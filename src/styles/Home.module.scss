@@ -169,11 +169,13 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   }
   @include desktop {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    padding: 2rem 3rem 2rem 0;
+    // !VA 2024
+    width: 100%;
+    // margin: 0 0 0 5rem;
+    // padding: 2rem 3rem 2rem 0;
+    // background: rgba(255, 0, 0, .3) !important; //devred
   }
   @include ldesktop {
     flex-direction: column;
@@ -209,9 +211,11 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     line-height: 4rem;
   }
   @include desktop {
+    // !VA 2024
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 4rem;
+    // background: rgba(0, 128, 0, .3) !important; //devgreen
   }
   @include ldesktop {
     font-size: 6rem;
@@ -219,7 +223,7 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     line-height: 7rem;
   }
   padding-bottom: .25rem;
-  color: $light_text_color;
+  // color: $light_text_color;
   // !VA 2024
   color: $light_text_color;
   font-family: $secondary_font;
@@ -229,10 +233,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  // background: rgba(0, 0, 255, .3) !important; //devblue
 }
 
-.font_massive {
+.hero_head_emphasis {
   @include mphone {
     font-size: 4.5rem;
     font-weight: 600;
@@ -251,11 +254,16 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     font-weight: 600;
   }
   @include desktop {
-    display: block;
-    padding: .25rem 0 .5rem;
-    font-size: 7rem;
-    line-height: 7rem;
-    font-weight: 600;
+    // !VA 2024
+    // display: block;
+    // padding: 1rem 0 .5rem;
+    color: $primary_color;
+    font-family: $boogaloo_font;
+    font-size: 8.5rem;
+    line-height: 9rem;
+    text-align: center;
+    text-shadow: -3px -3px 0 #FFF;
+
   }
   @include ldesktop {
     display: block;
@@ -264,41 +272,13 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     line-height: 9rem;
     font-weight: 600;
   }
+  width: 100%;
   display: block;
   font-size: 4rem;
   font-weight: 600;
   line-height: 4rem;
 }
 
-.hero_head_timer {
-  @include mphone {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  @include lphone {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  @include tablet {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  @include desktop {
-    font-size: 1.75rem;
-    line-height: 1.75rem;
-  }
-  @include ldesktop {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  width: 100%;
-  color: $primary_color;
-  font-family: $primary_font;
-  font-size: 1.313rem;
-  font-weight: 600;
-  line-height: 2rem;
-  text-align: center;
-}
 
 .hero_video {
   @include mphone {
@@ -312,7 +292,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   }
   @include desktop {
     width: 420px;
-    margin: 0 2rem 0 4rem;
+    // margin: 0 2rem 0 4rem;
+    // !VA 2024
+    margin: 0 2rem 0 1rem;
     border: 8px solid #FFF;
   }
   @include ldesktop {

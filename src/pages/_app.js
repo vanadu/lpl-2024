@@ -1,4 +1,4 @@
-import { Oswald, Inter, Open_Sans, Inconsolata } from 'next/font/google'
+import { Oswald, Inter, Boogaloo, Open_Sans, Inconsolata } from 'next/font/google'
 import { useEffect } from 'react'
 // !VA Date: 2024.03.29 Still using the Head component for the viewport property
 import Head from 'next/head'
@@ -24,6 +24,11 @@ import '../styles/globals.scss'
 const oswald = Oswald({ 
   subsets: ['latin'], 
   variable: '--oswald-font'
+})
+const boogaloo = Boogaloo({ 
+  subsets: ['latin'], 
+  variable: '--boogaloo-font',
+  weight: ["400"],
 })
 const inter = Inter({ 
   subsets: ['latin'], 
