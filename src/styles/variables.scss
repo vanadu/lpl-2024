@@ -1,0 +1,173 @@
+// FOREGROUND COLORS
+//------------------
+// $primary_color: #FCB900;
+// $primary_color: goldenrod;
+$primary_color: #DAA520;
+// !VA 2024 Blue as per the color wheel
+$secondary_color: #2055DA;
+// !VA 2024 Heart red
+// $secondary_color: #aa0000;
+$tertiary_color: #20DA48;
+$marquee_color: #AD0110;
+$accent_color: #DA20B2;
+$icon_color: #8b0000;
+// BACKGROUND COLORS
+//------------------
+$home_bg_color: #212121;
+$content_bg_color: #E1E1E1;
+$subnav1_bg_color: #E1E1E1;
+$footer_bg_color: #0e2660;
+// $footer_bg_color: #A520DA;
+
+// TYPOGRAPHY
+//-----------
+// $light_text_color: antiquewhite;
+$home_text-color: #212121;
+$light_text_color: #FFF;
+$dark_text_color: #212121;
+$gray_text_color: #494949;
+$showmore_text_color: #8E000B;
+$primary_font: 'Open Sans', sans-serif;
+$secondary_font: 'Oswald', 'Arial Narrow', sans-serif;
+$inter_font: 'Inter', sans-serif;
+// $condensed_font: 'Roboto Condensed', sans-serif;
+$monospace_font: 'Inconsolata', monospace;
+
+
+/* !VA Font sizes   
+------------------
+...TextFontSize - Text content
+// !VA 2024.04.03 HeadFontSize should be reserved for H1 tags sitewide
+...HeadFontSize - FIX THIS SITEWIDE
+...SubheadFontSize - FIX THIS SITEWIDE
+
+
+...TableFontSize - Table cells
+...FootnoteFontSize - Footnotes, not sure where they appear
+...ConsentFontSize - Consent form font sizes
+
+
+*/
+
+// !VA Main Head H1
+$rootHeadFontSize: 1.313rem;
+$rootHeadLineHeight: 1.625rem;
+$mphoneHeadFontSize: 1.563rem;
+$mphoneHeadLineHeight: 1.75rem;
+$lphoneHeadFontSize: 1.625rem;
+$lphoneHeadLineHeight: 1.813rem;
+$tabletHeadFontSize: 1.75rem;
+$tabletHeadLineHeight: 1.938rem;
+$desktopHeadFontSize: 1.875rem;
+$desktopHeadLineHeight: 2.063rem;
+$ldesktopHeadFontSize: 2.125rem;
+$ldesktopHeadLineHeight: 2.313rem;
+
+// !VA Subhead h2
+$rootSubheadFontSize: 1.125rem;
+$rootSubheadLineHeight: 1.375rem;
+$mphoneSubheadFontSize: 1.25rem;
+$mphoneSubheadLineHeight: 1.563rem;
+$lphoneSubheadFontSize: 1.313rem;
+$lphoneSubheadLineHeight: 1.688rem;
+$tabletSubheadFontSize: 1.375rem;
+$tabletSubheadLineHeight: 1.688rem;
+$desktopSubheadFontSize: 1.438rem;
+$desktopSubheadLineHeight: 1.75rem;
+$ldesktopSubheadFontSize: 1.5rem;
+$ldesktopSubheadLineHeight: 1.813rem;
+
+// !VA Text Content
+$rootTextFontSize: 1.063rem;
+$rootTextLineHeight: 1.375rem;
+$mphoneTextFontSize: 1.125rem;
+$mphoneTextLineHeight: 1.5rem;
+$lphoneTextFontSize: 1.188rem;
+$lphoneTextLineHeight: 1.575rem;
+$tabletTextFontSize: 1.25rem;
+$tabletTextLineHeight: 1.688rem;
+$desktopTextFontSize: 1.313rem;
+$desktopTextLineHeight: 1.938rem;
+$ldesktopTextFontSize: 1.5rem;
+$ldesktopTextLineHeight: 2.125rem;
+
+
+// !VA Table cells
+$rootTableFontSize: .913rem;
+$rootTableLineHeight: 1.125rem;
+$mphoneTableFontSize: 1rem;
+$mphoneTableLineHeight: 1.25rem;
+$lphoneTableFontSize: 1.063rem;
+$lphoneTableLineHeight: 1.313rem;
+$tabletTableFontSize: 1.125rem;
+$tabletTableLineHeight: 1.438rem;
+$desktopTableFontSize: 1.25rem;
+$desktopTableLineHeight: 1.588rem;
+$ldesktopTableFontSize: 1.313rem;
+$ldesktopTableLineHeight: 1.638rem;
+
+// ShowMore link text 
+$rootShowmoreFontSize: 1.063rem;
+$rootShowmoreLineHeight: 1.125rem;
+$mphoneShowmoreFontSize: 1.125rem;
+$mphoneShowmoreLineHeight: 1.5rem;
+$lphoneShowmoreFontSize: 1.188rem;
+$lphoneShowmoreLineHeight: 1.575rem;
+$tabletShowmoreFontSize: 1.25rem;
+$tabletShowmoreLineHeight: 1.688rem;
+$desktopShowmoreFontSize: 1.313rem;
+$desktopShowmoreLineHeight: 1.938rem;
+$ldesktopShowmoreFontSize: 1.5rem;
+$ldesktopShowmoreLineHeight: 2.125rem;
+
+// !VA Footnotes
+$rootFootnoteFontSize: .875rem;
+$rootFootnoteLineHeight: 1rem;
+$mphoneFootnoteFontSize: 1rem;
+$mphoneFootnoteLineHeight: 1.188rem;
+$lphoneFootnoteFontSize: 1.063rem;
+$lphoneFootnoteLineHeight: 1.25rem;
+$tabletFootnoteFontSize: 1.063rem;
+$tabletFootnoteLineHeight: 1.25rem;
+$desktopFootnoteFontSize: 1.125rem;
+$desktopFootnoteLineHeight: 1.313rem;
+$ldesktopFootnoteFontSize: 1.188rem;
+$ldesktopFootnoteLineHeight: 1.438rem;
+
+// !VA Consent Form
+$rootConsentFontSize: .938rem;
+$rootConsentLineHeight: 1.063rem;
+$mphoneConsentFontSize: 1rem;
+$mphoneConsentLineHeight: 1.188rem;
+$lphoneConsentFontSize: 1.063rem;
+$lphoneConsentLineHeight: 1.188rem;
+$tabletConsentFontSize: 1.125em;
+$tabletConsentLineHeight: 1.5rem;
+$desktopConsentFontSize: 1.188rem;
+$desktopConsentLineHeight: 1.313rem;
+$ldesktopConsentFontSize: 1.25rem;
+$ldesktopConsentLineHeight: 1.375rem;
+
+// ACCENTS
+// -------
+$primary_accent_color: #474747;
+$secondary_accent_color: #959595;
+$tertiary_accent_color: #E1E1E1;
+$horiz_rule_color: #666;
+// LINKS
+//------
+$primary_link_color: #FCB900;
+$primary_hover_color:  #8DD1FF;
+$secondary_link_color: #896400;
+$secondary_hover_color: #FCB900;
+$showmore_link_color: #8e000b;
+// UI AND TOOLTIPS
+// ---------------
+$primary_icon_color: #d3d3d3;
+$button_color: #841117;
+$separator_color: #808080;
+$tooltip_color: #4c3800;
+$tooltip_color: #725503;
+
+$test_color: #606060;
+

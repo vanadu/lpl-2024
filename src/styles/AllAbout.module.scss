@@ -1,0 +1,476 @@
+@import 'variables.scss';
+@import './mixins/mediaqueries.scss';
+
+// !VA Utility styles
+// !VA This is a generic block container - new
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+// !VA This is a generic flex container - new
+.container_flex_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+// !VA Section styles
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  // height: calc(100vh - 113px);
+  // !VA For Home, background is primary color. For other pages, it's currently $content_bg_color
+  background: $primary_color;
+}
+
+// !VA In Home, section_content lives on the $primary_color background set in .section. None of the other pages have this two-toned scheme, at least for now. 
+.section_content {
+  @include mphone {
+    width: 365px;
+    padding: 0 .75rem 0;
+  }
+  @include lphone {
+    width: 404px;
+    padding: 0 .75rem 0;
+  }
+  @include tablet {
+    width: 758px;
+  }
+  @include desktop {
+    width: 960px;
+  }
+  @include ldesktop {
+    width: 1200px;
+  }
+  position: relative;
+  width: 310px;
+  height: 100%;
+  // !VA Bump this element down to compensate for negative margin to cover border-radius -.75rem margin on head 
+  // top: 1rem;
+  padding: 0 .25rem 0;
+  // margin: 0 0 2rem;
+  // !VA Use primary_color to fill space created by flex/justify-content: space-around
+  background: $primary_color;
+  background: $content_bg_color;
+  color: $dark_text_color; 
+}
+
+.head {
+  @include mphone {
+    width: 365px;
+    padding: .75rem 0;
+  }
+  @include lphone {
+    width: 404px;
+    padding: .5rem 0 .25rem;
+  }
+  @include tablet {
+    width: 758px;
+  }
+  @include desktop {
+    width: 960px;
+  }
+  @include ldesktop {
+    width: 1200px;
+  }
+  position: relative;
+  // top: -1rem;
+  width: 310px;
+  margin-top: .75rem;
+  padding: .5rem 0;
+  // !VA Bump head up to cover the border-radius
+  background: $home_bg_color;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.head_title {
+  @include mphone {
+    // padding: 0 0 .188rem;
+    font-size: 1.313rem;
+    line-height: 1.75rem;
+  }
+  @include lphone {
+    padding: 0 0 .375rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  @include tablet {
+    padding: .25rem 0 .375rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  @include desktop {
+    padding: .25rem 0 .375rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  @include ldesktop {
+    padding: .125rem 0 .25rem;
+    padding: .5rem 0 .5rem;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+  color: $light_text_color;
+  font-family: $secondary_font;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.head_title_subtext {
+  @include tablet {
+    display: inline;
+    font-size: inherit;
+  }
+  @include desktop {
+    display: inline;
+    font-size: inherit;
+  }
+  @include ldesktop {
+    display: inline;
+    font-size: inherit;
+  }
+  display: block;
+  color: $light_text_color;
+  font-family: $secondary_font;
+  font-size: 1.063rem;
+  line-height: 1.625rem;
+  text-align: center;
+}
+
+
+
+
+// !VA The 'I'm looking for info about' text
+.content_caption_mobile {
+  @include mphone {
+    font-size: 1.188rem;
+    line-height: 1.188rem;
+  }
+  @include lphone {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include ldesktop {
+    display: none;
+  }
+  margin: .75rem .5rem 0;
+  color: $dark_text_color;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+.cards {
+  @include lphone {
+    margin: .5rem 0 2rem;
+  }
+  @include tablet {
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    margin: .5rem 0 2rem;
+  }
+  @include desktop {
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    margin: .5rem 0 2rem;
+  }
+  @include ldesktop {
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    margin: .5rem 0 2rem;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: .25rem 0 1rem;
+}
+
+
+.card {
+  @include tablet {
+    width: 50%;
+    padding: 0 .5rem;
+  }
+  @include desktop {
+    width: 50%;
+    padding: 0 .5rem;
+  }
+  @include ldesktop {
+    width: 50%;
+    padding: 0 1rem;
+  }
+  // width: 100%;
+  margin: .25rem 0;
+  display: flex;
+}
+
+.card_content {
+  @include tablet {
+    // display: block;
+    width: 100%;
+    // width: 50%;
+    height: auto;
+    padding: 0;
+    // margin: 0 .75rem 0;
+
+    margin: .25rem auto;
+  }
+  @include desktop {
+    width: 100%;
+    margin: 0 .75rem 0;
+  }
+  @include ldesktop {
+    width: 100%;
+    margin: 0 .75rem 0;
+  }
+  // margin-top: .25rem;
+  position: relative;
+  width: 100%;
+  margin: .25rem auto 0;
+  border:  1px solid $secondary_accent_color;
+  border-radius: 15px;
+  background: $content_bg_color;
+  // !VA NOW This is necessary with the new anchor text scheme
+
+}
+
+.card_link {
+  @include tablet {
+    position: absolute; 
+  }
+  @include desktop {
+    position: absolute; 
+  }
+  @include ldesktop {
+    position: absolute; 
+  }
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card_head {
+  @include mphone {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+  @include lphone {
+    margin-top: 2.063rem;
+    font-size: 1.438rem;
+    line-height: 1.625rem;
+  }
+  @include tablet {
+    margin-top: 2.125rem;
+    font-size: 1.5rem;
+    line-height: 1.688rem;
+  }
+  @include desktop {
+    margin-top: 2.125rem;
+    font-size: 1.5rem;
+    line-height: 1.688rem;
+  }
+  @include ldesktop {
+    margin-top: 2.25rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  display: block;
+  margin-top: 2rem;
+  padding: 0;
+  font-family: $secondary_font;
+  color: $dark_text_color;
+  // font-size: 1.375rem;
+  // line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+// !VA Container for .card_subhead and .card_list, i.e. the non-anchor text content of the card
+.card_content_text {
+  @include mphone {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include lphone {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  @include tablet {
+    display: block;
+    // !VA NOW Anchor Text - Compensate for the anchor now being position: absolute
+    margin-top: 2.25rem;
+    font-size: 1.188rem;
+    line-height: 1.625rem;
+  }
+  @include desktop {
+    display: block;
+    margin-top: 2rem;
+    // padding: .25rem 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+  }
+  @include ldesktop {
+    display: block;
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+  // !VA 04.02
+  // margin-top: 1rem;
+  color: $dark_text_color;
+  font-family: $primary_font;
+  text-align: left;
+  // display: none;
+}
+
+.card_subhead {
+  @include mphone {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  @include lphone {
+    font-size: 1.188rem;
+    line-height: 1.375rem;
+  }
+  @include tablet {
+    margin: 0 0 .25rem;
+    font-size: 1.188rem;
+    line-height: 1.375rem;
+  }
+  @include desktop {
+    margin: 0 0 .5rem;
+    font-size: 1.25rem;
+    line-height: 1.438rem;
+  }
+  @include ldesktop {
+    margin: 0 2rem .75rem;
+    font-size: 1.438rem;
+    line-height: 1.75rem;
+  }
+  display: block;
+  margin: 0 0 .188rem;
+  padding: 0 0 .313rem;
+  font-family: $secondary_font;
+  font-size: 1.063rem;
+  line-height: 1.313rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card_list {
+  @include ldesktop {
+    height: 2.125rem;
+  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 1.75rem;
+  list-style-type: none;
+  // background: $test_color;
+  background: $primary_accent_color;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  // !VA NOW
+  // visibility: hidden;
+}
+
+.card_list_item {
+  @include mphone {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  @include lphone {
+    font-size: 1.063rem;
+    line-height: 1.5rem;
+  }
+  @include tablet {
+    padding: .25rem 0 .25rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+  @include desktop {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include ldesktop {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  // padding: .063rem 0 .063rem;
+  color: $light_text-color;
+  // color: $secondary_link_color;
+  font-family: $secondary_font;
+  font-family: $primary_font;
+  font-size: .963rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+
+
+// !VA margin-bottom sets the distance from the bottom of the card head to the top of the card subhead.
+.go_button {
+  @include mphone {
+    margin-bottom: 2.125rem !important;
+  }
+  @include lphone {
+    margin-bottom: 2.188rem !important;
+  }
+  @include tablet {
+    margin-bottom: 2.313rem !important;
+  }
+  @include desktop {
+    margin-bottom: 2.375rem !important;
+  }
+  @include ldesktop {
+    margin-bottom: 2.938rem !important;
+  }
+  display: flex;
+  justify-content: center;
+  height: 1.75rem;
+  margin-bottom: 1.936rem !important;
+  background-color: $primary_accent_color;
+  color: $primary_link_color;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.go_button_label {
+  padding-right: .25rem;
+  font-family: $primary_font;
+  font-size: 1.063rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-align: center;
+  color: $primary_color;
+}
+.go_button_svg {
+  color: $primary_color;
+  height: 1.5rem;
+}

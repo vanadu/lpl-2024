@@ -1,0 +1,194 @@
+@import './variables.scss';
+@import './mixins/mediaqueries.scss';
+
+.footer {
+  padding: .75rem 0 5rem;
+  background: $home_bg_color;
+  // background: $primary_color;
+}
+
+.top_bar {
+  width: 100%;
+  height: .5rem;
+  background: $primary_color;
+}
+
+.two_column_content {
+  @include mphone {
+    display: block;
+    margin: 0 auto;
+    padding: 0 .75rem 0;
+    width: 365px;
+  }
+  @include lphone {
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 0;
+    width: 374px
+  }
+  @include tablet {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem 0;
+  }
+  @include desktop {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem 0;
+  }
+  @include ldesktop {
+    display: block;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 5.688rem 0;
+  }
+  display: flex;
+  flex-direction: column;
+
+  width: 310px;
+  margin: 0 auto;
+  padding: 0 .25rem 0;
+  // background: $content_bg_color;
+  background: $home_bg_color;
+}
+
+.column_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.head {
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  @include ldesktop {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  @include tablet {
+    width: 70px;
+  }
+  @include desktop {
+    width: 70px;
+  }
+  @include desktop {
+    width: 70px;
+  }
+  @include ldesktop {
+    width: 70px;
+  }
+  width: 90px;
+  height: auto;
+}
+
+.logo_img {
+  margin: .75rem 0 .25rem;
+}
+
+.copyright {
+  margin: 0 0 .75rem;
+}
+
+.copyright_text {
+  @include tablet {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include desktop {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include ldesktop {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  color: $light_text_color;
+  font-size: .963rem;
+  line-height: 1.313rem;
+  text-align: center;
+}
+
+.icons {
+  @include mphone {
+    margin: .5rem 0;
+  }
+  @include lphone {
+    margin: .5rem 0;
+  }
+  @include lphone {
+    margin: .5rem 0;
+  }
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.icon {
+    @include mphone {
+      font-size: 2rem;
+    }
+    @include lphone {
+      font-size: 2.25rem;
+      // padding: 1.75rem 1rem 0;
+    }
+    @include tablet {
+      font-size: 2rem;
+      padding: .5rem 1rem 0;
+    }
+    @include desktop {
+      font-size: 2rem;
+      padding: .5rem 1.5rem 0;
+    }
+    @include ldesktop {
+      font-size: 2rem;
+      padding: 0 1.5rem;
+    }
+  font-size: 1.625rem;
+  padding: 0 1rem;
+  color: $primary_color;
+}
+
+.disclaimer {
+  width: 100%;
+}
+
+.disclaimer_text {
+  @include tablet {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include desktop {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include ldesktop {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  color: $light_text_color;
+  font-size: .963rem;
+  line-height: 1.313rem;
+  text-align: left;
+}

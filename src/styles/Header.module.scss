@@ -1,0 +1,816 @@
+@import './variables.scss';
+@import './mixins/mediaqueries.scss';
+
+// !VA I'm trying to understand what I did here six months later, see the 
+.header {
+  @include mphone {
+    height: 130px;
+  }
+  @include lphone {
+    height: 130px;
+  }
+  @include tablet {
+    height: 140px;
+  }
+  @include desktop {
+    // !VA 2024 Shorten the header
+    height: 124px;
+  }
+  @include ldesktop {
+    height: 190px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 114px;
+  background: $home_bg_color;
+  overflow-x: hidden!important;
+  // !VA 2024
+  background: $content_bg_color;
+  position: relative;
+  // z-index: -1;
+}
+
+.header_content {
+  @include mphone {
+    height: 90px;
+  }
+  @include lphone {
+    height: 90px;
+  }
+  @include tablet {
+    height: 96px;
+  }
+  @include desktop {
+    // VA!
+    height: 110px;
+  }
+  @include ldesktop {
+    height: 138px;
+    // !VA This is a problem
+    width: 85%;
+  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  position: relative;
+  z-index: 1;
+  // background-color: $home_bg_color;
+  background-color: transparent;
+  overflow: hidden; 
+  // z-index: -1;
+}
+
+// !VA 2024.04.08 Replacing header_img_box with HeaderBricks from CBE
+// !VA Start HeaderBricks styles
+// -------------------------------------------------------------------
+.bricks_container {
+  @include mphone {
+    // VA!
+    // width: 375px;
+    height: 130px; 
+  }
+  @include lphone {
+    // VA!
+    // width: 414px;
+    height: 130px;
+  }
+  @include tablet {
+    // width: 2058px;
+    height: 140px;
+  }
+  @include desktop {
+    // VA! 2024
+    height: 126px;
+  }
+  @include ldesktop {
+    // !VA 2023.12.05 Trying to get rid of the vertical scrollbar
+    height: 190px;
+  }
+  // !VA 2024.04.08
+  // position: relative;
+  position: absolute;
+  // !VA 2024.04.08
+  top: 0;
+  display: block;
+  // !VA 2024.04.08
+  // opacity: 1;
+  opacity: .5;
+  width: 100%;
+  height: 114px; 
+  // !VA 2024.04.08
+  // height: 100%;
+  overflow: hidden; 
+  background: $primary_accent_color;
+  // !VA 2024
+  background: $secondary_color;
+  background: transparent;
+  opacity: 1;
+  // !VA I don't know what I did here, but the z-index works now and the bricks don't overlay the 
+  z-index: 1;
+}
+
+// !VA 2023.12.05 This was never implemented...
+.bricks_slider {
+  display: block;
+  height: 100%;
+  z-index: -1;
+
+  // !VA 2024 
+  opacity: 1;
+  z-index: 6;
+  }
+
+
+.bricks_slider .bricks {
+  @include tablet {
+    animation: moveSlideshow 360s linear infinite;
+  }
+  @include desktop {
+    animation: desktopMoveSlideshow 240s linear infinite;
+  }
+  @include ldesktop {
+    animation: lDesktopMoveSlideshow 240s linear infinite;
+  }
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  height: auto;
+  // !VA 2023.12.05 Didn't work
+  // !VA 2023.12.13
+  // visibility: visible !important;
+  // opacity: 1 !important;
+  // height: 64px;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 240s linear infinite;
+  z-index: 10;
+  // !VA 2024
+  opacity: .3;
+  // background: $secondary_color;
+  z-index: 7;
+}
+
+// !VA Stop animation on hover
+.bricks:hover, .bricks:focus {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    // !VA Initial from the demo, see links in OneNote CSS notebook
+    // transform: translateX(-66.6666%);  
+    transform: translateX(-80.9%);  
+  }
+}
+
+@keyframes desktopMoveSlideshow {
+  100% { 
+    transform: translateX(-52.2%);  
+  }
+}
+
+@keyframes lDesktopMoveSlideshow {
+  100% { 
+    transform: translateX(-31%);  
+  }
+}
+
+// !VA 2023.12.02 brick_img is in the Brick component
+.brick_img {
+  position: relative;
+  width: auto;
+  // !VA Height is defined in bricks_container
+  height: 100%;
+  // !VA Exposes the primary_accent_color background of the parent
+  padding: 2px .125rem 2px 0;
+  z-index: -1;
+}
+
+.ldesktop_brick_img {
+  display: none;
+}
+
+
+// !VA 2024 All of this below is deprecaated and was replaced by the moveSlideshow animation. Which is probably why it doesn't track properly on different devices...I never tried to sync the slideshow duration for responsive...
+// -------------------------------------------------------------------
+// !VA End HeaderBricks styles
+
+
+// .header_img_box {
+//   @include mphone {
+//     // VA!
+//     // width: 375px;
+//     height: 130px;
+//   }
+//   @include lphone {
+//     // VA!
+//     // width: 414px;
+//     height: 130px;  
+//   }
+//   @include tablet {
+//     // width: 2058px;
+//     height: 140px;
+//   }
+//   @include desktop {
+//     // VA!
+//     // width: 2117px;
+//     height: 144px;
+//   }
+//   @include ldesktop {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     opacity: .2;
+//     height: 190px;
+//   }
+//   position: absolute;
+//   display: block;
+//   top: 0;
+//   left: 0;
+//   opacity: .5;
+//   width: 100%;
+//   height: 114px;
+//   overflow: hidden;
+//   background: black;
+//   overflow-y: scroll !important;
+//   -webkit-overflow-scrolling: touch;
+// }
+
+// !VA  Image width 1911 - screen width 320;
+// @keyframes dogslider {
+//   0% {  transform: translateX(0);}
+//   // 50% { transform: translateX(-1356px); }
+//   50% { transform: translateX(-1356px); }
+//   100% {transform: translateX(0);}
+// }
+
+// // !VA  Image width 1911 - screen width 375;
+// @keyframes dogslidermphone {
+//   0% {  transform: translateX(0);}
+//   50% { transform: translateX(-1536px); }
+//   100% {transform: translateX(0);}
+// }
+
+// @keyframes dogsliderlphone {
+//   0% {  transform: translateX(0);}
+//   50% { transform: translateX(-1291px); }
+//   100% {transform: translateX(0);}
+// }
+
+// @keyframes dogslidertablet {
+//   0% {  transform: translateX(0);}
+//   50% { transform: translateX(-951px); }
+//   100% {transform: translateX(0);}
+// }
+
+// @keyframes dogsliderdesktop {
+//   0% {  transform: translateX(0);}
+//   50% { transform: translateX(-712px); }
+//   100% {transform: translateX(0);}
+// }
+
+// @keyframes dogsliderldesktop {
+//   0% {  transform: translateX(0);}
+//   50% { transform: translateX(-880px); }
+//   100% {transform: translateX(0);}
+// }
+
+// @keyframes hide-scroll {
+//   0% { overflow: hidden; } 
+//   100% { overflow: hidden; } 
+// }
+
+// .header_img {
+//   @include mphone {
+//   // display: none;
+//     width: 1911px;
+//     height: 130px;
+//     animation: dogslidermphone 200s  infinite;
+
+//   }
+//   @include lphone {
+//     // VA!
+//     width: 2058px;
+//     height: 130px;   
+//     animation: dogsliderlphone 200s  infinite;
+//   }
+//   @include tablet {
+//     // VA!
+//     width: 1911px;
+//     height: 140px;
+//     animation: dogslidertablet 200s  infinite;
+//   }
+//   @include desktop {
+//     // VA!
+//     width: 2117px;
+//     height: 144px;
+//     animation: dogsliderdesktop 180s  infinite;
+//   }
+//   @include ldesktop {
+//     position: absolute;
+//     display: block;
+//     top: 0;
+//     left: 0;
+//     width: 2793px;
+//     height: 190px;
+//     animation: dogsliderldesktop 200s  infinite;
+//   }
+//   position: absolute;
+//   display: block;
+//   top: 0;
+//   left: 0;
+//   opacity: .8;
+//   width: 1676px;
+//   height: 114px;
+//   overflow-x: hidden;
+//   animation: dogslider 200s  infinite;
+//   background: rgba(0, 128, 0, .3) !important; //devgreen
+// }
+
+
+.logo {
+  @include mphone {
+    width: 80px;
+    margin: .625rem;
+  }
+  @include lphone {
+    width: 80px;
+    // margin: .75rem;
+  }
+  @include tablet {
+    width: 90px;
+    margin: 1rem 0 1rem 1.25rem;
+  }
+  @include desktop {
+    // !VA 2024 This is where the slug lives now
+    align-items: flex-start;
+    width: 700px;
+    margin: .75rem 0 0 3rem;
+    position: relative;
+    z-index: 100;
+  }
+  @include ldesktop {
+    width: 120px;
+    // margin: 1.5rem 0 2rem 2.5rem;
+  }
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin: 0 .75rem;
+  width: 4.5rem;
+  // !VA 2024
+  position: relative; 
+  z-index: 100;
+}
+
+.logo_img {
+  // margin: 0 .5rem;
+  width: 100%;
+  height: auto;
+  position: relative;
+  // background: rgba(0, 0, 255, .3) !important; //devblue
+  // !VA 2024 This is wher e the header img is defined now because the slug lives in the logo container
+  @include desktop {
+    width: 140px;
+    z-index: 10;
+  }
+}
+
+// !VA 2024
+.slug {
+  @include desktop {
+    margin: .036rem 0 .5rem 3rem;
+    // padding: 0 0 .25rem 0;
+    // border-bottom: 1px solid gray;
+    p {
+      color: $dark_text_color;
+      font-family: $secondary_font;
+      // font-family: $primary_font;
+      font-family: $inter_font;
+      font-size: 1rem;
+      font-weight: 600;
+      // font-style: italic;
+    }
+  }
+
+}
+
+.icon_bar {
+  // !VA 2024 This is just the container, I think ???
+  position: relative;
+  margin: .25rem 0 0 0;
+}
+
+
+.icons {
+  position: relative;
+  display: flex;
+  // !VA 2024
+  align-items: flex-start;
+  margin: 0 1rem 0 0;
+  background: $secondary_color;
+  border-radius: 20px;
+}
+
+.icon {
+    @include mphone {
+      // padding: 0 .75rem;
+      font-size: 2.5rem;
+    }
+    @include lphone {
+      font-size: 2.25rem;
+      padding: 1.75rem 1rem 0;
+    }
+    @include tablet {
+      font-size: 2.75rem;
+      padding: 1rem 1rem 0;
+    }
+    @include desktop {
+      font-size: 3rem;
+      // !VA 2024
+      font-size: 1.5rem;
+      // !VA 2024
+      padding: .25rem 1.5rem 0;
+    }
+    @include ldesktop {
+      font-size: 2.75rem;
+      padding: 0 1.5rem;
+    }
+  font-size: 2.25rem;
+  padding: 0 .625rem;
+  color: $secondary_color;
+  color: #ffffff;
+}
+
+// !VA This is the only icon in the icon bar that's a PNG, not a react icon
+.icon img {
+  @include mphone {
+    width: 2.5rem;
+  }
+  @include lphone {
+    width: 2.5rem;
+  }
+  @include tablet {
+    width: 3.25rem;
+  }
+  @include desktop {
+    // !VA 2024
+    width: 2.25rem;
+  }
+  @include ldesktop {
+    width: 3.125rem;
+  }
+  margin-top: 5px;
+  width: 2.125rem;
+  height: auto;
+}
+
+
+// !VA There were two nav containers...I removed the one in Header.js  
+// !VA 2024
+.nav {
+  @include desktop {
+    // !VA 2024 Trying to move the main nav up into the header content area...
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.nav_main {
+  @include ldesktop {
+    justify-content: center;
+  
+  }
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-evenly;
+  // justify-content: flex-end;
+  justify-content: flex-start;
+  // justify-content: center;
+  // justify-content: space-between;
+
+
+  // align-items: flex-end;
+  width: 100%;
+  // !VA 2024
+  // border-bottom: 3px solid $marquee_color;
+  // border-top: 3px solid $marquee_color;
+
+  // background-color: rgba(0, 0, 0, .6);
+  // border-top: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  z-index: 10;
+}
+
+// !VA 2024 Home icon is no more...
+// .nav_main_home_icon {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+  // !VA The icon link fills the entire wrapper. The wrapper defines the size of the home button in proportion to the menu items 
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .nav_main_home_icon svg {
+//   @include tablet {
+//     width: 2rem;
+//   }
+//   @include desktop {
+//     width: 2rem;
+//   }
+//   @include ldesktop {
+//     width: 2.5rem;
+//   }
+//   height: auto;
+//   // !VA This is where we size the actual icon.
+//   width: 1.5rem;
+// }
+
+// !VA 2024.04.05 nav_subnav2_list not in js
+.nav_main_list, .nav_subnav1_list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  // !VA On phones, this makes the nav_main_list as wide as it can go, that is, it consumes any space that nav_home doesn't consume. This allows the list items to be centered in the space NOT consumed by the Home icon.
+  // width: 100%;
+  padding: .25rem .5rem;
+  list-style: none;
+  z-index: 1;
+}
+
+// !VA Control position of menu items and home button with width and margin
+.nav_main_list {
+  @include mphone {
+    // width: 94%;
+    margin: 0 .25rem;
+    // margin-right: .25rem;
+  }
+  @include lphone {
+    margin: 0 .5rem;
+  }
+  @include tablet {
+    margin: 0 5rem 0 6rem;
+  }
+  @include desktop {
+    margin: 0 5rem 0 6rem;
+  }
+  @include ldesktop {
+    margin: 0 5rem 0 6rem;
+    width: 1000px;
+    margin-right: 5rem;
+  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+// !VA Changed
+.nav_main_list_item a {
+  @include mphone {
+    font-size: 1.125rem;
+  }
+  @include lphone {
+    font-size: 1.125rem;
+  }
+  @include tablet {
+    font-size: 1.25rem;
+  }
+  @include desktop {
+    // !VA 2024;
+    font-size: 1rem;
+  }
+  @include ldesktop {
+    font-size: 1.625rem; 
+  }
+  // !VA 2024 Moved all text properties to the anchor
+  color: $dark_text_color;
+  font-family: $secondary_font;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.nav_subnav1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: $subnav1_bg_color;
+}
+
+// !VA Header container to accommodate top and bottom rules
+.nav_subnav1_header {
+  @include tablet {
+    margin-top: .75rem;
+  }
+  @include desktop {
+    margin: 1rem 0 .5rem;
+  }
+  @include ldesktop {
+    margin: 1rem 0 .5rem;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+.nav_subnav1_header_text {
+  @include mphone {  
+    margin: 1rem auto 0;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  @include lphone {
+    font-size: 1.25rem;
+    line-height: 1.88rem;
+  }
+  @include tablet {
+    margin: .5rem auto 0;
+    font-size: 1.563rem;
+    line-height: 1.88rem;
+  }
+  @include desktop {
+    margin: 1rem auto 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  @include ldesktop {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  display: inline-block;
+  // margin: 1rem auto;
+  margin: .75rem auto 0;
+  padding: .25rem 0 .375rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color: $dark_text_color;
+  font-family: $secondary_font;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
+  text-align: center;
+  // width: auto;
+}
+
+// !VA 2024.04.05 Not in js
+.nav_subnav1_header_rule {
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.nav_subnav1_list {
+  @include desktop {
+    margin: 0 4rem;
+  }
+  @include ldesktop {
+    margin: 0 16rem;
+  }
+}
+
+// !VA 
+.nav_subnav1_list_item {
+  @include mphone {
+    // font-size: .938rem;
+    // .mobile-hide {
+      //   display: none;
+      // }
+  }
+  @include lphone {
+    // font-size: 1rem;
+    // .mobile-hide {
+    //   display: none;
+    // }
+  }
+  @include tablet {
+    // font-size: 1.188rem;
+    // .mobile-hide {
+    //   display: inline;
+    // }
+  }
+  @include desktop {
+    // font-size: 1.188em;
+    // .mobile-hide {
+    //   display: inline;
+    // }
+  }
+  @include ldesktop {
+    // font-size: 1.25rem;
+    // .mobile-hide {
+    //   display: inline;
+    // }
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 33%;
+}
+
+.nav_subnav1_list_item_img {
+  // width: 100px;
+  @include tablet {
+    width: 70%;
+  }
+  @include desktop {
+    width: 70%;
+  }
+  @include ldesktop {
+    width: 70%;
+  }
+  width: 100%;
+  height: auto;
+  border: 8px solid transparent;
+  pointer-events: none;
+}
+
+.nav_subnav1_list_item_anchor {
+  @include mphone {
+    font-size: 1.125rem;
+  }
+  @include lphone {
+    font-size: 1.125rem;
+  }
+  @include tablet {
+    font-size: 1.25rem;
+  }
+  @include desktop {
+    font-size: 1.25rem;
+  }
+  @include ldesktop {
+    font-size: 1.625rem; 
+  }
+  font-family: $secondary_font;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  color: $dark_text_color;
+  text-align: center;
+  // pointer-events: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_subnav1_list_item_anchor::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+// !VA Subnav menus, which belong to the page, not the Header
+// !VA 2024.04.05 Not in js
+.nav_subnav2_list {
+  background: rgba(0, 128, 0, .3) !important; //devgreen
+}
+
+// !VA 2024.04.05 This is only in stories, should just use the global style for this
+.mobile_hide {
+  display: none;
+}
+
+// !VA 2024.04.05 Not in js
+.iphone5_hide {
+    @include mphone {
+      display: inline; 
+    }
+    @include lphone {
+      display: inline; 
+    }
+    @include tablet {
+      display: inline; 
+    }
+    @include desktop {
+      display: inline; 
+    }
+    @include ldesktop {
+      display: inline; 
+    }
+  // display: none;
+}
