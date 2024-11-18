@@ -2,8 +2,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import LarParNewsIcon from '/public/icon-larpar-news.png'
 import { FaFacebookSquare } from 'react-icons/fa'
+import { FaFacebookF } from 'react-icons/fa'
 import { FaTwitterSquare } from 'react-icons/fa'
 import { TfiYoutube } from 'react-icons/tfi'
+import { FaYoutube } from 'react-icons/fa'
 import { MdMail } from 'react-icons/md'
 import { FaExclamationCircle } from 'react-icons/fa'
 import { IoPawSharp } from 'react-icons/io5'
@@ -41,7 +43,7 @@ const IconBar = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visit Our Youtube channel">
-          <TfiYoutube />
+          <FaYoutube />
         </Link>
         <Link 
           href='https://www.facebook.com/groups/laryngealstentfordogs' 
@@ -49,7 +51,7 @@ const IconBar = () => {
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Visit Our Facebook Group">
-          <FaFacebookSquare />
+          <FaFacebookF />
         </Link>
         <Link
           href='/contact'
