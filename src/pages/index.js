@@ -82,29 +82,28 @@ const Home = ( {posts}) => {
             </div>
 
             <div className={styles.community}>
-                <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
+              <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
 
-                <figure className={styles.figure}>
-                  <Image 
-                    src={JoinUsIcon} 
-                    // width="0"
-                    // height="0"
-                    // sizes="100vw"
-                    // style={{ width: '100%', height: 'auto' }}
-                    className={styles.community_icon} 
-                    alt="Miss B Haven" 
-                  />
-                </figure>
-                <h3 className={styles.community_cta}>Join the Community!</h3>
-                <div className={styles.community_text}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue  nulla ut justo rutrum consequat. Aliquam eget tincidunt ex. Donec  bibendum risus at.</p>
-                </div>
+              <figure className={styles.figure}>
+                <Image 
+                  src={JoinUsIcon} 
+                  // width="0"
+                  // height="0"
+                  // sizes="100vw"
+                  // style={{ width: '100%', height: 'auto' }}
+                  className={styles.community_icon} 
+                  alt="Miss B Haven" 
+                />
+              </figure>
+              <h3 className={styles.community_cta}>Join the Community!</h3>
+              <div className={styles.community_text}>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue  nulla ut justo rutrum consequat. Aliquam eget tincidunt ex. Donec  bibendum risus at.</p>
+              </div>
 
-                <div className={styles.community_questions}>
-
-
-
-                <div className={styles.wrapper1}>
+              {/* Container for the individual community question animations */}
+              <div className={styles.community_questions}>
+                {/* First scrolling animation  */}
+                <div className={styles.marquee_wrapper1}>
                   <div className={styles.marquee1}>
                     <p>
                     What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?
@@ -113,11 +112,9 @@ const Home = ( {posts}) => {
                     What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?
                     </p>
                   </div>
-
-
                 </div>
-
-                <div className={styles.wrapper2}>
+                {/* Second scrolling animation  */}
+                <div className={styles.marquee_wrapper2}>
                   <div className={styles.marquee2}>
                       <p>
                       How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency?
@@ -125,11 +122,10 @@ const Home = ( {posts}) => {
                       <p>
                       How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency?
                       </p>
-                    </div>
-
+                  </div>
                 </div>
-
-                <div className={styles.wrapper3}>
+                {/* Third scrolling animation  */}
+                <div className={styles.marquee_wrapper3}>
                   <div className={styles.marquee3}>
                     <p>
                       Is it bad for my Lar Par dog to get excited? Is prolonging life the best thing for my Lar Par dog? Why does my primary veterinarian advise against surgery? Has any dog every died from a stent implant? Is there a cure for Lar Par? Is the stent treatment available where I live?
@@ -139,9 +135,8 @@ const Home = ( {posts}) => {
                       </p>
                   </div>
                 </div>
-
-                
-                <div className={styles.wrapper4}>
+                {/* Fourth scrolling animation  */}
+                <div className={styles.marquee_wrapper4}>
                   <div className={styles.marquee4}>
                     <p>
                     What should I feed my Lar Par dog? What is BVEAP surgery? How long before my dog&lsquo;s Lar Par gets really bad? What&lsquo;s stridor? Are all surgeons equally skilled at tieback surgery? Can Lar Par dogs get aspiration pneumonia without surgery?  
@@ -151,8 +146,8 @@ const Home = ( {posts}) => {
                     </p>
                   </div>
                 </div>
-
-                <div className={styles.wrapper5}>
+                {/* Fifth scrolling animation  */}
+                <div className={styles.marquee_wrapper5}>
                   <div className={styles.marquee5}>
                     <p>
                       Are there supplements that can help my Lar Par dog? How can I be sure my dog has Lar Par? Can accupuncture help with Lar Par? How much does the specialist diagnosis cost? Can a regular X-ray tell if my dog has Lar Par?
@@ -162,22 +157,7 @@ const Home = ( {posts}) => {
                     </p>
                   </div>
                 </div>
-
-
-
-
-
-
-                  {/* <p className={styles.tertiary}>What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?</p> */}
-                  {/* <p className={styles.tertiary}>How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency? </p> */}
-                  {/* <p className={styles.tertiary}>Is it bad for my Lar Par dog to get excited? Is prolonging life the best thing for my Lar Par dog? Why does my primary veterinarian advise against surgery? Has any dog every died from a stent implant? Is there a cure for Lar Par? Is the stent treatment available where I live?</p> */}
-                  {/* <p className={styles.tertiary}>What should I feed my Lar Par dog? What is BVEAP surgery? How long before my dog&lsquo;s Lar Par gets really bad? What&lsquo;s stridor? Are all surgeons equally skilled at tieback surgery? Can Lar Par dogs get aspiration pneumonia without surgery?  </p> */}
-                  {/* <p className={styles.tertiary}>Are there supplements that can help my Lar Par dog? How can I be sure my dog has Lar Par? Can accupuncture help with Lar Par? How much does the specialist diagnosis cost? Can a regular X-ray tell if my dog has Lar Par?</p> */}
-
-
-                </div>
-
-
+              </div>
             </div>
 
 

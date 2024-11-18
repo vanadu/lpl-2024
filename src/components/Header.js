@@ -102,12 +102,14 @@ const Header = () => {
         <div className={styles.icon_bar}>
           <IconBar />
         </div>
+
+        <div className={styles.header_slug}>
+          <h2 className={styles.header_slug_text}>The 21st Century Guide to Laryngeal Paralysis in Dogs</h2>
+        </div>
+
       </div>
 
-      {/* VA! The container is in the NavBar component, along with the context provider, which needs the container to work. It's not ideal that the NavBar component has no direct parent here but I guess it doesn't need one. */}
-      <div className={styles.header_slug}>
-        <h2>The 21st Century Guide to Laryngeal Paralysis in Dogs</h2>
-      </div>
+
     </div>
   )
 }

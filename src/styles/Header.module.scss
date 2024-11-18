@@ -13,8 +13,12 @@
     height: 140px;
   }
   @include desktop {
-    // !VA 2024 Shorten the header
-    height: 158px;
+    // !VA 2024 Shorten the header and push it up to the top
+    // !VA flex-start pushes it up to the top
+    justify-content: flex-start;
+    height: 125px;
+    margin: 0 0 2rem 0;
+    padding: .5rem 0 0 0;
   }
   @include ldesktop {
     height: 190px;
@@ -29,7 +33,7 @@
   // background: $home_bg_color;
   overflow-x: hidden!important;
   // !VA 2024
-  background: $content_bg_color;
+  background: none;
   // z-index: -1;
 }
 
@@ -44,8 +48,13 @@
     height: 96px;
   }
   @include desktop {
-    // VA!
-    height: 110px;
+    // !VA 2024 trying to push this container up to the top...
+    align-items: flex-start;
+    height: 138px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+
   }
   @include ldesktop {
     height: 138px;
@@ -84,7 +93,7 @@
   }
   @include desktop {
     // VA! 2024
-    height: 126px;
+    height: 140px;
   }
   @include ldesktop {
     // !VA 2023.12.05 Trying to get rid of the vertical scrollbar
@@ -347,10 +356,11 @@
     margin: 1rem 0 1rem 1.25rem;
   }
   @include desktop {
+    // !VA 2024
     align-items: flex-start;
     // width: 700px;
     width: auto;
-    margin: .75rem 0 0 3rem;
+    margin: 0 0 0 3rem;
     position: relative;
     z-index: 100;
   }
@@ -397,8 +407,6 @@
 }
 
 
-
-
 // !VA 2024
 .header_slug {
   @include desktop {
@@ -406,31 +414,33 @@
     // padding: 0 0 .25rem 0;
     // border-bottom: 1px solid gray;
     position: absolute;
-    top: 124px;
+    display: block;
+    top: 83px;
     width: 100%;
-    background: $home_bg_color;
-    background: #212121;
-
-    h2 {
-      padding: .25rem 0;
+    // background: $home_bg_color;
+    background: rgba(0, 0, 0, .5);
+  .header_slug_text {
+      padding: .5rem 0;
+      color: $dark_text_color;
       color: $light_text_color;
       // font-family: $primary_font;
       // font-family: $inter_font;
       font-family: $secondary_font;
-      font-size: 1.125rem;
+      font-size: 1.25rem;
+      line-height: 1.125rem;
       font-weight: 500;
       text-align: center;
       letter-spacing: 1px;
+      opacity: .8;
       // font-style: italic;
     }
   }
-
 }
 
 .icon_bar {
   // !VA 2024 This is just the container, I think ???
   position: relative;
-  margin: .25rem 0 0 0;
+  margin: 0;
 }
 
 
@@ -593,7 +603,8 @@
     margin: 0 5rem 0 6rem;
   }
   @include desktop {
-    margin: .438rem 3rem 0 4rem;
+    // !VA 2024
+    margin: 0 3rem 0 4rem;
   }
   @include ldesktop {
     margin: 0 5rem 0 6rem;
