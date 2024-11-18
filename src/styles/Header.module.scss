@@ -14,11 +14,12 @@
   }
   @include desktop {
     // !VA 2024 Shorten the header
-    height: 124px;
+    height: 158px;
   }
   @include ldesktop {
     height: 190px;
   }
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +30,6 @@
   overflow-x: hidden!important;
   // !VA 2024
   background: $content_bg_color;
-  position: relative;
   // z-index: -1;
 }
 
@@ -347,9 +347,9 @@
     margin: 1rem 0 1rem 1.25rem;
   }
   @include desktop {
-    // !VA 2024 This is where the slug lives now
     align-items: flex-start;
-    width: 700px;
+    // width: 700px;
+    width: auto;
     margin: .75rem 0 0 3rem;
     position: relative;
     z-index: 100;
@@ -382,18 +382,45 @@
 }
 
 // !VA 2024
-.slug {
+.nav_bar {
   @include desktop {
-    margin: .036rem 0 .5rem 3rem;
+    width: 100%;
+  }
+
+}
+
+.nav_dropdown_icon {
+  position: relative;
+  top: .188rem;
+  padding: 0 0 0 .25rem;
+  font-size: 1rem;
+}
+
+
+
+
+// !VA 2024
+.header_slug {
+  @include desktop {
+    // margin: .036rem 0 .5rem 3rem;
     // padding: 0 0 .25rem 0;
     // border-bottom: 1px solid gray;
-    p {
-      color: $dark_text_color;
-      font-family: $secondary_font;
+    position: absolute;
+    top: 124px;
+    width: 100%;
+    background: $home_bg_color;
+    background: #212121;
+
+    h2 {
+      padding: .25rem 0;
+      color: $light_text_color;
       // font-family: $primary_font;
-      font-family: $inter_font;
-      font-size: 1rem;
-      font-weight: 600;
+      // font-family: $inter_font;
+      font-family: $secondary_font;
+      font-size: 1.125rem;
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 1px;
       // font-style: italic;
     }
   }
@@ -509,7 +536,7 @@
 
   // background-color: rgba(0, 0, 0, .6);
   // border-top: 1px solid rgba(0, 0, 0, .1);
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  // border-bottom: 1px solid rgba(0, 0, 0, .1);
   z-index: 10;
 }
 
@@ -566,7 +593,7 @@
     margin: 0 5rem 0 6rem;
   }
   @include desktop {
-    margin: 0 5rem 0 6rem;
+    margin: .438rem 3rem 0 4rem;
   }
   @include ldesktop {
     margin: 0 5rem 0 6rem;
@@ -599,10 +626,13 @@
   }
   // !VA 2024 Moved all text properties to the anchor
   color: $dark_text_color;
-  font-family: $secondary_font;
+  // !VA 2024
+  // font-family: $secondary_font;
+  font-family: $inter_font;
   font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 600;
+  // !VA 2024
+  // text-transform: uppercase;
 }
 
 

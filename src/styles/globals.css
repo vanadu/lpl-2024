@@ -1,3 +1,4 @@
+/* VA! 2024 I don't think this is necessary - fonts are defined and imported in app.js */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* IMPORTANT: I had to @import the fonts including font weights instead of using next/fonts because they were not rendering on the iPhone due to... well, I'm not sure */
@@ -5,6 +6,7 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
+
 
   /* VA! Variables from old LPL */
  

@@ -11,6 +11,7 @@ import Image from 'next/image'
 
 // !VA Icons
 import { FaHome } from 'react-icons/fa'
+import { FaChevronDown } from "react-icons/fa";
 
 import * as styles from '../styles/Header.module.scss'
 
@@ -84,7 +85,7 @@ const MainNav = () => {
               className={[styles.nav_text].join(' ')}   
               onClick = {handleClick}             
               >
-              HOME
+              Home
             </Link>
           </li>
           <li
@@ -96,7 +97,7 @@ const MainNav = () => {
               className={[styles.nav_text].join(' ')}   
               onClick = {handleClick}             
               >
-              WHY STENT?
+              Why Stent?
             </Link>
           </li>
           <li 
@@ -109,7 +110,7 @@ const MainNav = () => {
               // className={[styles.nav_text, ' active'].join('')}
               className={[styles.nav_text].join('')}
               onClick = {handleClick}
-              >STORIES
+              >Stories
             </Link>
           </li>
           <li 
@@ -122,7 +123,7 @@ const MainNav = () => {
               // className={[styles.nav_text, ' active'].join('')}
               className={[styles.nav_text].join('')}
               onClick = {handleClick}
-              >NEWS
+              >News
             </Link>
           </li>
           <li 
@@ -134,7 +135,10 @@ const MainNav = () => {
               className={[styles.nav_text].join(' ')}
               onClick = {handleClick}
               >
-              MAIN MENU
+              Main Menu
+                <FaChevronDown 
+                className={styles.nav_dropdown_icon}
+                />
             </Link>
           </li>
         </ul>

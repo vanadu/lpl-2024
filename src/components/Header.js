@@ -45,36 +45,36 @@ import HeaderBrick12 from '../../public/bricks/img-brick-12.webp'
 const Header = () => {
   return (
     <div className={styles.header}>
-            {/* HeaderBricks  */}
-            <div className={styles.bricks_container}>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1}}
-                transition={{ duration: 1, delay: 1 }}
-              >
+      {/* HeaderBricks  */}
+      <div className={styles.bricks_container}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1}}
+          transition={{ duration: 1, delay: 1 }}
+        >
 
-                <div className={styles.bricks_slider}>
-                  <div className={styles.bricks}>
-                        
-                    <HeaderBrick src={HeaderBrick01} className={styles.brick_img} alt="Senior Boxer Dog" />
-                    <HeaderBrick src={HeaderBrick02} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
-                    <HeaderBrick src={HeaderBrick03} className={styles.brick_img} alt="Senior Retriever Mix Dog" />
-                    <HeaderBrick src={HeaderBrick04} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
-                    <HeaderBrick src={HeaderBrick05} className={styles.brick_img} alt="Senior Lab Mix Dog" />
-                    <HeaderBrick src={HeaderBrick06} className={styles.brick_img} alt="Senior Weimeraner Dog" />
-                    <HeaderBrick src={HeaderBrick07} className={styles.brick_img} alt="Senior White Mixed Breed Dog " />
-                    <HeaderBrick src={HeaderBrick08} className={styles.brick_img} alt="Senior Labrador Mix Dog" />
-                    {/* Unique bricks */}
-                    <HeaderBrick src={HeaderBrick09} className={styles.brick_img} alt="Senior Great Dane Dog" />
-                    <HeaderBrick src={HeaderBrick10} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
-                    <HeaderBrick src={HeaderBrick11} className={styles.brick_img} alt="Senior Black Lab Dog" />
-                    <HeaderBrick src={HeaderBrick12} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
-                    
-                  </div>
-                </div>
-
-              </motion.div>
+          <div className={styles.bricks_slider}>
+            <div className={styles.bricks}>
+                  
+              <HeaderBrick src={HeaderBrick01} className={styles.brick_img} alt="Senior Boxer Dog" />
+              <HeaderBrick src={HeaderBrick02} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
+              <HeaderBrick src={HeaderBrick03} className={styles.brick_img} alt="Senior Retriever Mix Dog" />
+              <HeaderBrick src={HeaderBrick04} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
+              <HeaderBrick src={HeaderBrick05} className={styles.brick_img} alt="Senior Lab Mix Dog" />
+              <HeaderBrick src={HeaderBrick06} className={styles.brick_img} alt="Senior Weimeraner Dog" />
+              <HeaderBrick src={HeaderBrick07} className={styles.brick_img} alt="Senior White Mixed Breed Dog " />
+              <HeaderBrick src={HeaderBrick08} className={styles.brick_img} alt="Senior Labrador Mix Dog" />
+              {/* Unique bricks */}
+              <HeaderBrick src={HeaderBrick09} className={styles.brick_img} alt="Senior Great Dane Dog" />
+              <HeaderBrick src={HeaderBrick10} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
+              <HeaderBrick src={HeaderBrick11} className={styles.brick_img} alt="Senior Black Lab Dog" />
+              <HeaderBrick src={HeaderBrick12} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
+              
             </div>
+          </div>
+
+        </motion.div>
+      </div>
 
       <div className={styles.header_content}>
         <div className={styles.logo}>
@@ -93,18 +93,21 @@ const Header = () => {
             />
           </Link>
           {/* VA! 2024 */}
-          <div className={styles.slug}>
+          {/* <div className={styles.slug}>
             <p>The21st Century Guide To Laryngeal Paralysis in Dogs
             </p>
-          </div>
+          </div> */}
         </div>
-
+        <div className={styles.nav_bar}><NavBar /></div>
         <div className={styles.icon_bar}>
           <IconBar />
         </div>
       </div>
+
       {/* VA! The container is in the NavBar component, along with the context provider, which needs the container to work. It's not ideal that the NavBar component has no direct parent here but I guess it doesn't need one. */}
-      <NavBar />
+      <div className={styles.header_slug}>
+        <h2>The 21st Century Guide to Laryngeal Paralysis in Dogs</h2>
+      </div>
     </div>
   )
 }

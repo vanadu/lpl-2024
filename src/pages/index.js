@@ -101,13 +101,78 @@ const Home = ( {posts}) => {
                 </div>
 
                 <div className={styles.community_questions}>
-                  <p className={styles.tertiary}>Can my primary veterinarian treat Lar Par? What are the risk factors of tieback surgery? Can my dog suffocate from Lar Par? What does Lar Par sound like? What happens if I don&lsquo;t do anything about my dog&lsquo;s Lar Par?</p>
-                  <p className={styles.tertiary}>What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?
-                  <p className={styles.tertiary}>How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency? </p>
-                  </p>
-                  <p className={styles.tertiary}>Is it bad for my Lar Par dog to get excited? Is prolonging life the best thing for my Lar Par dog? Why does my primary veterinarian advise against surgery? Has any dog every died from a stent implant? Is there a cure for Lar Par? Is the stent treatment available where I live?</p>
-                  <p className={styles.tertiary}>What do I feed my Lar Par dog? What is BVEAP surgery? How long before my dog&lsquo;s Lar Par gets really bad? What&lsquo;s stridor? Are all surgeons equally skilled at tieback surgery? Can Lar Par dogs get aspiration pneumonia without surgery?  </p>
-                  <p className={styles.tertiary}>Are there supplements that can help my Lar Par dog? How can I be sure my dog has Lar Par? Can accupuncture help with Lar Par? How much does the specialist diagnosis cost? Can a regular X-ray tell if my dog has Lar Par?</p>
+
+
+
+                <div className={styles.wrapper1}>
+                  <div className={styles.marquee1}>
+                    <p>
+                    What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?
+                    </p>
+                    <p>
+                    What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?
+                    </p>
+                  </div>
+
+
+                </div>
+
+                <div className={styles.wrapper2}>
+                  <div className={styles.marquee2}>
+                      <p>
+                      How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency?
+                      </p>
+                      <p>
+                      How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency?
+                      </p>
+                    </div>
+
+                </div>
+
+                <div className={styles.wrapper3}>
+                  <div className={styles.marquee3}>
+                    <p>
+                      Is it bad for my Lar Par dog to get excited? Is prolonging life the best thing for my Lar Par dog? Why does my primary veterinarian advise against surgery? Has any dog every died from a stent implant? Is there a cure for Lar Par? Is the stent treatment available where I live?
+                      </p>
+                      <p>
+                      Is it bad for my Lar Par dog to get excited? Is prolonging life the best thing for my Lar Par dog? Why does my primary veterinarian advise against surgery? Has any dog every died from a stent implant? Is there a cure for Lar Par? Is the stent treatment available where I live?
+                      </p>
+                  </div>
+                </div>
+
+                
+                <div className={styles.wrapper4}>
+                  <div className={styles.marquee4}>
+                    <p>
+                    What should I feed my Lar Par dog? What is BVEAP surgery? How long before my dog&lsquo;s Lar Par gets really bad? What&lsquo;s stridor? Are all surgeons equally skilled at tieback surgery? Can Lar Par dogs get aspiration pneumonia without surgery?  
+                    </p>
+                    <p>
+                    What should I feed my Lar Par dog? What is BVEAP surgery? How long before my dog&lsquo;s Lar Par gets really bad? What&lsquo;s stridor? Are all surgeons equally skilled at tieback surgery? Can Lar Par dogs get aspiration pneumonia without surgery?  
+                    </p>
+                  </div>
+                </div>
+
+                <div className={styles.wrapper5}>
+                  <div className={styles.marquee5}>
+                    <p>
+                      Are there supplements that can help my Lar Par dog? How can I be sure my dog has Lar Par? Can accupuncture help with Lar Par? How much does the specialist diagnosis cost? Can a regular X-ray tell if my dog has Lar Par?
+                    </p>
+                    <p>
+                      Are there supplements that can help my Lar Par dog? How can I be sure my dog has Lar Par? Can accupuncture help with Lar Par? How much does the specialist diagnosis cost? Can a regular X-ray tell if my dog has Lar Par?
+                    </p>
+                  </div>
+                </div>
+
+
+
+
+
+
+                  {/* <p className={styles.tertiary}>What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?</p> */}
+                  {/* <p className={styles.tertiary}>How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency? </p> */}
+                  {/* <p className={styles.tertiary}>Is it bad for my Lar Par dog to get excited? Is prolonging life the best thing for my Lar Par dog? Why does my primary veterinarian advise against surgery? Has any dog every died from a stent implant? Is there a cure for Lar Par? Is the stent treatment available where I live?</p> */}
+                  {/* <p className={styles.tertiary}>What should I feed my Lar Par dog? What is BVEAP surgery? How long before my dog&lsquo;s Lar Par gets really bad? What&lsquo;s stridor? Are all surgeons equally skilled at tieback surgery? Can Lar Par dogs get aspiration pneumonia without surgery?  </p> */}
+                  {/* <p className={styles.tertiary}>Are there supplements that can help my Lar Par dog? How can I be sure my dog has Lar Par? Can accupuncture help with Lar Par? How much does the specialist diagnosis cost? Can a regular X-ray tell if my dog has Lar Par?</p> */}
 
 
                 </div>

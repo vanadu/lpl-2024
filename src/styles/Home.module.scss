@@ -421,29 +421,107 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
 }
 
 .community_questions {
-  position: absolute;
-  top: 60px;
+  // position: absolute;
+  top: 70px;
   left: 40px;
   z-index: 1;
-  p {
-    margin: .575rem 0;
-    width: 2400px;
-    // display: inline;
-    font-family: $inter_font;
-    font-size: 18px;
-    font-weight: 500;
-    &.tertiary {
-      color: $tertiary_color;
-    }
-    &.accent {
-      color: $accent_color;
-    }
-    &.primary {
-      color: $primary_color;
-    }
-  }
-
+  display: flex;
+  flex-direction: column;
+  // margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
 }
+
+.marquee_wrapper1, .marquee_wrapper2, .marquee_wrapper3, .marquee_wrapper4, .marquee_wrapper5 {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee1, .marquee2, .marquee3, .marquee4, , .marquee5 {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+.marquee1 {
+  animation: marquee1 20s linear infinite;
+}
+
+.marquee2 {
+  animation: marquee2 15s linear infinite;
+}
+
+.marquee3 {
+  animation: marquee3 30s linear infinite;
+}
+
+.marquee4 {
+  animation: marquee3 19s linear infinite;
+}
+
+.marquee5 {
+  animation: marquee3 21s linear infinite;
+}
+
+
+
+.marquee1 p, .marquee2 p, .marquee3 p, .marquee4 p, .marquee5 p  {
+  display: inline-block;
+  color: $tertiary_color;
+  padding: .125rem 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@keyframes marquee1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
+@keyframes marquee2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee3 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee4 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes marquee5 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
+
 
 .community_heading {
 
