@@ -64,11 +64,20 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 75px;
+  // height: 75px;
   position: relative;
   z-index: 1;
   // background-color: $home_bg_color;
   background-color: transparent;
+
+
+  align-items: flex-start;
+  height: 138px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+
+
   overflow: hidden; 
   // z-index: -1;
 }
@@ -204,143 +213,7 @@
   display: none;
 }
 
-
-// !VA 2024 All of this below is deprecaated and was replaced by the moveSlideshow animation. Which is probably why it doesn't track properly on different devices...I never tried to sync the slideshow duration for responsive...
-// -------------------------------------------------------------------
-// !VA End HeaderBricks styles
-
-
-// .header_img_box {
-//   @include mphone {
-//     // VA!
-//     // width: 375px;
-//     height: 130px;
-//   }
-//   @include lphone {
-//     // VA!
-//     // width: 414px;
-//     height: 130px;  
-//   }
-//   @include tablet {
-//     // width: 2058px;
-//     height: 140px;
-//   }
-//   @include desktop {
-//     // VA!
-//     // width: 2117px;
-//     height: 144px;
-//   }
-//   @include ldesktop {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     opacity: .2;
-//     height: 190px;
-//   }
-//   position: absolute;
-//   display: block;
-//   top: 0;
-//   left: 0;
-//   opacity: .5;
-//   width: 100%;
-//   height: 114px;
-//   overflow: hidden;
-//   background: black;
-//   overflow-y: scroll !important;
-//   -webkit-overflow-scrolling: touch;
-// }
-
-// !VA  Image width 1911 - screen width 320;
-// @keyframes dogslider {
-//   0% {  transform: translateX(0);}
-//   // 50% { transform: translateX(-1356px); }
-//   50% { transform: translateX(-1356px); }
-//   100% {transform: translateX(0);}
-// }
-
-// // !VA  Image width 1911 - screen width 375;
-// @keyframes dogslidermphone {
-//   0% {  transform: translateX(0);}
-//   50% { transform: translateX(-1536px); }
-//   100% {transform: translateX(0);}
-// }
-
-// @keyframes dogsliderlphone {
-//   0% {  transform: translateX(0);}
-//   50% { transform: translateX(-1291px); }
-//   100% {transform: translateX(0);}
-// }
-
-// @keyframes dogslidertablet {
-//   0% {  transform: translateX(0);}
-//   50% { transform: translateX(-951px); }
-//   100% {transform: translateX(0);}
-// }
-
-// @keyframes dogsliderdesktop {
-//   0% {  transform: translateX(0);}
-//   50% { transform: translateX(-712px); }
-//   100% {transform: translateX(0);}
-// }
-
-// @keyframes dogsliderldesktop {
-//   0% {  transform: translateX(0);}
-//   50% { transform: translateX(-880px); }
-//   100% {transform: translateX(0);}
-// }
-
-// @keyframes hide-scroll {
-//   0% { overflow: hidden; } 
-//   100% { overflow: hidden; } 
-// }
-
-// .header_img {
-//   @include mphone {
-//   // display: none;
-//     width: 1911px;
-//     height: 130px;
-//     animation: dogslidermphone 200s  infinite;
-
-//   }
-//   @include lphone {
-//     // VA!
-//     width: 2058px;
-//     height: 130px;   
-//     animation: dogsliderlphone 200s  infinite;
-//   }
-//   @include tablet {
-//     // VA!
-//     width: 1911px;
-//     height: 140px;
-//     animation: dogslidertablet 200s  infinite;
-//   }
-//   @include desktop {
-//     // VA!
-//     width: 2117px;
-//     height: 144px;
-//     animation: dogsliderdesktop 180s  infinite;
-//   }
-//   @include ldesktop {
-//     position: absolute;
-//     display: block;
-//     top: 0;
-//     left: 0;
-//     width: 2793px;
-//     height: 190px;
-//     animation: dogsliderldesktop 200s  infinite;
-//   }
-//   position: absolute;
-//   display: block;
-//   top: 0;
-//   left: 0;
-//   opacity: .8;
-//   width: 1676px;
-//   height: 114px;
-//   overflow-x: hidden;
-//   animation: dogslider 200s  infinite;
-//   background: rgba(0, 128, 0, .3) !important; //devgreen
-// }
-
+// !VA 2024 The old animation was here which was repalced by the bricks animation from CBE at some point. 
 
 .logo {
   @include mphone {
@@ -360,6 +233,7 @@
     align-items: flex-start;
     // width: 700px;
     width: auto;
+    width: 140px;
     margin: 0 0 0 3rem;
     position: relative;
     z-index: 100;
@@ -368,12 +242,14 @@
     width: 120px;
     // margin: 1.5rem 0 2rem 2.5rem;
   }
+  // !VA 2024
   display: flex;
   align-items: center;
   height: auto;
-  margin: 0 .75rem;
+  margin: .25rem 0 0 .75rem;
   width: 4.5rem;
   // !VA 2024
+  width: 120px;
   position: relative; 
   z-index: 100;
 }
@@ -394,9 +270,11 @@
 // !VA 2024
 .nav_bar {
   @include desktop {
+    position: relative;
     width: 100%;
   }
-
+  position: absolute;
+  top: 60px;
 }
 
 .nav_dropdown_icon {
@@ -419,37 +297,57 @@
     width: 100%;
     // background: $home_bg_color;
     background: rgba(0, 0, 0, .5);
-  .header_slug_text {
-      padding: .5rem 0;
-      color: $dark_text_color;
-      color: $light_text_color;
-      // font-family: $primary_font;
-      // font-family: $inter_font;
-      font-family: $secondary_font;
-      font-size: 1.25rem;
-      line-height: 1.125rem;
-      font-weight: 500;
-      text-align: center;
-      letter-spacing: 1px;
-      opacity: .8;
-      // font-style: italic;
-    }
   }
+
+  display: none;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 128, 0, .3) !important; //devgreen
 }
+
+.header_slug_text {
+  @include desktop {
+    padding: .5rem 0;
+    color: $dark_text_color;
+    color: $light_text_color;
+    // font-family: $primary_font;
+    // font-family: $inter_font;
+    font-family: $secondary_font;
+    font-size: 1.25rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    opacity: .8;
+  // font-style: italic;
+  }
+
+  font-size: 1rem;
+
+
+}
+
+
+
 
 .icon_bar {
   // !VA 2024 This is just the container, I think ???
   position: relative;
   margin: 0;
+  background: rgba(0, 128, 0, .3) !important; //devgreen
 }
 
 
 .icons {
+  @include desktop {
+    margin: 0 1rem 0 0;
+  }
   position: relative;
   display: flex;
   // !VA 2024
   align-items: flex-start;
-  margin: 0 1rem 0 0;
+  margin: .25rem .25rem 0 0;
   background: $secondary_color;
   border-radius: 20px;
 }
@@ -478,34 +376,36 @@
       font-size: 2.75rem;
       padding: 0 1.5rem;
     }
-  font-size: 2.25rem;
+  // !VA 2024
+  font-size: 1.25rem;
   padding: 0 .625rem;
   color: $secondary_color;
   color: #ffffff;
 }
 
 // !VA This is the only icon in the icon bar that's a PNG, not a react icon
-.icon img {
-  @include mphone {
-    width: 2.5rem;
-  }
-  @include lphone {
-    width: 2.5rem;
-  }
-  @include tablet {
-    width: 3.25rem;
-  }
-  @include desktop {
-    // !VA 2024
-    width: 2.25rem;
-  }
-  @include ldesktop {
-    width: 3.125rem;
-  }
-  margin-top: 5px;
-  width: 2.125rem;
-  height: auto;
-}
+// .icon img {
+//   @include mphone {
+//     width: 2.5rem;
+//   }
+//   @include lphone {
+//     width: 2.5rem;
+//   }
+//   @include tablet {
+//     width: 3.25rem;
+//   }
+//   @include desktop {
+//     // !VA 2024
+//     width: 2.25rem;
+//   }
+//   @include ldesktop {
+//     width: 3.125rem;
+//   }
+//   // !VA 2024
+//   margin-top: 5px;
+//   width: 2.125rem;
+//   height: auto;
+// }
 
 
 // !VA There were two nav containers...I removed the one in Header.js  
@@ -640,7 +540,7 @@
   // !VA 2024
   // font-family: $secondary_font;
   font-family: $inter_font;
-  font-size: 1rem;
+  font-size: .938rem;
   font-weight: 600;
   // !VA 2024
   // text-transform: uppercase;
