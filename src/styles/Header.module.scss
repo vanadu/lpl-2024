@@ -72,11 +72,14 @@
   // !VA Makes the input element invisible. THe invisible checkbox MUST directly overlay the visible open and close boxes
   .nav_menu .checkbox {
     // !VA 
-    width: 3.5em;
-    height: 3.5em;
+    top: -5px;
+    right: 0;
+    width: 3em;
+    height: 3em;
     position: absolute;
     cursor: pointer;
-    opacity: 0;
+    opacity: .2;
+
     z-index: 2; 
     -webkit-touch-callout: none;
     overflow: hidden;
@@ -85,7 +88,7 @@
   // !VA These are the actual lines that make up the hamburger icons and the X. 
   .nav_menu .menu_span { /*open close toggle*/
     // !VA The length of each of the lines that comprises the burger icon
-      width: 2.75em;
+      width: 2.5em;
       // !VA The thickness of each of the lines that comprises the burger icon and the X
       height: .313em; 
       // !VA The distance between the lines of the burger icon
@@ -117,7 +120,7 @@
     // !VA The angle of the SLASH in the X
     // !VA The first value is the X axis distance from top left at 45 deg rotation. The second value is the Y axis distance from top left at 45 deg rotation.  
     transform: rotate(45deg) translate(-2px, -1px);
-    transform: rotate(45deg) translate(3px, 0px);
+    transform: rotate(45deg) translate(2px, -2px);
     background: black;
   }
   
