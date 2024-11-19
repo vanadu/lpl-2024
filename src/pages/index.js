@@ -44,42 +44,41 @@ const Home = ( {posts}) => {
         />
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.two_column_content}>
-            <div className={styles.hero}>
-              <div className={styles.hero_head}>
+          <div className={styles.hero}>
+            <div className={styles.hero_head}>
 
-                <p className={styles.hero_head_heading}>
-                    Lar Par?
-                </p>
-                <p className={styles.hero_head_emphasis}>
-                    LIFE!
-                </p>
-                
-                {/* <Image 
-                  src={LogoLifeOnly} 
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  className={styles.hero_life_only} alt="LIFE" 
-                /> */}
-                
+              <p className={styles.hero_head_heading}>
+                  Lar Par?
+              </p>
+              <p className={styles.hero_head_emphasis}>
+                  LIFE!
+              </p>
+              
+              {/* <Image 
+                src={LogoLifeOnly} 
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
+                className={styles.hero_life_only} alt="LIFE" 
+              /> */}
+              
 
-              </div>
-              <div className={styles.hero_video}>
-
-                <Image 
-                  src={MockHeroVideo} 
-                  // width="0"
-                  // height="0"
-                  // sizes="100vw"
-                  // style={{ width: '100%', height: 'auto' }}
-                  className={styles.mock_hero_video} 
-                  alt="Mock Hero Video" 
-                />
-              </div>
-              <hr/>
             </div>
+            <div className={styles.hero_video}>
+
+              <Image 
+                src={MockHeroVideo} 
+                // width="0"
+                // height="0"
+                // sizes="100vw"
+                // style={{ width: '100%', height: 'auto' }}
+                className={styles.mock_hero_video} 
+                alt="Mock Hero Video" 
+              />
+            </div>
+            <hr/>
+          </div>
 
             <div className={styles.community}>
               <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
@@ -239,7 +238,6 @@ const Home = ( {posts}) => {
               </p>
             </div>
           </div>
-        </div>
       </section>
     </>
   )

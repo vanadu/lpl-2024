@@ -104,7 +104,7 @@ const Header = () => {
         </div>
 
         <div className={styles.header_slug}>
-          <h2 className={styles.header_slug_text}>The 21st Century Guide to Laryngeal Paralysis in Dogs</h2>
+          <h2 className={styles.header_slug_text}><span className="mobile-hide-inline">The </span>21st Century Guide to Laryngeal Paralysis in Dogs</h2>
         </div>
 
       </div>

@@ -3,24 +3,155 @@
 
 .header {
   display: flex;
+  height: 94px;
+
+
+}
+
+
+// !VA BRICKS
+// !VA 2024.04.08 Replacing header_img_box with HeaderBricks from CBE
+// !VA Start HeaderBricks styles
+// -------------------------------------------------------------------
+.bricks_container {
+  @include mphone {
+    // VA!
+    // width: 375px;
+    height: 130px; 
+  }
+  @include lphone {
+    // VA!
+    // width: 414px;
+    height: 130px;
+  }
+  @include tablet {
+    // width: 2058px;
+    height: 140px;
+  }
+  @include desktop {
+    // VA! 2024
+    height: 140px;
+  }
+  @include ldesktop {
+    // !VA 2023.12.05 Trying to get rid of the vertical scrollbar
+    height: 190px;
+  }
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 95px; 
+  overflow: hidden; 
+  background: $primary_accent_color;
+  // !VA 2024
+  background: $secondary_color;
+  background: transparent;
+  opacity: 1;
+  // !VA I don't know what I did here, but the z-index works now and the bricks don't overlay the 
+  z-index: 1;
+}
+
+// !VA 2023.12.05 This was never implemented...
+.bricks_slider {
+  display: block;
+  height: 100%;
+  // z-index: -1;
+
+  // !VA 2024 
+  opacity: 1;
+  z-index: 6;
+  }
+
+
+.bricks_slider .bricks {
+  @include tablet {
+    animation: moveSlideshow 360s linear infinite;
+  }
+  @include desktop {
+    animation: desktopMoveSlideshow 240s linear infinite;
+  }
+  @include ldesktop {
+    animation: lDesktopMoveSlideshow 240s linear infinite;
+  }
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  height: auto;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 240s linear infinite;
+  // !VA 2024
+  opacity: .4;
+  // background: $secondary_color;
+  z-index: 7;
+}
+
+// !VA Stop animation on hover
+.bricks:hover, .bricks:focus {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    // !VA Initial from the demo, see links in OneNote CSS notebook
+    // transform: translateX(-66.6666%);  
+    transform: translateX(-80.9%);  
+  }
+}
+
+@keyframes desktopMoveSlideshow {
+  100% { 
+    transform: translateX(-52.2%);  
+  }
+}
+
+@keyframes lDesktopMoveSlideshow {
+  100% { 
+    transform: translateX(-31%);  
+  }
+}
+
+// !VA 2023.12.02 brick_img is in the Brick component
+.brick_img {
+  position: relative;
+  width: auto;
+  // !VA Height is defined in bricks_container
+  height: 100%;
+  // !VA Exposes the primary_accent_color background of the parent
+  padding: 2px .125rem 2px 0;
+  z-index: -1;
+}
+
+.ldesktop_brick_img {
+  display: none;
 }
 
 
 
 
+
+
+// !VA NAV Section
+// -------------
 .nav_container {
   margin: 1rem;
-  background: rgba(255, 0, 0, .3) !important; //devred
+  z-index: 100;
+
 }
 
 
 .nav_menu_items {
+  position: absolute;
   list-style: none;
   margin: 0; 
   background: black;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  background: rgba(0, 0, 255, .3) !important; //devblue
+  // !VA
+    z-index: 200;
   
 }
 
@@ -42,7 +173,6 @@
     text-decoration: none;
     color: black;
     transition: color 0.3s ease;
-    background: rgba(255, 0, 0, .3) !important; //devred
   }
   
   .menu_link:hover {
@@ -58,7 +188,7 @@
     top: .75rem;
     right: .75rem;
     
-    z-index: 1;
+    z-index: 100;
     -webkit-user-select: none;
     user-select: none;
     background: transparent;
@@ -78,7 +208,7 @@
     height: 3em;
     position: absolute;
     cursor: pointer;
-    opacity: .2;
+    opacity: 0;
 
     z-index: 2; 
     -webkit-touch-callout: none;
@@ -138,25 +268,25 @@
   }
   
   .nav_menu_items {
-      text-align: center;
-      position: fixed;
-      // !VA
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: white;
-      list-style-type: none;
-      transform-origin: 0% 0%;
-      transform: translate(-100%, 0);
-      // !VA 
-      transform: translate(-100%, 0);
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    position: fixed;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start; 
+    // !VA
+    top: 93px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: white;
+    // !VA
+    // list-style: none;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    // !VA 
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
-      // list-style: none;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: flex-start; 
 
   }
 
@@ -217,4 +347,47 @@
   position: absolute; 
   z-index: 100;
   
+}
+
+
+// !VA SLUG Section
+// -----------
+.header_slug {
+  @include desktop {
+    // margin: .036rem 0 .5rem 3rem;
+    // padding: 0 0 .25rem 0;
+    // border-bottom: 1px solid gray;
+    top: 0;
+    width: 100%;
+    // background: $home_bg_color;
+    background: rgba(0, 0, 0, .5);
+  }
+  position: absolute;
+  display: block;
+  top: 68px;
+  left: 0;
+  width: 100%;
+
+}
+
+.header_slug_text {
+  @include desktop {
+    padding: .5rem 0;
+    
+    color: $light_text_color;
+    font-size: 1.25rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    opacity: .8;
+    // font-style: italic;
+  }
+  color: $dark_text_color;
+  font-family: $secondary_font;
+  font-size: $rootTextFontSize;
+  font-weight: 500;
+  line-height: $rootTextLineHeight;
+  text-align: center;
+
 }

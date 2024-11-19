@@ -62,7 +62,6 @@ const Patients = () => {
         <PatientsNav />
   
         <div className={styles.section_content}>
-          <div className={styles.two_column_content}>
   
             <h3 className={styles.content_subhead}>What Is Laryngeal Paralysis?</h3>
   
@@ -232,7 +231,6 @@ const Patients = () => {
               &nbsp;
             </p>
           </div>
-        </div>
       </section>
     </>
   )

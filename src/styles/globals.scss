@@ -276,10 +276,9 @@ display: inline;
   width: 100%;
   position: relative;
   background: rgba(255, 0, 0, .3) !important; //devred
+  z-index: 1;
 
 
-  // !VA hamburgerMenu01
-  display: none;
 
 }
 
