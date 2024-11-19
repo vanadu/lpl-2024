@@ -55,30 +55,12 @@ const MainNav = () => {
     e.target.classList.add('active');
   }
 
-
-  /* !VA  
-  
-    <a href="" class="logo">CSS Nav</a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="#work">Our Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#careers">Careers</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  
-  */
-
   
   return (
     <>
-      
-        <input className={styles.menu_btn} type="checkbox" id="menu-btn" />
-        <label className={styles.menu_icon} for="menu-btn"><span className={styles.navicon}></span></label>
+      <div className={styles.nav_main}>
         <ul 
-        // className={styles.nav_main_list}
-        className={styles.menu}
+        className={styles.nav_main_list}
         ref={mainRef}
         >
           {/* VA! 2024 removing the home icon, the logo works for the home link */}
@@ -95,62 +77,62 @@ const MainNav = () => {
             </Link>
           </li> */}
           <li
-            // className={styles.nav_main_list_item}
+            className={styles.nav_main_list_item}
             // ref={ref}
             >
             <Link
               href='/'
-              // className={[styles.nav_text].join(' ')}   
+              className={[styles.nav_text].join(' ')}   
               onClick = {handleClick}             
               >
               Home
             </Link>
           </li>
           <li
-            // className={styles.nav_main_list_item}
+            className={styles.nav_main_list_item}
             // ref={ref}
             >
             <Link
               href='/whystent'
-              // className={[styles.nav_text].join(' ')}   
+              className={[styles.nav_text].join(' ')}   
               onClick = {handleClick}             
               >
               Why Stent?
             </Link>
           </li>
           <li 
-            // className={styles.nav_main_list_item}
+            className={styles.nav_main_list_item}
             // ref={ref}
             >
             <Link
               // key={item.text}
               href='/stories'
               // className={[styles.nav_text, ' active'].join('')}
-              // className={[styles.nav_text].join('')}
+              className={[styles.nav_text].join('')}
               onClick = {handleClick}
               >Stories
             </Link>
           </li>
           <li 
-            // className={styles.nav_main_list_item}
+            className={styles.nav_main_list_item}
             // ref={ref}
             >
             <Link
               // key={item.text}
               href='/blog'
               // className={[styles.nav_text, ' active'].join('')}
-              // className={[styles.nav_text].join('')}
+              className={[styles.nav_text].join('')}
               onClick = {handleClick}
               >News
             </Link>
           </li>
           <li 
             key='dvms'
-            // className={styles.nav_main_list_item}
+            className={styles.nav_main_list_item}
             >
             <Link
               href='/allabout'
-              // className={[styles.nav_text].join(' ')}
+              className={[styles.nav_text].join(' ')}
               onClick = {handleClick}
               >
               Main Menu
@@ -160,6 +142,7 @@ const MainNav = () => {
             </Link>
           </li>
         </ul>
+      </div>
     </>
   )
 }

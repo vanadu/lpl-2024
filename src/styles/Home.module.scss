@@ -121,6 +121,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
 }
 
 .hero {
+
+
+
   @include mphone {
     // Fill this
   }
@@ -157,6 +160,7 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   // background: $primary_color;
   // background: transparent;
   border-radius: 20px;
+
 
 }
 
@@ -376,7 +380,7 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
 }
 
 // !VA 2024
-// !VA Community
+// !VA  
 .community {
   @include mphone {
     // Fill this
@@ -418,6 +422,8 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   // !VA 2024 for the scrolling text animation so it's cut off at the edge of the container
   overflow: hidden;
   z-index: 10;
+
+
 }
 
 .community_questions {

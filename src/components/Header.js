@@ -44,73 +44,47 @@ import HeaderBrick12 from '../../public/bricks/img-brick-12.webp'
 
 const Header = () => {
   return (
+    <>
     <div className={styles.header}>
-      {/* HeaderBricks  */}
-      <div className={styles.bricks_container}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1}}
-          transition={{ duration: 1, delay: 1 }}
-        >
+      <div className={styles.logo}>
+        <Image 
+          src={logo} 
+          width="0"
+          height="0"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className={styles.logo_img} alt="LarParLife Logo" 
+        />
+      </div>
+      
+      <div className={styles.nav_container}>
 
-          <div className={styles.bricks_slider}>
-            <div className={styles.bricks}>
-                  
-              <HeaderBrick src={HeaderBrick01} className={styles.brick_img} alt="Senior Boxer Dog" />
-              <HeaderBrick src={HeaderBrick02} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
-              <HeaderBrick src={HeaderBrick03} className={styles.brick_img} alt="Senior Retriever Mix Dog" />
-              <HeaderBrick src={HeaderBrick04} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
-              <HeaderBrick src={HeaderBrick05} className={styles.brick_img} alt="Senior Lab Mix Dog" />
-              <HeaderBrick src={HeaderBrick06} className={styles.brick_img} alt="Senior Weimeraner Dog" />
-              <HeaderBrick src={HeaderBrick07} className={styles.brick_img} alt="Senior White Mixed Breed Dog " />
-              <HeaderBrick src={HeaderBrick08} className={styles.brick_img} alt="Senior Labrador Mix Dog" />
-              {/* Unique bricks */}
-              <HeaderBrick src={HeaderBrick09} className={styles.brick_img} alt="Senior Great Dane Dog" />
-              <HeaderBrick src={HeaderBrick10} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
-              <HeaderBrick src={HeaderBrick11} className={styles.brick_img} alt="Senior Black Lab Dog" />
-              <HeaderBrick src={HeaderBrick12} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
-              
-            </div>
-          </div>
 
-        </motion.div>
+        <div className={styles.nav_menu}>
+          {/* <!--<h3 class="title">BLOOM</h3>--> */}
+          <input className={styles.checkbox} type="checkbox" />
+          {/* This is the first line in the burger or the slash in the X */}
+          <span className={styles.menu_span}></span>
+          {/* This is the first line in the burger and has nothing in the */}
+          <span className={styles.menu_span}></span>
+          {/* This is the third line in the burger or the backslash line in the X */}
+          <span className={styles.menu_span}></span>
+          <ul className={styles.nav_menu_items}>
+              <li><a href="#" className={styles.menu_link}>Home</a></li>
+
+              <li><a href="#" className={styles.menu_link}>About</a></li>
+
+              <li><a href="#" className={styles.menu_link}>Blog</a></li>
+
+              <li><a href="#" className={styles.menu_link}>Contact Us</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div className={styles.header_content}>
-        <div className={styles.logo}>
-          <Link 
-            href='/'
-            aria-label='Go to Home page'
-            >
-            <Image 
-              src={logo} 
-              // width="0"
-              // height="0"
-              // sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className={styles.logo_img}
-              alt="LarPar Life Logo" 
-            />
-          </Link>
-          {/* VA! 2024 */}
-          {/* <div className={styles.slug}>
-            <p>The21st Century Guide To Laryngeal Paralysis in Dogs
-            </p>
-          </div> */}
-        </div>
-        <div className={styles.nav_bar}><NavBar /></div>
-        <div className={styles.icon_bar}>
-          <IconBar />
-        </div>
-
-        <div className={styles.header_slug}>
-          <h2 className={styles.header_slug_text}>The 21st Century Guide to Laryngeal Paralysis in Dogs</h2>
-        </div>
-
-      </div>
 
 
     </div>
+    </>
   )
 }
 

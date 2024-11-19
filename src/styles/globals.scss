@@ -276,6 +276,11 @@ display: inline;
   width: 100%;
   position: relative;
   background: rgba(255, 0, 0, .3) !important; //devred
+
+
+  // !VA hamburgerMenu01
+  display: none;
+
 }
 
 // !VA 2024.04.05 Appears to only be in patients/aboutlarpar, needs review
@@ -714,6 +719,12 @@ display: inline;
   width: 100%;
   // margin: 1rem 0 0;
   border-bottom: solid .25rem #DAA520;
+
+
+// !VA hamburgerMenu01
+  display: none;
+
+  
 }
 
 .half-circle {
