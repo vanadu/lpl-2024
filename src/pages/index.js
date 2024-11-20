@@ -48,11 +48,9 @@ const Home = ( {posts}) => {
             <div className={styles.hero_head}>
 
               <p className={styles.hero_head_heading}>
-                  Lar Par?
+                  Lar Par? <span className={styles.hero_head_emphasis}>LIFE!</span>
               </p>
-              <p className={styles.hero_head_emphasis}>
-                  LIFE!
-              </p>
+
               
               {/* <Image 
                 src={LogoLifeOnly} 

@@ -88,9 +88,11 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     margin-top: 1rem;
     padding-bottom: 1rem;
   }
+  // !VA On the Home page, we don't want rounded edges or a 'card' for the content sections, so close up all the spaces 
   width: 310px;
-  margin-top: .25rem;
-  padding:  0 0 .5rem;
+  width: 100%;
+  // margin-top: .25rem;
+  // padding:  0 0 .5rem;
   background: $content_bg_color;
 }
 
@@ -134,8 +136,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    padding: 2rem 0;
     width: 100%;
+    padding: 2rem 0;
+    border-radius: 20px !important;
   }
   @include ldesktop {
     flex-direction: row;
@@ -151,13 +154,12 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin: .75rem 0 .5rem;
+  // margin: .75rem 0 .5rem;
   padding-bottom: 1.5rem;
   // !VA 2024s
   background: $home_bg_color;
   // background: $primary_color;
   // background: transparent;
-  border-radius: 20px !important;
 }
 
 .hero_head {
@@ -175,7 +177,6 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     width: 100%;
     // margin: 0 0 0 5rem;
     // padding: 2rem 3rem 2rem 0;
-    // background: rgba(255, 0, 0, .3) !important; //devred
   }
   @include ldesktop {
     flex-direction: column;
@@ -191,7 +192,7 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   align-items: center;
   // height: 150px;
   width: 100%;
-  padding: .25rem 0;
+  padding: 1rem 0 .75rem;
 }
 
 .hero_head_heading {
@@ -226,7 +227,7 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   // !VA 2024
   color: $light_text_color;
   font-family: $secondary_font;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 900;
   line-height: 2.125rem;
   text-align: center;
@@ -271,13 +272,13 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     line-height: 9rem;
     font-weight: 600;
   }
-  width: 100%;
   color: $primary_color;
   font-family: $boogaloo_font;
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 1.5em;
+  line-height: 1.5rem;
   text-align: center;
-  text-shadow: -3px -3px 0 #FFF;
+  vertical-align: -3px;
+  text-shadow: -2px -2px 2px #FFF;
 }
 
 
