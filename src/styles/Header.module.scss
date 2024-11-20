@@ -9,8 +9,10 @@
   }
   @include lphone {
     height: 120px; 
-    
-
+  }
+  @include tablet {
+    height: 100px; 
+  
   }
   display: flex;
   height: 94px;
@@ -40,7 +42,7 @@
   }
   @include tablet {
     // width: 2058px;
-    height: 140px;
+    height: 100px;
   }
   @include desktop {
     // VA! 2024
@@ -141,6 +143,46 @@
   display: none;
 }
 
+// !VA HEADER content section, includes logo, nav and icon bar
+.header_content {
+  @include mphone {
+    height: 90px;
+  }
+  @include lphone {
+    height: 90px;
+  }
+  @include tablet {
+    height: 96px;
+  }
+  @include desktop {
+    // !VA 2024 trying to push this container up to the top...
+    align-items: flex-start;
+    height: 138px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+
+  }
+  @include ldesktop {
+    height: 138px;
+    // !VA This is a problem
+    width: 85%;
+  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  align-items: flex-start;
+  height: 138px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  overflow: hidden; 
+  // z-index: -1;
+  // !VA 2024
+  z-index: 1;
+}
 
 
 
@@ -151,30 +193,41 @@
 // !VA 2024 There's a whole thing with the highlighting the active route that doesn't work now with the new responsive menu
 
 .nav_container {
-  margin: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  // margin: 1rem;
+
+  width: 100%;
   z-index: 100;
 }
 
+// !VA 2024 Deprecated for now in MainNav
+// .nav_menu {
+//   background: rgba(0, 0, 255, .3) !important; //devblue
+// }
+
 .nav_menu_items {
-  position: absolute;
-  list-style: none;
-  margin: 0; 
-  background: black;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  // background: rgba(0, 0, 255, .3) !important; //devblue
-  // !VA
+  margin: 0 0 0 1rem; 
+  background: transparent;
+  list-style: none;
+  // !VA 2024 z-index Works, but I don't know why
     z-index: 200;
-  
 }
 
 .nav_menu_items a {
   text-decoration: none;
   display: block;
-  padding: 1em;
-  color: white;
-  font-size: 2 em;
+  padding: 0 .75rem;
+  color: $dark_text_color;
+  font-family: $inter_font;
+  font-size: .938rem;
+  font-weight: 600;
 }
 
 .checkbox{
@@ -333,8 +386,8 @@
     margin: .75rem;
   }
   @include tablet {
-    width: 90px;
-    margin: 1rem 0 1rem 1.25rem;
+    width: 180px;
+    margin: .75rem 0 1rem 1.75rem;
   }
   @include desktop {
     // !VA 2024
@@ -358,7 +411,8 @@
   // width: 4.5rem;
   // !VA 2024
   width: 110px;
-  position: absolute; 
+  position: relative; 
+  // !VA 2024 
   z-index: 100;
   
 }
@@ -372,7 +426,9 @@
   }
   @include lphone {
     top: 86px;
-  
+  }
+  @include tablet {
+    top: 64px;
   }
   @include desktop {
     // margin: .036rem 0 .5rem 3rem;
@@ -388,6 +444,7 @@
   top: 68px;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .header_slug_text {
@@ -401,10 +458,13 @@
     font-size: $lphoneSubheadFontSize;
     line-height: $lphoneSubheadLineHeight;
   }
+  @include tablet {
+    padding-bottom: .5rem;
+    font-size: $tabletSubheadFontSize;
+    line-height: $tabletSubheadLineHeight;
+  }
   @include desktop {
     padding: .5rem 0;
-    
-    color: $light_text_color;
     font-size: 1.25rem;
     line-height: 1.125rem;
     font-weight: 500;
@@ -419,5 +479,72 @@
   line-height: $rootSubheadLineHeight;
   font-weight: 500;
   text-align: center;
+  text-shadow: -2px -2px 2px rgba(90,90,90,0.2);
+}
 
+
+// !VA ICON BAR
+
+.icon_bar {
+  // !VA 2024 This is just the container, I think ???
+  @include tablet {
+    position: relative;
+    display: block;
+    top: 0;
+    right: 5px;
+    margin: 0.25rem 1rem 0 0;
+    background: rgba(0, 128, 0, .3) !important; //devgreen
+    // !VA 2024
+    z-index: 10;
+  }
+  @include desktop {
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+  display: none;
+}
+
+
+.icons {
+  @include tablet {
+    // !VA
+  }
+  @include desktop {
+    margin: 0 1rem 0 0;
+  }
+  position: relative;
+  display: flex;
+  // !VA 2024
+  align-items: flex-start;
+  margin: .25rem .25rem 0 0;
+  background: $secondary_color;
+  border-radius: 20px;
+}
+
+.icon {
+    // @include mphone {
+    //   // padding: 0 .75rem;
+    //   font-size: 2.5rem;
+    // }
+    // @include lphone {
+    //   font-size: 2.25rem;
+    //   padding: 1.75rem 1rem 0;
+    // }
+    @include tablet {
+      padding: .125rem .75rem;
+      font-size: 1.25rem;
+    }
+    @include desktop {
+      // font-size: 3rem;
+      // !VA 2024
+      font-size: 1.25rem;
+      // !VA 2024
+      padding: .25rem 1rem 0;
+    }
+    @include ldesktop {
+      font-size: 2.75rem;
+      padding: 0 1.5rem;
+    }
+  // !VA 2024 Not visible on mobile
 }

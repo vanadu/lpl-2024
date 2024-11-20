@@ -65,19 +65,28 @@ const Header = () => {
         </motion.div>
       </div>
 
-      <div className={styles.logo}>
-        <Image 
-          src={logo} 
-          width="0"
-          height="0"
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className={styles.logo_img} alt="LarParLife Logo" 
-        />
-      </div>
+      <div className={styles.header_content}>
 
-      <div className={styles.blob}>
-        <MainNav/>
+          <div className={styles.logo}>
+            <Image 
+              src={logo} 
+              width="0"
+              height="0"
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto' }}
+              className={styles.logo_img} alt="LarParLife Logo" 
+            />
+          </div>
+          
+          <div className={styles.nav_container}>
+            <MainNav/>
+          </div>
+
+          <div className={styles.icon_bar}>
+            <IconBar />
+          </div>
+
+
       </div>
 
 

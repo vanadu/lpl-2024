@@ -75,8 +75,7 @@ const MainNav = () => {
   return (
     <>
 
-      <div className={styles.nav_container}>
-        <div className={styles.nav_menu}>
+        {/* <div className={styles.nav_menu}> */}
 
           <input className={styles.checkbox} type="checkbox" />
           {/* This is the first line in the burger or the slash in the X */}
@@ -172,8 +171,7 @@ const MainNav = () => {
               </Link>
             </li>
           </ul>
-        </div>
-      </div>      
+        {/* </div> */}
     </>
   )
 }
