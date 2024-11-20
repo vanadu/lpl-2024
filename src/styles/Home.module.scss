@@ -57,22 +57,18 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding-bottom: .5rem;
-  // !VA For Home, background is primary color. For other pages, it's currently $content_bg_color
-  background: $primary_color;
   // !VA 2024
+  // padding-bottom: .5rem;
   background: $content_bg_color;
 }
 
 // !VA In Home, section_content lives on the $primary_color background set in .section. None of the other pages have this two-toned scheme, at least for now. 
 .section_content {
   @include mphone {
-    width: 365px;
-    padding-bottom: .5rem;
+    // padding-bottom: .5rem;
   }
   @include lphone {
-    width: 404px;
-    padding-bottom: .5rem;
+    // padding-bottom: .5rem;
   }
   @include tablet {
     width: 758px;
@@ -89,7 +85,6 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     padding-bottom: 1rem;
   }
   // !VA On the Home page, we don't want rounded edges or a 'card' for the content sections, so close up all the spaces 
-  width: 310px;
   width: 100%;
   // margin-top: .25rem;
   // padding:  0 0 .5rem;
@@ -126,6 +121,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   @include mphone {
     // Fill this
   }
+  @include lphone {
+    
+  }
   @include tablet {
     flex-direction: column;
     align-items: center;
@@ -154,20 +152,17 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  // margin: .75rem 0 .5rem;
+  // !VA 2024
   padding-bottom: 1.5rem;
-  // !VA 2024s
   background: $home_bg_color;
-  // background: $primary_color;
-  // background: transparent;
 }
 
 .hero_head {
   @include mphone {
-    padding: .625rem 0;
+    padding: 1.25rem 0 .75rem;
   }
   @include lphone {
-    padding: .625rem 0;
+    padding: 2rem 0 1.25rem;
   }
   @include desktop {
     flex-direction: column;
@@ -190,21 +185,24 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   display: flex;
   flex-direction: column;
   align-items: center;
-  // height: 150px;
   width: 100%;
   padding: 1rem 0 .75rem;
+  padding: .75rem 0 .5rem;
 }
+
+// .hero_head p {
+//   margin: 0 !important;
+//   padding: 0 !important;;
+// }
 
 .hero_head_heading {
   @include mphone {
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
   @include lphone {
-    font-size: 3.5rem;
-    font-weight: 400;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 2.25rem;
   }
   @include tablet {
     font-size: 4rem;
@@ -216,7 +214,6 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     font-size: 4rem;
     font-weight: 500;
     line-height: 4rem;
-    // background: rgba(0, 128, 0, .3) !important; //devgreen
   }
   @include ldesktop {
     font-size: 6rem;
@@ -225,27 +222,26 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   }
   // color: $light_text_color;
   // !VA 2024
+  width: 100%;
   color: $light_text_color;
   font-family: $secondary_font;
   font-size: 1.75rem;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 2.125rem;
   text-align: center;
   text-transform: uppercase;
-  width: 100%;
 }
 
 .hero_head_emphasis {
   @include mphone {
-    font-size: 4.5rem;
-    font-weight: 600;
-    line-height: 4.5rem;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    vertical-align: -1px;
   }
   @include lphone {
-    display: block;
-    padding: .5rem 0 1rem;
-    font-weight: 600;
-    font-size: 5.5rem;
+    font-size: 3.25rem;
+    line-height: 3rem;
+    vertical-align: -2px;
   }
   @include tablet {
     display: block;
@@ -308,13 +304,19 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   position: relative;
   flex-direction: column;
   align-items: center;
-  width: 280px;
   // !VA Height is the targest VH value minus the height of hero--content-head. This will allow the image to scale with the device height to accomodate tall phones.
   // height: calc(38vh - 85px);
-  border: 4px solid #FFF;
+  // border: 4px solid #FFF;
   margin: 0 auto;
+  // !VA 2024 This is for the mock video img.
   img {
-    width: 272px;
+    @include mphone {
+      width: 320px;
+    }
+    @include lphone {
+      width: 360px;
+    }
+    width: 280px;
     height: auto;
   }
 
@@ -380,8 +382,8 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   color: $primary_color;
 }
 
-.content {
-  padding-top: .5rem;
+.main {
+  padding: 0 .5rem 2rem;
 }
 
 // !VA 2024
@@ -401,9 +403,10 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     margin-top: 1rem;
     padding: .75rem 3rem;
-    width: 100%;
+    border-radius: 20px;
   }
   @include ldesktop {
     flex-direction: row;
@@ -412,7 +415,6 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     width: 100%;
     margin: 0 auto;
     padding: 2rem 3rem 2rem 0;
-    padding: 2rem 0;
   }
   position: relative;
   display: flex;
@@ -420,10 +422,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-bottom: .5rem;
+  padding-bottom: .75rem;
   // !VA 2024
   background: $secondary_color;
-  border-radius: 20px;
   // !VA 2024 for the scrolling text animation so it's cut off at the edge of the container
   overflow: hidden;
   z-index: 10;
@@ -431,10 +432,18 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
 
 }
 
+  // !VA This is for positioning the marquee block not the invidual marquee elements
 .community_questions {
+  @include mphone {
+    top: 2.75rem;
+  }
+  @include lphone {
+    top: 3rem;
+    
+  }
   // position: absolute;
-  top: 70px;
-  left: 40px;
+  top: 2.125rem;
+  left: 0px;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -445,23 +454,31 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
 }
 
 .marquee_wrapper1, .marquee_wrapper2, .marquee_wrapper3, .marquee_wrapper4, .marquee_wrapper5 {
+  @include lphone {
+    height: 1.575rem;
+  }
   max-width: 100%;
+  height: 1.25rem;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .marquee1, .marquee2, .marquee3, .marquee4, , .marquee5 {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 
 .marquee1 {
-  animation: marquee1 20s linear infinite;
+  animation: marquee1 29s linear infinite;
 }
 
 .marquee2 {
-  animation: marquee2 15s linear infinite;
+  animation: marquee2 35s linear infinite;
 }
 
 .marquee3 {
@@ -469,21 +486,35 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
 }
 
 .marquee4 {
-  animation: marquee3 19s linear infinite;
+  animation: marquee3 24s linear infinite;
 }
 
 .marquee5 {
-  animation: marquee3 21s linear infinite;
+  animation: marquee3 32s linear infinite;
 }
 
 
-
+// !VA Font declarations for the individual marquee elements. Set the height of the marquee elements with marquee_wrapper
 .marquee1 p, .marquee2 p, .marquee3 p, .marquee4 p, .marquee5 p  {
+  @include mphone {
+    font-size: 1.063rem;
+    line-height: 1.063rem;
+  }
+  @include lphone {
+    font-size: 1.188rem;
+    line-height: 1.25rem;
+  }
+  @include desktop {
+    padding: .125rem 0;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    
+  }
   display: inline-block;
+  padding: 0;
   color: $tertiary_color;
-  padding: .125rem 0;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 @keyframes marquee1 {
@@ -531,23 +562,38 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   }
 }
 
-
-
-
 .community_heading {
-
   // !VA 2024
-  @include desktop {
-    font-size: 32px;
+  @include mphone {
+    font-size: $mphoneHeadFontSize;
+    line-height: $mphoneHeadLineHeight;
   }
+  @include lphone {
+    padding: .75rem .25rem .25rem;
+    font-size: $lphoneHeadFontSize;
+    line-height: $lphoneHeadLineHeight;
+  }
+  @include desktop {
+    font-size: 2rem;
+  }
+  padding: .5rem .25rem .25rem;
   color: $light_text_color;
   font-family: $secondary_font;
-  font-size: 22px;
+  font-size: $rootHeadFontSize;
+  line-height: $rootHeadLineHeight;
   font-weight: 500;
+
 }
 
 .community_icon {
-
+  @include mphone {
+    width: 75px;
+    margin: 1rem 0 .375rem;
+  }
+  @include lphone {
+    width: 98px;
+    margin: 1.25rem 0 .575rem;
+  }
   // !VA 2024
   @include desktop {
     width: 130px;
@@ -555,34 +601,55 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     margin: 2rem 0;
   }
   position: relative;
-  width: 80px;
+  width: 70px;
   height: auto;
-  margin: 2rem 0;
+  margin: 1rem 0 0;
   // !VA 2024
   z-index: 100;
 
 }
 
 .community_cta {
+  @include mphone {
+    font-size: $mphoneHeadFontSize;
+    line-height: $mphoneHeadLineHeight;
+  }
+  @include lphone {
+    font-size: $lphoneHeadFontSize;
+    line-height: $lphoneHeadLineHeight;
+  }
   @include desktop {
     // !VA 2024
     font-size: 36px;
-    margin: 0 0 1rem 0;
+    margin-top: .75rem;
   }
+  margin-top: .575rem;
   color: $primary_color;
   font-family: $inter_font;
-  font-size: 22px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .community_text {
   p {
+    @include mphone {
+      font-size: $mphoneTextFontSize;
+      line-height: $mphoneTextLineHeight;
+    }
+    @include lphone {
+      padding: .638rem 1rem 0;
+      font-size: $lphoneTextFontSize;
+      line-height: $lphoneTextLineHeight;
+    }
+    padding: .125rem .75rem 0;
     color: $light_text_color;
     font-family: $inter_font;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: $rootTextFontSize;
+    line-height: $rootTextLineHeight;
+    font-weight: 300;
   }
 }
+
 
 
 
@@ -657,7 +724,7 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   font-size: $rootSubheadFontSize;
   line-height: $rootSubheadLineHeight; 
   font-weight: 500;
-  text-align: left;
+  text-align: center;
 }
 
 // !VA COMMON: content_text, content_list-item common styles

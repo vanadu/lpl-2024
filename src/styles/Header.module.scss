@@ -2,6 +2,16 @@
 @import './mixins/mediaqueries.scss';
 
 .header {
+  @include mphone {
+   height: 104px; 
+   box-shadow: 1px -2px 9px 4px rgba(0,0,0,0.32) inset;
+
+  }
+  @include lphone {
+    height: 120px; 
+    
+
+  }
   display: flex;
   height: 94px;
   // !VA Bottom gradient
@@ -315,12 +325,12 @@
 
 .logo {
   @include mphone {
-    width: 80px;
+    width: 105px;
     margin: .625rem;
   }
   @include lphone {
-    width: 80px;
-    // margin: .75rem;
+    width: 116px;
+    margin: .75rem;
   }
   @include tablet {
     width: 90px;
@@ -357,6 +367,13 @@
 // !VA SLUG Section
 // -----------
 .header_slug {
+  @include mphone {
+    top: 70px;
+  }
+  @include lphone {
+    top: 86px;
+  
+  }
   @include desktop {
     // margin: .036rem 0 .5rem 3rem;
     // padding: 0 0 .25rem 0;
@@ -371,10 +388,19 @@
   top: 68px;
   left: 0;
   width: 100%;
-
 }
 
 .header_slug_text {
+  @include mphone {
+    padding-bottom: .5rem;
+    font-size: $mphoneSubheadFontSize;
+    line-height: $mphoneSubheadLineHeight;
+  }
+  @include lphone {
+    padding-bottom: .5rem;
+    font-size: $lphoneSubheadFontSize;
+    line-height: $lphoneSubheadLineHeight;
+  }
   @include desktop {
     padding: .5rem 0;
     
@@ -389,9 +415,9 @@
   }
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootTextFontSize;
+  font-size: $rootSubheadFontSize;
+  line-height: $rootSubheadLineHeight;
   font-weight: 500;
-  line-height: $rootTextLineHeight;
   text-align: center;
 
 }
