@@ -6,20 +6,8 @@ import NavBar from './NavBar'
 import logo from '../../public/img-lpl-logo.png'
 import * as styles from '../styles/Header.module.scss'
 
-
-/* !VA  2024.04.08 useHeaderBricks_01
-  * copied /bricks into /public
-  * copied HeaderBrick.js into /components
-  * Commented out div.header_img_box
-  * import HeaderBrick from ../components
-  * import all HeaderBrick images
-  * install motion.div
-  * import { motion }
-  * Copy CBE CSS: bricks_container, bricks_slider, bricks, brick_img
-  * Copy webp brick images into /public/bricks
-  * Remove old header img and code 
-
-*/
+// !VA 2024
+import MainNav from './MainNav'
 
 import { motion } from 'framer-motion'
 
@@ -87,29 +75,11 @@ const Header = () => {
           className={styles.logo_img} alt="LarParLife Logo" 
         />
       </div>
-      
-      <div className={styles.nav_container}>
-        <div className={styles.nav_menu}>
-          {/* <!--<h3 class="title">BLOOM</h3>--> */}
-          <input className={styles.checkbox} type="checkbox" />
-          {/* This is the first line in the burger or the slash in the X */}
-          <span className={styles.menu_span}></span>
-          {/* This is the first line in the burger and has nothing in the */}
-          <span className={styles.menu_span}></span>
-          {/* This is the third line in the burger or the backslash line in the X */}
-          <span className={styles.menu_span}></span>
-          <ul className={styles.nav_menu_items}>
-              <li><a href="#" className={styles.menu_link}>Home</a></li>
 
-              <li><a href="#" className={styles.menu_link}>About</a></li>
-
-              <li><a href="#" className={styles.menu_link}>Blog</a></li>
-
-              <li><a href="#" className={styles.menu_lin_your_go
-              }>Contact Us</a></li>
-          </ul>
-        </div>
+      <div className={styles.blob}>
+        <MainNav/>
       </div>
+
 
       <div className={styles.header_slug}>
           <h2 className={styles.header_slug_text}>The 21st Century Guide to Lar<span className='mobile-hide-inline'>yngeal</span> Par<span className='mobile-hide-inline'>alysis in Dogs</span></h2>

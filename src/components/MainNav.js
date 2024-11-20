@@ -17,18 +17,19 @@ import * as styles from '../styles/Header.module.scss'
 
 const MainNav = () => {
 
-  // const shown = useContext(SitenavContext)
-  // const [shown, setShown] = useContext(SitenavContext);
+  // !VA 2024 removing...no workie
+  // const [mainIsActive, setMainIsActive ] = useState(true)
+  // const [mainHasActive, setMainHasActive ] = useState(false)
 
-  const [mainIsActive, setMainIsActive ] = useState(true)
-  const [mainHasActive, setMainHasActive ] = useState(false)
-
+  // !VA 2024 removing...no workie
   const mainRef = useRef()
   // VA! 2024 homeRef is deprecated because the Home button is no more
+    // !VA 2024 removing...no workie. IO'm not sure whether this is what broke the whole thing...
   // const homeRef = useRef()
-  const pathname = usePathname()
-  const router = useRouter()
-  const [shown, setShown] = useContext(SitenavContext);
+  // !VA 2024 removing...no workie
+  // const pathname = usePathname()
+  // const router = useRouter()
+  // const [shown, setShown] = useContext(SitenavContext);
   
 
   const handleClick = (e) => {
@@ -73,93 +74,106 @@ const MainNav = () => {
   
   return (
     <>
-      
-        <input className={styles.menu_btn} type="checkbox" id="menu-btn" />
-        <label className={styles.menu_icon} for="menu-btn"><span className={styles.navicon}></span></label>
-        <ul 
-        // className={styles.nav_main_list}
-        className={styles.menu}
-        ref={mainRef}
-        >
-          {/* VA! 2024 removing the home icon, the logo works for the home link */}
-          {/* <li>
-            <Link
-              href='/'
-              // className={[styles.nav_main_home_icon].join(' ')}
-              className={styles.nav_main_home_icon}
-              ref={homeRef}
-              onClick = {handleClick}
-              aria-label = 'Go to Home page'
+
+      <div className={styles.nav_container}>
+        <div className={styles.nav_menu}>
+
+          <input className={styles.checkbox} type="checkbox" />
+          {/* This is the first line in the burger or the slash in the X */}
+          <span className={styles.menu_span}></span>
+          {/* This is the first line in the burger and has nothing in the */}
+          <span className={styles.menu_span}></span>
+          {/* This is the third line in the burger or the backslash line in the X */}
+          <span className={styles.menu_span}></span>
+
+
+          <ul 
+          // className={styles.nav_main_list}
+          className={styles.nav_menu_items}
+          ref={mainRef}
+          >
+
+            {/* VA! 2024 removing the home icon, the logo works for the home link */}
+            {/* <li>
+              <Link
+                href='/'
+                // className={[styles.nav_main_home_icon].join(' ')}
+                className={styles.nav_main_home_icon}
+                ref={homeRef}
+                onClick = {handleClick}
+                aria-label = 'Go to Home page'
+                >
+                <FaHome />
+              </Link>
+            </li> */}
+            <li
+              className={styles.nav_main_list_item}
+              // ref={ref}
               >
-              <FaHome />
-            </Link>
-          </li> */}
-          <li
-            // className={styles.nav_main_list_item}
-            // ref={ref}
-            >
-            <Link
-              href='/'
-              // className={[styles.nav_text].join(' ')}   
-              onClick = {handleClick}             
+              <Link
+                href='/'
+                // className={[styles.nav_text].join(' ')}   
+                onClick = {handleClick}             
+                >
+                Home
+              </Link>
+            </li>
+            <li
+              className={styles.nav_main_list_item}
+              // ref={ref}
               >
-              Home
-            </Link>
-          </li>
-          <li
-            // className={styles.nav_main_list_item}
-            // ref={ref}
-            >
-            <Link
-              href='/whystent'
-              // className={[styles.nav_text].join(' ')}   
-              onClick = {handleClick}             
+              <Link
+                href='/whystent'
+                // className={[styles.nav_text].join(' ')}   
+                onClick = {handleClick}             
+                >
+                Why Stent?
+              </Link>
+            </li>
+            <li 
+              className={styles.nav_main_list_item}
+              // ref={ref}
               >
-              Why Stent?
-            </Link>
-          </li>
-          <li 
-            // className={styles.nav_main_list_item}
-            // ref={ref}
-            >
-            <Link
-              // key={item.text}
-              href='/stories'
-              // className={[styles.nav_text, ' active'].join('')}
-              // className={[styles.nav_text].join('')}
-              onClick = {handleClick}
-              >Stories
-            </Link>
-          </li>
-          <li 
-            // className={styles.nav_main_list_item}
-            // ref={ref}
-            >
-            <Link
-              // key={item.text}
-              href='/blog'
-              // className={[styles.nav_text, ' active'].join('')}
-              // className={[styles.nav_text].join('')}
-              onClick = {handleClick}
-              >News
-            </Link>
-          </li>
-          <li 
-            key='dvms'
-            // className={styles.nav_main_list_item}
-            >
-            <Link
-              href='/allabout'
-              // className={[styles.nav_text].join(' ')}
-              onClick = {handleClick}
+              <Link
+                // key={item.text}
+                href='/stories'
+                // className={[styles.nav_text, ' active'].join('')}
+                // className={[styles.nav_text].join('')}
+                onClick = {handleClick}
+                >Stories
+              </Link>
+            </li>
+            <li 
+              className={styles.nav_main_list_item}
+              // ref={ref}
               >
-              Main Menu
-                <FaChevronDown 
-                className={styles.nav_dropdown_icon}
-                />
-            </Link>
-          </li>
-        </ul>
+              <Link
+                // key={item.text}
+                href='/blog'
+                // className={[styles.nav_text, ' active'].join('')}
+                // className={[styles.nav_text].join('')}
+                onClick = {handleClick}
+                >News
+              </Link>
+            </li>
+            <li 
+              key='dvms'
+              className={styles.nav_main_list_item}
+              >
+              <Link
+                href='/allabout'
+                // className={[styles.nav_text].join(' ')}
+                onClick = {handleClick}
+                >
+                Main Menu
+                  <FaChevronDown 
+                  className={styles.nav_dropdown_icon}
+                  />
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>      
     </>
   )
 }

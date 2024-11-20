@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <>
-    <SitenavContext.Provider  value={[shown, setShown]}>
+      <SitenavContext.Provider  value={[shown, setShown]}>
         <div className={styles.nav}>
             <MainNav />
             <Subnav1 />

@@ -15,11 +15,23 @@ const MainNavItems = ( { items, setIsActive } ) => {
 
   return (
     <>
-      <div className={styles.nav_main}>
-        <ul 
-          className={styles.nav_main_list}
-          >
+      <div className={styles.nav_container}>
+        <div className={styles.nav_menu}>
 
+          <input className={styles.checkbox} type="checkbox" />
+          {/* This is the first line in the burger or the slash in the X */}
+          <span className={styles.menu_span}></span>
+          {/* This is the first line in the burger and has nothing in the */}
+          <span className={styles.menu_span}></span>
+          {/* This is the third line in the burger or the backslash line in the X */}
+          <span className={styles.menu_span}></span>
+
+
+          <ul 
+          // className={styles.nav_main_list}
+          className={styles.nav_menu_items}
+          ref={mainRef}
+          >
           {items.map( item=> (
               <li 
               key={item.id}
@@ -38,7 +50,7 @@ const MainNavItems = ( { items, setIsActive } ) => {
 
         </ul>
       </div>      
-
+      </div>
     </> 
     )
 }
