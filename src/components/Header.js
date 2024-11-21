@@ -42,6 +42,7 @@ const Header = () => {
           transition={{ duration: 1, delay: 1 }}
         >
         <div className={styles.bricks_slider}>
+          It didn't do
           <div className={styles.bricks}>
                 
             <HeaderBrick src={HeaderBrick01} className={styles.brick_img} alt="Senior Boxer Dog" />
