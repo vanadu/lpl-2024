@@ -23,7 +23,7 @@ const NavBar = () => {
       <SitenavContext.Provider  value={[shown, setShown]}>
         <div className={styles.nav}>
             <MainNav />
-            <Subnav1 />
+            {/* <Subnav1 /> */}
         </div>
       </SitenavContext.Provider>
     </>
