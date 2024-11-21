@@ -175,9 +175,8 @@
   padding: 0;
   top: 0;
   overflow: hidden; 
-  // z-index: -1;
-  // !VA 2024
-  z-index: 1;
+  // !VA 2024 This what was breaking the mobile menu!
+  // z-index: 1;
 }
 
 
