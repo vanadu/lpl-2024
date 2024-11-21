@@ -41,57 +41,50 @@ const Header = () => {
           animate={{ opacity: 1}}
           transition={{ duration: 1, delay: 1 }}
         >
-
-          <div className={styles.bricks_slider}>
-            <div className={styles.bricks}>
-                  
-              <HeaderBrick src={HeaderBrick01} className={styles.brick_img} alt="Senior Boxer Dog" />
-              <HeaderBrick src={HeaderBrick02} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
-              <HeaderBrick src={HeaderBrick03} className={styles.brick_img} alt="Senior Retriever Mix Dog" />
-              <HeaderBrick src={HeaderBrick04} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
-              <HeaderBrick src={HeaderBrick05} className={styles.brick_img} alt="Senior Lab Mix Dog" />
-              <HeaderBrick src={HeaderBrick06} className={styles.brick_img} alt="Senior Weimeraner Dog" />
-              <HeaderBrick src={HeaderBrick07} className={styles.brick_img} alt="Senior White Mixed Breed Dog " />
-              <HeaderBrick src={HeaderBrick08} className={styles.brick_img} alt="Senior Labrador Mix Dog" />
-              {/* Unique bricks */}
-              <HeaderBrick src={HeaderBrick09} className={styles.brick_img} alt="Senior Great Dane Dog" />
-              <HeaderBrick src={HeaderBrick10} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
-              <HeaderBrick src={HeaderBrick11} className={styles.brick_img} alt="Senior Black Lab Dog" />
-              <HeaderBrick src={HeaderBrick12} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
-              
-            </div>
+        <div className={styles.bricks_slider}>
+          <div className={styles.bricks}>
+                
+            <HeaderBrick src={HeaderBrick01} className={styles.brick_img} alt="Senior Boxer Dog" />
+            <HeaderBrick src={HeaderBrick02} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
+            <HeaderBrick src={HeaderBrick03} className={styles.brick_img} alt="Senior Retriever Mix Dog" />
+            <HeaderBrick src={HeaderBrick04} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
+            <HeaderBrick src={HeaderBrick05} className={styles.brick_img} alt="Senior Lab Mix Dog" />
+            <HeaderBrick src={HeaderBrick06} className={styles.brick_img} alt="Senior Weimeraner Dog" />
+            <HeaderBrick src={HeaderBrick07} className={styles.brick_img} alt="Senior White Mixed Breed Dog " />
+            <HeaderBrick src={HeaderBrick08} className={styles.brick_img} alt="Senior Labrador Mix Dog" />
+            {/* Unique bricks */}
+            <HeaderBrick src={HeaderBrick09} className={styles.brick_img} alt="Senior Great Dane Dog" />
+            <HeaderBrick src={HeaderBrick10} className={styles.brick_img} alt="Senior Mixed Breed Dog" />
+            <HeaderBrick src={HeaderBrick11} className={styles.brick_img} alt="Senior Black Lab Dog" />
+            <HeaderBrick src={HeaderBrick12} className={styles.brick_img} alt="Senior Golden Retriever Dog" />
+            
           </div>
-
+        </div>
         </motion.div>
       </div>
 
       <div className={styles.header_content}>
-
-          <div className={styles.logo}>
-            <Image 
-              src={logo} 
-              width="0"
-              height="0"
-              sizes="100vw"
-              style={{ width: '100%', height: 'auto' }}
-              className={styles.logo_img} alt="LarParLife Logo" 
-            />
-          </div>
-          
-          <div className={styles.nav_container}>
-            <MainNav/>
-          </div>
-
-          <div className={styles.icon_bar}>
-            <IconBar />
-          </div>
-
-
-      </div>
+        <div className={styles.logo}>
+          <Image 
+            src={logo} 
+            width="0"
+            height="0"
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
+            className={styles.logo_img} alt="LarParLife Logo" 
+          />
+        </div>
+        <div className={styles.nav_container}>
+          <MainNav/>
+        </div>
+        <div className={styles.icon_bar}>
+          <IconBar />
+        </div>
+    </div>
 
 
       <div className={styles.header_slug}>
-          <h2 className={styles.header_slug_text}>The 21st Century Guide to Lar<span className='mobile-hide-inline'>yngeal</span> Par<span className='mobile-hide-inline'>alysis in Dogs</span></h2>
+        <h2 className={styles.header_slug_text}>The 21st Century Guide to Lar<span className='mobile-hide-inline'>yngeal</span> Par<span className='mobile-hide-inline'>alysis in Dogs</span></h2>
       </div>
 
 

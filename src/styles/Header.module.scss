@@ -5,16 +5,26 @@
   @include mphone {
    height: 104px; 
    box-shadow: 1px -2px 9px 4px rgba(0,0,0,0.32) inset;
-
   }
   @include lphone {
     height: 120px; 
   }
   @include tablet {
+    align-items: center;
     height: 120px; 
-  
+    box-shadow: 1px -4px 9px 4px rgba(0,0,0,0.32) inset;
+  }
+  @include desktop {
+    align-items: center;
+    box-shadow: 1px -7px 9px 4px rgba(0,0,0,0.32) inset;
+    height: 130px; 
+  }
+  @include ldesktop {
+    box-shadow: 1px -7px 9px 4px rgba(0,0,0,0.32) inset;
+    height: 150px; 
   }
   display: flex;
+  flex-direction: column;
   height: 94px;
   // !VA Bottom gradient
   // background-size: 100% 100%;
@@ -42,11 +52,11 @@
   }
   @include desktop {
     // VA! 2024
-    height: 140px;
+    height: 130px;
   }
   @include ldesktop {
     // !VA 2023.12.05 Trying to get rid of the vertical scrollbar
-    height: 190px;
+    height: 150px;
   }
   position: absolute;
   top: 0;
@@ -149,15 +159,13 @@
   }
   @include tablet {
     height: 96px;
+    width: 768px;
   }
   @include desktop {
     // !VA 2024 trying to push this container up to the top...
     align-items: flex-start;
     height: 138px;
-    margin: 0;
-    padding: 0;
-    top: 0;
-
+    width: 960px;
   }
   @include ldesktop {
     height: 138px;
@@ -175,7 +183,7 @@
   padding: 0;
   top: 0;
   overflow: hidden; 
-  // !VA 2024 This what was breaking the mobile menu!
+  // !VA 2024 This what was breaking the mobile menu! Or maybe not...maybe I just a a devred applied and it LOOKED like something was broken.
   // z-index: 1;
 }
 
@@ -189,31 +197,32 @@
 
 .nav_container {
   @include tablet {
-    margin-top: .813rem;
-    width: 100%;
+    // position: relative;
+    // align-items: center;
+    margin: .913rem 0 0 0;
   }
   @include desktop {
-    width: 100%;
+    align-items: flex-end;
+    margin: .913rem 1rem 0 0;
+    background: rgba(255, 0, 0, .3) !important; //devred
   }
   @include ldesktop {
-    width: 100%;
+    margin-top: .913rem;
   }
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   z-index: 100;
   width: 10px;
-
+  width: auto;
 }
 
-// !VA 2024 Deprecated  now in MainNav
-// .nav_menu {
-//   background: rgba(0, 0, 255, .3) !important; //devblue
-// }
-
 .nav_menu_items {
+  @include tablet {
+    margin: 0; 
+  }
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -221,10 +230,26 @@
   background: transparent;
   list-style: none;
   // !VA 2024 z-index Works, but I don't know why
-    z-index: 200;
+  z-index: 200;
 }
 
 .nav_menu_items a {
+  // !VA 2024 This affects the mobile AND desktop menu items
+  @include tablet {
+    padding: 0 .638rem;
+    font-size: $tabletFootnoteFontSize;
+    font-weight: 600;
+  }
+  @include desktop {
+    padding: 0 .75rem;
+    font-size: $desktopFootnoteFontSize;
+    font-weight: 600;
+  }
+  @include ldesktop {
+    padding: 0 .638rem;
+    font-size: $ldesktopFootnoteFontSize;
+    font-weight: 600;
+  }
   text-decoration: none;
   display: block;
   padding: 0 .75rem;
@@ -248,7 +273,20 @@
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+
+// !VA 2024
+// !VA iPads and larger devices
+// @media screen and (min-width: 768px) {
+//   .nav_menu .menu_span {
+//     display: none;
+//   }
+// }
+
+
+
+
+// !VA Devices up to 767px i.e. smaller than a standard iPad.
+@media screen and (max-width: 767px) {
   // !VA These are the menu items expanded
   .menu_link {
     text-decoration: none;
@@ -401,19 +439,19 @@
   }
   @include tablet {
     // !VA img width depends on nav menu width...
-    width: 180px;
-    margin: .75rem 0 1rem 1.75rem;
+    width: 135px;
+    margin: .75rem 0 1rem .75rem;
   }
   @include desktop {
-    width: 180px;
-    margin: .75rem 0 1rem 1.75rem;
+    width: 160px !important;
+    margin: .75rem 0 1rem .75rem;
   }
   @include ldesktop {
-    width: 180px;
-    margin: .75rem 0 1rem 1.75rem;
+    width: 170px;
+    margin: 1rem 0 2rem 3rem;
   }
-  margin: .5rem 0 0 .5rem;
-  width: 110px;
+  margin: .575rem 0 0 .575rem;
+  width: 100px;
   position: relative; 
   // !VA 2024
 
@@ -432,10 +470,10 @@
     top: 86px;
   }
   @include tablet {
-    top: 64px;
+    top: 80px;
   }
   @include desktop {
-    top: 64px;
+    top: 90px;
   }
   @include ldesktop {
     top: 64px;
@@ -466,8 +504,13 @@
   }
   @include desktop {
     padding-bottom: .5rem;
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight;
+    font-size: $desktopSubheadFontSize;
+    line-height: $desktopSubheadLineHeight;
+  }
+  @include ldesktop {
+    padding-bottom: .5rem;
+    font-size: $ldesktopSubheadFontSize;
+    line-height: $ldesktopSubheadLineHeight;
   }
   color: $dark_text_color;
   font-family: $secondary_font;
@@ -478,38 +521,29 @@
   text-shadow: -2px -2px 2px rgba(90,90,90,0.2);
 }
 
-
 // !VA ICON BAR
-
 .icon_bar {
   // !VA 2024 This is just the container, I think ???
   @include tablet {
-    position: relative;
     display: block;
-    top: 0;
-    right: 5px;
-    margin: 0.25rem 1rem 0 0;
+    margin: 0.438rem .438rem 0 0;
     z-index: 10;
   }
   @include desktop {
-    position: relative;
     display: block;
-    top: 0;
-    right: 5px;
     margin: 0.25rem 1rem 0 0;
     z-index: 10;
   }
   @include ldesktop {
-    position: relative;
     display: block;
-    top: 0;
-    right: 5px;
     margin: 0.25rem 1rem 0 0;
     z-index: 10;
   }
+  position: relative;
   display: none;
+  top: 0;
+  right: 0;
 }
-
 
 .icons {
   @include tablet {
@@ -543,8 +577,8 @@
       font-size: 1rem;
     }
     @include desktop {
-      padding: .125rem .75rem .063rem;
-      font-size: 1rem;
+      padding: .125rem 1rem .063rem;
+      font-size: 1.25rem;
     }
     @include ldesktop {
       padding: .125rem .75rem .063rem;
