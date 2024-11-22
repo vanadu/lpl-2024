@@ -52,9 +52,9 @@
     // margin-top: .75rem;
   }
   @include ldesktop {
-    width: 1400px;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
+    // width: 1400px;
+    // margin-top: 1rem;
+    // padding-bottom: 1rem;
   }
   // !VA On the Home page, we don't want rounded edges or a 'card' for the content sections, so close up all the spaces 
   width: 100%;
@@ -89,13 +89,14 @@
   background: #e1e1e1;
 }
 
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $home_bg_color;
+} 
+
 .hero {
-  @include mphone {
-    // Fill this
-  }
-  @include lphone {
-    // Fill this
-  }
   @include tablet {
     flex-direction: column;
     align-items: center;
@@ -106,17 +107,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding: 2rem 8rem;
+    padding: 2rem 0;
+    width: 760px;
   }
   @include ldesktop {
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem 3rem 2rem 0;
+    justify-content: center;
     padding: 2rem 0;
+    width: 860px;
   }
   display: flex;
   flex-direction: column;
@@ -126,6 +125,7 @@
   // !VA 2024
   padding-bottom: 1.5rem;
   background: $home_bg_color;
+
 }
 
 .hero_head {
@@ -133,10 +133,15 @@
     padding: 1.25rem 0 .75rem;
   }
   @include lphone {
-    padding: 2rem 0 1.25rem;
+    padding: 1.5rem 0 .5rem;
   }
   @include tablet {
-    padding: 1.25rem 0 .5rem;
+    // width: 100%;
+    // width: auto;
+    // flex-direction: row;
+    // align-items: center;
+    justify-content: space-between;
+    padding: 1.75rem 0 .75rem;
   }
   @include desktop {
     flex-direction: column;
@@ -148,16 +153,14 @@
   @include ldesktop {
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    // width: 90%;
-    width: 500px;
-    margin: 0 auto;
-    padding: 2rem 3rem 2rem 0;
+    justify-content: center;
+    width: 100%;
+    // padding: 1.5rem 0 .5rem;
   }
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 100%;
+  // width: 100%;
   padding: 1rem 0 .75rem;
   padding: .75rem 0 .5rem;
 }
@@ -170,30 +173,32 @@
   }
   @include lphone {
     font-size: 2.5rem;
-    line-height: 2.25rem;
+    line-height: 2.5rem;
   }
   @include tablet {
     font-size: 2.75rem;
     font-weight: 400;
-    line-height: 3rem;
+    line-height: 2.75rem;
+    // padding: 0 .75rem 0 0;
   }
   @include desktop {
     // !VA 2024
-    display: block;
+    // display: block;
     font-size: 4rem;
-    line-height: 3.25rem;
+    line-height: 4rem;
     font-weight: 500;
     margin: 0;
     padding: 0;
   }
   @include ldesktop {
-    font-size: 6rem;
-    line-height: 6rem;
-    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
   }
   // color: $light_text_color;
   // !VA 2024
-  display: inline;
   width: 100%;
   color: $light_text_color;
   font-family: $secondary_font;
@@ -208,65 +213,63 @@
   @include mphone {
     font-size: 2.5rem;
     line-height: 2rem;
-    vertical-align: -1px;
+    padding: .25rem 0 0 .5rem;
   }
   @include lphone {
     font-size: 3.25rem;
     line-height: 3rem;
-    vertical-align: -2px;
+    padding: .25rem 0 0 .5rem;
   }
   @include tablet {
-    padding: 1rem 0;
     font-size: 3.5rem;
     font-weight: 600;
+    padding: .25rem 0 0 .5rem;
   }
   @include desktop {
-    display: block;
+    width: 100%;
     font-size: 8.5rem;
-    line-height: 3rem;
+    line-height: 8.5rem;
     text-align: center;
     text-shadow: -3px -3px 0 #FFF;
     margin: 0;
     padding: 0;
   }
   @include ldesktop {
-    display: block;
-    padding: .25rem 0 .5rem;
-    font-size: 9rem;
-    line-height: 9rem;
-    font-weight: 600;
+    width: 100%;
+    font-size: 8.5rem;
+    line-height: 8.5rem;
+    text-align: center;
+    text-shadow: -3px -3px 0 #FFF;
+    margin: 0;
+    padding: 0;
   }
-  display: inline;
+  padding: .125rem 0 0 .5rem;
   color: $primary_color;
   font-family: $boogaloo_font;
-  font-size: 1.5em;
-  line-height: 1.5rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
   text-align: center;
-  vertical-align: -3px;
   text-shadow: -2px -2px 2px #FFF;
 }
 
 
 .hero_video {
-  @include mphone {
-    width: 100%;
-  }
-  @include lphone {
-    width: 100%;
-  }
-  @include tablet {
-    width: 496px;
-  }
-  @include desktop {
-    width: auto;
-    // margin: 0 2rem 0 4rem;
-    // !VA 2024
-  }
-  @include ldesktop {
-    width: 600px;
-    margin: 0 3rem 0 3rem;
-    border: 8px solid #FFF;
-  }
+  // !VA Video size is handled by the mock image for now
+  // @include mphone {
+  //   width: 100%;
+  // }
+  // @include lphone {
+  //   width: 100%;
+  // }
+  // @include tablet {
+  //   width: 496px;
+  // }
+  // @include desktop {
+  //   width: 496px;
+  // }
+  // @include ldesktop {
+  //   margin: 0 3rem 0 3rem;
+  // }
   display: flex;
   position: relative;
   flex-direction: column;
@@ -289,10 +292,12 @@
     @include desktop {
       width: 400px;
     }
+    @include ldesktop {
+      width: 520px;
+    }
     width: 280px;
     height: auto;
   }
-
 }
 
 .hero_video_frame {

@@ -44,22 +44,27 @@ const Home = ( {posts}) => {
         />
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.hero}>
-            <div className={styles.hero_head}>
-              <p className={styles.hero_head_heading}>
-                  Lar Par? <span className={styles.hero_head_emphasis}><span className='tablet-hide'><br/></span>LIFE!</span>
-              </p>
-            </div>
-            <div className={styles.hero_video}>
-              <Image 
-                src={MockHeroVideo} 
-                // width="0"
-                // height="0"
-                // sizes="100vw"
-                // style={{ width: '100%', height: 'auto' }}
-                className={styles.mock_hero_video} 
-                alt="Mock Hero Video" 
-              />
+          <div className={styles.hero_content}>
+            <div className={styles.hero}>
+              <div className={styles.hero_head}>
+                <p className={styles.hero_head_heading}>
+                    Lar Par?
+                </p>
+                <p className={styles.hero_head_emphasis}>
+                  LIFE!
+                </p>
+              </div>
+              <div className={styles.hero_video}>
+                <Image 
+                  src={MockHeroVideo} 
+                  // width="0"
+                  // height="0"
+                  // sizes="100vw"
+                  // style={{ width: '100%', height: 'auto' }}
+                  className={styles.mock_hero_video} 
+                  alt="Mock Hero Video" 
+                />
+              </div>
             </div>
             <hr/>
           </div>
