@@ -202,6 +202,27 @@ html{scroll-behavior: smooth;}
   margin-top: .125rem;
 }
 
+// !VA Hide on all mobile devices including tablet
+.tablet-hide-inline {
+  @include mphone {
+    display: none;
+  }
+  @include lphone {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: inline;
+  }
+  @include ldesktop {
+    display: inline;
+  }
+display: none;
+}
+
+// !VA Hide on  mobile phones only excluding tablet
 .mobile-hide-inline {
     @include mphone {
       display: none;
@@ -240,6 +261,28 @@ html{scroll-behavior: smooth;}
 display: inline;
 }
 
+// !VA Hide on all mobile devices including tablet
+.tablet-hide {
+  @include mphone {
+    display: none;
+  }
+  @include lphone {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: inline;
+  }
+  @include ldesktop {
+    display: inline;
+  }
+display: none;
+}
+
+
+// !VA Hide on mobile phones only excluding tablet
 .mobile-hide {
   @include mphone {
     display: none;

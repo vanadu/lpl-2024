@@ -1,34 +1,6 @@
 @import 'variables.scss';
 @import './mixins/mediaqueries.scss';
 
-/* !VA 2024.04.06
-Removed styles due to not found in JS. If you need to restore any of these, git back to any commit before 830a1ad 2024.04.06A - Purging  unused SCSS
---------------------------------------
-.hero_head_rule
-.blog_header_description
-.content_list_item_or
-.content_list_item_subtext
-.figure_large
-.figure_large_image
-.blog - and all styles starting with blog_ - these were all moved to Blog.module.scss I think
-.blog_header_head
-.blog_header_legend
-.blog_header_title
-.blog_header_rule
-.blog_header_subtitle
-.blog_header_figure
-.blog_header_figure_image
-.blog_listing
-.blog_list
-.blog_list_item
-.blog_list_item_svg
-.blog_list_item_text
-.blog_list_item_description
-.blog_item
-.figure_md
-.figure_image_md
-.blog_readmore
-*/
 
 // !VA Utility styles
 // !VA This is a generic block container - new
@@ -71,13 +43,13 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     // padding-bottom: .5rem;
   }
   @include tablet {
-    width: 758px;
-    margin-top: .75rem;
-    padding-bottom: 1rem;
+    // width: 758px;
+    // margin-top: .75rem;
+    // padding-bottom: 1rem;
   }
   @include desktop {
-    width: 960px;
-    margin-top: .75rem;
+    // width: 960px;
+    // margin-top: .75rem;
   }
   @include ldesktop {
     width: 1400px;
@@ -128,15 +100,14 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    // padding: 1rem;
   }
   @include desktop {
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
-    padding: 2rem 0;
-    border-radius: 20px !important;
+    padding: 2rem 8rem;
   }
   @include ldesktop {
     flex-direction: row;
@@ -164,18 +135,19 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   @include lphone {
     padding: 2rem 0 1.25rem;
   }
+  @include tablet {
+    padding: 1.25rem 0 .5rem;
+  }
   @include desktop {
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    // !VA 2024
+    align-items: flex-start;
+    justify-content: center;
     width: 100%;
-    // margin: 0 0 0 5rem;
-    // padding: 2rem 3rem 2rem 0;
+    // padding: 1.5rem 0 .5rem;
   }
   @include ldesktop {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     // width: 90%;
     width: 500px;
@@ -190,10 +162,6 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   padding: .75rem 0 .5rem;
 }
 
-// .hero_head p {
-//   margin: 0 !important;
-//   padding: 0 !important;;
-// }
 
 .hero_head_heading {
   @include mphone {
@@ -205,23 +173,27 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     line-height: 2.25rem;
   }
   @include tablet {
-    font-size: 4rem;
+    font-size: 2.75rem;
     font-weight: 400;
-    line-height: 4rem;
+    line-height: 3rem;
   }
   @include desktop {
     // !VA 2024
+    display: block;
     font-size: 4rem;
+    line-height: 3.25rem;
     font-weight: 500;
-    line-height: 4rem;
+    margin: 0;
+    padding: 0;
   }
   @include ldesktop {
     font-size: 6rem;
+    line-height: 6rem;
     font-weight: 400;
-    line-height: 7rem;
   }
   // color: $light_text_color;
   // !VA 2024
+  display: inline;
   width: 100%;
   color: $light_text_color;
   font-family: $secondary_font;
@@ -244,22 +216,18 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     vertical-align: -2px;
   }
   @include tablet {
-    display: block;
     padding: 1rem 0;
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
   }
   @include desktop {
-    // !VA 2024
-    // display: block;
-    // padding: 1rem 0 .5rem;
-    color: $primary_color;
-    font-family: $boogaloo_font;
+    display: block;
     font-size: 8.5rem;
-    line-height: 9rem;
+    line-height: 3rem;
     text-align: center;
     text-shadow: -3px -3px 0 #FFF;
-
+    margin: 0;
+    padding: 0;
   }
   @include ldesktop {
     display: block;
@@ -268,6 +236,7 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     line-height: 9rem;
     font-weight: 600;
   }
+  display: inline;
   color: $primary_color;
   font-family: $boogaloo_font;
   font-size: 1.5em;
@@ -289,11 +258,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     width: 496px;
   }
   @include desktop {
-    width: 420px;
+    width: auto;
     // margin: 0 2rem 0 4rem;
     // !VA 2024
-    margin: 0 2rem 0 1rem;
-    border: 8px solid #FFF;
   }
   @include ldesktop {
     width: 600px;
@@ -315,6 +282,12 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     }
     @include lphone {
       width: 360px;
+    }
+    @include tablet {
+      width: 460px;
+    }
+    @include desktop {
+      width: 400px;
     }
     width: 280px;
     height: auto;
@@ -439,7 +412,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   }
   @include lphone {
     top: 3rem;
-    
+  }
+  @include tablet {
+    top: 3.75rem;
   }
   // position: absolute;
   top: 2.125rem;
@@ -456,6 +431,9 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
 .marquee_wrapper1, .marquee_wrapper2, .marquee_wrapper3, .marquee_wrapper4, .marquee_wrapper5 {
   @include lphone {
     height: 1.575rem;
+  }
+  @include tablet {
+    height: 1.688rem;
   }
   max-width: 100%;
   height: 1.25rem;
@@ -504,10 +482,14 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     font-size: 1.188rem;
     line-height: 1.25rem;
   }
+  @include tablet {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
   @include desktop {
     padding: .125rem 0;
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 1.25rem;
     
   }
   display: inline-block;
@@ -573,6 +555,11 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     font-size: $lphoneHeadFontSize;
     line-height: $lphoneHeadLineHeight;
   }
+  @include tablet {
+    padding: .25rem .25rem .25rem;
+    font-size: $tabletHeadFontSize;
+    line-height: $tabletHeadLineHeight;
+  }
   @include desktop {
     font-size: 2rem;
   }
@@ -593,6 +580,10 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
   @include lphone {
     width: 98px;
     margin: 1.25rem 0 .575rem;
+  }
+  @include tablet {
+    width: 110px;
+    margin: 1.25rem 0 .5rem;
   }
   // !VA 2024
   @include desktop {
@@ -618,6 +609,10 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
     font-size: $lphoneHeadFontSize;
     line-height: $lphoneHeadLineHeight;
   }
+  @include tablet {
+    font-size: $tabletHeadFontSize;
+    line-height: $tabletHeadLineHeight;
+  }
   @include desktop {
     // !VA 2024
     font-size: 36px;
@@ -640,6 +635,11 @@ Removed styles due to not found in JS. If you need to restore any of these, git 
       padding: .638rem 1rem 0;
       font-size: $lphoneTextFontSize;
       line-height: $lphoneTextLineHeight;
+    }
+    @include tablet {
+      padding: .638rem 1rem 0;
+      font-size: $tabletTextFontSize;
+      line-height: $tabletTextLineHeight;
     }
     padding: .125rem .75rem 0;
     color: $light_text_color;
