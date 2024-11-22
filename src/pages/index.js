@@ -66,7 +66,6 @@ const Home = ( {posts}) => {
                 />
               </div>
             </div>
-            <hr/>
           </div>
         </div>
       </section>
