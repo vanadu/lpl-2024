@@ -18,8 +18,8 @@ const IconBar = () => {
   // !VA Commented out the Home, Stories, For Patients and For DVMs Links below 2023.09.24. 
   return (
     <>
-      {/* VA! 2024 This div was duplicated, the container is in Header.js, so I just changed that container to icon_bar. This is the direct parent of the individual icons*/}
-      <div className={styles.icons}>
+      <div className={styles.icon_bar}>
+        <div className={styles.icons}>
 
         {/* <Link
           href='/'
@@ -62,6 +62,7 @@ const IconBar = () => {
         </Link>
 
 
+        </div>
       </div>
     </>
   )

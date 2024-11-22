@@ -20,7 +20,8 @@
     height: 130px; 
   }
   @include ldesktop {
-    box-shadow: 1px -7px 9px 4px rgba(0,0,0,0.32) inset;
+    align-items: center;
+    box-shadow: 1px -12px 12px 5px rgba(0,0,0,.35) inset;
     height: 150px; 
   }
   display: flex;
@@ -168,9 +169,10 @@
     width: 960px;
   }
   @include ldesktop {
+    align-items: flex-start;
     height: 138px;
     // !VA This is a problem
-    width: 85%;
+    width: 1600px;
   }
   display: flex;
   justify-content: space-between;
@@ -199,34 +201,38 @@
   @include tablet {
     // position: relative;
     // align-items: center;
-    margin: .913rem 0 0 0;
+    margin: .688rem 0 0 0;
   }
   @include desktop {
-    align-items: flex-end;
-    margin: .913rem 1rem 0 0;
-    background: rgba(255, 0, 0, .3) !important; //devred
+    margin: .936rem 0 0 0;
   }
   @include ldesktop {
-    margin-top: .913rem;
+    margin: .688rem 2rem 0 0;
   }
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
   z-index: 100;
   width: 10px;
   width: auto;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .nav_menu_items {
   @include tablet {
-    margin: 0; 
+    margin: .188rem .5rem 0 0; 
+  }
+  @include desktop {
+    margin: .188rem .75rem 0 0; 
+  }
+  @include ldesktop {
+    margin: .188rem .75rem 0 0; 
   }
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  margin: 0 0 0 1rem; 
+  // margin: 0 0 0 1rem; 
   background: transparent;
   list-style: none;
   // !VA 2024 z-index Works, but I don't know why
@@ -237,17 +243,19 @@
   // !VA 2024 This affects the mobile AND desktop menu items
   @include tablet {
     padding: 0 .638rem;
-    font-size: $tabletFootnoteFontSize;
+    font-size: $tabletMenuFontSize;
+    line-height: $tabletMenuLineHeight;
     font-weight: 600;
   }
   @include desktop {
     padding: 0 .75rem;
-    font-size: $desktopFootnoteFontSize;
+    font-size: $desktopMenuFontSize;
+    line-height: $desktopMenuLineHeight;
     font-weight: 600;
   }
   @include ldesktop {
-    padding: 0 .638rem;
-    font-size: $ldesktopFootnoteFontSize;
+    font-size: $ldesktopMenuFontSize;
+    line-height: $ldesktopMenuLineHeight;
     font-weight: 600;
   }
   text-decoration: none;
@@ -257,6 +265,13 @@
   font-family: $inter_font;
   font-size: .938rem;
   font-weight: 600;
+}
+
+.nav_dropdown_icon {
+  font-size: 80%;
+  font-weight: 600;
+  vertical-align: -1px;
+  padding-left: .063rem;
 }
 
 .checkbox{
@@ -473,10 +488,10 @@
     top: 80px;
   }
   @include desktop {
-    top: 90px;
+    top: 89px;
   }
   @include ldesktop {
-    top: 64px;
+    top: 110px;
   }
   position: absolute;
   display: block;
@@ -526,63 +541,46 @@
   // !VA 2024 This is just the container, I think ???
   @include tablet {
     display: block;
-    margin: 0.438rem .438rem 0 0;
-    z-index: 10;
   }
   @include desktop {
     display: block;
-    margin: 0.25rem 1rem 0 0;
-    z-index: 10;
   }
   @include ldesktop {
     display: block;
-    margin: 0.25rem 1rem 0 0;
-    z-index: 10;
   }
   position: relative;
   display: none;
-  top: 0;
-  right: 0;
+  z-index: 10;
 }
 
 .icons {
-  @include tablet {
-    margin: .375rem .5rem 0 0;
-  }
-  @include desktop {
-    margin: .375rem .5rem 0 0;
-  }
-  @include ldesktop {
-    margin: .375rem .5rem 0 0;
-  }
+  // @include desktop {
+  //   margin: .375rem .5rem 0 0;
+  //   padding-top: .125rem;
+  // }
+  // @include ldesktop {
+  //   margin: .375rem .5rem 0 0;
+  // }
   position: relative;
   display: flex;
-  // !VA 2024
   align-items: flex-start;
+  padding-top: .125rem;
   background: $secondary_color;
   border-radius: 20px;
 }
 
 .icon {
-    // @include mphone {
-    //   // padding: 0 .75rem;
-    //   font-size: 2.5rem;
-    // }
-    // @include lphone {
-    //   font-size: 2.25rem;
-    //   padding: 1.75rem 1rem 0;
-    // }
     @include tablet {
       padding: .125rem .75rem .063rem;
       font-size: 1rem;
     }
     @include desktop {
       padding: .125rem 1rem .063rem;
-      font-size: 1.25rem;
+      font-size: 1.125rem;
     }
     @include ldesktop {
-      padding: .125rem .75rem .063rem;
-      font-size: 1rem;
+      padding: .125rem 1rem .063rem;
+      font-size: 1.188rem;
     }
   // !VA 2024 Not visible on mobile
 }

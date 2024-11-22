@@ -76,10 +76,9 @@ const Header = () => {
         </div>
         <div className={styles.nav_container}>
           <MainNav/>
-        </div>
-        <div className={styles.icon_bar}>
           <IconBar />
         </div>
+
     </div>
 
 
