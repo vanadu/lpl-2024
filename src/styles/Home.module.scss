@@ -45,41 +45,35 @@
   background: $content_bg_color;
 }
 
-.section_content .main {
-  @include desktop {
-    width: 1100px;
-    display: block;
-    margin: 0 auto;
-    padding: 0 .5rem 2rem;
-    background: $content_bg_color;
-  }
-}
 
-.two_column_content {
+.section_content .main {
   @include mphone {
-    padding: 0 .75rem 2rem;
+    padding: 1rem .75rem;
   }
   @include lphone {
-    padding: 0 1rem 2rem;
+    padding: 1rem 1rem;
   }
   @include tablet {
-    padding: 0 2rem 3rem;
+    padding: 1rem 1.5rem;
   }
   @include desktop {
-    padding: 0 3rem 3rem;
+    width: 900px;
+    padding: 0;
   }
   @include ldesktop {
-    width: 1400px;
-    padding: 0 5.688rem 3rem;
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+    background: $content_bg_color;
   }
   display: block;
-  width: 100%;
   margin: 0 auto;
-  padding: 0 .75rem 2rem;
-  background: $home_bg_color;
-  // !VA 2024
-  background: #e1e1e1;
+  padding: 1rem .75rem;
+  background: $content_bg_color;
 }
+
+// !VA 2024 two_column_content removed
 
 .hero_content {
   display: flex;
@@ -106,7 +100,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     width: 860px;
   }
   display: flex;
@@ -340,7 +334,6 @@
 // !VA  
 
 .community_content {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -351,28 +344,32 @@
 
 
 
-
+// !VA Set page width and text margins here
 .community {
   @include mphone {
-    // Fill this
+    padding: 1rem .75rem;
+  }
+  @include lphone {
+    padding: 1rem 1rem;
   }
   @include tablet {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem rem;
   }
   @include desktop {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 900px;
   }
   @include ldesktop {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1100px;
+    padding: 0 0 2rem;
+    width: 1200px;
   }
   position: relative;
   display: flex;
@@ -380,7 +377,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-bottom: .75rem;
+  padding: 1rem .75rem;
   background: transparent;
   // !VA 2024 for the scrolling text animation so it's cut off at the edge of the container
   overflow: hidden;
@@ -635,39 +632,9 @@
   font-weight: 600;
 }
 
-.community_text {
-  p {
-    @include mphone {
-      font-size: $mphoneTextFontSize;
-      line-height: $mphoneTextLineHeight;
-    }
-    @include lphone {
-      padding: .638rem 1rem 0;
-      font-size: $lphoneTextFontSize;
-      line-height: $lphoneTextLineHeight;
-    }
-    @include tablet {
-      padding: .638rem 1rem 0;
-      font-size: $tabletTextFontSize;
-      line-height: $tabletTextLineHeight;
-    }
-    @include desktop {
-      padding: .638rem 1rem 0;
-      font-size: $desktopTextFontSize;
-      line-height: $desktopTextLineHeight;
-    }
-    @include ldesktop {
-      padding: .638rem 1rem 0;
-      font-size: $desktopTextFontSize;
-      line-height: $desktopTextLineHeight;
-    }
-    padding: .125rem .75rem 0;
+// !VA Override the Home text color
+.community_text .content_text {
     color: $light_text_color;
-    font-family: $inter_font;
-    font-size: $rootTextFontSize;
-    line-height: $rootTextLineHeight;
-    font-weight: 300;
-  }
 }
 
 
