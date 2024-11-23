@@ -427,8 +427,8 @@
     height: 3em;
     position: absolute;
     cursor: pointer;
+    // !VA Set opacity here to show the checkbox
     opacity: 1;
-
     z-index: 2; 
     -webkit-touch-callout: none;
     overflow: hidden;

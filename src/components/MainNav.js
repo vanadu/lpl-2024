@@ -35,25 +35,11 @@ const MainNav = () => {
   // const [shown, setShown] = useContext(SitenavContext);
   
 
+  // !VA When a menu item is clicked, close the mobile menu
   const handleClick = (e) => {
-    
-    console.log('isChecked :>> ');
-    console.log(isChecked);
+    console.log('HERE');
+    // !VA If the hamburger menu is checked, ie. the mobile menu is open, clicking on a menu item in the menu will uncheck the menu and go to the clicked link target.
     isChecked ? setChecked(false) : null;
-    // setChecked(e.target.checked)
-    // checkRef.current.checked = false;
-
-    // console.log('homeRef.current :>> ');
-    // console.log(homeRef.current);
-    // console.log('checkRef.current.checked :>> ');
-    // console.log(checkRef.current.checked);
-    // if (checkRef.current.checked === true ) {
-    //   console.log('TRUE');
-
-    // } 
-
-
-
 
     // !VA Handle add/remove active class for the clicked elements
     // !VA 2024 THe Home button is no more, so just reset the main menu items 
@@ -78,25 +64,17 @@ const MainNav = () => {
     e.target.classList.add('active');
   }
 
-  const onClick=(e)=> {
+  // !VA onChange is fired when the checked status of the input changes.
+  const onChangeEvent=(e)=> {
     setChecked(e.target.checked)
-    // console.log('e.target.checked :>> ');
-    // console.log(e.target.checked);
-    // var blob = checkRef.current.checked;
   }
   
-
-  // useEffect(() => {
-  //   console.log('checkRef.current.checked :>> ');
-  //   console.log(checkRef.current.checked);
-  // }, []);
-
   return (
     <>
 
         <div className={styles.nav_menu}>
-
-          <input className={styles.checkbox} type="checkbox" checked={isChecked} ref={checkRef} onClick={(e) => onClick(e)}/>
+          {/* When the input is clicked, fire onChangeEvent and toggle the input's checked status  */}
+          <input className={styles.checkbox} type="checkbox" checked={isChecked} onChange= {(e) => onChangeEvent(e)} ref={checkRef} />
           {/* This is the first line in the burger or the slash in the X */}
           <span className={styles.menu_span}></span>
           {/* This is the first line in the burger and has nothing in the */}
