@@ -73,6 +73,19 @@ $test_color: #606060;
 
 
 */
+// !VA Header Slug 
+$rootSlugFontSize: 1.188rem;
+$rootSlugLineHeight: 1.375rem;
+$mphoneSlugFontSize: 1.375rem;
+$mphoneSlugLineHeight: 1.638rem;
+$lphoneSlugFontSize: 1.5rem;
+$lphoneSlugLineHeight: 1.75rem;
+$tabletSlugFontSize: 1.5rem;
+$tabletSlugLineHeight: 1.75rem;
+$desktopSlugFontSize: 1.688rem;
+$desktopSlugLineHeight: 2.938rem;
+$ldesktopSlugFontSize: 1.938rem;
+$ldesktopSlugLineHeight: 2.25rem;
 
 // !VA Main Head H1
 $rootHeadFontSize: 1.313rem;
@@ -124,9 +137,6 @@ $desktopMenuFontSize: 1.063rem;
 $desktopMenuLineHeight: 1.625rem;
 $ldesktopMenuFontSize: 1.188rem;
 $ldesktopMenuLineHeight: 1.688rem;
-
-
-
 
 // !VA Table cells
 $rootTableFontSize: .913rem;

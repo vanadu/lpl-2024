@@ -72,24 +72,34 @@ const Home = ( {posts}) => {
 
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.community}>
-            <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
 
-            <figure className={styles.figure}>
-              <Image 
-                src={JoinUsIcon} 
-                // width="0"
-                // height="0"
-                // sizes="100vw"
-                // style={{ width: '100%', height: 'auto' }}
-                className={styles.community_icon} 
-                alt="Join the Lar Par Community" 
-              />
-            </figure>
-            <h3 className={styles.community_cta}>Join the Community!</h3>
-            <div className={styles.community_text}>
-              <p>Laryngeal Paralysis in dogs is hard to deal with. Sometimes you need to just talk about it with people who know what you&lsquo;re going through. That&lsquo;s where we can help by sharing experiences, giving support, and helpful info that only other Lar Par dog parents can provide.</p>
+
+          <div className={styles.community_content}>
+
+
+
+            <div className={styles.community}>
+              <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
+
+              <figure className={styles.figure}>
+                <Image 
+                  src={JoinUsIcon} 
+                  // width="0"
+                  // height="0"
+                  // sizes="100vw"
+                  // style={{ width: '100%', height: 'auto' }}
+                  className={styles.community_icon} 
+                  alt="Join the Lar Par Community" 
+                />
+              </figure>
+              <h3 className={styles.community_cta}>Join the Community!</h3>
+              <div className={styles.community_text}>
+                <p>Laryngeal Paralysis in dogs is hard to deal with. Sometimes you need to just talk about it with people who know what you&lsquo;re going through. That&lsquo;s where we can help by sharing experiences, giving support, and helpful info that only other Lar Par dog parents can provide.</p>
+              </div>
+
+
             </div>
+
 
             {/* Container for the individual community question animations */}
             <div className={styles.community_questions}>
@@ -158,7 +168,7 @@ const Home = ( {posts}) => {
         <div className={styles.section_content}>
           <div className={styles.main}>
             {/* <h1 className={styles.content_head}>The 21st Century Guide to <span className="mobile-show-inline"><br /></span>Laryngeal Paralysis in Dogs</h1> */}
-            <h2 className={styles.content_subhead}>Lar Par Dogs&lsquo; Best Friends</h2>
+            <h2 className={styles.content_subhead}>Your Lar Par Dog&rsquo;s Best Friend</h2>
             <p className={styles.content_text}>Lar Par dogs&rsquo; best friends are the people who love them enough to make informed choices for them. This website is devoted to providing reliable, up-to-date information so that people can make the best decisions for their beloved canine companions who suffer from laryngeal paralysis.   </p>
 
             <h2 className={styles.content_subhead}>Lar Par: The Deadly Little Defect</h2>

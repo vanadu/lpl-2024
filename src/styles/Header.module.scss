@@ -172,7 +172,7 @@
     align-items: flex-start;
     height: 138px;
     // !VA This is a problem
-    width: 1600px;
+    width: 80%;
   }
   display: flex;
   justify-content: space-between;
@@ -479,19 +479,19 @@
 // -----------
 .header_slug {
   @include mphone {
-    top: 70px;
+    top: 72px;
   }
   @include lphone {
-    top: 86px;
+    top: 84px;
   }
   @include tablet {
-    top: 80px;
+    top: 82px;
   }
   @include desktop {
-    top: 89px;
+    top: 84px;
   }
   @include ldesktop {
-    top: 110px;
+    top: 104px;
   }
   position: absolute;
   display: block;
@@ -503,34 +503,29 @@
 
 .header_slug_text {
   @include mphone {
-    padding-bottom: .5rem;
-    font-size: $mphoneSubheadFontSize;
-    line-height: $mphoneSubheadLineHeight;
+    font-size: $mphoneSlugFontSize;
+    line-height: $mphoneSlugLineHeight;
   }
   @include lphone {
-    padding-bottom: .5rem;
-    font-size: $lphoneSubheadFontSize;
-    line-height: $lphoneSubheadLineHeight;
+    font-size: $lphoneSlugFontSize;
+    line-height: $lphoneSlugLineHeight;
   }
   @include tablet {
-    padding-bottom: .5rem;
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight;
+    font-size: $tabletSlugFontSize;
+    line-height: $tabletSlugLineHeight;
   }
   @include desktop {
-    padding-bottom: .5rem;
-    font-size: $desktopSubheadFontSize;
-    line-height: $desktopSubheadLineHeight;
+    font-size: $desktopSlugFontSize;
+    line-height: $desktopSlugLineHeight;
   }
   @include ldesktop {
-    padding-bottom: .5rem;
-    font-size: $ldesktopSubheadFontSize;
-    line-height: $ldesktopSubheadLineHeight;
+    font-size: $ldesktopSlugFontSize;
+    line-height: $ldesktopSlugLineHeight;
   }
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootSubheadFontSize;
-  line-height: $rootSubheadLineHeight;
+  font-size: $rootSlugFontSize;
+  line-height: $rootSlugLineHeight;
   font-weight: 500;
   text-align: center;
   text-shadow: -2px -2px 2px rgba(90,90,90,0.2);

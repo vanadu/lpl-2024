@@ -36,11 +36,23 @@
 
 // !VA In Home, section_content lives on the $primary_color background set in .section. None of the other pages have this two-toned scheme, at least for now. 
 .section_content {
+  display: block;
+  margin: 0 auto;
   // !VA On the Home page, we don't want rounded edges or a 'card' for the content sections, so close up all the spaces 
   width: 100%;
   // margin-top: .25rem;
   // padding:  0 0 .5rem;
   background: $content_bg_color;
+}
+
+.section_content .main {
+  @include desktop {
+    width: 1100px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 .5rem 2rem;
+    background: $content_bg_color;
+  }
 }
 
 .two_column_content {
@@ -322,12 +334,24 @@
   color: $primary_color;
 }
 
-.main {
-  padding: 0 .5rem 2rem;
-}
+
 
 // !VA 2024
 // !VA  
+
+.community_content {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: $secondary_color;
+  z-index: 1;
+}
+
+
+
+
 .community {
   @include mphone {
     // Fill this
@@ -339,19 +363,16 @@
     padding: 1rem;
   }
   @include desktop {
-    // !VA 2024
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
   @include ldesktop {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem 3rem 2rem 0;
+    justify-content: center;
+    width: 1100px;
   }
   position: relative;
   display: flex;
@@ -360,13 +381,10 @@
   justify-content: space-between;
   width: 100%;
   padding-bottom: .75rem;
-  // !VA 2024
-  background: $secondary_color;
+  background: transparent;
   // !VA 2024 for the scrolling text animation so it's cut off at the edge of the container
   overflow: hidden;
-  z-index: 10;
-
-
+  z-index: 12;
 }
 
   // !VA This is for positioning the marquee block not the invidual marquee elements
@@ -380,16 +398,22 @@
   @include tablet {
     top: 3.75rem;
   }
+  @include desktop {
+    top: 4.25rem;
+  }
+  @include ldesktop {
+    top: 4.25rem;
+  }
   // position: absolute;
   top: 2.125rem;
   left: 0px;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   // margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
+  z-index: 11;
 }
 
 .marquee_wrapper1, .marquee_wrapper2, .marquee_wrapper3, .marquee_wrapper4, .marquee_wrapper5 {
@@ -398,6 +422,12 @@
   }
   @include tablet {
     height: 1.688rem;
+  }
+  @include desktop {
+    height: 2rem;
+  }
+  @include ldesktop {
+    height: 2rem;
   }
   max-width: 100%;
   height: 1.25rem;
@@ -451,10 +481,12 @@
     line-height: 1.75rem;
   }
   @include desktop {
-    padding: .125rem 0;
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-    
+    font-size: 1.313rem;
+    line-height: 1.313rem;
+  }
+  @include ldesktop {
+    font-size: 1.313rem;
+    line-height: 1.313rem;
   }
   display: inline-block;
   padding: 0;
@@ -525,7 +557,14 @@
     line-height: $tabletHeadLineHeight;
   }
   @include desktop {
-    font-size: 2rem;
+    padding: 1rem .25rem .188rem;
+    font-size: $desktopHeadFontSize;
+    line-height: $desktopHeadLineHeight;
+  }
+  @include ldesktop {
+    padding: 1rem .25rem .188rem;
+    font-size: $ldesktopHeadFontSize;
+    line-height: $ldesktopHeadLineHeight;
   }
   padding: .5rem .25rem .25rem;
   color: $light_text_color;
@@ -549,11 +588,13 @@
     width: 110px;
     margin: 1.25rem 0 .5rem;
   }
-  // !VA 2024
   @include desktop {
     width: 130px;
-    height: auto;
-    margin: 2rem 0;
+    margin: 2rem 0 .5rem
+  }
+  @include ldesktop {
+    width: 136px;
+    margin: 2rem 0 .5rem
   }
   position: relative;
   width: 70px;
@@ -582,6 +623,11 @@
     font-size: 36px;
     margin-top: .75rem;
   }
+  @include ldesktop {
+    // !VA 2024
+    font-size: 36px;
+    margin-top: .75rem;
+  }
   margin-top: .575rem;
   color: $primary_color;
   font-family: $inter_font;
@@ -604,6 +650,16 @@
       padding: .638rem 1rem 0;
       font-size: $tabletTextFontSize;
       line-height: $tabletTextLineHeight;
+    }
+    @include desktop {
+      padding: .638rem 1rem 0;
+      font-size: $desktopTextFontSize;
+      line-height: $desktopTextLineHeight;
+    }
+    @include ldesktop {
+      padding: .638rem 1rem 0;
+      font-size: $desktopTextFontSize;
+      line-height: $desktopTextLineHeight;
     }
     padding: .125rem .75rem 0;
     color: $light_text_color;
