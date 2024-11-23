@@ -3,6 +3,7 @@ import { useState, useRef, useEffect, useContext } from 'react'
 import { SitenavContext} from './NavBar'
 import {usePathname} from 'next/navigation'
 import {useRouter} from 'next/router'
+import IconBar  from './IconBar'
 
 
 import Link from 'next/link'
@@ -170,7 +171,11 @@ const MainNav = () => {
                   />
               </Link>
             </li>
+            <li className={styles.blob}>
+              <IconBar />
+            </li>
           </ul>
+
         </div>
     </>
   )

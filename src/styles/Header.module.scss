@@ -189,12 +189,58 @@
   // z-index: 1;
 }
 
-
-
-
-
 // !VA NAV Section
 // -------------
+
+// !VA ICON BAR
+.icon_bar {
+  // !VA 2024 This is just the container, I think ???
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: block;
+  }
+  @include ldesktop {
+    display: block;
+  }
+  position: relative;
+  display: none;
+  z-index: 10;
+}
+
+.icons {
+  // @include desktop {
+  //   margin: .375rem .5rem 0 0;
+  //   padding-top: .125rem;
+  // }
+  // @include ldesktop {
+  //   margin: .375rem .5rem 0 0;
+  // }
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-top: .125rem;
+  background: $secondary_color;
+  border-radius: 20px;
+}
+
+.icon {
+    @include tablet {
+      padding: .125rem .75rem .063rem;
+      font-size: 1rem;
+    }
+    @include desktop {
+      padding: .125rem 1rem .063rem;
+      font-size: 1.125rem;
+    }
+    @include ldesktop {
+      padding: .125rem 1rem .063rem;
+      font-size: 1.188rem;
+    }
+  // !VA 2024 Not visible on mobile
+}
+
 // !VA 2024 There's a whole thing with the highlighting the active route that doesn't work now with the new responsive menu
 
 .nav_container {
@@ -221,22 +267,61 @@
 
 .nav_menu_items {
   @include tablet {
+    flex-flow: row wrap;
     margin: .188rem .5rem 0 0; 
   }
   @include desktop {
+    flex-flow: row wrap;
     margin: .188rem .75rem 0 0; 
   }
   @include ldesktop {
+    flex-flow: row wrap;
     margin: .188rem .75rem 0 0; 
   }
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  flex-direction: column;
+
+  // flex-flow: row wrap;
+  // flex-direction: row;
+
+  
   // margin: 0 0 0 1rem; 
   background: transparent;
   list-style: none;
   // !VA 2024 z-index Works, but I don't know why
   z-index: 200;
+}
+
+.blob .icon_bar {
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include ldesktop {
+    display: none;
+  }
+  display: block;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  width: 240px;
+}
+
+.blob .icon_bar .icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: .125rem;
+  background: $secondary_color;
+  border-radius: 20px;
+}
+
+.blob .icon_bar .icon {
+  color: white;
+  padding: .125rem .75rem .063rem;
+  font-size: 1.75rem;
 }
 
 .nav_menu_items a {
@@ -402,12 +487,18 @@
   }
   
   .nav_menu_items {
+    @include mphone {
+      top: 104px;
+    }
+    @include lphone {
+      top: 120px;
+    }
     position: fixed;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start; 
     // !VA
-    top: 93px;
+    top: 94px;
     right: 0;
     width: 100%;
     height: 100%;
@@ -531,51 +622,3 @@
   text-shadow: -2px -2px 2px rgba(90,90,90,0.2);
 }
 
-// !VA ICON BAR
-.icon_bar {
-  // !VA 2024 This is just the container, I think ???
-  @include tablet {
-    display: block;
-  }
-  @include desktop {
-    display: block;
-  }
-  @include ldesktop {
-    display: block;
-  }
-  position: relative;
-  display: none;
-  z-index: 10;
-}
-
-.icons {
-  // @include desktop {
-  //   margin: .375rem .5rem 0 0;
-  //   padding-top: .125rem;
-  // }
-  // @include ldesktop {
-  //   margin: .375rem .5rem 0 0;
-  // }
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  padding-top: .125rem;
-  background: $secondary_color;
-  border-radius: 20px;
-}
-
-.icon {
-    @include tablet {
-      padding: .125rem .75rem .063rem;
-      font-size: 1rem;
-    }
-    @include desktop {
-      padding: .125rem 1rem .063rem;
-      font-size: 1.125rem;
-    }
-    @include ldesktop {
-      padding: .125rem 1rem .063rem;
-      font-size: 1.188rem;
-    }
-  // !VA 2024 Not visible on mobile
-}
