@@ -21,12 +21,14 @@ const MainNav = () => {
   // !VA 2024 removing...no workie
   // const [mainIsActive, setMainIsActive ] = useState(true)
   // const [mainHasActive, setMainHasActive ] = useState(false)
+  const [isChecked, setChecked ] = useState(false)
+  const checkRef = useRef(null)
+  const homeRef = useRef(null)
 
   // !VA 2024 removing...no workie
   const mainRef = useRef()
   // VA! 2024 homeRef is deprecated because the Home button is no more
     // !VA 2024 removing...no workie. IO'm not sure whether this is what broke the whole thing...
-  // const homeRef = useRef()
   // !VA 2024 removing...no workie
   // const pathname = usePathname()
   // const router = useRouter()
@@ -34,6 +36,25 @@ const MainNav = () => {
   
 
   const handleClick = (e) => {
+    
+    console.log('isChecked :>> ');
+    console.log(isChecked);
+    isChecked ? setChecked(false) : null;
+    // setChecked(e.target.checked)
+    // checkRef.current.checked = false;
+
+    // console.log('homeRef.current :>> ');
+    // console.log(homeRef.current);
+    // console.log('checkRef.current.checked :>> ');
+    // console.log(checkRef.current.checked);
+    // if (checkRef.current.checked === true ) {
+    //   console.log('TRUE');
+
+    // } 
+
+
+
+
     // !VA Handle add/remove active class for the clicked elements
     // !VA 2024 THe Home button is no more, so just reset the main menu items 
     // !VA If the home button is clicked
@@ -46,7 +67,7 @@ const MainNav = () => {
       // homeRef.current.classList.remove('active')
     // }
     // !VA Now reset all the menu items to inactive and make the current click target active
-    resetMainMenu(e);
+    // resetMainMenu(e);
   }
   // !VA Function to reset the main menu and make the current click target active
   const resetMainMenu = (e) => {
@@ -57,28 +78,25 @@ const MainNav = () => {
     e.target.classList.add('active');
   }
 
+  const onClick=(e)=> {
+    setChecked(e.target.checked)
+    // console.log('e.target.checked :>> ');
+    // console.log(e.target.checked);
+    // var blob = checkRef.current.checked;
+  }
+  
 
-  /* !VA  
-  
-    <a href="" class="logo">CSS Nav</a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="#work">Our Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#careers">Careers</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  
-  */
+  // useEffect(() => {
+  //   console.log('checkRef.current.checked :>> ');
+  //   console.log(checkRef.current.checked);
+  // }, []);
 
-  
   return (
     <>
 
         <div className={styles.nav_menu}>
 
-          <input className={styles.checkbox} type="checkbox" />
+          <input className={styles.checkbox} type="checkbox" checked={isChecked} ref={checkRef} onClick={(e) => onClick(e)}/>
           {/* This is the first line in the burger or the slash in the X */}
           <span className={styles.menu_span}></span>
           {/* This is the first line in the burger and has nothing in the */}
@@ -99,7 +117,7 @@ const MainNav = () => {
                 href='/'
                 // className={[styles.nav_main_home_icon].join(' ')}
                 className={styles.nav_main_home_icon}
-                ref={homeRef}
+                // ref={homeRef}
                 onClick = {handleClick}
                 aria-label = 'Go to Home page'
                 >
@@ -108,7 +126,7 @@ const MainNav = () => {
             </li> */}
             <li
               className={styles.nav_main_list_item}
-              // ref={ref}
+              ref={homeRef}
               >
               <Link
                 href='/'
