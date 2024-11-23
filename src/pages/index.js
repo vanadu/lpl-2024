@@ -168,7 +168,8 @@ const Home = ( {posts}) => {
       <section className={styles.section}>
         <div className={styles.section_content}>
           <div className={styles.main}>
-            {/* <h1 className={styles.content_head}>The 21st Century Guide to <span className="mobile-show-inline"><br /></span>Laryngeal Paralysis in Dogs</h1> */}
+            <h1 className={styles.content_head}>The 21st Century Guide to <span 
+            className="mobile-show-inline"><br /></span>Laryngeal Paralysis in Dogs</h1>
             <h2 className={styles.content_subhead}>Your Lar Par Dog&rsquo;s Best Friend</h2>
             <p className={styles.content_text}>Lar Par dogs&rsquo; best friends are the people who love them enough to make informed choices for them. This website is devoted to providing reliable, up-to-date information so that people can make the best decisions for their beloved canine companions who suffer from laryngeal paralysis.   </p>
 
@@ -187,7 +188,7 @@ const Home = ( {posts}) => {
             </figure>
             <p className={styles.content_text}> 
               With laryngeal paralysis, the larynx (the &lsquo;voicebox&rsquo; that dogs use to bark) stops working properly. The parts that are supposed to open and close to let air through 
-              become paralyzed and flaccid, blocking the airway. It&lsquo;s a neurological defect &mdash; the nerves that control the muscles of the larynx stop working. Lar Par dogs can be otherwise perfectly healthy but because of this deadly little defect, they can&lsquo;t get enough air to sustain a quality life. That&lsquo;s the way it was with our black Lab Miss B, but we swore that when Miss B&rsquo;s time came, it wouldn&rsquo;t be for something as menial as that. To learn more about our battle to keep Miss B alive and breathing, go to <Link href="/stories" className="link" target="_blank">Miss B&rsquo;s Incredible Stent&&nbsp;Journey&nbsp;<FaArrowCircleRight className="read_more_svg"/></Link>
+              become paralyzed and flaccid, blocking the airway. It&lsquo;s a neurological defect &mdash; the nerves that control the muscles of the larynx stop working. Lar Par dogs can be otherwise perfectly healthy but because of this deadly little defect, they can&lsquo;t get enough air to sustain a quality life. That&lsquo;s the way it was with our black Lab Miss B, but we swore that when Miss B&rsquo;s time came, it wouldn&rsquo;t be for something as menial as that. To learn more about our battle to keep Miss B alive and breathing, go to <Link href="/stories" className="link" target="_blank">Miss B&rsquo;s Incredible Stent&nbsp;Journey&nbsp;<FaArrowCircleRight className="read_more_svg"/></Link>
             </p>
             <h2 className={styles.content_subhead}>The Non-Surgical Alternative</h2>
             <p className={styles.content_text}> 
