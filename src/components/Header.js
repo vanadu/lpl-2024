@@ -70,7 +70,7 @@ const Header = () => {
           />
         </div>
           <div className={styles.nav_container}>
-            <div className={`{$styles.blob} {$styles.rotate} {$styles.top}`}></div>
+
               <MainNav/>
               <IconBar />
           </div>
