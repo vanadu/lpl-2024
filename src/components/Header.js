@@ -24,17 +24,12 @@ import HeaderBrick09 from '../../public/bricks/img-brick-09.webp'
 import HeaderBrick10 from '../../public/bricks/img-brick-10.webp'
 import HeaderBrick11 from '../../public/bricks/img-brick-11.webp'
 import HeaderBrick12 from '../../public/bricks/img-brick-12.webp'
-// import Placeholder from '../../public/bricks/placeholder'
-// import Placeholder from '../../public/bricks/placeholder'
-
-
-
 
 const Header = () => {
   return (
     <>
     <div className={styles.header}>
-
+      
       <div className={styles.bricks_container}>
           <motion.div
             initial={{ opacity: 0 }}
@@ -61,7 +56,7 @@ const Header = () => {
             </div>
           </div>
           </motion.div>
-        </div>
+      </div>
 
       <div className={styles.header_content}>
         <div className={styles.logo}>
@@ -74,10 +69,11 @@ const Header = () => {
             className={styles.logo_img} alt="LarParLife Logo" 
           />
         </div>
-        <div className={styles.nav_container}>
-          <MainNav/>
-          <IconBar />
-        </div>
+          <div className={styles.nav_container}>
+            <div className={`{$styles.blob} {$styles.rotate} {$styles.top}`}></div>
+              <MainNav/>
+              <IconBar />
+          </div>
 
     </div>
 

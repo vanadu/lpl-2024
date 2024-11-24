@@ -23,7 +23,7 @@ const MainNav = () => {
   // const [mainHasActive, setMainHasActive ] = useState(false)
   const [isChecked, setChecked ] = useState(false)
   const checkRef = useRef(null)
-  const homeRef = useRef(null)
+  // const homeRef = useRef(null)
 
   // !VA 2024 removing...no workie
   const mainRef = useRef()
@@ -72,7 +72,16 @@ const MainNav = () => {
   return (
     <>
 
+        <div className={[styles.blob, styles.top, styles.bottom].join(' ')}></div>
+
+
         <div className={styles.nav_menu}>
+
+
+
+
+
+
           {/* When the input is clicked, fire onChangeEvent and toggle the input's checked status  */}
           <input className={styles.checkbox} type="checkbox" checked={isChecked} onChange= {(e) => onChangeEvent(e)} ref={checkRef} />
           {/* This is the first line in the burger or the slash in the X */}
@@ -82,6 +91,8 @@ const MainNav = () => {
           {/* This is the third line in the burger or the backslash line in the X */}
           <span className={styles.menu_span}></span>
 
+      
+
 
           <ul 
           // className={styles.nav_main_list}
@@ -90,21 +101,9 @@ const MainNav = () => {
           >
 
             {/* VA! 2024 removing the home icon, the logo works for the home link */}
-            {/* <li>
-              <Link
-                href='/'
-                // className={[styles.nav_main_home_icon].join(' ')}
-                className={styles.nav_main_home_icon}
-                // ref={homeRef}
-                onClick = {handleClick}
-                aria-label = 'Go to Home page'
-                >
-                <FaHome />
-              </Link>
-            </li> */}
             <li
               className={styles.nav_main_list_item}
-              ref={homeRef}
+              // ref={homeRef}
               >
               <Link
                 href='/'
