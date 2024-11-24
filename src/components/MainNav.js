@@ -72,106 +72,99 @@ const MainNav = () => {
   return (
     <>
 
-        <div className={[styles.blob, styles.top, styles.bottom].join(' ')}></div>
+      {/* Mobile Menu Background Semicircle: https://codepen.io/xram/pen/DjbWbb  */}
+      <div className={[styles.mobile_menu_bg, styles.mobile_menu_bg_top, styles.mobile_menu_bg_bottom].join(' ')}></div>
 
+      {/* !VA This is the parent container for the ul containing the individual menu items */}
+      <div className={styles.nav_menu}>
+        {/* When the input is clicked, fire onChangeEvent and toggle the input's checked status  */}
+        <input className={styles.checkbox} type="checkbox" checked={isChecked} onChange= {(e) => onChangeEvent(e)} ref={checkRef} />
+        {/* This is the first line in the burger or the slash in the X */}
+        <span className={styles.menu_span}></span>
+        {/* This is the first line in the burger and has nothing in the */}
+        <span className={styles.menu_span}></span>
+        {/* This is the third line in the burger or the backslash line in the X */}
+        <span className={styles.menu_span}></span>
 
-        <div className={styles.nav_menu}>
+        {/* !VA Tjos is the parent container for the actual individual menu items. Eventually this should move to a separate container, i.e. MainNavItems.js */}
+        <ul 
+        // className={styles.nav_main_list}
+        className={styles.nav_menu_items}
+        ref={mainRef}
+        >
 
-
-
-
-
-
-          {/* When the input is clicked, fire onChangeEvent and toggle the input's checked status  */}
-          <input className={styles.checkbox} type="checkbox" checked={isChecked} onChange= {(e) => onChangeEvent(e)} ref={checkRef} />
-          {/* This is the first line in the burger or the slash in the X */}
-          <span className={styles.menu_span}></span>
-          {/* This is the first line in the burger and has nothing in the */}
-          <span className={styles.menu_span}></span>
-          {/* This is the third line in the burger or the backslash line in the X */}
-          <span className={styles.menu_span}></span>
-
-      
-
-
-          <ul 
-          // className={styles.nav_main_list}
-          className={styles.nav_menu_items}
-          ref={mainRef}
-          >
-
-            {/* VA! 2024 removing the home icon, the logo works for the home link */}
-            <li
-              className={styles.nav_main_list_item}
-              // ref={homeRef}
+          {/* VA! 2024 removing the home icon, the logo works for the home link */}
+          <li
+            className={styles.nav_main_list_item}
+            // ref={homeRef}
+            >
+            <Link
+              href='/'
+              // className={[styles.nav_text].join(' ')}   
+              onClick = {handleClick}             
               >
-              <Link
-                href='/'
-                // className={[styles.nav_text].join(' ')}   
-                onClick = {handleClick}             
-                >
-                Home
-              </Link>
-            </li>
-            <li
-              className={styles.nav_main_list_item}
-              // ref={ref}
+              Home
+            </Link>
+          </li>
+          <li
+            className={styles.nav_main_list_item}
+            // ref={ref}
+            >
+            <Link
+              href='/whystent'
+              // className={[styles.nav_text].join(' ')}   
+              onClick = {handleClick}             
               >
-              <Link
-                href='/whystent'
-                // className={[styles.nav_text].join(' ')}   
-                onClick = {handleClick}             
-                >
-                Why Stent?
-              </Link>
-            </li>
-            <li 
-              className={styles.nav_main_list_item}
-              // ref={ref}
+              Why Stent?
+            </Link>
+          </li>
+          <li 
+            className={styles.nav_main_list_item}
+            // ref={ref}
+            >
+            <Link
+              // key={item.text}
+              href='/stories'
+              // className={[styles.nav_text, ' active'].join('')}
+              // className={[styles.nav_text].join('')}
+              onClick = {handleClick}
+              >Stories
+            </Link>
+          </li>
+          <li 
+            className={styles.nav_main_list_item}
+            // ref={ref}
+            >
+            <Link
+              // key={item.text}
+              href='/blog'
+              // className={[styles.nav_text, ' active'].join('')}
+              // className={[styles.nav_text].join('')}
+              onClick = {handleClick}
+              >News
+            </Link>
+          </li>
+          <li 
+            key='dvms'
+            className={styles.nav_main_list_item}
+            >
+            <Link
+              href='/allabout'
+              // className={[styles.nav_text].join(' ')}
+              onClick = {handleClick}
               >
-              <Link
-                // key={item.text}
-                href='/stories'
-                // className={[styles.nav_text, ' active'].join('')}
-                // className={[styles.nav_text].join('')}
-                onClick = {handleClick}
-                >Stories
-              </Link>
-            </li>
-            <li 
-              className={styles.nav_main_list_item}
-              // ref={ref}
-              >
-              <Link
-                // key={item.text}
-                href='/blog'
-                // className={[styles.nav_text, ' active'].join('')}
-                // className={[styles.nav_text].join('')}
-                onClick = {handleClick}
-                >News
-              </Link>
-            </li>
-            <li 
-              key='dvms'
-              className={styles.nav_main_list_item}
-              >
-              <Link
-                href='/allabout'
-                // className={[styles.nav_text].join(' ')}
-                onClick = {handleClick}
-                >
-                Main Menu
-                  <FaChevronDown 
-                  className={styles.nav_dropdown_icon}
-                  />
-              </Link>
-            </li>
-            <li className={styles.blob}>
-              <IconBar />
-            </li>
-          </ul>
+              Main Menu
+                <FaChevronDown 
+                className={styles.nav_dropdown_icon}
+                />
+            </Link>
+          </li>
+          <li className={styles.icon_bar_menu_item}>
+            <IconBar />
+          </li>
+        </ul>
 
-        </div>
+      </div>
     </>
   )
 }
