@@ -82,7 +82,7 @@
 
   // !VA 2024 
   opacity: 1;
-  z-index: 6;
+  z-index: 1;
   }
 
 
@@ -106,7 +106,7 @@
   // !VA 2024
   opacity: .4;
   // background: $secondary_color;
-  z-index: 7;
+  z-index: 1;
 }
 
 // !VA Stop animation on hover
@@ -143,7 +143,7 @@
   height: 100%;
   // !VA Exposes the primary_accent_color background of the parent
   padding: 2px .125rem 2px 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .ldesktop_brick_img {
@@ -185,8 +185,6 @@
   padding: 0;
   top: 0;
   overflow: hidden; 
-  // !VA 2024 This what was breaking the mobile menu! Or maybe not...maybe I just a a devred applied and it LOOKED like something was broken.
-  // z-index: 1;
 }
 
 // !VA NAV Section
@@ -267,12 +265,6 @@
 }
 
 .nav_menu_items {
-  @include mphone {
-    top: 104px;
-  }
-  @include lphone {
-    top: 120px;
-  }
   @include tablet {
     flex-flow: row wrap;
     margin: .188rem .5rem 0 0; 
@@ -285,11 +277,11 @@
     flex-flow: row wrap;
     margin: .188rem .75rem 0 0; 
   }
+  position: fixed;
   display: flex;
   // align-items: stretch;
   flex-flow: column wrap;
-  position: fixed;
-  // top: 94px;
+  top: 0;
   right: 0;
   width: 100%;
   height: 100%;
@@ -297,10 +289,7 @@
   // flex-flow: row wrap;
   // flex-direction: row;
   // margin: 0 0 0 1rem; 
-  background: #FFFFFF;
-  // list-style: none;
-  // !VA 2024 z-index Works, but I don't know why
-  
+  background: $content_bg_color;
   text-align: center;
   list-style-type: none;
   transform-origin: 0% 0%;
@@ -308,7 +297,8 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   // !VA 2024 Check this, lots of these running around
   // !VA Trying to get the mobile menu to display over the menu items
-  z-index: 50;
+  // !VA 2024 Has no effect on anything...
+  z-index: auto;
 }
 
 .nav_menu_items a {
@@ -379,19 +369,6 @@
   font-size: 1.75rem;
 }
 
-.checkbox{
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
-  }
-  @include ldesktop {
-    display: none;
-  }
-  // opacity: 0;
-  display: block;
-}
 
 // !VA Devices up to 767px i.e. smaller than a standard iPad.
 // !VA THIS IS THE MEDIA QUERY BLOCK FOR THE MOBILE MENU. Also includes embedded media queries for mobile menu size modifications for lphones.
@@ -401,15 +378,20 @@
   // !VA mobile menu background semicircle from here: https://codepen.io/xram/pen/DjbWbb
   // !VA mobile menu variables are in variables.scss
   .mobile_menu_bg {
+    @include lphone {
+      top: 0;
+      right: -75px;
+    }
     position: fixed;
     top: 0;
-    background: red;
+    right: -60px;
+    background: white;
     display: inline-block;
     display: block;
-    margin: 0 1em 1em 0;
+    // margin: 0 1em 1em 0;
     height: auto;
-    opacity: .7;
-    z-index: 100;
+    opacity: .5;
+      z-index: 50;
   }
 
   // !VA mobile menu bg height and width
@@ -452,8 +434,10 @@
     // }
     @include lphone {
       top: .75rem; 
+      top: 0; 
       right: .75rem;
     }
+    position: relative;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -462,31 +446,47 @@
     -webkit-user-select: none;
     user-select: none;
     background: transparent;
-    // !VA 2024 Check this, it's unnecessarily high
-    z-index: 200;
+    // z-index: 100;
   }
 
-  // !VA Not sure why the checkbox opacity is set at all here. Actually opacity is set below under .nav_menu .checkbox. Commenting this out for now.
+  // !VA Not sure why the checkbox opacity is set at all here. Actually opacity is set below under .nav__ .checkbox. Commenting this out for now.
   // .checkbox {
   //   opacity: 1;
   // }
 
   // !VA Makes the input element invisible. THe invisible checkbox MUST directly overlay the visible open and close boxes
   .nav_menu .checkbox {
-    top: -5px;
-    right: 0;
+    @include lphone {
+      top: 8px;
+      right: -3px;
+    }
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+    @include ldesktop {
+      display: none;
+    }
+    // opacity: 0;
+    // position: relative;
+    position: absolute;
+    display: block;
+    z-index: 100;
+    top: -4px;
+    right: -3px;
     width: 3em;
     height: 3em;
-    position: absolute;
     cursor: pointer;
     // !VA Set opacity here to show the checkbox for dev. Hide it for production. 
+    opacity: .5;
     opacity: 0;
-    z-index: 2; 
     -webkit-touch-callout: none;
     overflow: hidden;
   }
   
-  /* !VA The hamburger/mobile menu itself, i.e. the open/close toggle
+  /* !VA The hamburger/mobile _ itself, i.e. the open/close toggle
     These are the actual lines that make up the hamburger icons and the X. 
     width: The length of each of the lines that comprises the burger icon
     height: The thickness of each of the lines that comprises the burger icon and the X
@@ -496,23 +496,30 @@
   */
   .nav_menu .menu_span { 
     @include lphone {
+      // top: 30px;
+      // right: 30px;
+      top: -10px;
+      right: -3px;
       width: 2.5em;
       height: .313em; 
       margin-bottom: .575em; 
       border-radius: 3px;
     }
+    position: relative;
+    top: -22px;
+    right: -2px;
     width: 2.25em;
     height: .313em; 
     margin-bottom: .5em; 
     border-radius: 3px;
-    position: relative;
     background: $dark_text_color;
-    z-index: 1;
     transform-origin: 4px 0px;
     // !VA This is the animation. Doesn't affect the shape of the burger or the X
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+    // !VA 2024 This can't have a stacking context otherwise it will block the checkbox from user actions.
+    z-index: 50;
   }
   
 
@@ -554,9 +561,7 @@
     // !VA Turning off the transform prevents it from sliding in...not sure why
     transform: none;
   }
-
 }
-
 
 // !VA LOGO
 // --------
@@ -587,9 +592,8 @@
   width: 100px;
   position: relative; 
   // !VA 2024
-
-  z-index: 100;
-  
+  // !VA Makes logo opaque over the bricks container
+  z-index: 2;
 }
 
 
@@ -616,7 +620,8 @@
   top: 66px;
   left: 0;
   width: 100%;
-  z-index: 10;
+  // !VA Makes slug opaque over the bricks container
+  z-index: 2;
 }
 
 .header_slug_text {

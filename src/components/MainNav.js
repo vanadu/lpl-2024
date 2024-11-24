@@ -72,11 +72,21 @@ const MainNav = () => {
   return (
     <>
 
-      {/* Mobile Menu Background Semicircle: https://codepen.io/xram/pen/DjbWbb  */}
-      <div className={[styles.mobile_menu_bg, styles.mobile_menu_bg_top, styles.mobile_menu_bg_bottom].join(' ')}></div>
+
+
+
 
       {/* !VA This is the parent container for the ul containing the individual menu items */}
       <div className={styles.nav_menu}>
+
+
+
+        {/* Mobile Menu Background Semicircle: https://codepen.io/xram/pen/DjbWbb  */}
+        <div className={[styles.mobile_menu_bg, styles.mobile_menu_bg_top, styles.mobile_menu_bg_bottom].join(' ')}>
+          &nbsp;
+        </div>;
+
+        
         {/* When the input is clicked, fire onChangeEvent and toggle the input's checked status  */}
         <input className={styles.checkbox} type="checkbox" checked={isChecked} onChange= {(e) => onChangeEvent(e)} ref={checkRef} />
         {/* This is the first line in the burger or the slash in the X */}
@@ -164,7 +174,15 @@ const MainNav = () => {
           </li>
         </ul>
 
+
+
+
+
       </div>
+
+
+
+
     </>
   )
 }
