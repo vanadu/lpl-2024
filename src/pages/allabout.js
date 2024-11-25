@@ -99,7 +99,7 @@ const More = () => {
                       <ul className={styles.card_list}>
                         <li className={styles.card_list_item}>Studies</li>
                         <li className={styles.card_list_item}>Websites</li>
-                        <li className={styles.card_list_item}>Facebook Groups</li>
+                        <li className={styles.card_list_item}>Community</li>
                       </ul>
                     </div>
                   </div>
@@ -132,10 +132,10 @@ const More = () => {
                   <div className={styles.card_content}>
                     <GoButton />
                     <Link href='/blog'  className={styles.card_link}>
-                      <span className={styles.card_head}>LarPar News &amp; Notes</span>
+                      <span className={styles.card_head}>Lar Par News</span>
                     </Link>
                     <div className={styles.card_content_text}>
-                      <h3 className={styles.card_subhead}>A Dog Lover&rsquo;s Perspective<br/>on&nbsp;Laryngeal&nbsp;Paralysis&nbsp;in&nbsp;Dogs</h3>
+                      <h3 className={styles.card_subhead}>Current Topics from the World of<br/>&nbsp;Laryngeal&nbsp;Paralysis&nbsp; &amp; GOLPP in&nbsp;Dogs</h3>
                       <ul className={styles.card_list}>
                         <li className={styles.card_list_item}>Lar Par Dog Blog</li>
                       </ul>
@@ -151,12 +151,12 @@ const More = () => {
                   <div className={styles.card_content}>
                     <GoButton />
                     <Link href='/contact'  className={styles.card_link}>
-                      <span className={styles.card_head}>Contact Us</span>
+                      <span className={styles.card_head}>Connect &amp; Contact</span>
                     </Link>
                     <div className={styles.card_content_text}>
-                      <h3 className={styles.card_subhead}>How to Contact&nbsp;Us<br/> Directly&nbsp;or&nbsp;on&nbsp;Social&nbsp;Media</h3>
+                      <h3 className={styles.card_subhead}>Join the Lar Par Community or <br />Contact Us Directly</h3>
                       <ul className={styles.card_list}>
-                        <li className={styles.card_list_item}>Contact Information</li>
+                        <li className={styles.card_list_item}>Join the Lar Par Community</li>
                       </ul>
                     </div>
                   </div>

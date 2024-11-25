@@ -170,9 +170,10 @@
   }
   @include ldesktop {
     align-items: flex-start;
+    justify-content: space-evenly;
     height: 138px;
     // !VA This is a problem
-    width: 80%;
+    width: 85%;
   }
   display: flex;
   justify-content: space-between;
@@ -252,14 +253,17 @@
   }
   @include ldesktop {
     margin: .688rem 2rem 0 0;
+    width: 100%;
+    justify-content: flex-end;
+
   }
   position: relative;
   display: flex;
-  width: 10px;
-  width: auto;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  width: 10px;
+  width: auto;
   // !VA 2024
   z-index: 100;
 }
@@ -281,10 +285,19 @@
     position: relative;
     flex-flow: row wrap;
     margin: .188rem .75rem 0 0; 
+    transition: none;
+    transform: none;
+    transform-origin: none;
+    background: transparent;
   }
   @include ldesktop {
+    position: relative;
     flex-flow: row wrap;
-    margin: .188rem .75rem 0 0; 
+    // margin: .188rem .75rem 0 0; 
+    transition: none;
+    transform: none;
+    transform-origin: none;
+    background: transparent;
   }
   position: fixed;
   display: flex;
@@ -325,6 +338,7 @@
     font-weight: 600;
   }
   @include ldesktop {
+    padding: .25rem 1rem 0;
     font-size: $ldesktopMenuFontSize;
     line-height: $ldesktopMenuLineHeight;
     font-weight: 600;
@@ -398,6 +412,19 @@
   @include tablet {
     display: none;
   }
+  @include desktop {
+    display: none;
+  }
+  @include ldesktop {
+    display: none;
+  }
+}
+
+// !VA Did nothing
+.menu_span {
+  @include ldesktop {
+    display: none;
+  }
 }
 
 
@@ -460,10 +487,6 @@
   right: distance from right of screen
   */
   .nav_menu {
-    // @include mphone {
-    //   top: .75rem; 
-    //   right: .75rem;
-    // }
     @include lphone {
       top: 20px; 
       right: 10px;
