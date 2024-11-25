@@ -71,20 +71,13 @@ const MainNav = () => {
   
   return (
     <>
-
-
-
-
-
       {/* !VA This is the parent container for the ul containing the individual menu items */}
       <div className={styles.nav_menu}>
-
-
 
         {/* Mobile Menu Background Semicircle: https://codepen.io/xram/pen/DjbWbb  */}
         <div className={[styles.mobile_menu_bg, styles.mobile_menu_bg_top, styles.mobile_menu_bg_bottom].join(' ')}>
           &nbsp;
-        </div>;
+        </div>
 
         
         {/* When the input is clicked, fire onChangeEvent and toggle the input's checked status  */}
@@ -174,15 +167,7 @@ const MainNav = () => {
           </li>
         </ul>
 
-
-
-
-
       </div>
-
-
-
-
     </>
   )
 }

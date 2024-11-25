@@ -31,8 +31,9 @@ const More = () => {
       <section className={styles.section}>
         {/* head comes before section_content due to border-radius */}
         <div className={styles.head}>
-            <h1 className={styles.head_title}>What Do You Want To Know <span className={styles.head_title_subtext}>About Laryngeal Paralysis and GOLPP<span className='mobile-hide-inline'> In Dogs</span>?</span></h1>
-          </div>
+          {/* <h1 className={styles.head_title}>What Do You Want To Know About<span className={styles.head_title_subtext}>Laryngeal Paralysis/GOLPP in Dogs?<span className='mobile-hide-inline'> In Dogs</span>?</span></h1> */}
+          <h1 className={styles.head_title}>What Do You Want To Know About Laryngeal Paralysis/GOLPP in Dogs?</h1>
+        </div>
         <div className={styles.section_content}>
           {/* Two column content - flex on mobile and grid on desktop */}
             {/* topic section */}
