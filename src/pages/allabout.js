@@ -7,6 +7,7 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 // !VA Icons
 // !VA Components
+import BottomNav from '../components/BottomNav'
 import Layout from '@/components/Layout'
 // import ShowMoreContent from '@/components/ShowMoreContent'
 import ShowMoreContent from '../components/ShowMoreContent'
@@ -171,6 +172,7 @@ const More = () => {
 
         {/* section_content */}
         </div>
+
       </section>
     </>
   )
