@@ -698,3 +698,178 @@
   text-shadow: -2px -2px 2px rgba(90,90,90,0.2);
 }
 
+
+// !VA 2024 BOTTOM NAV
+// -------------------
+
+// !VA Bottom Nav Styles
+.bottom_nav {
+  @include mphone {
+    border-bottom: solid .313rem #DAA520;
+  }
+  @include lphone {
+    border-bottom: solid .5rem #DAA520;
+  }
+  @include tablet {
+    width: 100%;
+    // !VA Include the border height in element height
+    height: 3rem; 
+    border-bottom: solid .5rem #DAA520;
+  }
+  @include desktop {
+    width: 100%;
+    height: 3rem; 
+    border-bottom: solid .75rem #DAA520;
+  }
+  @include ldesktop {
+    width: 1400px;
+    width: 100%;
+    height: 3rem; 
+    border-bottom: solid .75rem #DAA520;
+  }
+  // position: relative;
+  // position: sticky;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // margin: 1rem 0 0;
+  border-bottom: solid .25rem #DAA520;
+}
+
+.bottom_nav_items {
+  @include ldesktop {
+    width: 1000px;
+  }
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bottom_nav_content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: .5rem;
+  pointer-events: none;
+}
+
+.bottom_nav_text {
+  color: black;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.bottom_nav_icon {
+    @include tablet {
+      font-size: 1rem;
+    }
+    @include desktop {
+      font-size: 1rem;
+    }
+    @include ldesktop {
+      font-size: 1rem;
+    }
+    color: black;
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+.bottom_nav_icon-svg {
+  // color: white !important;
+}
+
+.go_back, .go_to_top, .go_to_menu {
+  cursor: pointer;
+}
+
+.half_circle {
+  @include mphone {
+    height: 2.5rem;
+    width: 6rem;
+  }
+  @include lphone {
+    height: 2.5rem;
+    width: 6rem;
+  }
+  @include tablet {
+    height: 3rem;
+    width: 8.75rem;
+  }
+  @include desktop {
+    height: 3rem;
+    width: 8.75rem;
+  }
+  @include ldesktop {
+    height: 3rem;
+    width: 8.75rem;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 6rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.half_circle:before {
+  @include mphone {
+    height: 6rem;
+    width: 6rem;
+  }
+  @include lphone {
+    height: 6rem;
+    width: 6rem;
+  }
+  @include tablet {
+    height: 8.75rem;
+    width: 8.75rem;
+  }
+  @include desktop {
+    height: 8.75rem;
+    width: 8.75rem;
+  }
+  @include ldesktop {
+    height: 8.75rem;
+    width: 8.75rem;
+  }
+content: '';
+position: absolute;
+height: 5rem;
+width: 5rem;
+border-radius: 50%;
+top: 0;
+// background: rgba(218, 165, 32, .5);
+background: $primary_color;
+background: #DAA520;
+}
+
+.sticky_nav {
+  @include ldesktop {
+    bottom: -12px;
+  
+  }
+  position: fixed;
+  // !VA 2024
+  bottom: -5px;
+  // bottom: 0;
+  left: 0;
+  animation: bottomNavBump .25s;
+  z-index: 300;
+}
+
+@keyframes bottomNavBump {
+  0% {  transform: translateY(10rem);}
+  // 50% { transform: translateX(-1356px); }
+  // 80% { transform: translateY(10rem); }
+  100% { transform: translateY(0); }
+}
+

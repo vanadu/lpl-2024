@@ -3,6 +3,9 @@ import React from 'react'
 // import {useRouter}from 'next/router'
 import { useState, useEffect } from 'react'
 
+// !VA 2024
+import * as styles from '../styles/Header.module.scss'
+
 // !VA React Icons
 import { MdVerticalAlignTop } from 'react-icons/md'
 
@@ -18,14 +21,16 @@ const BottomNavTop = () => {
     <>
      <div
         id="go-to-top"
-        className="go-to-top half-circle"
+        className={[styles.go_to_top, styles.half_circle].join(' ')}
         onClick={scrollTop}
         >
-        <div className="bottom-nav-content">
-          <div className="bottom-nav-icon">
-            <MdVerticalAlignTop className='bottom-nav-icon-svg'/>
+        <div className={styles.bottom_nav_content}>
+          <div className={styles.bottom_nav_icon}>
+            <MdVerticalAlignTop className={styles.bottom_nav_icon_svg}/>
           </div>
-          <div className="mobile-hide bottom-nav-text">
+          {/* <div className="mobile-hide bottom-nav-text"> */}
+          {/* <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}> */}
+          <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}>
             Top
           </div>
         </div>

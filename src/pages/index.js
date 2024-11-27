@@ -248,7 +248,6 @@ const Home = ( {posts}) => {
           </div>
           </div>
       </section>
-      <BottomNav />
     </>
   )
 }
