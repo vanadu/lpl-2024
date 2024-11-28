@@ -2,7 +2,22 @@
 @import './mixins/mediaqueries.scss';
 
 .footer {
-  padding: .75rem 0 5rem;
+  @include mphone {
+    padding: .75rem 0 5rem;
+  }
+  @include lphone {
+    padding: .75rem 0 5rem;  
+  }
+  @include tablet {
+    padding: .75rem 0 5rem;
+  }
+  @include desktop {
+    padding: .75rem 0 5rem;
+  }
+  @include ldesktop {
+    padding: .75rem 0 5rem;
+  }
+  padding: .25rem 0 2rem;
   background: $home_bg_color;
   // background: $primary_color;
 }
@@ -88,23 +103,35 @@
 
 .logo {
   @include tablet {
-    width: 70px;
+    width: 90px;
   }
   @include desktop {
-    width: 70px;
-  }
-  @include desktop {
-    width: 70px;
+    width: 94px;
   }
   @include ldesktop {
-    width: 70px;
+    width: 98px;
   }
-  width: 90px;
+  width: 80px;
   height: auto;
 }
 
 .logo_img {
-  margin: .75rem 0 .25rem;
+  @include mphone {
+    margin: .25rem 0 0;
+  }
+  @include lphone {
+    margin: .25rem 0 0;
+  }
+  @include tablet {
+    margin: .75rem 0 .25rem;
+  }
+  @include desktop {
+    margin: .75rem 0 .25rem;
+  }
+  @include ldesktop {
+    margin: .75rem 0 .25rem;
+  }
+  margin: .25rem 0 0;
 }
 
 .copyright {
@@ -112,21 +139,29 @@
 }
 
 .copyright_text {
+  @include mphone {
+    font-size: $mphoneFootnoteFontSize;
+    line-height: $mphoneFootnoteLineHeight;
+  }
+  @include lphone {
+    font-size: $lphoneFootnoteFontSize;
+    line-height: $lphoneFootnoteLineHeight;
+  }
   @include tablet {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: $tabletFootnoteFontSize;
+    line-height: $tabletFootnoteLineHeight;
   }
   @include desktop {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: $desktopFootnoteFontSize;
+    line-height: $desktopFootnoteLineHeight;
   }
   @include ldesktop {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: $ldesktopFootnoteFontSize;
+    line-height: $ldesktopFootnoteLineHeight;
   }
   color: $light_text_color;
-  font-size: .963rem;
-  line-height: 1.313rem;
+  font-size: $rootFootnoteFontSize;
+  line-height: $rootFootnoteLineHeight;
   text-align: center;
 }
 
@@ -137,7 +172,7 @@
   @include lphone {
     margin: .5rem 0;
   }
-  @include lphone {
+  @include desktop {
     margin: .5rem 0;
   }
   display: flex;
@@ -147,18 +182,18 @@
 
 .icon {
     @include mphone {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
     @include lphone {
-      font-size: 2.25rem;
+      font-size: 1.813rem;
       // padding: 1.75rem 1rem 0;
     }
     @include tablet {
-      font-size: 2rem;
+      font-size: 1.875rem;
       padding: .5rem 1rem 0;
     }
     @include desktop {
-      font-size: 2rem;
+      font-size: 1.938rem;
       padding: .5rem 1.5rem 0;
     }
     @include ldesktop {
@@ -175,20 +210,28 @@
 }
 
 .disclaimer_text {
+  @include mphone {
+    font-size: $mphoneFootnoteFontSize;
+    line-height: $mphoneFootnoteLineHeight;
+  }
+  @include lphone {
+    font-size: $lphoneFootnoteFontSize;
+    line-height: $lphoneFootnoteLineHeight;
+  }
   @include tablet {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: $tabletFootnoteFontSize;
+    line-height: $tabletFootnoteLineHeight;
   }
   @include desktop {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: $desktopFootnoteFontSize;
+    line-height: $desktopFootnoteLineHeight;
   }
   @include ldesktop {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: $ldesktopFootnoteFontSize;
+    line-height: $ldesktopFootnoteLineHeight;
   }
   color: $light_text_color;
-  font-size: .963rem;
-  line-height: 1.313rem;
+  font-size: $rootFootnoteFontSize;
+  line-height: $rootFootnoteLineHeight;
   text-align: left;
 }

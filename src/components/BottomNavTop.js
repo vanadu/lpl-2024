@@ -32,9 +32,9 @@ const BottomNavTop = () => {
         </div>
         {/* <div className="mobile-hide bottom-nav-text"> */}
         {/* <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}> */}
-        <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}>
+        {/* <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}>
           Top
-        </div>
+        </div> */}
       </div>
     </>
   )

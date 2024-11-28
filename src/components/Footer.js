@@ -3,8 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import NavBar from './NavBar'
 // !VA Images
-import Logo from '../../public/img-lpl-logo.png'
-// import LogoNoPaw from '../../public/img-lpl-logo-no-paw.png'
+// import Logo from '../../public/img-lpl-logo.png'
+import Logo from '../../public/img-lpl-logo-white-text.png'
 // !VA React Icons
 import { FaFacebookSquare } from 'react-icons/fa'
 import { FaTwitterSquare } from 'react-icons/fa'
@@ -70,7 +70,7 @@ const Footer = () => {
 
             <div className={styles.copyright}>
               <p className={styles.copyright_text}>
-              Copyright &copy; 2023 LarParLife.com
+              Copyright &copy; 2024 LarParLife.com
               All&nbsp;rights&nbsp;reserved.<br />
               LarPar? Life!, LarParLife and the LarParLife logo are trademarks of LarParLife.com
               </p>

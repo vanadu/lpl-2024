@@ -722,6 +722,9 @@
   @include tablet {
     align-items: center;
   }
+  @include desktop {
+    align-items: center;
+  }
   @include ldesktop {
     align-items: center;
   }
@@ -822,10 +825,8 @@
   pointer-events: none;
 }
 
+// !VA Getting rid of the text...not necessary
 .bottom_nav_text {
-  color: black;
-  line-height: 100%;
-  text-transform: uppercase;
   display: none;
 }
 
@@ -838,7 +839,7 @@
     margin-bottom: -.25rem;
   }
   @include desktop {
-    font-size: 1rem;
+    font-size: 2.5rem;
     margin-bottom: -.5rem;
   }
   @include ldesktop {
@@ -864,12 +865,6 @@
 
 
 .sticky_nav {
-  @include tablet {
-
-  }
-  @include ldesktop {
-
-  }
   position: fixed;
   bottom: 0;
   animation: bottomNavBump .25s;
