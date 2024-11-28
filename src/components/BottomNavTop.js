@@ -21,18 +21,19 @@ const BottomNavTop = () => {
     <>
      <div
         id="go-to-top"
-        className={[styles.go_to_top, styles.half_circle].join(' ')}
+        // className={[styles.go_to_top, styles.half_circle].join(' ')}
+        className={[styles.bottom_nav_bg, styles.bottom_nav_bg_top, styles.bottom_nav_bg_bottom ].join(' ')}
         onClick={scrollTop}
-        >
-        <div className={styles.bottom_nav_content}>
-          <div className={styles.bottom_nav_icon}>
-            <MdVerticalAlignTop className={styles.bottom_nav_icon_svg}/>
-          </div>
-          {/* <div className="mobile-hide bottom-nav-text"> */}
-          {/* <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}> */}
-          <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}>
-            Top
-          </div>
+      >
+      </div>
+      <div className={styles.bottom_nav_content}>
+        <div className={styles.bottom_nav_icon}>
+          <MdVerticalAlignTop className={styles.bottom_nav_icon_svg}/>
+        </div>
+        {/* <div className="mobile-hide bottom-nav-text"> */}
+        {/* <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}> */}
+        <div className={["mobile-hide", styles.bottom_nav_text].join(' ')}>
+          Top
         </div>
       </div>
     </>

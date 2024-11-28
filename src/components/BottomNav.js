@@ -17,12 +17,10 @@ const BottomNav = () => {
   const stickyNavbar = () => {
     if (window !== undefined) {
       // windowScroll = window.scrollY;
+      // !VA Ge the scroll position and save it in state
       setwindowScroll(window.scrollY);
-      console.log("windowScroll :>> ");
-      console.log(windowScroll);
-      // window height changed for the demo
+      // !VA If the window scrolls more than 150 units apply the sticky_nav style from the styles object, which has the unique identifiers used by the style module. You could change this for different devices by using window.innerHeight and conditionals, but I don't see the need.
       windowScroll > 150 ? setStickyClass(styles.sticky_nav) : setStickyClass("");
-      console.log('stickyClass', stickyClass)
     }
   };
   
@@ -34,8 +32,10 @@ const BottomNav = () => {
     // }), [];
   });
 
+  
   return (
     <>
+      {/* !VA stickyClass is the piece of state defined in the stickyNavbar function */}
       <div
         className={[styles.bottom_nav, `${stickyClass}`].join(" ")}
       >
