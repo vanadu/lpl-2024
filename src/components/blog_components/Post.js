@@ -69,6 +69,7 @@ const Post = ({ serializedContent }) => {
       h3: props => <h1 {...props} className={styles.post_h3} />,
       h4: props => <h1 {...props} className={styles.post_h4} />,
       h5: props => <h5 {...props} className={styles.post_date} />,
+      p: props => <p {...props} className={styles.post_text} />,
       
     }}>
 

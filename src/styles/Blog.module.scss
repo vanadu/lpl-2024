@@ -585,6 +585,40 @@
     background: rgba(0, 0, 255, .3) !important; //devblue
 }
 
+.post_text {
+  @include mphone {
+    margin: .375rem 0 0;
+    font-size: $mphonePostLinkFontSize;
+    line-height: $mphonePostLinkLineHeight;
+  }
+  @include lphone {
+    margin: .375rem 0 .25rem;
+    font-size: $lphonePostLinkFontSize;
+    line-height: $lphonePostLinkLineHeight;
+  }
+  @include tablet {
+    margin: .375rem 0 .25rem;
+    font-size: $tabletPostLinkFontSize;
+    line-height: $tabletPostLinkLineHeight;
+  }
+  @include desktop {
+    margin: .375rem 0 .25rem;
+    font-size: $desktopPostLinkFontSize;
+    line-height: $desktopPostLinkLineHeight;
+  }
+  @include ldesktop {
+    margin: .375rem 0 .25rem;
+    font-size: $ldesktopPostLinkFontSize;
+    line-height: $ldesktopPostLinkLineHeight;
+  }
+  margin: .375rem 0 0;
+  font-family: $primary_font;
+  font-size: $rootPostLinkFontSize;
+  line-height: $rootPostLinkLineHeight;
+}
+
+
+
 // !VA 2024 Hero image and Blog.module.scss import in HeroImage.js and Youtube.js
 .post_hero, .youtube_embed {
   @include mphone {
