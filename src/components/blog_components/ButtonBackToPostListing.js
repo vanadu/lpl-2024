@@ -8,9 +8,12 @@ import * as styles from '../../styles/Blog.module.scss'
 const ButtonBackToPostListing = () => {
   return (
     <>
-      <div className={styles.blog_nav_button}>
+      <div className={styles.blog_post_nav_link}>
         <FaArrowCircleLeft className={styles.go_button_svg}/>
-        <Link href='/blog' >&nbsp;Back To Post Listing</Link> 
+        <Link 
+          href='/blog'
+          className={styles.blog_post_nav_link_text}
+          >&nbsp;Back To Post Listing</Link> 
       </div>
     </>
   )

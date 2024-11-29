@@ -3,6 +3,22 @@
 
 // !VA NOTE: ALL STYLES FOR THE MDX BODY CONTENT ARE IN GLOBALS.SCSS BECAUSE CSS MODULES AREN'T SUPPORTED INSIDE MDX FILES, OR AT LEAST I COULDN'T GET IT TO WORK
 
+
+
+// !VA 2024 heading_subhead removed, no longer used
+// !VA 2024 blog_heading_subhead removed, no longer used
+// !VA 2024 header_subtitle removed, no longer used
+// !VA 2024 .subhead removed, no longer used
+// !VA 2024 .subhead_text removed, no longer used
+// !VA 2024 subhead_toggle removed, no longer used
+// !VA 2024 post_listing_topic removed, no longer used
+// !VA 2024 post_listing_figure removed, no longer used
+// !VA 2024 header_legend removed, no longer used
+// !VA 2024 header_figure removed, no longer used
+// !VA 2024 header_text removed, no longer used
+// !VA 2024 header_title removed, no longer used
+// !VA 2024 container_flex_center removed, not used
+
 // !VA Utility classes
 // !VA ---------------
 
@@ -11,16 +27,7 @@
   display: inline-block;
 }
 
-// !VA This is a generic flex container - new
-// !VA 2024.04.04 This appears in Light, Dark and Blog modules...maybe should be consolidated into globals.scss
-.container_flex_center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-// !VA 2024.04.04 This appears in Light, Dark and Blog modules...maybe should be consolidated into globals.scss
+// !VA 2024 Not used, but keep it just in case
 .rule_underline {
   width: auto;
   height: 1px;
@@ -38,11 +45,11 @@
   }
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding-top: .5rem;
+  justify-content: flex-start;
+  padding-top: 0;
 }
 
-.blog_nav_button {
+.blog_post_nav_link {
   @include lphone {
     width: 220px;
     height: 2rem;
@@ -69,14 +76,19 @@
     padding: .375rem 0 0;
     font-size: 1.125rem;
   }
-  width: 200px;
+  // width: 200px;
   display: flex;
   justify-content: center;
   padding: .125rem 0 0;
-  background-color: $primary_accent_color;
   font-size: 1rem;
-  color: $primary_link_color;
-  border-radius: 1rem;
+  color: $secondary_link_color;
+  // border-radius: 1rem;
+  // background-color: $primary_accent_color;
+}
+
+// !VA 2024 This is unneeded
+.blog_post_nav_link_text {
+  // !VA 2024
 }
 
 .go_button_label {
@@ -90,7 +102,7 @@
 }
 
 .go_button_svg {
-  color: $primary_color;
+  color: $secondary_link_color;
   height: 1.5rem;
 }
 
@@ -103,46 +115,17 @@
   justify-content: flex-start;
   width: 100%;
   padding-bottom: .5rem;
-  // !VA For Home, background is primary color. For other pages, it's currently $content_bg_color
   background: $content_bg_color;
-  // background: $primary_color;
 }
 
-// !VA In Home, section_content lives on the $primary_color background set in .section. None of the other pages have this two-toned scheme, at least for now. 
+
+// !VA This element is the content root of all the blog components
 .section_content {
-  @include mphone {
-    width: 355px;
-    padding-bottom: .5rem;
-  }
-  @include lphone {
-    width: 394px;
-    padding-bottom: .5rem;
-  }
-  @include tablet {
-    width: 758px;
-    margin-top: .75rem;
-    padding-bottom: 1rem;
-  }
-  @include desktop {
-    width: 960px;
-    margin-top: .75rem;
-  }
-  @include ldesktop {
-    width: 1200px;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  width: 310px;
-  margin-top: .25rem;
-  padding:  0 0 .5rem;
-  // border-top-left-radius: 12px;
-  // border-top-right-radius: 12px;
-  // background: $content_bg_color;
-  // background: $primary_color;
+  width: 100%;
 }
 
-// !VA Merging content and two_column_content here for the Blog module - those two containers are redundant. I'm not sure what two_column_content even does anymore.
-.content, .post_content {
+// !VA This container is in the Post.js component
+.post_content {
   @include mphone {
     padding: 0 .75rem 2rem;
   }
@@ -168,406 +151,109 @@
 }
 
 // !VA Blog Index Page
-// !VA 2024.04.04 Appears in Blog, Dark, Header and Light modules but not globals.scss
+// !VA Refers to the BLOG header, not the site header
 .header {
   @include mphone {
-    padding: .5rem .5rem 0;
+    margin: 0 auto .75rem;
   }
   @include lphone {
-    padding: .5rem .5rem 0;
+    margin: 0 auto .875rem;
   }
   @include tablet {
-    width: 42rem;
-    padding: .5rem 1rem 0;
+    margin: 0 auto 1rem;
   }
   @include desktop {
-    width: 44rem;
-    padding: .5rem 1rem 0;
+    margin: 0 auto 1rem;
   }
   @include ldesktop {
-    // !VA 2024.04.10
-    width: 48rem;
-    padding: .75rem 2rem .25rem;
+    margin: 0 auto 1rem;
   }
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: .5rem .5rem 0;
-  margin: .25rem auto;
-  background: $content_bg_color;
-  color: $dark_text_color;
-  // border-radius: .5rem;
-  // box-shadow: 0 0 1em #27272733;
-  // background: rgba(255, 0, 0, .3) !important; //devred
+  // !VA 2024
+  margin: 0 auto .5rem;
+  background: $home_bg_color;
 }
 
-// !VA 2024.04.04 Appears in Blog and Header modules
-// !VA 2024.04.10 Set the width of the header content relative to the header width in the header padding.
 .header_content {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-// !VA 2024.04.04 Appears in Blog and Header modules, but only applied in blog content
-.header_figure {
-  @include mphone {
-    display: block;
-    margin: .25rem .5rem .25rem .5rem;
-    width: 6rem;
-  }
-  @include lphone {
-    display: block;
-    margin: 0rem .5rem .25rem .25rem;
-    width: 9rem;
-  }
-  @include tablet {
-    display: block;
-    margin: 0rem 1.5rem .25rem .75rem;
-    width: 8.5rem;
-  }
-  @include desktop {
-    display: block;
-    margin: 0rem 1.5rem .25rem .75rem;
-    width: 9rem;
-  }
-  @include ldesktop {
-    display: block;
-    margin: 0rem 1.5rem .25rem .75rem;
-    width: 9.5rem;
-  }
-  display: none;
-  margin: 0rem .25rem .25rem .5rem;
-  width: 5rem;
-}
 
-// !VA 2024.04.04 Appears in Blog and Dark// !VA 2024.04.04 Appears in Blog and Header modules but only applied in blog content
-.header_figure_image {
-  @include mphone {
-    // Fill this 
-  }
-  @include lphone {
-    border: 3px solid white;
-  }
-  @include tablet {
-    width: 100%;
-    border: 4px solid #FFF;
-  }
-  @include desktop {
-    width: 100%;
-    border: 4px solid #FFF;
-  }
-  @include ldesktop {
-    width: 100%;
-    border: 6px solid #FFF;
-  }
-  width: 100%;
-  height: auto;
-  border: 2px solid white;
-}
-
-// !VA 2024.04.04 Appears in Blog, Header, Light modules - only applied in blog content
-.header_text {
-  @include tablet {
-    // padding-top: .5rem;
-  }
-  @include desktop {
-    padding-top: .5rem;
-  }
-  
-  @include ldesktop {
-    padding-top: .5rem;
-  }
-  // !VA
-  width: 100%;
-  margin-bottom: .5rem;
-}
-
-// !VA 2024.04.04 Appears in Blog and Dark modules  - only applied in blog content
-.header_legend {
-  @include mphone {
-    font-size: 0.938rem;
-    line-height: 1.25rem;
-  }
-  @include lphone {
-    font-size: 1.063rem;
-    line-height: 1.25rem;
-  }
-  @include tablet {
-    display: block;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-  @include desktop {
-    display: block;
-    font-size: 1.188rem;
-    line-height: 1.5rem;
-  }
-  @include ldesktop {
-    display: block;
-    font-size: 1.25rem;
-    line-height: 1.688rem;
-  } 
-  display: none;
-  font-family: $primary_font;
-  font-size: 0.875rem;
-  font-weight: 400;
-}
-
-// !VA 2024.04.04 Appears in Blog, Dark and Light modules - only applied in blog content
-.header_title {
-  @include mphone {
-    font-size: 1.313rem;
-    line-height: 1.75rem;
-  }
-  @include lphone {
-    font-size: 1.413rem;
-    line-height: 2rem;
-  }
-  @include tablet {
-    font-size: 1.75rem;
-    line-height: 1.875rem;
-  }
-  @include desktop {
-    font-size: 2rem;
-    line-height: 2.313rem;
-  }
-  @include ldesktop {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-  }
-  font-family: $secondary_font;
-  font-size: 1.25rem;
-  line-height: 1.688rem;
-  padding: 0;
-  margin: 0;
-  display: block;
-}
 
 // !VA 2024.04.10 This is the same as in the Light module.
 .heading_head {
   @include mphone {
-    padding: 0;
-    font-size: $mphoneHeadFontSize;
-    line-height: $mphoneHeadLineHeight;
+    padding: .25rem 0;
+    font-size: $mphonePostLinkFontSize;
+    line-height: $mphonePostLinkLineHeight;
   }
   @include lphone {
-    padding: 0;
-    font-size: $lphoneHeadFontSize;
-    line-height: $lphoneSubheadLineHeight;
+    padding: .25rem 0;
+    font-size: $lphonePostLinkFontSize;
+    line-height: $lphonePostLinkLineHeight;
   }
   @include tablet {
-    padding: .5rem 0 0;
-    font-size: $tabletHeadFontSize;
-    line-height: $tabletHeadLineHeight;
+    padding: .5rem 0 .375rem;
+    font-size: $tabletPostLinkFontSize;
+    line-height: $tabletPostLinkLineHeight;
   }
   @include desktop {
-    padding: .5rem 0 0;
-    font-size: $desktopHeadFontSize;
-    line-height: $desktopHeadLineHeight;
+    padding: .5rem 0 .375rem;
+    font-size: $desktopPostLinkFontSize;
+    line-height: $desktopPostLinkLineHeight;
   }
   @include ldesktop {
-    padding: .5rem 0 0;
-    font-size: $ldesktopHeadFontSize;
-    line-height: $ldesktopHeadLineHeight;
+    padding: .5rem 0 .375rem;
+    font-size: $ldesktopPostLinkFontSize;
+    line-height: $ldesktopPostLinkLineHeight;
   }
   display: block;
   width: 100%;
-  padding: 0;
+  padding: .25rem 0;
   // !VA 2024.04.10
   // !VA Add left padding to compensate for figure not displaying on smallest phone
-  padding: 0 0 0 1rem;
-  font-family: $secondary_font;
-  font-size: $rootHeadFontSize;
-  line-height: $rootHeadLineHeight;
-  font-weight: 600;
+  // margin: 0 0 0 1rem;
+  color: $light_text_color;
+  font-family: $inter_font;
+  font-size: $rootPostLinkFontSize;
+  line-height: $rootPostLinkLineHeight;
+  font-weight: 400;
+  // letter-spacing: .05rem;
   text-align: center;
-  color: $dark_text_color;
-}
-
-// !VA 2024.04.10 Override the center text alignment for the Blog title
-.blog_heading_head {
-  text-align: left !important;
-}
-
-// !VA 2024.04.10 This is the same as in Light
-.heading_subhead {
-  // !VA mphone same as root
-  @include mphone {
-    padding: .25rem 0 .25rem;
-    font-size: $mphoneSubheadFontSize;
-    line-height: $mphoneSubheadLineHeight;
-  }
-  @include lphone {
-    padding: .25rem 0 .25rem;
-    font-size: $lphoneSubheadFontSize;
-    line-height: $lphoneSubheadLineHeight;
-  }
-  @include tablet {
-    padding: .5rem 0 0;
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight;
-  }
-  @include desktop {
-    padding: .5rem 0 .5rem;
-    font-size: $desktopSubheadFontSize;
-    line-height: $desktopSubheadLineHeight;
-  }
-  @include ldesktop {
-    padding: .5rem 0 .5rem;
-    font-size: $ldesktopSubheadFontSize;
-    line-height: $ldesktopSubheadLineHeight;
-  }
-  display: block;
-  width: 100%;
-  padding: .5rem 0 .25rem;
-  font-family: $primary_font;
-  font-size: $rootSubheadFontSize;
-  line-height: $rootSubheadLineHeight;
-  font-weight: 700;
-  text-align: center;
-  // !VA 04.02
-  color: $dark_text_color;
-}
-
-.blog_heading_subhead {
-  text-align: left !important;
-}
-
-
-// !VA 2024.04.04 Appears in Blog and Dark modules - only applied in blog content
-.header_subtitle {
-  @include mphone {
-    padding: .25rem;
-    font-size: 1.125rem;
-    line-height: 1.313rem;
-  }
-  @include lphone {
-    padding: .25rem;
-    font-size: 1.188rem;
-    line-height: 1.613rem;
-  }
-  @include tablet {
-    padding-top: .25rem;
-    font-size: 1.375rem;
-    line-height: 1.75rem;
-  }
-  @include desktop {
-    padding-top: .25rem;
-    font-size: 1.375rem;
-    line-height: 1.875rem;
-  }
-  @include ldesktop {
-    padding-top: .25rem;
-    font-size: 1.75rem;
-    line-height: 2.125rem;
-  }
-margin: 0;
-font-family: $primary_font;
-font-size: 1.063rem;
-line-height: 1.25rem;
-}
-
-// !VA 2024.04.04 Appears only in Blog modules, but the word is all over the place. Needs to be made more specific
-// !VA 2024 This is removed, wasted space
-.subhead {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-// !VA 2024.04.04 Appears only in Blog modules. Specificity
-.subhead_text {
-  @include mphone {
-    font-size: 1.313rem;
-    line-height: 1.75rem;
-  }
-  @include lphone {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  @include tablet {
-    font-size: 1.625rem;
-    line-height: 2rem;
-  }
-  @include desktop {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-  @include ldesktop {
-    margin: .25rem 0;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-font-family: $secondary_font;
-font-family: $primary_font;
-font-weight: 700;
-font-size: 1rem;
-line-height: 1.313rem;
-padding: 0;
-// margin: .25rem 0 0;
 }
 
 // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
-.subhead_toggle {
-  @include mphone {
-    font-size: 1.313rem;
-    line-height: 1.75rem;
-  }
-  @include lphone {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  @include tablet {
-    font-size: 1.625rem;
-    line-height: 2rem;
-  }
-  @include desktop {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-  @include ldesktop {
-    margin: .25rem 0;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-font-family: $secondary_font;
-font-family: $primary_font;
-font-weight: 400;
-font-size: 1rem;
-line-height: 1.313rem;
-padding: 0;
-}
-
-// !VA 2024.04.04 Appears only in Blog module - only applied in blog content
+// !VA Used in PostListing.js
 .post_listing {
   @include mphone {
-    padding: 0 .75rem .25rem;
+    padding: 0 0 .25rem;
   }
   @include lphone {
-    padding: 0 .75rem .5rem;
+    padding: 0 0 .5rem;
   }
   @include tablet {
     padding: 0 1.5rem;
   }
   @include desktop {
-    padding: 0 1rem;
-    margin: .75rem auto;
+    padding: 0 1.5rem 1rem;
   }
   @include ldesktop {
-    padding: 0 4rem .75rem;
-    margin: .75rem auto;
+    padding: 0 2rem 1rem;
   }
   display: block;
   width: 100%;
-  margin: .5rem auto;
+  margin: 0 auto;
   background: $content_bg_color;
   color: $dark_text_color;
-  border-radius: .5rem;
-  box-shadow: 0 0 1em #27272733;
+  // !VA 2024
+  // border-radius: .5rem;
+  // box-shadow: 0 0 1em #27272733;
 }
 
-// !VA 2024.04.04 Appears only in Blog module - only applied in blog content
 .post_listing_link {
   @include ldesktop {
     // padding: 1rem 0 0;
@@ -576,11 +262,14 @@ padding: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: .5rem .5rem .5rem 1rem;
+  // padding: .5rem .5rem .5rem 1rem;
+  // padding: 0 1rem 0 0;
+  margin: 0 0 1rem .25rem;
+      // !VA 2024
+  border-left: .575rem solid $primary_color;
 }
 
 
-// !VA 2024.04.04 Appears only in Blog module - only applied in blog content
 .post_listing_content {
     // !VA display block to float image right
     @include tablet {
@@ -588,20 +277,21 @@ padding: 0;
     }
     @include desktop {
       display: block;
-      padding-top: .5rem;
+      padding-left: .75rem;
     }
     @include ldesktop {
       display: block;
-      // padding-top: .5rem;
+      padding-left: .75rem;
     }
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: .5rem;
     align-items: center;
 }
 
 // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
-.post_listing_date, .post_listing_topic {
+.post_listing_date {
     @include mphone {
       font-size: 1.063rem;
       line-height: 1.313rem;
@@ -611,13 +301,12 @@ padding: 0;
       line-height: 1.438rem;    
     }
     @include tablet {
-      padding-top: .5rem;
+      // padding-top: .5rem;
       font-size: 1.063rem;
       line-height: 1.5rem;
       text-align: left;
     }
     @include desktop {
-      padding-top: .5rem;
       font-size: 1.188rem;
       line-height: 1.75rem;
       text-align: left;
@@ -628,109 +317,42 @@ padding: 0;
       line-height: 1.75rem;
       text-align: left;
     }
+    // !VA 2024
   font-size: 1rem;
   line-height: 1.313rem;
-  text-align: center;
-}
-
-// !VA 2024.04.04 Appears only in Blog module - only applied in blog content
-.post_listing_topic {
-    @include tablet {
-      display: block;
-    }
-    @include desktop {
-      display: block;
-    }
-    @include ldesktop {
-      display: block;
-    }
-  font-weight: 700;
-  display: none;
-  }
-
-  // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
-.post_listing_figure {
-  @include mphone {
-    margin: .5rem 1rem .5rem .5rem;
-    width: 260px;
-  }
-  @include lphone {
-    margin: .5rem 1.5rem .5rem 1rem;
-    width: 300px;
-    max-width: 360px;
-  }
-  @include tablet {
-    display: block;
-    margin: -1.75rem 0 0rem 1.5rem;
-    width: 240px;
-    float: right;
-    // !VA NOW
-    // margin: 0 auto 2rem;
-  }
-  @include desktop {
-    display: block;
-    margin: -1.75rem 0 0rem 1.5rem;
-    width: 300px;
-    float: right;
-  }
-  @include ldesktop {
-    display: block;
-    margin: -2rem 0 0 2rem;
-    width: 320px;
-    float: right;
-  }
-  display: none;
-  // display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: .5rem 1rem .5rem 0;
-  width: 240px;
-  // float: right;
-}
-
-.post_listing_figure_image {
   width: 100%;
-  height: auto;
+  text-align: center;
+  text-align: left;
 }
 
 // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
 .post_listing_title {
     @include mphone {
-      padding: .25rem 0;
-      font-family: $primary_font;
       font-size: 1.125rem;
       line-height: 1.438rem;
-      text-decoration: underline;
     }
     @include lphone {
-      padding: .25rem 0;
-      font-family: $primary_font;
       font-size: 1.188rem;
       line-height: 1.313rem;
-      text-decoration: underline;
     }
     @include tablet {
-      margin: .25rem 0 0;
       font-size: 1.313rem;
       line-height: 1.75rem;
     }
     @include desktop {
-      margin: 1rem 0;
       font-size: 1.5rem;
       line-height: 1.875rem;
     }
     @include ldesktop {
       width: 72%;
-      margin: .5rem 0;
-      // padding: .75rem 0;
       font-size: 1.688rem;
       line-height: 2.125rem;
     }
   font-family: $primary_font;
-  padding: .125rem .5rem 0 0;
-  font-size: 1.063rem;
-  line-height: 1.313rem;
+  // padding: .125rem .5rem 0 0;
+  // !VA 2024
+  font-size: $rootPostLinkFontSize;
+  line-height: $rootPostLinkLineHeight;
   text-decoration: underline;
 }
 
@@ -756,7 +378,335 @@ padding: 0;
       font-size: 1.438rem;
       line-height: 1.75rem;
     }
+  width: 100%;
   font-size: 1.063rem;
   line-height: 1.313rem;
+  text-align: left;
 }
+
+
+// !VA STYLES FOR MDX BODY 
+// !VA CSS modules are used for the elements corresponing to MDX markup and passed as props. See Post.js for JSX. Components used in the MDX files are in /blog_components; each component imports the Blog.module.scss into its own component. 
+
+
+// !VA 2024 Post styles from the MDX files. Watch this, there are duplicate styles here.
+.post {
+  @include tablet {
+    margin-top: 1rem;
+  }
+  margin: 0;
+}
+
+// !VA Applied to the H1, i.e. post title as props, see Post.js
+.post_head {
+  @include mphone {
+    margin: 0 0 .5rem;
+    font-size: $mphoneHeadFontSize;
+    line-height: $mphoneHeadLineHeight;
+    text-align: center;
+  }
+  @include lphone {
+    margin: 0 0 .5rem;
+    font-size: $lphoneHeadFontSize;
+    line-height: $lphoneHeadLineHeight;
+    text-align: center;
+  }
+  @include tablet {
+    font-size: $tabletHeadFontSize;
+    line-height: $tabletHeadLineHeight;
+    text-align: left;
+  }
+  @include desktop {
+    margin: 0 0 .5rem;
+    font-size: $desktopHeadFontSize;
+    line-height: $desktopHeadLineHeight;
+    text-align: left;
+  }
+  @include ldesktop {
+    margin: 0 0 .5rem;
+    font-size: $ldesktopHeadFontSize;
+    line-height: $ldesktopHeadLineHeight;
+    text-align: left;
+  }
+  margin: 0 0 .5rem;
+  padding: 0;
+  font-family: $secondary_font;
+  font-size: $rootHeadFontSize;
+  line-height: $rootHeadLineHeight;
+  font-weight: 500;
+  text-align: center;
+}
+
+.post_subhead {
+  @include mphone {
+    margin: 0 0 .5rem;
+    font-size: $mphoneSubheadFontSize;
+    line-height: $mphoneSubheadLineHeight;
+    text-align: center;
+  }
+  @include lphone {
+    margin: 0 0 .5rem;
+    font-size: $lphoneSubheadFontSize;
+    line-height: $lphoneSubheadLineHeight;
+    text-align: center;
+  }
+  @include tablet {
+    font-size: $tabletSubheadFontSize;
+    line-height: $tabletSubheadLineHeight;
+    text-align: left;
+  }
+  @include desktop {
+    margin: 0 0 .5rem;
+    font-size: $desktopSubheadFontSize;
+    line-height: $desktopSubheadLineHeight;
+    text-align: left;
+  }
+  @include ldesktop {
+    margin: 0 0 .5rem;
+    font-size: $ldesktopSubheadFontSize;
+    line-height: $ldesktopSubheadLineHeight;
+    text-align: left;
+  }
+  margin: 0 0 .5rem;
+  padding: 0;
+  font-family: $secondary_font;
+  font-size: $rootSubheadFontSize;
+  line-height: $rootSubheadLineHeight;
+  font-weight: 500;
+  text-align: center;
+}
+
+// !VA Used for long subheads, as an alternative to bullets. 
+.post_h3 {
+  @include mphone {
+    margin: .375rem 0 0;
+    font-family: $secondary_font;
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+  }
+  @include lphone {
+    margin: .375rem 0 .25rem;
+    font-family: $secondary_font;
+    font-size: 1.188rem;
+    line-height: 1.5rem;
+  }
+  @include tablet {
+    margin: .375rem 0 .25rem;
+    font-family: $secondary_font;
+    font-size: 1.313rem;
+    line-height: 1.75rem;
+  }
+  @include desktop {
+    margin: .375rem 0 .25rem;
+    font-family: $secondary_font;
+    font-size: 1.375rem;
+    line-height: 1.813rem;
+  }
+  @include ldesktop {
+    margin: .375rem 0 .25rem;
+    font-family: $secondary_font;
+    font-size: 1.438rem;
+    line-height: 1.875rem;
+  }
+  margin: .375rem 0 0;
+  font-family: $secondary_font;
+  font-size: 1.063rem;
+  line-height: 1.375rem;
+}
+
+.post_h4 {
+  @include lphone {
+    margin: 0 0 .5rem;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  @include tablet {
+    margin: 0 0 .5rem;
+    text-align: left;
+    font-size: 1.188rem;
+    line-height: 1.688rem;
+  }
+  @include desktop {
+    margin: .5rem 0 .5rem;
+    font-size: 1.313rem;
+    line-height: 1.75rem;
+    text-align: left;
+  }
+  @include ldesktop {
+    margin: .5rem 0;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: left;
+  }
+  margin: 0 0 .5rem;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+
+// !VA Applied to the H5 as props, see Post.js
+.post_date {
+    // !VA We need to override the default p here specifically for the date extracted from frontmatter
+    @include mphone {
+      margin: 0;
+      font-size: .875rem !important;  
+      line-height: 1.25rem;
+    }
+    @include lphone {
+      margin: .125rem 0 .25rem;
+      font-size: .938rem !important;  
+      line-height: 1.25rem;
+    }
+    @include tablet {
+      margin: .5rem 0;
+      font-size: 1.125rem !important;
+      text-align: left;
+    }
+    @include desktop {
+      margin: .5rem 0;
+      font-size: 1.188rem !important;
+      text-align: left;
+    }
+    @include ldesktop {
+      margin: .5rem 0;
+      font-size: 1.188rem !important;
+      text-align: left;
+    }
+    width: 100%;
+    margin: 0;
+    font-size: .875rem !important;
+    line-height: 1.25rem;
+    font-style: italic;
+    text-align: center;
+    background: rgba(0, 0, 255, .3) !important; //devblue
+}
+
+// !VA 2024 Hero image and Blog.module.scss import in HeroImage.js and Youtube.js
+.post_hero, .youtube_embed {
+  @include mphone {
+    margin: .5rem auto;
+    width: 325px;
+    height: 191px;
+  }
+  @include lphone {
+    margin: 0 auto .75rem;
+    width: 365px;
+    height: 215px;
+  }
+  @include tablet {
+    // float:right;
+    // clear: both;
+    width: 460px;
+    // margin: -6rem 1rem 0 1rem;
+    margin: 1rem auto;
+  }
+  @include desktop {
+    float:right;
+    clear: both;
+    width: 400px;
+    margin: 1rem 1rem 0 1rem;
+  }  
+  @include ldesktop {
+    float:right;
+    clear: both;
+    width: 500px;
+    margin: 1rem 1rem 0 3rem;
+  }
+  iframe {
+    @include mphone {
+      width: 325px;
+      height: 191px;
+    }
+    @include lphone {
+      width: 365px;
+      height: 215px;
+    }
+    @include tablet {
+      width: 460px;
+      height: 271px;
+    }
+    @include desktop {
+      width: 400px;
+      height: 235px;
+    }
+    @include ldesktop {
+      width: 500px;
+      height: 294px;
+    }
+    width: 280px;
+    height: auto;
+  }
+  display: block;
+  margin: 0 auto;
+  float: none;
+  clear: both;
+  width: 280px;
+  height: auto;
+}
+
+.post_hero_image {
+  width: 100%;
+  height: auto;
+}
+
+// !VA 2024 Content and Blog.module.scss import in Disclaimer.js
+.post_disclaimer {
+  @include lphone {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  @include tablet {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  @include desktop {
+    font-size: 1.188rem;
+    line-height: 1.575rem;
+  }
+  @include ldesktop {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  font-size: .875rem;
+  line-height: 1.125rem;
+}
+
+.post_disclaimer_hr {
+  margin: 1rem;
+  // color: #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+
+// !VA 2024 In Sharebar.js, Blog.module.scss imported there
+.post_sharebar {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  // height: 2.5rem;
+  padding: 0 1rem;
+}
+
+.post_sharebar_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.post_sharebar_item_icon {
+  margin: 0 auto;
+  height: 3rem;
+  width: 3rem;
+  color: $secondary_color;
+}
+
 

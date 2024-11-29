@@ -79,7 +79,7 @@ const Header = () => {
 
 
       <div className={styles.header_slug}>
-        <h2 className={styles.header_slug_text}>The 21st Century Guide to Lar<span className='mobile-hide-inline'>yngeal</span> Par<span className='mobile-hide-inline'>alysis in Dogs</span></h2>
+        <h2 className={styles.header_slug_text}>21st Century Guide to Lar<span className='mobile-hide-inline'>yngeal</span> Par<span className='mobile-hide-inline'>alysis in Dogs</span><span className="mobile-show-inline">/GOLPP</span></h2>
       </div>
 
 

@@ -613,28 +613,29 @@
 
 .logo {
   @include mphone {
-    width: 88px;
-    margin: .5rem 0 0 .638rem;
+    width: 78px;
+    margin: .5rem 0 0 1rem;
   }
   @include lphone {
-    width: 96px;
-    margin: .5rem 0 0 .725rem;
+    width: 84px;
+    margin: .75rem 0 0 1rem;
   }
   @include tablet {
     // !VA img width depends on nav menu width...
-    width: 100px;
-    margin: .575rem 0 0 .75rem;
+    width: 88px;
+    margin: .575rem 0 0 1rem;
   }
   @include desktop {
-    width: 110px;
-    margin: .75rem 0 0.75rem;
+    width: 96px;
+    margin: .75rem 0 0 1.5rem;
   }
   @include ldesktop {
-    width: 140px;
+    width: 110px;
     margin: .5rem 0 0 0;
   }
-  margin: .575rem 0 0 .575rem;
-  width: 76px;
+  margin: .5rem 0 0 .75rem;
+  width: 70px;
+  height: auto;
   position: relative; 
   // !VA 2024
   // !VA Makes logo opaque over the bricks container

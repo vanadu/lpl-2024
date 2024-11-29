@@ -32,9 +32,6 @@ import MeAndMissB from '../../../public/img-me-and-miss-b-2015.jpg'
 const Blog = ({ posts}) => {
   // !VA Log out the posts exported from the getStaticProps function below 
 
-  // const doStuff = () => {
-
-  // }
 
 
   return (
@@ -48,33 +45,29 @@ const Blog = ({ posts}) => {
         <div className={styles.section_content}>
           <div className={styles.header}>
             <div className={styles.header_content}>
-              <figure className={styles.header_figure}>
-                <Image src={MeAndMissB} className={styles.header_figure_image} alt="Lar Par News Profile Image" />
-                {/* <figcaption className={styles.header_figure_caption}>Bee & Me 2015</figcaption> */}
-              </figure>
-              <div className={styles.header_text}>         
-                <div className={styles.container_inline_block}>
-
-                  <h1 className={[styles.heading_head, styles.blog_heading_head].join(' ')}><span className={styles.blog_heading_head}>Laryngeal Paralysis/GOLPP <span className="mobile-show"><br/></span>News &amp; Notes</span></h1>
-
-
-
-                  {/* <hr className={styles.rule_underline} /> */}
-                </div>
+              {/* !VA 2024 removed <figure className={styles.header_figure}> */}
+              {/* !VA 2024 removed !VA 2024 The image of me and miss B doesn't belong here */}
+              {/* <Image src={MeAndMissB} className={styles.header_figure_image} alt="Lar Par News Profile Image" /> */}
+              {/* <figcaption className={styles.header_figure_caption}>Bee & Me 2015</figcaption> */}
+              {/* </figure> */}
+              {/* !VA 2024 removed <div className={styles.header_text}>          */}
+              <div className={styles.container_inline_block}>
+                <h1 className={[styles.heading_head, styles.blog_heading_head].join(' ')}><span className={styles.blog_heading_head}>Laryngeal Paralysis/GOLPP News<span className="mobile-hide-inline"> &amp; Notes</span></span></h1>
+                {/* <hr className={styles.rule_underline} /> */}
               </div>
+              {/* !VA 2024 removed </div> */}
             </div>
+          </div>
 
-            </div>
-
-            {/* <div className={styles.subhead}> */}
-              {/* <h2 className={styles.subhead_text}>Articles</h2> */}
-              {/* <p className={styles.subhead_toggle} onClick={doStuff}>Show Images</p> */}
-            {/* </div> */}
-            <div className={styles.post_listings}>
-              {posts.map((post, index) => (
-                <PostListing post={post} key={index} />
-              ))}
-            </div>
+          {/* !VA 2024 removed <div className={styles.subhead}> */}
+          {/* !VA 2024 removed <h2 className={styles.subhead_text}>Articles</h2> */}
+          {/* !VA 2024 removed <p className={styles.subhead_toggle} onClick={doStuff}>Show Images</p> */}
+          {/* </div> */}
+          <div className={styles.post_listings}>
+            {posts.map((post, index) => (
+              <PostListing post={post} key={index} />
+            ))}
+          </div>
         </div>
       </section>
     </>

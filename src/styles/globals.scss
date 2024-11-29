@@ -336,12 +336,8 @@ display: none;
   padding: 0 .75rem .5rem;
 }
 
-// !VA STYLES FOR MDX BODY 
-// !VA I wasn't able to implement css style modules for MDX
 
-// !VA Non-default styles for HTML elements
-
-// !VA 2024.04.05 In /blog_components and MDX files
+// !VA 2024 Watch this
 .post {
   @include ldesktop {
     // padding: 0 2rem;
@@ -350,6 +346,7 @@ display: none;
 }
 
 // !VA 2024.04.05 In MDX files
+// !VA 2024 Watch this...
 .post-head {
   @include tablet {
     margin-top: 1rem;
@@ -358,8 +355,10 @@ display: none;
 }
 
 // !VA 2024.04.05 In MDX files
+// !VA 2024 Moved to Blog.module.scss and applied to the H5 element
 .post p.post-date {
   // !VA We need to override the default p here specifically for the date extracted from frontmatter
+  // !VA 2024 This probably doesn't apply anymore.
   @include mphone {
     margin: 0;
     font-size: .875rem !important;  
@@ -394,6 +393,7 @@ display: none;
 }
 
 // !VA 2024.04.05 In MDX files
+// !VA 2024 Moved to Blog.module.scss and applied to the h1 element as props
 .post-head h1 {
   @include mphone {
     margin: 0 0 .5rem;
@@ -437,6 +437,7 @@ display: none;
   font-family: $secondary_font;
 }
 
+// !VA 2024 Not sure if this is used at all...
 .post h4 {
   @include lphone {
     margin: 0 0 .5rem;
@@ -470,6 +471,7 @@ display: none;
   text-align: center;
 }
 
+// !VA 2024 Moved to Blog.module.scss
 .post-hero, .post .youtube-embed {
   @include mphone {
     margin: .5rem auto;
@@ -538,6 +540,7 @@ display: none;
 }
 
 // !VA Used for long subheads, as an alternative to bullets. 
+// !VA 2024 Moved to Blog.module.scss
 .post h3 {
     @include mphone {
       margin: .375rem 0 0;
@@ -668,33 +671,6 @@ display: none;
   width: 100%;
 }
 
-// !VA 2024.04.05 in Disclaimer.js
-.post-disclaimer p {
-  @include lphone {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  @include tablet {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-  @include desktop {
-    font-size: 1.188rem;
-    line-height: 1.575rem;
-  }
-  @include ldesktop {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-  font-size: .875rem;
-  line-height: 1.125rem;
-}
-
-.post-disclaimer hr {
-  margin: 1rem;
-  // color: #e1e1e1;
-  border-top: 1px solid #e1e1e1;
-}
 
 .post-sharebar {
   display: flex;
