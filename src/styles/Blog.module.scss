@@ -105,7 +105,7 @@
   padding-bottom: .5rem;
   // !VA For Home, background is primary color. For other pages, it's currently $content_bg_color
   background: $content_bg_color;
-  background: $primary_color;
+  // background: $primary_color;
 }
 
 // !VA In Home, section_content lives on the $primary_color background set in .section. None of the other pages have this two-toned scheme, at least for now. 
@@ -135,10 +135,10 @@
   width: 310px;
   margin-top: .25rem;
   padding:  0 0 .5rem;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  background: $content_bg_color;
-  background: $primary_color;
+  // border-top-left-radius: 12px;
+  // border-top-right-radius: 12px;
+  // background: $content_bg_color;
+  // background: $primary_color;
 }
 
 // !VA Merging content and two_column_content here for the Blog module - those two containers are redundant. I'm not sure what two_column_content even does anymore.
@@ -196,8 +196,9 @@
   margin: .25rem auto;
   background: $content_bg_color;
   color: $dark_text_color;
-  border-radius: .5rem;
-  box-shadow: 0 0 1em #27272733;
+  // border-radius: .5rem;
+  // box-shadow: 0 0 1em #27272733;
+  // background: rgba(255, 0, 0, .3) !important; //devred
 }
 
 // !VA 2024.04.04 Appears in Blog and Header modules
@@ -468,6 +469,7 @@ line-height: 1.25rem;
 }
 
 // !VA 2024.04.04 Appears only in Blog modules, but the word is all over the place. Needs to be made more specific
+// !VA 2024 This is removed, wasted space
 .subhead {
   display: flex;
   justify-content: space-evenly;

@@ -12,6 +12,8 @@ import Image from 'next/image'
 
 // !VA Icons
 import { FaHome } from 'react-icons/fa'
+import { FaChevronRight } from "react-icons/fa";
+// import { FaAnglesRight } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa";
 
 import * as styles from '../styles/Header.module.scss'
@@ -156,8 +158,8 @@ const MainNav = () => {
               // className={[styles.nav_text].join(' ')}
               onClick = {handleClick}
               >
-              Main Menu
-                <FaChevronDown 
+              Lar Par Guide
+                <FaChevronRight 
                 className={styles.nav_dropdown_icon}
                 />
             </Link>

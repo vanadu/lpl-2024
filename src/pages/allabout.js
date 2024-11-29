@@ -36,8 +36,12 @@ const More = () => {
           <h1 className={styles.head_title}>What Do You Want To Know About Laryngeal Paralysis/GOLPP in Dogs?</h1>
         </div>
         <div className={styles.section_content}>
+          <h2 className={styles.content_heading}>
+            Lar Par Guide Main Topics
+          </h2>
           {/* Two column content - flex on mobile and grid on desktop */}
             {/* topic section */}
+
             <div className={styles.cards}>
 
               {/* First Topic Card */}

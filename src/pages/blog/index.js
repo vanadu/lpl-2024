@@ -40,8 +40,8 @@ const Blog = ({ posts}) => {
   return (
     <>
       <NextSeo 
-        title="Lar Par Dog Blog: News and Notes About Laryngeal Paralysis"
-        description="Our lar par dog blog discusses issues of interest to people whose dogs suffer from laryngeal paralysis."
+        title="News and Notes About Laryngeal Paralysis &amp; GOLPP in dogs"
+        description="Topics of interest for people whose dogs suffer from laryngeal paralysis/GOLPP."
         canonical="https://larparlife.com/blog"
       />
       <section className={styles.section}>
@@ -49,14 +49,16 @@ const Blog = ({ posts}) => {
           <div className={styles.header}>
             <div className={styles.header_content}>
               <figure className={styles.header_figure}>
-                <Image src={MeAndMissB} className={styles.header_figure_image} alt="Lar Par Dog Blog Profile Image" />
+                <Image src={MeAndMissB} className={styles.header_figure_image} alt="Lar Par News Profile Image" />
                 {/* <figcaption className={styles.header_figure_caption}>Bee & Me 2015</figcaption> */}
               </figure>
               <div className={styles.header_text}>         
-                {/* <h5 className={styles.header_legend}>Van&rsquo;s</h5> */}
                 <div className={styles.container_inline_block}>
-                  {/* <h1 className={styles.heading_head}><span className={styles.blog_heading_head}>Lar Par Dog Blog</span>: <span className={styles.heading_subhead}>News and Notes About Laryngeal Paralysis</span></h1> */}
-                  <h1 className={[styles.heading_head, styles.blog_heading_head].join(' ')}><span className={styles.blog_heading_head}>Lar Par Dog Blog</span> <span className={[styles.heading_subhead, styles.blog_heading_subhead].join(' ')}>News and Notes <span className='mobile-show-inline'><br /></span> About Laryngeal Paralysis</span></h1>
+
+                  <h1 className={[styles.heading_head, styles.blog_heading_head].join(' ')}><span className={styles.blog_heading_head}>Laryngeal Paralysis/GOLPP <span className="mobile-show"><br/></span>News &amp; Notes</span></h1>
+
+
+
                   {/* <hr className={styles.rule_underline} /> */}
                 </div>
               </div>
@@ -64,10 +66,10 @@ const Blog = ({ posts}) => {
 
             </div>
 
-            <div className={styles.subhead}>
-              <h2 className={styles.subhead_text}>Articles</h2>
+            {/* <div className={styles.subhead}> */}
+              {/* <h2 className={styles.subhead_text}>Articles</h2> */}
               {/* <p className={styles.subhead_toggle} onClick={doStuff}>Show Images</p> */}
-            </div>
+            {/* </div> */}
             <div className={styles.post_listings}>
               {posts.map((post, index) => (
                 <PostListing post={post} key={index} />

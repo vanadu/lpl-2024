@@ -15,7 +15,9 @@ const PostListing = ({post}) => {
         {/* <h2 className={styles.post_listing_topic}>{post.frontmatter.topic}</h2> */}
         <div className={styles.post_listing_content}>
           {/* <p className={styles.post_listing_topic}>Topic: {post.frontmatter.topic}</p> */}
-          <p className={styles.post_listing_date}>Posted on: {post.frontmatter.date}</p>
+          {/* !VA 2024 removed the 'posted on'...wasted space */}
+          {/* <p className={styles.post_listing_date}>Posted on: {post.frontmatter.date}</p> */}
+          <p className={styles.post_listing_date}>{post.frontmatter.date}</p>
           <figure className={styles.post_listing_figure}>
             <Image 
               src={post.frontmatter.cover_image} 
