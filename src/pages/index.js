@@ -226,7 +226,7 @@ const Home = ( {posts}) => {
                 // This is unused, I put it in here to log the click event
                 // onClick={ (e) => handleLink(e) }
                 >
-                Main Menu
+                Lar Par Guide
                 </Link> to see all the available topics.
             </p>
             <p className={styles.content_text}>
@@ -240,7 +240,7 @@ const Home = ( {posts}) => {
               If you&rsquo;re a DVM seeking research info and procedural details about the laryngeal stent implant for laryngeal paralysis, visit the <Link href='/dvms' className='link'>Info for DVMs</Link> section.
             </p>
             <p className={styles.content_text}>
-              You can also find links to pertinent research and informational websites from respected institution on the <Link href="/patients/links" className='link'>Research Links and More Info</Link> page. You can explore a dog lover&lsquo;s perspective on Lar Par-related topics in the <Link href="/blog" className='link'>Lar Par Dog Blog</Link> section. 
+              You can also find links to pertinent research and informational websites from respected institution on the <Link href="/patients/links" className='link'>Research Links and More Info</Link> page. You can explore a dog lover&lsquo;s perspective on Lar Par-related topics in the <Link href="/blog" className='link'>News</Link> section. 
             </p>
             <p className={styles.content_text}>
               Thank you for visiting LarParLife.com.  People want a more moderate treatment path for their beloved canine companions, a third way between surgery and deteriorating quality of life. It&rsquo;s time for this affordable, life-saving alternative to move into the mainstream of veterinary care.  

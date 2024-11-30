@@ -32,8 +32,6 @@ import MeAndMissB from '../../../public/img-me-and-miss-b-2015.jpg'
 const Blog = ({ posts}) => {
   // !VA Log out the posts exported from the getStaticProps function below 
 
-
-
   return (
     <>
       <NextSeo 

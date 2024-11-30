@@ -613,28 +613,28 @@
 
 .logo {
   @include mphone {
-    width: 78px;
+    width: 86px;
     margin: .5rem 0 0 1rem;
   }
   @include lphone {
-    width: 84px;
+    width: 90px;
     margin: .75rem 0 0 1rem;
   }
   @include tablet {
     // !VA img width depends on nav menu width...
-    width: 88px;
+    width: 100px;
     margin: .575rem 0 0 1rem;
   }
   @include desktop {
-    width: 96px;
+    width: 110px;
     margin: .75rem 0 0 1.5rem;
   }
   @include ldesktop {
-    width: 110px;
+    width: 130px;
     margin: .5rem 0 0 0;
   }
   margin: .5rem 0 0 .75rem;
-  width: 70px;
+  width: 80px;
   height: auto;
   position: relative; 
   // !VA 2024
@@ -647,23 +647,23 @@
 // -----------
 .header_slug {
   @include mphone {
-    top: 72px;
+    top: 70px;
   }
   @include lphone {
-    top: 84px;
+    top: 80px;
   }
   @include tablet {
-    top: 82px;
+    top: 78px;
   }
   @include desktop {
-    top: 84px;
+    top: 80px;
   }
   @include ldesktop {
-    top: 104px;
+    top: 100px;
   }
   position: absolute;
   display: block;
-  top: 66px;
+  top: 64px;
   left: 0;
   width: 100%;
   // !VA Makes slug opaque over the bricks container
