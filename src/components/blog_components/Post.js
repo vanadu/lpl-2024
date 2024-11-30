@@ -70,7 +70,8 @@ const Post = ({ serializedContent }) => {
       h4: props => <h1 {...props} className={styles.post_h4} />,
       h5: props => <h5 {...props} className={styles.post_date} />,
       p: props => <p {...props} className={styles.post_text} />,
-      
+      ul: props => <ul {...props} className={styles.post_ul} />,
+      li: props => <li {...props} className={styles.post_li} />,
     }}>
 
       <NextSeo 

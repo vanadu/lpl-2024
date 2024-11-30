@@ -654,6 +654,56 @@
 }
 
 
+.post_ul {
+  @include tablet {
+  margin: 0 2rem 0 1rem;
+  }
+  @include desktop {
+    margin: 0 2rem 0 2rem;
+  }
+  @include ldesktop {
+    margin: .5rem 2rem 0;
+  }
+  margin: 0 .75rem 0 0;
+  list-style-type: disc;
+  color: $dark_text_color;
+}
+
+.post_li {
+  @include mphone {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  @include lphone {
+    font-size: 1.188rem;
+    line-height: 1.75rem;
+  }
+  @include tablet {
+    // margin-left: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+  }
+  @include desktop {
+    font-size: 1.313rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+  }
+  @include ldesktop {
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+  }
+  font-family: $primary_font;
+  color: $dark_text_color;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.413rem;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 0 1rem;
+  padding-left: 0;
+}
 
 // !VA 2024 Hero image and Blog.module.scss import in HeroImage.js and Youtube.js
 .post_hero, .youtube_embed {
