@@ -9,13 +9,15 @@ import { NextSeo } from 'next-seo'
 // !VA Custom Components
 import ShowMoreContent from '../../../components/ShowMoreContent'
 import TreatmentNav from '../../../components/subnav1/TreatmentNav'
-import BottomNav from '../../../components/BottomNav'
+import GuideNav from '@/components/GuideNav'
+
 // !VA React Icons
 import { FaPaw } from 'react-icons/fa'
 import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Images
 import MissBStentLink from '../../../../public/img-miss-b-stent-link.jpg'
 import GolppDiagnosisTests from '../../../../public/img-golpp-diagnosis-tests.jpg'
+
 // !VA Style modules
 import * as styles from '../../../styles/Light.module.scss'
 
@@ -31,18 +33,28 @@ const Managing = () => {
         description="Learn about managing laryngeal paralysis in dogs with behavioral modifications and/or medications."
         canonical="https://larparlife.com/patients/treatment/managing"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+
+      {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
 
-
-          <div className={styles.heading}>
-            {/* <hr /> */}
-            <h1 className={styles.heading_head}>Managing Laryngeal Paralysis in Dogs Without Surgery</h1>
-            <h2 className={styles.heading_subhead}>Alternative Approaches to &nbsp;Canine&nbsp;Laryngeal&nbsp;Paralysis
-            </h2>
-            {/* <hr /> */}
+          <div className={styles.topic_head}>
+              <h1 className={styles.topic_head_title}>Managing Laryngeal Paralysis in Dogs Without Surgery</h1>
           </div>
+            {/* Submenu for the Patients pages */}
+            {/* <PatientsNav /> */}
+          <div className={styles.topic_subhead}>
+              <h2 className={styles.topic_subhead_title}>Alternative Approaches to &nbsp;Canine&nbsp;Laryngeal&nbsp;Paralysis</h2>
+          </div>
+        </div>
+      </section>
+
+
+      {/*  */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
 
           {/* Treatment vs Management Content Start */}
           <div className={styles.content_block}>
@@ -73,10 +85,17 @@ const Managing = () => {
           </div>
           {/* Treatment vs Management Content End */}
 
+        </div>
+      </section>
+
+      {/*  */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+          
           {/* Behaviors To Avoid Content Start*/}
           <div className={styles.content_block}>
 
-            <h2 className={styles.content_subhead}>Behaviors to Avoid in Dogs with Laryngeal Paralysis</h2>
+            <h2 className={styles.content_subhead}>Behaviors to Avoid in Dogs with Laryngeal&nbsp;Paralysis</h2>
             
             {/* ShowMoreComponent content start */}
             <div className={styles.content_text}>
@@ -102,6 +121,13 @@ const Managing = () => {
           </div>
           {/* Behaviors To Avoid Content Emd*/}
 
+        </div>
+      </section>
+
+      {/*  */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+          
           {/* Medications and Accupuncture Start */}
           <div className={styles.content_block}>
 
@@ -145,6 +171,14 @@ const Managing = () => {
 
           </div>
           {/* Medications and Accupuncture End */}
+
+        </div>
+      </section>
+
+
+      {/*  */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           
           {/* Pharmaceuticals Content Start*/}
           <div className={styles.content_block}>
@@ -189,12 +223,13 @@ const Managing = () => {
                   </ShowMoreContent>
                 </li>
               </ul>
-            </div>
-            {/* Pharmaceuticals Content End */}
-
           </div>
+          {/* Pharmaceuticals Content End */}
+
         </div>
       </section>
+
+
     </>
   )
 }

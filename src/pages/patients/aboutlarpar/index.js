@@ -9,10 +9,11 @@ import { NextSeo } from 'next-seo'
 
 import ReactTooltip from 'react-tooltip'
 // !VA Components
+
 import ShowMoreContent from '../../../components/ShowMoreContent'
 // !VA React Icons
 import { FaPaw } from 'react-icons/fa'
-import { FaArrowCircleRight } from 'react-icons/fa'
+
 // !VA Images
 import HumanLarynx from '../../../../public/img-human-larynx.jpg'
 import Epiglottis from '../../../../public/img-epiglottis.jpg'
@@ -103,7 +104,7 @@ const AboutLarpar = () => {
 
       {/* Section Page Nav Menu */}
       <section className={[styles.section, styles.section_full_width].join(' ')}>
-        
+
           <div 
             className={[styles.section_menu, 'sticky'].join(' ')}
             ref={refTopics}

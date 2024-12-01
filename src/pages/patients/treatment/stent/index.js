@@ -12,6 +12,8 @@ import { FaPaw } from 'react-icons/fa'
 // !VA Custom Components
 import ShowMoreContent from '../../../../components/ShowMoreContent'
 import StentNav from '../../../../components/subnav1/StentNav'
+import GuideNav from '@/components/GuideNav'
+
 // !VA Images
 import SiliconeStents from '../../../../../public/img-abtvet-stents.jpg'
 import MissBXrayStent from '../../../../../public/img-miss-b-xray-stent.jpg'
@@ -51,123 +53,166 @@ function Stent() {
         description="Learn about the risks, benefits, and other details about stent implants for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/treatment/stent"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+
+      {/* Intro Section */}
       <section className={styles.section}>
-
         <div className={styles.section_content}>
-          <div className={styles.content}>
-            <div className={styles.heading}>
-              <h1 className={styles.heading_head}>Stent Treatment for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs</h1>
-            </div>
-            <div className={styles.container}>
-              <h2 className={styles.heading_subhead}>The 21st Century Solution <span className='mobile-show-inline'><br /></span>for Senior Lar Par Dogs</h2>
-            </div>
+
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Stent Treatment for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs</h1>
           </div>
-        </div>
-        <StentNav />
+          {/* Submenu for the Patients pages */}
+          <StentNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>The 21st Century Solution <span className='mobile-show-inline'><br /></span>for Senior Lar Par Dogs
+            </h2>
+          </div>
 
-        <div className={styles.section_content}>
-          <div className={styles.content}>
           <figure className={styles.figure_float_right}>
-              <Image src={MissBXrayStent}  className={styles.figure_image} alt="Miss B&rsquo;s laryngeal stent" />
-              <figcaption className={styles.figure_caption}>Miss B&rsquo;s Laryngeal Stent</figcaption>
-            </figure>
-            <p className={styles.content_text}>
-              Our 13-year-old Labrador was suffocating when they closed the door. When we came in five minutes later she was awake and breathing normally &mdash; without surgery. So why are people saying surgery is the only way to treat laryngeal paralysis in dogs? 
+            <Image src={MissBXrayStent}  className={styles.figure_image} alt="Miss B&rsquo;s laryngeal stent" />
+            <figcaption className={styles.figure_caption}>Miss B&rsquo;s Laryngeal Stent</figcaption>
+          </figure>
+          <p className={styles.content_text}>
+            Our 13-year-old Labrador was suffocating when they closed the door. When we came in five minutes later she was awake and breathing normally &mdash; without surgery. So why are people saying surgery is the only way to treat laryngeal paralysis in dogs? 
+          </p>
+          <div className={styles.content_text}>
+            <p className={styles.showmore_content_inline}>
+            What they&rsquo;re not talking about is the <span className='semibold-italic'>laryngeal stent</span> &mdash; the future of laryngeal paralysis treatment in the 21st century.&#8203;&nbsp;
             </p>
+          </div>  
+
+        </div>
+      </section>
+
+
+      {/* Stent Procedure Section  */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+
+          {/* The Laryngeal Stent Procedure Content Start */}
+          <div className={styles.content_block}>
+            <h2 className={styles.content_subhead}>The Laryngeal Stent Procedure<span className='mobile-hide-inline'> for Canine&nbsp;Laryngeal&nbsp;Paralysis</span></h2>
+            {/* ShowMoreComponent content start */}
+            <div className={styles.showmore_content_block}>
+                <p className={styles.content_text}>
+                The laryngeal stent procedure for laryngeal paralysis in dogs is quick and affordable. There&rsquo;s no surgery, no stitches, no incision, no penetration of tissue at all and therefore no chance for post-surgical infection. It takes as little as five minutes, which means only five minutes of anesthesia. Normal breathing is restored immediately, the recovery period is short, and post-procedure medications are minimal.&#8203;&nbsp;
+              </p>
+              <ShowMoreContent
+                title='What&rsquo;s a laryngeal stent?'
+                index={1}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className={styles.showmore_content_block}>
+                  <figure className={styles.showmore_figure}>
+                    <Image src={SiliconeStents} className={styles.showmore_figure_image} alt="Silicone Laryngeal Stents for Dogs"/>
+                    <figcaption className={styles.showmore_figure_caption}>
+                      Silicone Laryngeal Stents for Dogs
+                    </figcaption>
+                  </figure>
+                  <span className={styles.showmore_content_space}></span>
+                  <p className={styles.showmore_content_text}>
+                    A laryngeal stent is an artificial structure placed within the paralyzed larynx to allow air to pass unobstructed to the lungs. Once implanted, stents stay in position without sutures or incisions. This is a completely different paradigm than 20th century approaches that permanently modify the structure of the larynx through surgery.
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+          </div>
+          {/* The Laryngeal Stent Procedure Content End */}
+
+        </div>
+      </section>
+
+      {/* Cost Benefit Section */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+          
+          {/* The Cost/Benefit Content Start */}
+          <div className={styles.content_block}>
+
+            <h2 className={styles.content_subhead}>Cost/Benefit of Laryngeal Stents</h2>
+            
+            {/* ShowMoreComponent content start */}
             <div className={styles.content_text}>
               <p className={styles.showmore_content_inline}>
-              What they&rsquo;re not talking about is the <span className='semibold-italic'>laryngeal stent</span> &mdash; the future of laryngeal paralysis treatment in the 21st century.&#8203;&nbsp;
+                Weighing the cost vs. benefit of a stent procedure means not just the financial aspect, but also the toll the procedure might have on your dog&rsquo;s quality of life in the short- and long-term.&nbsp;
               </p>
+              <ShowMoreContent
+                title='Is prolonging life with a laryngeal stent the best thing for my dog?'
+                index={2}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className={styles.showmore_content_block}>
+                  <span className={styles.showmore_content_space}></span>
+                  <p className={styles.showmore_content_text}>
+                    Just like surgery, a laryngeal stent can restore your dog&rsquo;s breathing so he or she can live out her or his natural life. But the difference between surgery and stent lies in the cost &mdash; not just the financial aspect but also in terms of the burden placed on the dog with regard to recovery time and possible complications. The laryngeal stent procedure takes a fraction of the time to perform, costs on average a fraction of the money, and comes with significantly fewer possible complications compared to surgery.In case of unforeseen issues, it can also simply be removed in a simple procedure. Consequently, the risk assessment is much simpler and entails less stress and uncertainty for the pet parent and the dog than the surgical option.
+                  </p>
+                </div>
+              </ShowMoreContent>
             </div>  
-            
-            {/* The Laryngeal Stent Procedure Content Start */}
-            <div className={styles.content_block}>
-              <h2 className={styles.content_subhead}>The Laryngeal Stent Procedure<span className='mobile-hide-inline'> for Canine&nbsp;Laryngeal&nbsp;Paralysis</span></h2>
-              {/* ShowMoreComponent content start */}
+            {/* ShowMoreComponent content end */}
+          </div>
+          {/* The Cost/Benefit Content End */}
+
+        </div>
+      </section>
+
+      {/* Risk Assessment Content Block */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+          
+        <h2 className={styles.content_subhead}>Risk Assessment</h2>
+          {/* ShowMoreComponent content start */}
+          <div className={styles.content_text}>
+            <p className={styles.showmore_content_space}></p>   
+            <p className={styles.showmore_content_inline}>
+              Laryngeal stent placement isn&rsquo;t surgery, so many of the risk factors associated with surgery don&rsquo;t apply. But the stent procedure isn&rsquo;t risk&#8209;free. Just like with surgery, it can be helpful to view risk factors in terms of <span className='semibold-italic'>likelihood</span> of occurrence and <span className='semibold-italic'>severity</span> of outcome.
+            </p>
+            <span className={styles.showmore_content_space}></span>
+            <ShowMoreContent
+              title='Is the laryngeal stent procedure risky?'
+              index={3}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              >
               <div className={styles.showmore_content_block}>
-                 <p className={styles.content_text}>
-                  The laryngeal stent procedure for laryngeal paralysis in dogs is quick and affordable. There&rsquo;s no surgery, no stitches, no incision, no penetration of tissue at all and therefore no chance for post-surgical infection. It takes as little as five minutes, which means only five minutes of anesthesia. Normal breathing is restored immediately, the recovery period is short, and post-procedure medications are minimal.&#8203;&nbsp;
+                <p className={styles.showmore_content_text}>
+                  Since the stent procedure involves no incision, requires minimal anesthesia, and can be reversed by simply removing the stent, it&rsquo;s reasonable to say that stent placement is not a risky procedure when compared to surgical treatments. Having said that, there are post-procedure complications that can occur with both stent and surgery, so it&rsquo;s best to talk about the actual <span className='semibold-italic'>risk factors</span>.
                 </p>
-                <ShowMoreContent
-                  title='What&rsquo;s a laryngeal stent?'
-                  index={1}
-                  activeIndex={activeIndex}
-                  setActiveIndex={setActiveIndex}
-                  >
-                  <div className={styles.showmore_content_block}>
-                    <figure className={styles.showmore_figure}>
-                      <Image src={SiliconeStents} className={styles.showmore_figure_image} alt="Silicone Laryngeal Stents for Dogs"/>
-                      <figcaption className={styles.showmore_figure_caption}>
-                        Silicone Laryngeal Stents for Dogs
-                      </figcaption>
-                    </figure>
-                    <span className={styles.showmore_content_space}></span>
-                    <p className={styles.showmore_content_text}>
-                      A laryngeal stent is an artificial structure placed within the paralyzed larynx to allow air to pass unobstructed to the lungs. Once implanted, stents stay in position without sutures or incisions. This is a completely different paradigm than 20th century approaches that permanently modify the structure of the larynx through surgery.
-                    </p>
-                  </div>
-                </ShowMoreContent>
-              </div>  
-              {/* ShowMoreComponent content end */}
+              </div>
+            </ShowMoreContent>
+          </div>  
+          {/* ShowMoreComponent content end */}
 
-            </div>
-            {/* The Laryngeal Stent Procedure Content End */}
+        </div>
+      </section>
+
+      {/*  */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+          
+        </div>
+      </section>
 
 
-            {/* The Cost/Benefit Content Start */}
-            <div className={styles.content_block}>
 
-              <h2 className={styles.content_subhead}>Cost/Benefit of Laryngeal Stents</h2>
-              
-              {/* ShowMoreComponent content start */}
-              <div className={styles.content_text}>
-                <p className={styles.showmore_content_inline}>
-                 Weighing the cost vs. benefit of a stent procedure means not just the financial aspect, but also the toll the procedure might have on your dog&rsquo;s quality of life in the short- and long-term.&nbsp;
-                </p>
-                <ShowMoreContent
-                  title='Is prolonging life with a laryngeal stent the best thing for my dog?'
-                  index={2}
-                  activeIndex={activeIndex}
-                  setActiveIndex={setActiveIndex}
-                  >
-                  <div className={styles.showmore_content_block}>
-                    <span className={styles.showmore_content_space}></span>
-                    <p className={styles.showmore_content_text}>
-                      Just like surgery, a laryngeal stent can restore your dog&rsquo;s breathing so he or she can live out her or his natural life. But the difference between surgery and stent lies in the cost &mdash; not just the financial aspect but also in terms of the burden placed on the dog with regard to recovery time and possible complications. The laryngeal stent procedure takes a fraction of the time to perform, costs on average a fraction of the money, and comes with significantly fewer possible complications compared to surgery.In case of unforeseen issues, it can also simply be removed in a simple procedure. Consequently, the risk assessment is much simpler and entails less stress and uncertainty for the pet parent and the dog than the surgical option.
-                    </p>
-                  </div>
-                </ShowMoreContent>
-              </div>  
-              {/* ShowMoreComponent content end */}
-            </div>
-            {/* The Cost/Benefit Content End */}
+            
+        <div className={styles.section_content}>
+
+
+
+
             
 
             {/* Risk Assessment Content Start */}
             <div className={styles.content_block}>
 
-              <h2 className={styles.content_subhead}>Risk Assessment</h2>
-              {/* ShowMoreComponent content start */}
-              <div className={styles.content_text}>
-                <p className={styles.showmore_content_space}></p>   
-                <p className={styles.showmore_content_inline}>
-                  Laryngeal stent placement isn&rsquo;t surgery, so many of the risk factors associated with surgery don&rsquo;t apply. But the stent procedure isn&rsquo;t risk&#8209;free. Just like with surgery, it can be helpful to view risk factors in terms of <span className='semibold-italic'>likelihood</span> of occurrence and <span className='semibold-italic'>severity</span> of outcome.
-                </p>
-                <span className={styles.showmore_content_space}></span>
-                <ShowMoreContent
-                  title='Is the laryngeal stent procedure risky?'
-                  index={3}
-                  activeIndex={activeIndex}
-                  setActiveIndex={setActiveIndex}
-                  >
-                  <div className={styles.showmore_content_block}>
-                    <p className={styles.showmore_content_text}>
-                      Since the stent procedure involves no incision, requires minimal anesthesia, and can be reversed by simply removing the stent, it&rsquo;s reasonable to say that stent placement is not a risky procedure when compared to surgical treatments. Having said that, there are post-procedure complications that can occur with both stent and surgery, so it&rsquo;s best to talk about the actual <span className='semibold-italic'>risk factors</span>.
-                    </p>
-                  </div>
-                </ShowMoreContent>
-              </div>  
-              {/* ShowMoreComponent content end */}
+
 
             </div>
             {/* Risk Assessment Content End */}
@@ -275,8 +320,7 @@ function Stent() {
             {/* More Info Content End */}
 
           </div>{/* .content */}
-        </div>{/* .section_content .*/}  
-      </section>
+
     </>
   )
 }

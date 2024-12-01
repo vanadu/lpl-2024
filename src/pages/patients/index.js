@@ -14,10 +14,9 @@ import { FaPaw } from 'react-icons/fa'
 
 // !VA Custom Components
 import PatientsNav from '../../components/subnav1/PatientsNav'
-import BottomNav from '../../components/BottomNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 import AccordionContent from '../../components/AccordionContent'
-import GuideNav from '../../components/GuideNav'
+import GuideNav from '@/components/GuideNav'
 // !VA Images
 import MissBStentLink from '../../../public/img-miss-b-stent-link.jpg'
 import Treats2 from '../../../public/img-treats-02.jpg'
