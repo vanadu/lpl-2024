@@ -9,10 +9,11 @@ import { NextSeo } from 'next-seo'
 // !VA Custom Components
 import AccordionContent from '../../../components/AccordionContent'
 import BottomNav from '../../../components/BottomNav'
-import SkipThis from '../../../components/SkipThis'
+
+import GuideNav from '@/components/GuideNav'
+import PatientsNav from '@/components/subnav1/PatientsNav'
 // !VA Style modules
 import * as styles from '../../../styles/Light.module.scss'
-import PatientsNav from '@/components/subnav1/PatientsNav'
 
 
 const Faqs = () => {
@@ -26,25 +27,31 @@ const Faqs = () => {
       description="Find answers to a wide range of frequently-asked questions about laryngeal paralysis in dogs"
       canonical="https://larparlife.com/patients/aboutlarpar/faqs"
     />
+    {/* Navbar for the Guide pages with All Topics and About Stents links */}
+    <GuideNav />
+
     <section className={styles.section}>
       <div className={styles.section_content}>
-        <div className={styles.content}>
-          <div className={styles.heading}>
-            <h1 className={styles.heading_head}>Laryngeal Paralysis In Dogs FAQs</h1>
-            <h2 className={styles.heading_subhead}>Answers to Common Questions About&nbsp;<span className='mobile-hide-inline'>Canine</span> Lar Par and GOLPP
-            </h2>
-          </div>
+
+
+        <div className={styles.topic_head}>
+          <h1 className={styles.topic_head_title}>Laryngeal Paralysis In Dogs FAQs</h1>
         </div>
-        <SkipThis />
+        <PatientsNav />
+        {/* Submenu for the Patients pages */}
+        <div className={styles.topic_subhead}>
+          <h2 className={styles.topic_subhead_title}>Answers to Common Questions About&nbsp;<span className='mobile-hide-inline'>Canine</span> Lar Par and GOLPP
+          </h2>
+        </div>
+
       </div>
-      <PatientsNav />
       
       <div className={styles.section_content}>
         <div className={styles.content}>
           <p className={styles.content_text}>Here are some answers to frequently-asked questions about laryngeal paralysis in dogs. This info comes from veterinary websites, scientific publications, through interactions with veterinarians, from our own experience with laryngeal paralysis and the stent implant in our dog. We&rsquo;re not veterinarians. Always consult with a veterinary professional before making any decisions regarding the health of your companion. </p>
           <AccordionContent
             className='accordion__faqs'
-            title='Can laryngeal paralysis in dogs be cured?'
+            title='Can laryngeal paralysis in dogs be&nbsp;cured?'
             index={1}
             activeAccordionIndex={activeAccordionIndex}
             setActiveAccordionIndex={setActiveAccordionIndex}
@@ -80,7 +87,7 @@ const Faqs = () => {
 
           <AccordionContent
             className='accordion__faqs'
-            title='How bad does laryngeal paralysis in dogs get?'
+            title='How bad does laryngeal paralysis in dogs&nbsp;get?'
             index={4}
             activeAccordionIndex={activeAccordionIndex}
             setActiveAccordionIndex={setActiveAccordionIndex}

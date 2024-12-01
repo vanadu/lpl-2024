@@ -342,7 +342,6 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: 0 2rem 0;
     padding: 0 3rem 0 2.5rem;
   }
   @include desktop {
@@ -368,6 +367,12 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   // background: $secondary_color;
 }
 
+.section_full_width {
+  margin-top: .75rem;
+
+}
+
+.section_
 // !VA Structural wrapper to separate content into blocks for spacing
 .content_block {
   padding-bottom: .5rem;
@@ -570,7 +575,8 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: .75rem;
+  // margin-top: .75rem;
+  // !VA 2024
   background-color: $home_bg_color;
   // !VA NOW, I don't know what this does
   &.active {
@@ -2407,7 +2413,6 @@ text-align: left;
   // !VA Required to show the link on the same line as the text it references
   display: inline;
   text-indent: 0;
-  // background: rgba(0, 0, 255, .3) !important; //devblue
 }
 
 
