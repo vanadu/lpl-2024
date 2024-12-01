@@ -384,6 +384,7 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   }
   width: 100%;
   height: auto;
+
   display: block; 
   margin: 1rem 0 0;
   background: $primary_color;
@@ -399,13 +400,30 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   align-items: center;
   justify-content: center;
   width: 100%;
+  // background: rgba(0, 0, 255, .3) !important; //devblue
+  background: $primary_color;
+  background: $home_bg_color;
 }
 
 .guide_nav_items {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
-  padding: .75rem 0;
+  padding: .5rem 0;
+}
+
+.guide_nav_item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $dark_text_color;
+  color: $light_text_color;
+  font-family: $inter_font;
+  font-size: .875rem;
+}
+
+.guide_nav_items_icon {
+  font-size: 1rem;
 }
 
 
@@ -416,51 +434,44 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   // !VA 2024
   position: relative;
   width: 100%;
-  padding: .5rem;
-  background: $home_bg_color;
+  // padding: .5rem;
+  margin: .5rem 0 .75rem;
 }
 
 .topic_head_title {
   @include mphone {
     font-size: $mphoneConsentFontSize;
     line-height: $mphoneConsentLineHeight;
-    padding: .188rem 1rem;
+    // padding: .188rem 1rem;
   }
   @include lphone {
     font-size: $lphoneConsentFontSize;
     line-height: $lphoneConsentLineHeight;
-    padding: .188rem 2rem;
+    // padding: .188rem 2rem;
   }
   @include tablet {
     font-size: $tabletConsentFontSize;
     line-height: $tabletConsentLineHeight;
   }
   @include desktop {
-    padding: .25rem 0 .375rem;
+    // padding: .25rem 0 .375rem;
     font-size: $desktopConsentFontSize;
     line-height: $desktopConsentLineHeight;
   }
   @include ldesktop {
-    padding: .125rem 0 .25rem;
-    padding: .5rem 0 .5rem;
+    // padding: .125rem 0 .25rem;
+    // padding: .5rem 0 .5rem;
     font-size: $ldesktopConsentFontSize;
     line-height: $ldesktopConsentLineHeight;
   }
-  color: $light_text_color;
-  font-family: $secondary_font;
-  font-family: $inter_font;
   // !VA 2024
-  // font-size: 1.375rem;
-  // line-height: 1.75rem;
-  font-size: $rootConsentFontSize;
-  line-height: $rootConsentLineHeight;
-  font-weight: 400;
+  color: $dark_text_color;
+  font-family: $secondary_font;
+  font-size: $rootHeadFontSize;
+  line-height: $rootHeadLineHeight;
+  font-weight: 500;
   text-align: center;
 }
-
-
-
-
 
 
 // !VA 2024.04.05 This is only in /stories
@@ -675,7 +686,7 @@ font-weight: 400;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0 0 .5rem;
+  margin: 0 0 .75rem;
   background-color: $content_bg_color;
   // border-top: 2px solid $home_bg_color;
   // border-bottom: 2px solid $home_bg_color;
@@ -1876,8 +1887,49 @@ font-weight: 400;
   height: auto;
   display: block; 
   margin: 0 auto;
-  padding-top: .5rem;
+  // padding-top: .5rem;
 }
+
+.topic_subhead_title {
+  // !VA mphone same as root
+  @include mphone {
+    padding: .25rem 0 .25rem;
+    font-size: $mphoneSubheadFontSize;
+    line-height: $mphoneSubheadLineHeight;
+  }
+  @include lphone {
+    padding: .25rem 0 .25rem;
+    font-size: $lphoneSubheadFontSize;
+    line-height: $lphoneSubheadLineHeight;
+  }
+  @include tablet {
+    padding: .5rem 0 0;
+    font-size: $tabletSubheadFontSize;
+    line-height: $tabletSubheadLineHeight;
+  }
+  @include desktop {
+    padding: .5rem 0 .5rem;
+    font-size: $desktopSubheadFontSize;
+    line-height: $desktopSubheadLineHeight;
+  }
+  @include ldesktop {
+    padding: .5rem 0 .5rem;
+    font-size: $ldesktopSubheadFontSize;
+    line-height: $ldesktopSubheadLineHeight;
+  }
+  display: block;
+  width: 100%;
+  padding: 0 0 .25rem;
+  font-family: $secondary_font;
+  font-family: $inter_font;
+  font-size: $rootSubheadFontSize;
+  line-height: $rootSubheadLineHeight;
+  font-weight: 700;
+  text-align: center;
+  // !VA 04.02
+  color: $dark_text_color;
+}
+
 
 // !VA For Patients
 // !VA 2024.04.05 This should be in Contact.module.scss
@@ -2016,44 +2068,6 @@ font-weight: 400;
   text-align: left;
 }
 
-.topic_subhead_title {
-  // !VA mphone same as root
-  @include mphone {
-    padding: .25rem 0 .25rem;
-    font-size: $mphoneSubheadFontSize;
-    line-height: $mphoneSubheadLineHeight;
-  }
-  @include lphone {
-    padding: .25rem 0 .25rem;
-    font-size: $lphoneSubheadFontSize;
-    line-height: $lphoneSubheadLineHeight;
-  }
-  @include tablet {
-    padding: .5rem 0 0;
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight;
-  }
-  @include desktop {
-    padding: .5rem 0 .5rem;
-    font-size: $desktopSubheadFontSize;
-    line-height: $desktopSubheadLineHeight;
-  }
-  @include ldesktop {
-    padding: .5rem 0 .5rem;
-    font-size: $ldesktopSubheadFontSize;
-    line-height: $ldesktopSubheadLineHeight;
-  }
-  display: block;
-  width: 100%;
-  padding: .5rem 0 .25rem;
-  font-family: $secondary_font;
-  font-size: $rootSubheadFontSize;
-  line-height: $rootSubheadLineHeight;
-  font-weight: 700;
-  text-align: center;
-  // !VA 04.02
-  color: $dark_text_color;
-}
 
 // !VA 2024.04.05 .blog_post_title_subtext is only in one of the old blog pages
 .blog_post_title_subtext {
@@ -2092,6 +2106,7 @@ font-weight: 400;
   font-size: $rootSubheadFontSize;
   line-height: $rootSubheadLineHeight;
   color: $dark_text_color;
+  font-weight: 500;
   text-align: left;
 }
 

@@ -22,7 +22,10 @@ import MissBXmas from '../../../../public/img-miss-b-xmas.jpg'
 import MissBInBushes from '../../../../public/img-miss-b-in-bushes.jpg'
 // !VA Custom Components
 import PatientsNav from '@/components/subnav1/PatientsNav'
-import BottomNav from '@/components/BottomNav'
+import GuideNav from '@/components/GuideNav'
+
+
+
 // !VA Styles
 import * as styles from '../../../styles/Light.module.scss'
 
@@ -50,59 +53,56 @@ const AboutLarpar = () => {
         description="Learn about the sounds, symptoms, causes, diagnosis and treatments for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/aboutlarpar"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
-            <div className={styles.heading}>
-              <h1 className={styles.heading_head}>Lar Par Crash Course:<span className='mobile-show-inline'><br /></span> Symptoms, Causes & Progression</h1>
-              <h2 className={styles.heading_subhead}>What You Need To Know About Laryngeal Paralysis in Dogs
-              </h2>
-            </div>
+
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Lar Par Crash Course:<span className='mobile-show-inline'><br /></span> Symptoms, Causes & Progression</h1>
           </div>
-          <div className={styles.skip_this}>
-            <div 
-              className={styles.skip_this_button}
-              >
-              <Link href="/patients/treatment/stent" className={styles.skip_this_link}>
-              Skip this and go <span className='mobile-hide-inline'>straight</span> to&nbsp;the&nbsp;<span className='nowrap'><span className='bold'>Stent</span> page&nbsp;&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} /></span>
-              </Link>
-            </div>
+          {/* Submenu for the Patients pages */}
+          <PatientsNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>How Do You Know If Your Dog <span className='mobile-show-inline'><br /></span> Has Laryngeal Paralysis?</h2>
           </div>
         </div>
-        <PatientsNav />
   
         <div className={styles.section_content}>
-          {/* Go to Stent link, lives outside two_column_content */}
-          <div className={styles.content}>
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_block}>
-              <div className={styles.showmore_content_inline}>
-              <p className={styles.content_text}>
-                  If your dog is making a raspy, wheezing sound, then he or she might have laryngeal paralysis (LarPar)<span className='mobile-hide-inline'> or geriatric-onset laryngeal paralysis and polyneuropathy (GOLPP)</span>.
-                </p>
-              </div>
+          {/* ShowMoreComponent content start */}
+          <div className={styles.content_block}>
+            <div className={styles.showmore_content_inline}>
+            <p className={styles.content_text}>
+                If your dog is making a raspy, wheezing sound, then he or she might have laryngeal paralysis (LarPar)<span className='mobile-hide-inline'> or geriatric-onset laryngeal paralysis and polyneuropathy (GOLPP)</span>.
+              </p>
+            </div>
 
-              <ShowMoreContent 
-                title='What does laryngeal paralysis in dogs sound like?'
-                index={1}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                 <div className={styles.showmore_content_block}>
-                  <span className={styles.showmore_content_space}></span>
-                  <div className={styles.figure_flex}>
-                    <div className={styles.container}>
-                      <iframe className={styles.figure_iframe} width="560" height="315" src="https://www.youtube.com/embed/2S_UO21AiHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                      <figcaption className={styles.figure_caption}>
-                        The Sound of Laryngeal Paralysis
-                      </figcaption>
-                    </div>
+            <ShowMoreContent 
+              title='What does laryngeal paralysis in dogs sound like?'
+              index={1}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              >
+                <div className={styles.showmore_content_block}>
+                <span className={styles.showmore_content_space}></span>
+                <div className={styles.figure_flex}>
+                  <div className={styles.container}>
+                    <iframe className={styles.figure_iframe} width="560" height="315" src="https://www.youtube.com/embed/2S_UO21AiHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <figcaption className={styles.figure_caption}>
+                      The Sound of Laryngeal Paralysis
+                    </figcaption>
                   </div>
                 </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-          </div>
+              </div>
+            </ShowMoreContent>
+          </div>  
+          {/* ShowMoreComponent content end */}
+
+
+
+
+
 
           <div className={styles.section_content}
           >
@@ -145,7 +145,6 @@ const AboutLarpar = () => {
             </div>
           </div>
   
-          <div className={styles.content}>
 
             {/* Overview Content */}
             <div className={styles.content_block}>
@@ -430,7 +429,6 @@ const AboutLarpar = () => {
               <p className={styles.content_text}>There are also a number of pharmaceuticals and naturopathic treatments that are reported to be effective in managing some of the effects of laryngeal paralysis  for some dogs. However, there is no scientific evidence demonstrating their effectiveness. You can learn about these approaches in the <Link href='/patients/treatment/managing' className='link-dark'>Managing Laryngeal Paralysis</Link> page of the <Link href='/patients/treatment' className='link-dark'>Treatment Options</Link> section.</p>
             </div>
           </div>
-        </div>
       </section>
     </>
   )

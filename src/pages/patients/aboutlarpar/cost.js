@@ -16,7 +16,7 @@ import { FaArrowCircleRight } from 'react-icons/fa'
 import ShowMoreContent from '../../../components/ShowMoreContent'
 import PatientsNav from '../../../components/subnav1/PatientsNav'
 import BottomNav from '../../../components/BottomNav'
-import SkipThis from '../../../components/SkipThis'
+import GuideNav from '../../../components/GuideNav'
 // !VA Images
 import MissBStentLink from '../../../../public/img-miss-b-stent-link.jpg'
 import GolppDiagnosisTests from '../../../../public/img-golpp-diagnosis-tests.jpg'
@@ -40,18 +40,22 @@ const Cost = () => {
         description="Learn about the cost of laryngeal paralysis, including diagnosis, surgery, stent and treatment alternatives."
         canonical="https://larparlife.com/patients/aboutlarpar/cost"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.heading}>
-            <h1 className={styles.heading_head}>Treatment Costs For<span className='mobile-show-inline'><br /></span> Laryngeal Paralysis & GOLPP</h1>
-            <h2 className={styles.heading_subhead}>The Financial Realities of <span className='mobile-show-inline'><br /></span>Treating Your Dog&lsquo;s Lar Par
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Treatment Costs For<span className='mobile-show-inline'><br /></span> Laryngeal Paralysis & GOLPP</h1>
+          </div>
+          {/* Submenu for the Patients pages */}
+          <PatientsNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>The Financial Realities of <span className='mobile-show-inline'><br /></span>Treating Your Dog&lsquo;s Lar Par
             </h2>
           </div>
-          <SkipThis />
         </div>
 
-        {/* Submenu for the Patients pages */}
-        <PatientsNav />
 
         <div className={styles.section_content}>
           <div className={styles.content}>

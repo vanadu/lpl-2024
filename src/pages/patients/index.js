@@ -18,8 +18,7 @@ import { FaPaw } from 'react-icons/fa'
 import { FaRegMinusSquare } from 'react-icons/fa'
 import { FaRegPlusSquare } from 'react-icons/fa'
 import { FaArrowCircleRight } from 'react-icons/fa'
-import { LuArrowUpWideNarrow } from "react-icons/lu";
-import { MdReadMore } from "react-icons/md";
+
 
 import { FaSmile } from 'react-icons/fa'
 // !VA Custom Components
@@ -27,7 +26,7 @@ import PatientsNav from '../../components/subnav1/PatientsNav'
 import BottomNav from '../../components/BottomNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 import AccordionContent from '../../components/AccordionContent'
-import SkipThis from '../../components/SkipThis'
+import GuideNav from '../../components/GuideNav'
 // !VA Images
 import MissBStentLink from '../../../public/img-miss-b-stent-link.jpg'
 import Treats2 from '../../../public/img-treats-02.jpg'
@@ -50,31 +49,22 @@ const Patients = () => {
         description="Straight talk about laryngeal paralysis in dogs including costs, surgery, treatment alternatives and FAQs."
         canonical="https://larparlife.com/patients"
       />
-      <div className={styles.topic_head}>
-        <h1 className={styles.topic_head_title}>Dog Lover&rsquo;s Guide to <span className="mobile-show-inline"><br /></span> Canine Laryngeal Paralysis &amp; GOLPP</h1>
-      </div>
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
 
       <section className={styles.section}>
         <div className={styles.section_content}>
-
-          <div className={styles.guide_nav}>
-            <div className={styles.guide_nav_items}>
-              <div className={styles.guide_nav_topics}>
-                <LuArrowUpWideNarrow />Lar Par Guide Topics
-              </div>
-              <div className={styles.guide_nav_topics}>
-                Learn About Stents<MdReadMore />
-              </div>
-            </div>
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Dog Lover&rsquo;s Guide to <span className="mobile-show-inline"><br /></span> <span className="mobile-hide-inline">Canine</span> Laryngeal Paralysis &amp; GOLPP</h1>
           </div>
-            <div className={styles.topic_subhead}>
-              <h2 className={styles.topic_subhead_title}>The Straight Truth About Lar Par and GOLPP in Dogs
-              </h2>
-            </div>
-          <SkipThis />
+          {/* Submenu for the Patients pages */}
+          <PatientsNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>The Straight Truth About <span className="mobile-show-inline"><br /></span> Lar Par and GOLPP in Dogs
+            </h2>
+          </div>
         </div>
-        {/* Submenu for the Patients pages */}
-        <PatientsNav />
+
   
 
         <section className={styles.section}>
