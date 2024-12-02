@@ -60,10 +60,10 @@ const Cost = () => {
       {/* This should actually be the Diagnosis Costs section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-
+          <hr className={styles.content_list_spacer}/>
             {/* Estimating the Bill  */}
             <div className={styles.content_block}>
-              <h2 className={styles.content_subhead}>Estimating The Cost of Lar Par</h2>
+              <h2 className={styles.content_subhead}>First Step: Definitive Diagnosis</h2>
               <figure className={styles.figure_float_right}>
                 <Image src={GolppDiagnosisTests} className={styles.figure_image} alt="GOLPP Diagnosis Test"/>
                 <figcaption className={styles.figure_caption}>

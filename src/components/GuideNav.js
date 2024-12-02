@@ -19,12 +19,12 @@ const GuideNav = () => {
                 <LuArrowUpWideNarrow 
                   className={styles.guide_nav_items_icon}
                 />
-                <span className='mobile-hide-inline'>Lar Par Guide</span> All Topics
+                 &nbsp;Show<span className='mobile-hide-inline'>&nbsp;Lar Par Guide</span>&nbsp;Topics
             </div>
           </Link>
-          <Link href='/patients/treatment/stent' className='link-dark'>
+          <Link href='/patients/treatment/stent'>
             <div className={styles.guide_nav_item}>
-                <span className='mobile-hide-inline'>Learn</span>About Stents
+                <span className='mobile-hide-inline'>Learn&nbsp;</span>About Stents&nbsp;
                 <MdReadMore
                   className={styles.guide_nav_items_icon}
                 />
