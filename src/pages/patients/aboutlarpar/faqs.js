@@ -37,8 +37,21 @@ const Faqs = () => {
         <div className={styles.topic_head}>
           <h1 className={styles.topic_head_title}>Laryngeal Paralysis In Dogs FAQs</h1>
         </div>
-        <PatientsNav />
+
+
+        </div>
+      </section>
+
+      <section className={styles.section}>
         {/* Submenu for the Patients pages */}
+        <PatientsNav />
+      </section>
+
+
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+
+
         <div className={styles.topic_subhead}>
           <h2 className={styles.topic_subhead_title}>Answers to Common Questions About&nbsp;<span className='mobile-hide-inline'>Canine</span> Lar Par and GOLPP
           </h2>

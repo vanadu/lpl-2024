@@ -623,6 +623,7 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   // margin-top: .75rem;
   // !VA 2024
   background-color: $home_bg_color;
+  background-color: $primary_color;
   // !VA NOW, I don't know what this does
   &.active {
     display: block;
@@ -739,10 +740,12 @@ font-weight: 400;
   width: 100%;
   margin: 0 0 .5rem;
   background-color: $content_bg_color;
+  background-color: $primary_color;
+
   // border-top: 2px solid $home_bg_color;
   // border-bottom: 2px solid $home_bg_color;
-  border-top: 2px solid #959595;
-  border-bottom: 2px solid #959595;
+  // border-top: 2px solid #959595;
+  // border-bottom: 2px solid #959595;
 
   // !VA NOW, I don't know what this does
   &.active {
@@ -772,7 +775,6 @@ font-weight: 400;
   @include mphone {
     font-size: 1.125rem;
     line-height: 1.75rem;
-    font-weight: 600;
     .mobile_hide {
       display: none;
     }
@@ -780,7 +782,6 @@ font-weight: 400;
   @include lphone {
     font-size: 1.125rem;
     line-height: 1.75rem;
-    font-weight: 600;
     .mobile_hide {
       display: none;
     }
@@ -788,7 +789,6 @@ font-weight: 400;
   @include tablet {
     font-size: 1.188rem;
     line-height: 2rem;
-    font-weight: 600;
     .mobile_hide {
       display: inline;
     }
@@ -796,7 +796,6 @@ font-weight: 400;
   @include desktop {
     font-size: 1.25em;
     line-height: 2rem;
-    font-weight: 600;
     .mobile_hide {
       display: inline;
     }
@@ -804,7 +803,6 @@ font-weight: 400;
   @include ldesktop {
     font-size: 1.313rem;
     line-height: 2.25rem;
-    font-weight: 600;
     .mobile_hide {
       display: inline;
     }

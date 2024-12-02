@@ -49,7 +49,19 @@ const Patients = () => {
             <h1 className={styles.topic_head_title}>Dog Lover&rsquo;s Guide to <span className="mobile-show-inline"><br /></span> <span className="mobile-hide-inline">Canine</span> Laryngeal Paralysis &amp; GOLPP</h1>
           </div>
           {/* Submenu for the Patients pages */}
-          <PatientsNav />
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <PatientsNav />
+      </section>
+
+
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+
+
+
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>The Straight Truth About <span className="mobile-show-inline"><br /></span> Lar Par and GOLPP in Dogs
             </h2>
