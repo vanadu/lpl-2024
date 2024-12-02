@@ -167,27 +167,27 @@ function Stent() {
         <div className={styles.section_content}>
           
         <h2 className={styles.content_subhead}>Risk Assessment</h2>
-          {/* ShowMoreComponent content start */}
-          <div className={styles.content_text}>
-            <p className={styles.showmore_content_space}></p>   
-            <p className={styles.showmore_content_inline}>
-              Laryngeal stent placement isn&rsquo;t surgery, so many of the risk factors associated with surgery don&rsquo;t apply. But the stent procedure isn&rsquo;t risk&#8209;free. Just like with surgery, it can be helpful to view risk factors in terms of <span className='semibold-italic'>likelihood</span> of occurrence and <span className='semibold-italic'>severity</span> of outcome.
-            </p>
-            <span className={styles.showmore_content_space}></span>
-            <ShowMoreContent
-              title='Is the laryngeal stent procedure risky?'
-              index={3}
-              activeIndex={activeIndex}
-              setActiveIndex={setActiveIndex}
-              >
-              <div className={styles.showmore_content_block}>
-                <p className={styles.showmore_content_text}>
-                  Since the stent procedure involves no incision, requires minimal anesthesia, and can be reversed by simply removing the stent, it&rsquo;s reasonable to say that stent placement is not a risky procedure when compared to surgical treatments. Having said that, there are post-procedure complications that can occur with both stent and surgery, so it&rsquo;s best to talk about the actual <span className='semibold-italic'>risk factors</span>.
-                </p>
-              </div>
-            </ShowMoreContent>
-          </div>  
-          {/* ShowMoreComponent content end */}
+        {/* ShowMoreComponent content start */}
+        <div className={styles.content_text}>
+          <p className={styles.showmore_content_space}></p>   
+          <p className={styles.showmore_content_inline}>
+            Laryngeal stent placement isn&rsquo;t surgery, so many of the risk factors associated with surgery don&rsquo;t apply. But the stent procedure isn&rsquo;t risk&#8209;free. Just like with surgery, it can be helpful to view risk factors in terms of <span className='semibold-italic'>likelihood</span> of occurrence and <span className='semibold-italic'>severity</span> of outcome.
+          </p>
+          <span className={styles.showmore_content_space}></span>
+          <ShowMoreContent
+            title='Is the laryngeal stent procedure risky?'
+            index={3}
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+            >
+            <div className={styles.showmore_content_block}>
+              <p className={styles.showmore_content_text}>
+                Since the stent procedure involves no incision, requires minimal anesthesia, and can be reversed by simply removing the stent, it&rsquo;s reasonable to say that stent placement is not a risky procedure when compared to surgical treatments. Having said that, there are post-procedure complications that can occur with both stent and surgery, so it&rsquo;s best to talk about the actual <span className='semibold-italic'>risk factors</span>.
+              </p>
+            </div>
+          </ShowMoreContent>
+        </div>  
+        {/* ShowMoreComponent content end */}
 
         </div>
       </section>
