@@ -18,6 +18,7 @@ import { FaPaw } from 'react-icons/fa'
 import ShowMoreContent from '../../../../components/ShowMoreContent'
 import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
 import ImageCrossfade from '../../../../components/ImageCrossfade'
+import GuideNav from '@/components/GuideNav'
 // !VA Images
 import Tieback from '../../../../../public/img-tieback-kitshoff.jpg'
 import Treats4 from '../../../../../public/img-treats-04.jpg'
@@ -51,48 +52,82 @@ const SurgeryStudies = () => {
         description="Learn about UAL (tieback), BVEAP, Laser Photoablation and other surgeries for canine laryngeal paralysis"
         canonical="https://larparlife.com/patients/treatment/surgery/surgerytypes"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+      {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
-            <div className={styles.heading}>
-              <h1 className={styles.heading_head}>Surgery Types for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs<br />
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Surgery Types for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs<br />
               </h1>
-              <h2 className={styles.heading_subhead}>Types of Surgery for <span className='mobile-show-inline'><br /></span>Canine Lar Par and GOLPP</h2>
-            </div>
+          </div>
+          {/* Submenu for the Patients pages */}
+          <SurgeryNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>Types of Surgery for <span className='mobile-show-inline'><br /></span>Canine Lar Par and GOLPP</h2>
           </div>
         </div>
-        <SurgeryNav />
+      </section>  
+
+
+      {/* Surgery Types Section */}
+      <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
-            <div className={styles.content_block}>
-                
+
+          {/* Surgery Types Content */}
+          <div className={styles.content_block}>
               <p className={styles.content_text}>
                 LP surgery entails surgically modifying the larynx to create an opening that allows airflow between the paralyzed laryngeal (arytenoid) cartilages. This page summarizes the pros and cons of various surgery types based on research data. <br />
               </p>
               <p className={styles.footnote_text}> 
              <a href="https://pdfs.semanticscholar.org/d956/5eb9c6ed52531d4899b61974576e47a6ad04.pdf" className="link-source" target="_blank" rel="noreferrer noopener"> Source: Kitshoff et. al, &lsquo;Laryngeal paralysis in dogs: An update on recent knowledge&rsquo;, 2013</a>
               </p>
-            </div>
-  
-            {/* ShowMoreComponent content start */}
+
+              {/* ShowMoreComponent content start */}
               <ShowMoreContent
-                title='How does surgery affect the function of the larynx?'
-                index={1}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className={styles.showmore_content_block}>
-                  <span className={styles.showmore_content_space}></span>
-                  <p className={styles.content_text}>
-                    The larynx is responsible for vocalizing, regulating airflow, and preventing food and other contaminants from getting to the lungs. Surgery creates an opening for airflow through the paralyzed larynx. But unlike a normal larynx, this opening can&rsquo;t open and close to protect the lungs from contaminants. That results in a greater likelihood of infection i.e., <span className='italic'>aspiration pneumonia</span>. This is a downside of all surgical techniques for LP, some more so than others. 
-                  </p>
-                </div>
-              </ShowMoreContent>
-            {/* ShowMoreComponent content end */}
-            
-  
+                  title='How does surgery affect the function of the larynx?'
+                  index={1}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className={styles.showmore_content_block}>
+                    <span className={styles.showmore_content_space}></span>
+                    <p className={styles.content_text}>
+                      The larynx is responsible for vocalizing, regulating airflow, and preventing food and other contaminants from getting to the lungs. Surgery creates an opening for airflow through the paralyzed larynx. But unlike a normal larynx, this opening can&rsquo;t open and close to protect the lungs from contaminants. That results in a greater likelihood of infection i.e., <span className='italic'>aspiration pneumonia</span>. This is a downside of all surgical techniques for LP, some more so than others. 
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              {/* ShowMoreComponent content end */}
+            </div>
+          
+        </div>
+      </section>
+
+      {/* Section */}
+      <section className={styles.section}>
+        <div className={styles.section_}>
+
+          
+        </div>
+      </section>
+
+      {/* Section */}
+      <section className={styles.section}>
+        <div className={styles.section_}>
+
+          
+        </div>
+      </section>   
+
+
+      
+      {/* Cverview Section */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+
+          <div className={styles.content_block}>
             <hr className={styles.rule_underline}/>
-              <h2 className={styles.content_heading}>Surgical Techniques for Laryngeal Paralysis</h2>
+            <h2 className={styles.content_heading}>Surgical Techniques for Laryngeal Paralysis</h2>
   
             <Tabs>
               <TabList>
@@ -295,6 +330,7 @@ const SurgeryStudies = () => {
             </Tabs>
   
           </div>
+
         </div>
       </section>
     </>

@@ -6,8 +6,8 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 
 // !VA Custom Compontents
-import BottomNav from '../../../../components/BottomNav'
 import StentNav from '../../../../components/subnav1/StentNav'
+import GuideNav from '@/components/GuideNav'
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // !VA React Icons
@@ -23,14 +23,28 @@ const StentFaqs = () => {
         description="Find quick links to published research studies about stent treatments for canine laryngeal paralysis."
         canonical="https://larparlife.com/patients/treatment/stent/stentstudies"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+      {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
-            <div className={styles.heading}>
-              <h1 className={styles.heading_head}>Laryngeal Stent Studies <span className='mobile-show-inline'><br /></span>and Research Links</h1>
-              <h2 className={styles.heading_subhead}>Published Research Studies on Laryngeal Stents for Dogs </h2>
-            </div>
-            <StentNav />
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Laryngeal Stent Studies <span className='mobile-show-inline'><br /></span>and Research Links</h1>
+          </div>
+          {/* Submenu for the Patients pages */}
+          <StentNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>Published Research Studies on Laryngeal Stents for Dogs
+            </h2>
+          </div>
+        </div>
+      </section>  
+
+
+
+      {/* Studies Section */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
 
             <div className='tabs-container'>
               <Tabs>
@@ -87,7 +101,6 @@ const StentFaqs = () => {
 
 
 
-          </div>
         </div>
       </section>
     </>

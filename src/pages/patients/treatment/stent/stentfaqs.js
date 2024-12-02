@@ -7,9 +7,10 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 // !VA Custom Components
 import AccordionContent from '../../../../components/AccordionContent'
+import StentNav from '../../../../components/subnav1/StentNav'
+import GuideNav from '@/components/GuideNav'
 // !VA React Icons
 import { FaPaw } from 'react-icons/fa'
-import StentNav from '../../../../components/subnav1/StentNav'
 // !VA Style modules
 import * as styles from '../../../../styles/Light.module.scss'
 
@@ -25,22 +26,31 @@ const StentFaqs = () => {
         description="Get answers to frequently-asked questions about the stent procedure for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/treatment/stent/stentfaqs"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+      {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Stent FAQs For Laryngeal Paralysis & GOLPP in Dogs</h1>
+          </div>
+          {/* Submenu for the Patients pages */}
+          <StentNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>Answers to Common Questions About Laryngeal Stents
+            </h2>
+          </div>
+          <p className={styles.content_text}>Here are answers to a some questions we had before we decided to go ahead with the stent procedure for Miss&nbsp;B. This info came from veterinary websites, scientific publications and through direct interactions with veterinarians. We&rsquo;re not veterinarians. Always consult with a veterinary professional before making any decisions regarding the health of your companion animal. </p>
+        </div>
+      </section>  
 
-            <div className={styles.heading}>
-              <h1 className={styles.heading_head}>Stent FAQs For Laryngeal Paralysis & GOLPP in Dogs</h1>
-              <h2 className={styles.heading_subhead}>Answers to Common Questions About Laryngeal Stents</h2>
-              <StentNav />
-            </div>
+      {/* Stent FAQs Section */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
 
             {/* FAQs Content Start */}
             <div className={styles.content_block}>
   
-              <p className={styles.content_text}>Here are answers to a some questions we had before we decided to go ahead with the stent procedure for Miss&nbsp;B. This info came from veterinary websites, scientific publications and through direct interactions with veterinarians. We&rsquo;re not veterinarians. Always consult with a veterinary professional before making any decisions regarding the health of your companion animal. </p>
-
-
               <AccordionContent
                 className='accordion__faqs'
                 title="Is the stent procedure the best option for all animals with laryngeal paralysis?"
@@ -174,7 +184,6 @@ const StentFaqs = () => {
 
             </div>
             {/* FAQs Content End */}
-          </div>
 
         </div>
       </section>

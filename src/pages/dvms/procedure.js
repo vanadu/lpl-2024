@@ -16,7 +16,7 @@ import { FaPaw } from 'react-icons/fa'
 import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Custom Components
 import DvmsNav from '../../components/subnav1/DvmsNav'
-import BottomNav from '../../components/BottomNav'
+import GuideNav from '@/components/GuideNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 // import AccordionContent from '../../components/AccordionContent'
 import SkipThis from '../../components/SkipThis'
@@ -45,22 +45,29 @@ const Procedure = () => {
         description="Stent implant procedure details for treating laryngeal paralysis in dogs based on published research."
         canonical="https://larparlife.com/dvms/procedure"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+      {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
-            <div className={styles.heading}>
-              {/* <hr /> */}
-              <h1 className={styles.heading_head}>Laryngeal Stent Implant Procedure Details
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Laryngeal Stent Implant Procedure&nbsp;Details
               </h1>
-              <h2 className={styles.heading_subhead}>Information for Veterinarians</h2>
-            </div>
           </div>
-          {/* <SkipThis /> */}
+          {/* Submenu for the Patients pages */}
+          <DvmsNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>Information for Veterinarians</h2>
+          </div>
         </div>
+      </section>  
+
+      
+      <section className={styles.section}>
+
         <div className={styles.section_content}>
           <div className={styles.content}>
-        {/* Submenu for the DVMs pages */}
-        <DvmsNav />
+
 
         {/* Procedure Intro Content Start */}
         <div className={styles.content_block}>

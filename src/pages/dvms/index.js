@@ -16,10 +16,9 @@ import { FaPaw } from 'react-icons/fa'
 import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Custom Components
 import DvmsNav from '../../components/subnav1/DvmsNav'
-import BottomNav from '../../components/BottomNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 // import AccordionContent from '../../components/AccordionContent'
-import SkipThis from '../../components/SkipThis'
+import GuideNav from '@/components/GuideNav'
 // !VA Images
 import Typewriter from '../../../public/img-typewriter.jpg'
 import TypeSilicone from '../../../public/img-type-silicone.jpg'
@@ -42,17 +41,24 @@ const DVMs = () => {
         description="Info for veterinarians about laryngeal stent treatments for canine laryngeal paralysis based on published research."
         canonical="https://larparlife.com/dvms"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+      {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
-            <div className={styles.heading}>
-              <h1 className={styles.heading_head}>Stent Implant for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Stent Implant for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs
               </h1>
-              <h2 className={styles.heading_subhead}>Information for Veterinarians</h2>
-            </div>
+          </div>
+          {/* Submenu for the DVMs pages */}
+          <DvmsNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>Information for Veterinarians</h2>
           </div>
         </div>
-        <DvmsNav />
+      </section>  
+
+      <section className={styles.section}>
   
         <div className={styles.section_content}>
           <div className={styles.content}>
@@ -79,8 +85,6 @@ const DVMs = () => {
                 Here you can learn about the stent procedure for canine laryngeal paralysis &mdash; types of stents, procedure details, and revenue prospects for your practice. You can choose to be a leader in your community by adopting this proven 21st-century procedure to help your clients and the animals they love, as well as generate the revenue you need to run a successful business.
               </p>
             </div>
-
-
 
             {/* Background Content Start */}
             

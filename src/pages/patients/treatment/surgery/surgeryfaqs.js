@@ -8,6 +8,7 @@ import { NextSeo } from 'next-seo'
 // !VA Custom Components
 import AccordionContent from '../../../../components/AccordionContent'
 import ShowMoreContent from '../../../../components/ShowMoreContent'
+import GuideNav from '@/components/GuideNav'
 // !VA React Icons
 import { FaPaw } from 'react-icons/fa'
 import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
@@ -28,42 +29,53 @@ const StentFaqs = () => {
         description="Explore frequently-asked questions about tieback and other surgery types for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/treatment/surgery/surgeryfaqs"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+      {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.content}>
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Surgery FAQs for Laryngeal Paralysis in Dogs</h1>
+          </div>
+          {/* Submenu for the Patients pages */}
+          <SurgeryNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>Frequently-Asked Questions About Surgery for Lar Par & GOLPP</h2>
+          </div>
+        </div>
+      </section>  
 
-            <div className={styles.heading}>
-              <h1 className={styles.heading_head}>Surgery FAQs for Laryngeal Paralysis in Dogs</h1>
-              <h2 className={styles.heading_subhead}>Frequently-Asked Questions About Surgery for Lar Par & GOLPP</h2>
-              <SurgeryNav />
-            </div>
+      {/* Disclaimer Section */}
+      <section className={styles.section}>
+        <div className={styles.section_}>
 
-            {/* FAQs Content Start */}
-            <div className={styles.content_block}>
-  
-              {/* ShowMoreComponent content start */}
-              <div className={styles.content_text}>
-                <ShowMoreContent
-                  title='Read Important Disclaimer'
-                  index={1}
-                  activeIndex={activeIndex}
-                  setActiveIndex={setActiveIndex}
-                  >
-                  <div className="showmore-content-text">
-                    <span className="showmore-content-space"></span>
-                    <p className="showmore-content-text">
-                    Our objective is to present information as non-veterinarians from the perspective of the patient, not to answer veterinary-technical questions. The responses to these FAQs are based on social media interactions, publicly-available research studies, and discussions we&lsquo;ve had with veterinary professionals. For answers to veterinary-technical questions, ask your veterinarian.
-                    </p>
-                  </div>
-                </ShowMoreContent>
-              </div>  
-              {/* ShowMoreComponent content end */}
+          {/* ShowMoreComponent content start */}
+          <div className={styles.content_text}>
+            <ShowMoreContent
+              title='Read Important Disclaimer'
+              index={1}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              >
+              <div className="showmore-content-text">
+                <span className="showmore-content-space"></span>
+                <p className="showmore-content-text">
+                Our objective is to present information as non-veterinarians from the perspective of the patient, not to answer veterinary-technical questions. The responses to these FAQs are based on social media interactions, publicly-available research studies, and discussions we&lsquo;ve had with veterinary professionals. For answers to veterinary-technical questions, ask your veterinarian.
+                </p>
+              </div>
+            </ShowMoreContent>
+          </div>  
+          {/* ShowMoreComponent content end */}
+          
+        </div>
+      </section>
 
+      {/* FAQs Section */}
+      <section className={styles.section}>
+        <div className={styles.section_}>
 
-
-
-
-
+                      {/* FAQs Content Start */}
+                      <div className={styles.content_block}>
               <AccordionContent
                 className='accordion__faqs'
                 title="Is tieback surgery safe or is it risky? "
@@ -152,23 +164,17 @@ const StentFaqs = () => {
                 SURGERYFAQANSWER
                 </p>
               </AccordionContent> */}
-
-
-
-
-
-              
                 
-                <p className={styles.content_text}>
-                  If you have other questions of go suggest a correction, please send us an email with the Contact form or via Facebook Messanger on our Facebook Group: <a href="https://www.facebook.com/groups/laryngealstentfordogs" className="link-dark" target="_blank" rel="noreferrer noopener">Facebook group</a>.
-                </p>
+              <p className={styles.content_text}>
+                If you have other questions of go suggest a correction, please send us an email with the Contact form or via Facebook Messanger on our Facebook Group: <a href="https://www.facebook.com/groups/laryngealstentfordogs" className="link-dark" target="_blank" rel="noreferrer noopener">Facebook group</a>.
+              </p>
 
             </div>
             {/* FAQs Content End */}
-          </div>
 
         </div>
       </section>
+      
     </>
   )
 }

@@ -12,10 +12,9 @@ import { FaPaw } from 'react-icons/fa'
 import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Custom Components
 import DvmsNav from '../../components/subnav1/DvmsNav'
-import BottomNav from '../../components/BottomNav'
+import GuideNav from '@/components/GuideNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 // import AccordionContent from '../../components/AccordionContent'
-import SkipThis from '../../components/SkipThis'
 // !VA Images
 // import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
 // !VA Images
@@ -39,6 +38,22 @@ const Business = () => {
         content="Laryngeal Stent for Canine Laryngeal Paralysis: &mdash; Procedure, Business Case and Ethics" />
         <meta name="keywords" content="laryngeal paralysis in dogs, stent, laryngeal stent, veterinarians, DVMs, surgery, cost, treatment options, laryngeal stent, tieback surgery, symptoms, causes, diagnosis, sound, progress, canine laryngeal paralysis, LarPar, geriatric-onset laryngeal paralysis, GOLPP"></meta>
       </Head>
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
+      {/* Intro Section */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Laryngeal Stent Procedure for LarPar/GOLPP
+              </h1>
+          </div>
+          {/* Submenu for the Patients pages */}
+          <DvmsNav />
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>Business Case</h2>
+          </div>
+        </div>
+      </section>  
 
       <section className={styles.section}>
         <div className={styles.section_content}>
