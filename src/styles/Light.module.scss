@@ -740,12 +740,11 @@ font-weight: 400;
   width: 100%;
   margin: 0 0 .5rem;
   background-color: $content_bg_color;
-  background-color: $primary_color;
 
   // border-top: 2px solid $home_bg_color;
   // border-bottom: 2px solid $home_bg_color;
-  // border-top: 2px solid #959595;
-  // border-bottom: 2px solid #959595;
+  border-top: 2px solid #959595;
+  border-bottom: 2px solid #959595;
 
   // !VA NOW, I don't know what this does
   &.active {

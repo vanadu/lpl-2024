@@ -40,8 +40,17 @@ const Surgery = () => {
           <div className={styles.topic_head}>
             <h1 className={styles.topic_head_title}>Lar Par Surgery for Dogs: Types, Risk Factors and Background</h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <SurgeryNav />
+        </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        <SurgeryNav />
+      </section>
+
+      {/* Intro Section Subhead */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>Surgical Treatment Options for<span className='mobile-hide-inline'>&nbsp;Canine</span>&nbsp;Laryngeal&nbsp;Paralysis</h2>
           </div>

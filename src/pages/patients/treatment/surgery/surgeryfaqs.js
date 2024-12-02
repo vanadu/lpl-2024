@@ -37,8 +37,17 @@ const StentFaqs = () => {
           <div className={styles.topic_head}>
             <h1 className={styles.topic_head_title}>Surgery FAQs for Laryngeal Paralysis in Dogs</h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <SurgeryNav />
+          </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        <SurgeryNav />
+      </section>
+
+      {/* Intro Section Subhead */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>Frequently-Asked Questions About Surgery for Lar Par & GOLPP</h2>
           </div>

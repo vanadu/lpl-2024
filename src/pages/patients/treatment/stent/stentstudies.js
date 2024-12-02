@@ -31,16 +31,23 @@ const StentFaqs = () => {
           <div className={styles.topic_head}>
             <h1 className={styles.topic_head_title}>Laryngeal Stent Studies <span className='mobile-show-inline'><br /></span>and Research Links</h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <StentNav />
+          </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        <StentNav />
+      </section>
+
+      {/* Intro Section Subhead */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>Published Research Studies on Laryngeal Stents for Dogs
             </h2>
           </div>
         </div>
       </section>  
-
-
 
       {/* Studies Section */}
       <section className={styles.section}>

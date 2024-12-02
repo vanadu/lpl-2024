@@ -63,12 +63,25 @@ const AboutLarpar = () => {
           <div className={styles.topic_head}>
             <h1 className={styles.topic_head_title}>Lar Par Crash Course:<span className='mobile-show-inline'><br /></span> Symptoms, Causes & Progression</h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <PatientsNav />
+        </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        <PatientsNav />
+      </section>
+
+      {/* Intro Section Subhead */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>How Do You Know If Your Dog <span className='mobile-show-inline'><br /></span> Has Laryngeal Paralysis?</h2>
           </div>
+        </div>
+      </section>
 
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           {/* ShowMoreComponent content start */}
           <div className={styles.content_block}>
             <div className={styles.showmore_content_inline}>

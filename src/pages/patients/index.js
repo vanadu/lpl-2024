@@ -42,32 +42,28 @@ const Patients = () => {
       {/* Navbar for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
 
-      {/* Intro Section */}
+      {/* Intro Section Head */}
       <section className={styles.section}>
         <div className={styles.section_content}>
           <div className={styles.topic_head}>
             <h1 className={styles.topic_head_title}>Dog Lover&rsquo;s Guide to <span className="mobile-show-inline"><br /></span> <span className="mobile-hide-inline">Canine</span> Laryngeal Paralysis &amp; GOLPP</h1>
           </div>
-          {/* Submenu for the Patients pages */}
         </div>
       </section>
 
+      {/* Submenu for the Patients pages */}
       <section className={styles.section}>
         <PatientsNav />
       </section>
 
-
+      {/* Intro Section Subhead */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-
-
-
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>The Straight Truth About <span className="mobile-show-inline"><br /></span> Lar Par and GOLPP in Dogs
             </h2>
           </div>
         </div>
-
       </section>  
 
       {/* What Is Laryngeal Paralysis Section */}

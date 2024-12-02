@@ -49,8 +49,17 @@ const UseCases = () => {
             <h1 className={styles.topic_head_title}>Use Cases For <span className='mobile-show-inline'><br /></span>Laryngeal Stents in Dogs
               </h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <DvmsNav />
+          </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        {/* Submenu for the Patients pages */}
+        <DvmsNav />
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>Information for Veterinarians</h2>
           </div>

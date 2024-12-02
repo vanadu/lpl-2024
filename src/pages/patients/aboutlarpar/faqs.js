@@ -29,36 +29,33 @@ const Faqs = () => {
     />
     {/* Navbar for the Guide pages with All Topics and About Stents links */}
     <GuideNav />
-
+    {/* Intro Section Head*/}
     <section className={styles.section}>
       <div className={styles.section_content}>
-
-
         <div className={styles.topic_head}>
           <h1 className={styles.topic_head_title}>Laryngeal Paralysis In Dogs FAQs</h1>
         </div>
+      </div>
+    </section>
 
+    {/* Submenu for the Patients pages */}
+    <section className={styles.section}>
+      {/* Submenu for the Patients pages */}
+      <PatientsNav />
+    </section>
 
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        {/* Submenu for the Patients pages */}
-        <PatientsNav />
-      </section>
-
-
-      <section className={styles.section}>
-        <div className={styles.section_content}>
-
-
+    {/* Intro Section Subhead*/}
+    <section className={styles.section}>
+      <div className={styles.section_content}>
         <div className={styles.topic_subhead}>
           <h2 className={styles.topic_subhead_title}>Answers to Common Questions About&nbsp;<span className='mobile-hide-inline'>Canine</span> Lar Par and GOLPP
           </h2>
         </div>
-
       </div>
-      
+    </section>
+
+    {/* FAQs Section */}
+    <section className={styles.section}>
       <div className={styles.section_content}>
         <div className={styles.content}>
           <p className={styles.content_text}>Here are some answers to frequently-asked questions about laryngeal paralysis in dogs. This info comes from veterinary websites, scientific publications, through interactions with veterinarians, from our own experience with laryngeal paralysis and the stent implant in our dog. We&rsquo;re not veterinarians. Always consult with a veterinary professional before making any decisions regarding the health of your companion. </p>

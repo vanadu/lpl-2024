@@ -41,28 +41,24 @@ const Cost = () => {
       {/* Navbar for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
 
-      {/* Intro Section */}
+      {/* Intro Section Head*/}
       <section className={styles.section}>
         <div className={styles.section_content}>
           <div className={styles.topic_head}>
             <h1 className={styles.topic_head_title}>Treatment Costs For<span className='mobile-show-inline'><br /></span> Laryngeal Paralysis & GOLPP</h1>
           </div>
-
-
-
-          </div>
+        </div>
       </section>
 
+      {/* Submenu for the Patients pages */}
       <section className={styles.section}>
         {/* Submenu for the Patients pages */}
         <PatientsNav />
       </section>
 
-
+      {/* Intro Section Subead*/}
       <section className={styles.section}>
         <div className={styles.section_content}>
-
-
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>The Financial Realities of <span className='mobile-show-inline'><br /></span>Treating Your Dog&lsquo;s Lar Par
             </h2>
@@ -70,10 +66,7 @@ const Cost = () => {
         </div>
       </section>
 
-
-
-      {/* Estimating Section */}
-      {/* This should actually be the Diagnosis Costs section */}
+      {/* Diagnosis Costs section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
           <hr className={styles.content_list_spacer}/>

@@ -63,13 +63,27 @@ function Stent() {
           <div className={styles.topic_head}>
             <h1 className={styles.topic_head_title}>Stent Treatment for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs</h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <StentNav />
+        </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        <StentNav />
+      </section>
+
+      {/* Intro Section Subhead */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>The 21st Century Solution <span className='mobile-show-inline'><br /></span>for Senior Lar Par Dogs
             </h2>
           </div>
+        </div>
+      </section>
 
+      {/* Overview Section */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <figure className={styles.figure_float_right}>
             <Image src={MissBXrayStent}  className={styles.figure_image} alt="Miss B&rsquo;s laryngeal stent" />
             <figcaption className={styles.figure_caption}>Miss B&rsquo;s Laryngeal Stent</figcaption>
@@ -82,7 +96,6 @@ function Stent() {
             What they&rsquo;re not talking about is the <span className='semibold-italic'>laryngeal stent</span> &mdash; the future of laryngeal paralysis treatment in the 21st century.&#8203;&nbsp;
             </p>
           </div>  
-
         </div>
       </section>
 

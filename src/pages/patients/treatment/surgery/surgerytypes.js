@@ -61,8 +61,17 @@ const SurgeryStudies = () => {
             <h1 className={styles.topic_head_title}>Surgery Types for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs<br />
               </h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <SurgeryNav />
+          </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        <SurgeryNav />
+      </section>
+
+      {/* Intro Section Subhead */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>Types of Surgery for <span className='mobile-show-inline'><br /></span>Canine Lar Par and GOLPP</h2>
           </div>

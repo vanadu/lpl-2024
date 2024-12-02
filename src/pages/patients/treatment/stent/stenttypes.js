@@ -47,6 +47,8 @@ const StentTypes = () => {
         description="Learn about types of stents for canine laryngeal paralysis:  silicone stents vs Nitinol wire stents."
         canonical="https://larparlife.com/patients/treatment/stent/stenttypes"
       />
+      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
@@ -54,8 +56,17 @@ const StentTypes = () => {
             <h1 className={styles.topic_head_title}>Stent Types for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs
             </h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <StentNav />
+        </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        <StentNav />
+      </section>
+
+      {/* Intro Section Subhead */}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>Silicone Stents vs. <span className='mobile-show-inline'><br /></span>Nitinol Wire Stents</h2>
           </div>

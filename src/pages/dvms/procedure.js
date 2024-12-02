@@ -19,7 +19,7 @@ import DvmsNav from '../../components/subnav1/DvmsNav'
 import GuideNav from '@/components/GuideNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 // import AccordionContent from '../../components/AccordionContent'
-import SkipThis from '../../components/SkipThis'
+
 // !VA Images
 // import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
 // !VA Images
@@ -54,8 +54,17 @@ const Procedure = () => {
             <h1 className={styles.topic_head_title}>Laryngeal Stent Implant Procedure&nbsp;Details
               </h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <DvmsNav />
+        </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        {/* Submenu for the Patients pages */}
+        <DvmsNav />
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>Information for Veterinarians</h2>
           </div>

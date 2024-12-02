@@ -47,8 +47,18 @@ const Business = () => {
             <h1 className={styles.topic_head_title}>Laryngeal Stent Procedure for LarPar/GOLPP
               </h1>
           </div>
-          {/* Submenu for the Patients pages */}
-          <DvmsNav />
+        </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        {/* Submenu for the Patients pages */}
+        <DvmsNav />
+      </section>
+
+
+      <section className={styles.section}>
+        <div className={styles.section_content}>
           <div className={styles.topic_subhead}>
             <h2 className={styles.topic_subhead_title}>Business Case</h2>
           </div>
@@ -56,17 +66,6 @@ const Business = () => {
       </section>  
 
       <section className={styles.section}>
-        <div className={styles.section_content}>
-          <div className={styles.content}>
-            <div className={styles.heading}>
-              {/* <hr /> */}
-              <h1 className={styles.heading_subhead}>Laryngeal Stent Procedure for LarPar/GOLPP
-              </h1>
-              <h2 className={styles.heading_head}>Business Case</h2>
-            </div>
-          </div>
-          {/* <SkipThis /> */}
-        </div>
         <div className={styles.section_content}>
           <div className={styles.content}>
         {/* Submenu for the DVMs pages */}
