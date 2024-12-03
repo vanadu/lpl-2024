@@ -69,7 +69,7 @@ const Cost = () => {
       {/* Diagnosis Costs section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <hr className={styles.content_list_spacer}/>
+          {/* <hr className={styles.content_list_spacer}/> */}
             {/* Estimating the Bill  */}
             <div className={styles.content_block}>
               <h2 className={styles.content_subhead}>First Step: Definitive Diagnosis</h2>

@@ -397,9 +397,6 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
 
 // !VA LAR PAR GUIDE NAV MENU
 .guide_nav {
-  @include ldesktop {
-    width: 1200px;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,6 +478,18 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
 // !VA These are the same as in AllAbout.module.scss
 
 .topic_head {
+  @include mphone {
+      margin: .5rem 0 .75rem;
+    }
+    @include tablet {
+      margin: 1.25rem 0;
+    }
+    @include desktop {
+      margin: 1.5rem 0 1.25rem;
+    }
+    @include ldesktop {
+      margin: 1.75rem 0 1.5rem;
+    }
   // !VA 2024
   position: relative;
   width: 100%;
@@ -623,7 +632,6 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   // margin-top: .75rem;
   // !VA 2024
   background-color: $home_bg_color;
-  background-color: $primary_color;
   // !VA NOW, I don't know what this does
   &.active {
     display: block;
@@ -717,17 +725,19 @@ font-weight: 400;
 .section_submenu {
   // !VA The MQs below appear to not have any function
   @include mphone {
-    margin: 0 0 .5rem;
+    margin: 0 0 .75rem;
   }
-  // @include lphone {
-  // }
-  // @include tablet {
-  // } 
-  // @include desktop {
-  // }
-    @include ldesktop {
-      margin-bottom: 2rem;
-      padding: 0;
+  @include lphone {
+    margin: 0 0 1rem;
+  }
+  @include tablet {
+    margin: 0 0 1.5rem;
+  } 
+  @include desktop {
+    margin: 0 0 1.5rem;
+  }
+  @include ldesktop {
+      margin: 0 0 1.75rem;
     }
   display: flex;
   position: sticky;
@@ -740,11 +750,8 @@ font-weight: 400;
   width: 100%;
   margin: 0 0 .5rem;
   background-color: $content_bg_color;
-
-  // border-top: 2px solid $home_bg_color;
-  // border-bottom: 2px solid $home_bg_color;
-  border-top: 2px solid #959595;
-  border-bottom: 2px solid #959595;
+  border-top: 2px solid $secondary_accent_color;
+  border-bottom: 2px solid $secondary_accent_color;
 
   // !VA NOW, I don't know what this does
   &.active {
@@ -1916,20 +1923,14 @@ font-weight: 400;
 }
 
 .topic_subhead {
-  @include mphone {
-    margin-top: .5rem;
-  }
-  @include lphone {
-    margin-top: .5rem;
-  }
   @include tablet {
-    margin-top: .75rem;
+    margin-bottom: .25rem;
   }
   @include desktop {
-    margin-top: 1.313em;
+    margin-bottom: .5rem;
   }
   @include ldesktop {
-    margin-top: 2rem;
+    margin-bottom: .75rem;
   }
   width: 100%;
   height: auto;
@@ -1970,9 +1971,10 @@ font-weight: 400;
   // padding: 0 0 .25rem;
   font-family: $secondary_font;
   font-family: $inter_font;
+  // font-family: $primary_font;
   font-size: $rootSubheadFontSize;
   line-height: $rootSubheadLineHeight;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   // !VA 04.02
   color: $dark_text_color;

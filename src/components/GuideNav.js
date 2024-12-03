@@ -11,8 +11,7 @@ import * as styles from '../styles/Light.module.scss'
 const GuideNav = () => {
   return (
     <>
-
-<div className={styles.guide_nav}>
+      <div className={styles.guide_nav}>
         <div className={styles.guide_nav_items}>
           <Link href='/allabout'>
             <div className={styles.guide_nav_item}>

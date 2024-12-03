@@ -38,8 +38,18 @@ const Treatment = () => {
           <div className={styles.topic_head}>
             <h1 className={styles.topic_head_title}>Treatment Options for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs<span className='mobile-show-inline'><br /></span> Symptoms, Causes & Progression</h1>
             </div>
-            {/* Submenu for the Treatment pages */}
-            <TreatmentNav />
+            </div>
+      </section>
+
+      {/* Submenu for the Patients pages */}
+      <section className={styles.section}>
+        {/* Submenu for the Patients pages */}
+        <TreatmentNav />
+      </section>
+
+      {/* Intro Section Subead*/}
+      <section className={styles.section}>
+        <div className={styles.section_content}>
             <div className={styles.topic_subhead}>
               <h2 className={styles.topic_subhead_title}>Veterinary Treatment vs.<span className="mobile-show"><br/></span> Managing Lar Par Symptoms</h2>
             </div>

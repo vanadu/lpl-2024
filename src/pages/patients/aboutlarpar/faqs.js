@@ -33,7 +33,7 @@ const Faqs = () => {
     <section className={styles.section}>
       <div className={styles.section_content}>
         <div className={styles.topic_head}>
-          <h1 className={styles.topic_head_title}>Laryngeal Paralysis In Dogs FAQs</h1>
+          <h1 className={styles.topic_head_title}>Laryngeal Paralysis In Dogs Frequently&nbsp;Asked&nbsp;Questions</h1>
         </div>
       </div>
     </section>
