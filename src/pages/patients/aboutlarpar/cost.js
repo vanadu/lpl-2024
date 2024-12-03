@@ -13,8 +13,8 @@ import 'react-tooltip/dist/react-tooltip.css'
 import { FaPaw } from 'react-icons/fa'
 // !VA Components
 import ShowMoreContent from '../../../components/ShowMoreContent'
-import PatientsNav from '../../../components/subnav1/PatientsNav'
-// !VA 2024 Guide replaces SkipThis compontent
+import PatientsNav from '../../../components/guidenav/PatientsNav'
+// !VA 2024 Guide navigation
 import GuideNav from '@/components/GuideNav'
 // !VA Images
 import GolppDiagnosisTests from '../../../../public/img-golpp-diagnosis-tests.jpg'
@@ -38,7 +38,7 @@ const Cost = () => {
         description="Learn about the cost of laryngeal paralysis, including diagnosis, surgery, stent and treatment alternatives."
         canonical="https://larparlife.com/patients/aboutlarpar/cost"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
 
       {/* Intro Section Head*/}

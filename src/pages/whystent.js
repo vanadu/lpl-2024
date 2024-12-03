@@ -11,10 +11,10 @@ import { FaRegMinusSquare, FaRegPlusSquare } from 'react-icons/fa'
 import { BsPlusSquareDotted, BsMinusSquareDotted } from 'react-icons/bs'
 import { FaPaw } from 'react-icons/fa'
 import { FaHeart } from 'react-icons/fa'
+import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Custom Components
 import ShowMoreContent from '@/components/ShowMoreContent'
 import BottomNav from '@/components/BottomNav'
-import SkipThis from '@/components/SkipThis'
 // !VA Images
 import MissBXrayStentHeart from '/public/img-miss-b-stent-heart.jpg'
 // !VA Style modules
@@ -46,7 +46,15 @@ function WhyStent() {
                 <span className={styles.why_title_head}>Stent Treatment For Laryngeal&nbsp;Paralysis&nbsp;in&nbsp;Dogs!</span></h1>
 
               </div>
-              <SkipThis />
+              <div className={styles.skip_this}>
+                <div 
+                  className={styles.skip_this_button}
+                  >
+                  <Link href="/patients/treatment/stent" className={styles.skip_this_link}>
+                  Skip this and go <span className='mobile-hide-inline'>straight</span> to&nbsp;the&nbsp;<span className='nowrap'><span className='bold'>Stent</span> page&nbsp;&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} /></span>
+                  </Link>
+                </div>
+              </div>
               <p className={styles.content_text}>
                 The laryngeal stent is the first major veterinary-medical development in laryngeal paralysis treatment in decades. It&lsquo;s not intended to replace laryngeal paralysis surgery, but instead to give veterinarians another tool for their treatment toolchest to help ease the suffering of Lar Par dogs in the short-term until surgery can be performed or even in the long-term for dogs who aren&lsquo;t candidates for surgery due advanced age, pre-existing conditions or financial constraints. And what&lsquo;s not to love about that?
               </p>

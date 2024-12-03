@@ -8,7 +8,7 @@ import { NextSeo } from 'next-seo'
 
 // !VA Custom Components
 import ShowMoreContent from '../../../components/ShowMoreContent'
-import TreatmentNav from '../../../components/subnav1/TreatmentNav'
+import TreatmentNav from '../../../components/guidenav/TreatmentNav'
 import GuideNav from '@/components/GuideNav'
 
 // !VA React Icons
@@ -33,7 +33,7 @@ const Managing = () => {
         description="Learn about managing laryngeal paralysis in dogs with behavioral modifications and/or medications."
         canonical="https://larparlife.com/patients/treatment/managing"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
 
       {/* Intro Section */}

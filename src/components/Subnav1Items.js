@@ -7,7 +7,6 @@ import * as styles from '../../styles/Header.module.scss'
 const Subnav1Items = ( { items } ) => {
   // !VA Piece of state to contain the subnav items, i.e. the object with the array of Stories, Patients and DVMs submenus.
 
-
   return (
     <>
       <div className={styles.nav_subnav1}>

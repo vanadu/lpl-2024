@@ -1,6 +1,5 @@
 import React from 'react'
 import { useRef, useContext } from 'react'
-import { SitenavContext} from './NavBar'
 
 
 import Link from 'next/link'

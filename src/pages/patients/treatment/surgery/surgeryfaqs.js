@@ -11,7 +11,7 @@ import ShowMoreContent from '../../../../components/ShowMoreContent'
 import GuideNav from '@/components/GuideNav'
 // !VA React Icons
 import { FaPaw } from 'react-icons/fa'
-import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
+import SurgeryNav from '../../../../components/guidenav/SurgeryNav'
 // !VA Style modules
 import * as styles from '../../../../styles/Light.module.scss'
 
@@ -29,7 +29,7 @@ const StentFaqs = () => {
         description="Explore frequently-asked questions about tieback and other surgery types for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/treatment/surgery/surgeryfaqs"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

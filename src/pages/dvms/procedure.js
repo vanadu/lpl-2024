@@ -15,13 +15,13 @@ import { FaPaw } from 'react-icons/fa'
 // !VA React Icons
 import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Custom Components
-import DvmsNav from '../../components/subnav1/DvmsNav'
+import DvmsNav from '../../components/guidenav/DvmsNav'
 import GuideNav from '@/components/GuideNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 // import AccordionContent from '../../components/AccordionContent'
 
 // !VA Images
-// import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
+// import SurgeryNav from '../../../../components/guidenav/SurgeryNav'
 // !VA Images
 import RicartFig1 from './../../../public/img-ricart-fig1.jpg'
 import RicartFig5 from './../../../public/img-ricart-fig5.jpg'
@@ -45,7 +45,7 @@ const Procedure = () => {
         description="Stent implant procedure details for treating laryngeal paralysis in dogs based on published research."
         canonical="https://larparlife.com/dvms/procedure"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

@@ -13,7 +13,7 @@ import 'react-tooltip/dist/react-tooltip.css'
 import { FaPaw } from 'react-icons/fa'
 
 // !VA Custom Components
-import PatientsNav from '../../components/subnav1/PatientsNav'
+import PatientsNav from '../../components/guidenav/PatientsNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 import AccordionContent from '../../components/AccordionContent'
 import GuideNav from '@/components/GuideNav'
@@ -29,8 +29,12 @@ import * as styles from '../../styles/Light.module.scss'
 
 const Patients = () => {
 
+  // !VA Index of the current ShowMore 
   const [activeIndex, setActiveIndex] = useState(0)
+  // !VA Index of the current Accordion block
   const [activeAccordionIndex, setActiveAccordionIndex] = useState(0)
+
+  const [blob, setBlob] = useState("");
 
   return (
     <>
@@ -39,8 +43,12 @@ const Patients = () => {
         description="Straight talk about laryngeal paralysis in dogs including costs, surgery, treatment alternatives and FAQs."
         canonical="https://larparlife.com/patients"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
-      <GuideNav />
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
+      <GuideNav 
+       blob = {"booger"}
+      
+      
+      />
 
       {/* Intro Section Head */}
       <section className={styles.section}>

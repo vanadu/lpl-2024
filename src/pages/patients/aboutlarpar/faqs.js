@@ -8,10 +8,9 @@ import { NextSeo } from 'next-seo'
 
 // !VA Custom Components
 import AccordionContent from '../../../components/AccordionContent'
-import BottomNav from '../../../components/BottomNav'
 
 import GuideNav from '@/components/GuideNav'
-import PatientsNav from '@/components/subnav1/PatientsNav'
+import PatientsNav from '@/components/guidenav/PatientsNav'
 // !VA Style modules
 import * as styles from '../../../styles/Light.module.scss'
 
@@ -27,7 +26,7 @@ const Faqs = () => {
       description="Find answers to a wide range of frequently-asked questions about laryngeal paralysis in dogs"
       canonical="https://larparlife.com/patients/aboutlarpar/faqs"
     />
-    {/* Navbar for the Guide pages with All Topics and About Stents links */}
+    {/* Navigation for the Guide pages with All Topics and About Stents links */}
     <GuideNav />
     {/* Intro Section Head*/}
     <section className={styles.section}>

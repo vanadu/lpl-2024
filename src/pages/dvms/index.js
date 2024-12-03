@@ -15,7 +15,7 @@ import { FaPaw } from 'react-icons/fa'
 // !VA React Icons
 import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Custom Components
-import DvmsNav from '../../components/subnav1/DvmsNav'
+import DvmsNav from '../../components/guidenav/DvmsNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 // import AccordionContent from '../../components/AccordionContent'
 import GuideNav from '@/components/GuideNav'
@@ -41,7 +41,7 @@ const DVMs = () => {
         description="Info for veterinarians about laryngeal stent treatments for canine laryngeal paralysis based on published research."
         canonical="https://larparlife.com/dvms"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

@@ -14,12 +14,11 @@ import { FaPaw } from 'react-icons/fa'
 // !VA React Icons
 import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Custom Components
-import DvmsNav from '../../components/subnav1/DvmsNav'
+import DvmsNav from '../../components/guidenav/DvmsNav'
 import BottomNav from '../../components/BottomNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 import GuideNav from '@/components/GuideNav'
 // import AccordionContent from '../../components/AccordionContent'
-import SkipThis from '../../components/SkipThis'
 // !VA Images
 import Typewriter from '../../../public/img-typewriter.jpg'
 import TypeSilicone from '../../../public/img-type-silicone.jpg'
@@ -40,7 +39,7 @@ const UseCases = () => {
         description="Info for veterinarians about the benefits of stenting as an alternative to laryngeal paralysis surgery. "
         canonical="https://larparlife.com/dvms/usecases"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

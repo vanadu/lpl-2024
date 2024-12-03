@@ -11,12 +11,10 @@ import { FaPaw } from 'react-icons/fa'
 // !VA React Icons
 import { FaArrowCircleRight } from 'react-icons/fa'
 // !VA Custom Components
-import DvmsNav from '../../components/subnav1/DvmsNav'
+import DvmsNav from '../../components/guidenav/DvmsNav'
 import GuideNav from '@/components/GuideNav'
 import ShowMoreContent from '../../components/ShowMoreContent'
 // import AccordionContent from '../../components/AccordionContent'
-// !VA Images
-// import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
 // !VA Images
 import Treats4 from './../../../public/img-treats-04.jpg'
 import Treats5 from './../../../public/img-treats-05.jpg'
@@ -38,7 +36,7 @@ const Business = () => {
         content="Laryngeal Stent for Canine Laryngeal Paralysis: &mdash; Procedure, Business Case and Ethics" />
         <meta name="keywords" content="laryngeal paralysis in dogs, stent, laryngeal stent, veterinarians, DVMs, surgery, cost, treatment options, laryngeal stent, tieback surgery, symptoms, causes, diagnosis, sound, progress, canine laryngeal paralysis, LarPar, geriatric-onset laryngeal paralysis, GOLPP"></meta>
       </Head>
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

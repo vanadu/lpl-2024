@@ -11,7 +11,6 @@ import BottomNav from '../components/BottomNav'
 import Layout from '@/components/Layout'
 // import ShowMoreContent from '@/components/ShowMoreContent'
 import ShowMoreContent from '../components/ShowMoreContent'
-import SkipThis from '../components/SkipThis'
 import GoButton from '../components/GoButton'
 
 // !VA Styles

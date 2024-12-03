@@ -16,7 +16,7 @@ import { BsPlusSquareDotted, BsMinusSquareDotted } from 'react-icons/bs'
 import { FaPaw } from 'react-icons/fa'
 // !VA Custom Components
 import ShowMoreContent from '../../../../components/ShowMoreContent'
-import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
+import SurgeryNav from '../../../../components/guidenav/SurgeryNav'
 import ImageCrossfade from '../../../../components/ImageCrossfade'
 import GuideNav from '@/components/GuideNav'
 // !VA Images
@@ -52,7 +52,7 @@ const SurgeryStudies = () => {
         description="Learn about UAL (tieback), BVEAP, Laser Photoablation and other surgeries for canine laryngeal paralysis"
         canonical="https://larparlife.com/patients/treatment/surgery/surgerytypes"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

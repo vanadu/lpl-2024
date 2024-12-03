@@ -12,7 +12,7 @@ import { BsPlusSquareDotted, BsMinusSquareDotted } from 'react-icons/bs'
 import { FaPaw } from 'react-icons/fa'
 // !VA Custom Components
 import ShowMoreContent from '../../../../components/ShowMoreContent'
-import SurgeryNav from '../../../../components/subnav1/SurgeryNav'
+import SurgeryNav from '../../../../components/guidenav/SurgeryNav'
 import GuideNav from '@/components/GuideNav'
 // !VA Images
 import Pharynx from '../../../../../public/img-pharynx.jpg'
@@ -32,7 +32,7 @@ const Surgery = () => {
         description="Learn about the risk factors and quality of life cost/benefit associated with laryngeal paralysis surgery."
         canonical="https://larparlife.com/patients/treatment/surgery"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

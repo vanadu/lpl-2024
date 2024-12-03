@@ -25,7 +25,7 @@ import WrongStent from '../../../public/img-wrong-stent.webp'
 // !VA Icons
 import { FaPaw } from 'react-icons/fa'
 // !VA StoriesNav
-import StoriesNav from '@/components/subnav1/StoriesNav'
+import StoriesNav from '@/components/guidenav/StoriesNav'
 
 
 const Stories = () => {

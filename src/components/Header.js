@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import IconBar from './IconBar'
-import NavBar from './NavBar'
 import logo from '../../public/img-lpl-logo.png'
 import * as styles from '../styles/Header.module.scss'
 

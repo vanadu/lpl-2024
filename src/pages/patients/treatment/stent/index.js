@@ -11,7 +11,7 @@ import { NextSeo } from 'next-seo'
 import { FaPaw } from 'react-icons/fa'
 // !VA Custom Components
 import ShowMoreContent from '../../../../components/ShowMoreContent'
-import StentNav from '../../../../components/subnav1/StentNav'
+import StentNav from '../../../../components/guidenav/StentNav'
 import GuideNav from '@/components/GuideNav'
 
 // !VA Images
@@ -53,7 +53,7 @@ function Stent() {
         description="Learn about the risks, benefits, and other details about stent implants for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/treatment/stent"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
 
       {/* Intro Section */}

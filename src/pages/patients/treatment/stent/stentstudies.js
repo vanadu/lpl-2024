@@ -6,7 +6,7 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 
 // !VA Custom Compontents
-import StentNav from '../../../../components/subnav1/StentNav'
+import StentNav from '../../../../components/guidenav/StentNav'
 import GuideNav from '@/components/GuideNav'
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -23,7 +23,7 @@ const StentFaqs = () => {
         description="Find quick links to published research studies about stent treatments for canine laryngeal paralysis."
         canonical="https://larparlife.com/patients/treatment/stent/stentstudies"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

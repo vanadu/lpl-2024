@@ -7,7 +7,7 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 // !VA Custom Components
 import ShowMoreContent from '../../../components/ShowMoreContent'
-import TreatmentNav from '../../../components/subnav1/TreatmentNav'
+import TreatmentNav from '../../../components/guidenav/TreatmentNav'
 import GuideNav from '@/components/GuideNav'
 // !VA React Icons
 import { FaPaw } from 'react-icons/fa'
@@ -30,7 +30,7 @@ const Treatment = () => {
         description="Learn about treatments (i.e. stent vs. surgery) and treatment alternatives for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/treatment"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

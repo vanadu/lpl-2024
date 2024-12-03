@@ -7,7 +7,7 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 // !VA Custom Components
 import AccordionContent from '../../../../components/AccordionContent'
-import StentNav from '../../../../components/subnav1/StentNav'
+import StentNav from '../../../../components/guidenav/StentNav'
 import GuideNav from '@/components/GuideNav'
 // !VA React Icons
 import { FaPaw } from 'react-icons/fa'
@@ -26,7 +26,7 @@ const StentFaqs = () => {
         description="Get answers to frequently-asked questions about the stent procedure for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/treatment/stent/stentfaqs"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

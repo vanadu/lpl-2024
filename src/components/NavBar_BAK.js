@@ -17,6 +17,9 @@ const NavBar = () => {
   const [shown, setShown ] = useState(false)
   // const [context, setContext] = useState("default context value");
 
+  useEffect(() => {
+    console.log('shown', shown)
+  });
 
   return (
     <>

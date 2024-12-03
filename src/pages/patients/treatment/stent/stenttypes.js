@@ -15,7 +15,7 @@ import { BsPlusSquareDotted, BsMinusSquareDotted } from 'react-icons/bs'
 import { FaPaw } from 'react-icons/fa'
 // !VA Custom Components
 import ShowMoreContent from '../../../../components/ShowMoreContent'
-import StentNav from '../../../../components/subnav1/StentNav'
+import StentNav from '../../../../components/guidenav/StentNav'
 import GuideNav from '@/components/GuideNav'
 // !VA Images
 import SiliconeStents from '../../../../../public/img-abtvet-stents.jpg'
@@ -47,7 +47,7 @@ const StentTypes = () => {
         description="Learn about types of stents for canine laryngeal paralysis:  silicone stents vs Nitinol wire stents."
         canonical="https://larparlife.com/patients/treatment/stent/stenttypes"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>

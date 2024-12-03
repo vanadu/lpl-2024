@@ -22,7 +22,7 @@ import LarparStages from '../../../../public/img-larpar-stages.jpg'
 import MissBXmas from '../../../../public/img-miss-b-xmas.jpg'
 import MissBInBushes from '../../../../public/img-miss-b-in-bushes.jpg'
 // !VA Custom Components
-import PatientsNav from '@/components/subnav1/PatientsNav'
+import PatientsNav from '@/components/guidenav/PatientsNav'
 import GuideNav from '@/components/GuideNav'
 
 
@@ -31,6 +31,7 @@ import GuideNav from '@/components/GuideNav'
 import * as styles from '../../../styles/Light.module.scss'
 
 const AboutLarpar = () => {
+  // !VA The index of the current ShowMore topic
   const [activeIndex, setActiveIndex] = useState(0)
 
   const refTopics = useRef()
@@ -54,7 +55,7 @@ const AboutLarpar = () => {
         description="Learn about the sounds, symptoms, causes, diagnosis and treatments for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/aboutlarpar"
       />
-      {/* Navbar for the Guide pages with All Topics and About Stents links */}
+      {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav />
 
       {/* Intro Section, includes Sound of LarPar Video */}

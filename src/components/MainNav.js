@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useRef, useEffect, useContext } from 'react'
-import { SitenavContext} from './NavBar'
 import {usePathname} from 'next/navigation'
 import {useRouter} from 'next/router'
 import IconBar  from './IconBar'
@@ -39,7 +38,7 @@ const MainNav = () => {
 
   // !VA When a menu item is clicked, close the mobile menu
   const handleClick = (e) => {
-    console.log('HERE');
+    // console.log('HERE');
     // !VA If the hamburger menu is checked, ie. the mobile menu is open, clicking on a menu item in the menu will uncheck the menu and go to the clicked link target.
     isChecked ? setChecked(false) : null;
 
