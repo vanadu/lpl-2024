@@ -33,7 +33,10 @@ const Surgery = () => {
         canonical="https://larparlife.com/patients/treatment/surgery"
       />
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav />
+      <GuideNav 
+        item={'Treatment Options'}
+        link={'/patients/treatment'}
+      />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>

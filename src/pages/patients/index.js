@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useRef } from 'react'
+import { useState, useRef, useContext } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 // !VA Date: 2024.04.01 Head replaced with NextSeo for meta tags
@@ -27,6 +27,14 @@ import * as styles from '../../styles/Light.module.scss'
 // !VA Receive the props from the AccordionContent tags.
 //prettier-ignore
 
+
+// !VA 2024
+import { GuidenavContext } from '@/components/Contexts'
+
+
+
+
+
 const Patients = () => {
 
   // !VA Index of the current ShowMore 
@@ -34,7 +42,10 @@ const Patients = () => {
   // !VA Index of the current Accordion block
   const [activeAccordionIndex, setActiveAccordionIndex] = useState(0)
 
-  const [blob, setBlob] = useState("");
+  // !VA 2024 working with contexts
+  // const foo = useContext(GuidenavContext)
+
+
 
   return (
     <>
@@ -45,9 +56,8 @@ const Patients = () => {
       />
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
       <GuideNav 
-       blob = {"booger"}
-      
-      
+        item={'About Lar Par'}
+        link={null}
       />
 
       {/* Intro Section Head */}

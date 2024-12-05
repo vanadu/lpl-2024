@@ -52,8 +52,10 @@ const SurgeryStudies = () => {
         description="Learn about UAL (tieback), BVEAP, Laser Photoablation and other surgeries for canine laryngeal paralysis"
         canonical="https://larparlife.com/patients/treatment/surgery/surgerytypes"
       />
-      {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav />
+      <GuideNav 
+        item={'Treatment Options'}
+        link={'/patients/treatment'}
+      />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>

@@ -6,9 +6,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import {useRouter} from 'next/router'
 
-import DvmsNav from './subnav1/DvmsNav'
-import PatientsNav from './subnav1/PatientsNav'
-import StoriesNav from './subnav1/StoriesNav'
+import DvmsNav from './guidenav/DvmsNav'
+import PatientsNav from './guidenav/PatientsNav'
+import StoriesNav from './guidenav/StoriesNav'
 import Home from '../pages/index.js'
 
 

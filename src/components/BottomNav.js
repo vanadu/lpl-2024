@@ -1,13 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import BottomNavTop from "./BottomNavTop";
-import BottomNavBack from "./BottomNavBack";
-import BottomNavMenu from "./BottomNavMenu";
+// import BottomNavBack from "./BottomNavBack";
+// import BottomNavMenu from "./BottomNavMenu/";
 
 // !VA 2024
 import * as styles from "../styles/Header.module.scss";
 
 const BottomNav = () => {
-  
 
   /* !VA Initialize the stickyClass piece of state as an empty string. We will use this piece of state to store the className of sticky_nav in the styles object. We have to get it from the styles object because that's where unique identifier of the style name in the CSS style module is stored.   */
   const [stickyClass, setStickyClass] = useState("");

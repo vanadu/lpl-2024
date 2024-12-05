@@ -45,8 +45,10 @@ const Links = () => {
         description="Find quick links to published research by veterinarians and institutions about canine laryngeal paralysis"
         canonical="https://larparlife.com/patients/links"
       />
-      {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav />
+      <GuideNav 
+        item={null}
+        link={null}
+      />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>

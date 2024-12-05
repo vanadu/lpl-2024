@@ -16,7 +16,6 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 
 import * as styles from '../styles/Header.module.scss'
-
 const MainNav = () => {
 
   // !VA 2024 removing...no workie
@@ -29,7 +28,7 @@ const MainNav = () => {
   // !VA 2024 removing...no workie
   const mainRef = useRef()
   // VA! 2024 homeRef is deprecated because the Home button is no more
-    // !VA 2024 removing...no workie. IO'm not sure whether this is what broke the whole thing...
+    // !VA 2024 removing...no workie. I'm not sure whether this is what broke the whole thing...
   // !VA 2024 removing...no workie
   // const pathname = usePathname()
   // const router = useRouter()
