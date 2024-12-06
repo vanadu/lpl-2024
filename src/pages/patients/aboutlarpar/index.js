@@ -56,10 +56,7 @@ const AboutLarpar = () => {
         canonical="https://larparlife.com/patients/aboutlarpar"
       />
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav 
-        item={'About Lar Par'}
-        link={'/patients'}
-      />
+      <GuideNav />
 
       {/* Intro Section, includes Sound of LarPar Video */}
       <section className={styles.section}>

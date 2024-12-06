@@ -42,10 +42,7 @@ const DVMs = () => {
         canonical="https://larparlife.com/dvms"
       />
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav 
-        item={"Stent Info for DVMs"}
-        link={null}
-      />
+      <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>

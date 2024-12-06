@@ -39,10 +39,7 @@ const Cost = () => {
         canonical="https://larparlife.com/patients/aboutlarpar/cost"
       />
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav 
-        item={'About Lar Par'}
-        link={'/patients'}
-      />
+      <GuideNav />
 
       {/* Intro Section Head*/}
       <section className={styles.section}>

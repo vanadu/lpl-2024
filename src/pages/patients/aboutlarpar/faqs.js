@@ -26,10 +26,7 @@ const Faqs = () => {
       description="Find answers to a wide range of frequently-asked questions about laryngeal paralysis in dogs"
       canonical="https://larparlife.com/patients/aboutlarpar/faqs"
     />
-    <GuideNav 
-      item={'About Lar Par'}
-      link={'/patients'}
-    />
+      <GuideNav />
     {/* Intro Section Head*/}
     <section className={styles.section}>
       <div className={styles.section_content}>

@@ -33,10 +33,7 @@ const Managing = () => {
         description="Learn about managing laryngeal paralysis in dogs with behavioral modifications and/or medications."
         canonical="https://larparlife.com/patients/treatment/managing"
       />
-      <GuideNav 
-        item={'Treatment Options'}
-        link={'/patients/treatment'}
-      />
+      <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>

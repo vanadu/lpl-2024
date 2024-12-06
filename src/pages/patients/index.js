@@ -55,10 +55,7 @@ const Patients = () => {
         canonical="https://larparlife.com/patients"
       />
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav 
-        item={'About Lar Par'}
-        link={null}
-      />
+      <GuideNav />
 
       {/* Intro Section Head */}
       <section className={styles.section}>

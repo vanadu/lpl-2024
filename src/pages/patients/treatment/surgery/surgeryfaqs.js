@@ -29,10 +29,7 @@ const StentFaqs = () => {
         description="Explore frequently-asked questions about tieback and other surgery types for laryngeal paralysis in dogs."
         canonical="https://larparlife.com/patients/treatment/surgery/surgeryfaqs"
       />
-      <GuideNav 
-        item={'Treatment Options'}
-        link={'/patients/treatment'}
-      />
+      <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>

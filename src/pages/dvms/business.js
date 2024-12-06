@@ -37,10 +37,7 @@ const Business = () => {
         <meta name="keywords" content="laryngeal paralysis in dogs, stent, laryngeal stent, veterinarians, DVMs, surgery, cost, treatment options, laryngeal stent, tieback surgery, symptoms, causes, diagnosis, sound, progress, canine laryngeal paralysis, LarPar, geriatric-onset laryngeal paralysis, GOLPP"></meta>
       </Head>
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav 
-        item={'Info for DVMs'}
-        link={'/dvms'}
-      />
+      <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>

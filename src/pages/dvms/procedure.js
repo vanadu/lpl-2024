@@ -46,10 +46,7 @@ const Procedure = () => {
         canonical="https://larparlife.com/dvms/procedure"
       />
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav 
-        item={'Info for DVMs'}
-        link={'/dvms'}
-      />
+      <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>

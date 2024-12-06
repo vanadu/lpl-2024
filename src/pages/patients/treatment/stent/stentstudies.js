@@ -24,10 +24,7 @@ const StentFaqs = () => {
         canonical="https://larparlife.com/patients/treatment/stent/stentstudies"
       />
       {/* Navigation for the Guide pages with All Topics and About Stents links */}
-      <GuideNav 
-        item={'Treatment Options'}
-        link={'/patients/treatment'}
-      />
+      <GuideNav />
       {/* Intro Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
