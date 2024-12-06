@@ -2795,14 +2795,80 @@ text-align: left;
 }
 
 // !VA 2024
-// !VA Guidenav component
+// !VA Guidenav dropdown menu 
+
+/* !VA From here:  https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown/71029926#71029926. I used Arsen's answer from this jsfiddle: https://jsfiddle.net/5zngspur/ */
+
+// !VA Trying to keep only the link text in the link but also include subtext in the menu item, like on the cards. This is to prevent link stuffing
+.guide_menu_item_block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 75px;
+  // !VA background has to be here rather than on the .mi, otherwise, the .mi will stack below the h3 and the link won't be active on the h3 text. 
+  background: $primary_color;
+  background: #ffd468;
+  background: #afbddd;
+  border-bottom: 1px $secondary_accent_color solid;
+}
 
 
+// !VA Same element as .mi, i.e. the menu item from Arsen's code. Need to remove the multicms from the JSX in the GuideNav component
+// .guide_menu_item_link {
+  // !VA in .mi
+  // position: absolute;
+  // width: 100%;
+  // height: 100%;
+  // top: 0;
+  // left: 0;
+  // z-index: 1;
+// }
+
+// !VA Styling for the link text. This is positioned relatively within the absolutely positioned parent, i.e. the a element within the Link component.
+.guide_menu_item_text {
+  position: relative;
+  margin: .5rem 0 0 .5rem ;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  // height: 1rem;
+  color: #212121;
+  color: $light_text_color;
+  color: $dark_text_color;
+  font-family: $secondary_font;
+  font-size: $rootTableFontSize;
+  line-height: $rootTableLineHeight;
+  text-align: left;
+  // background: rgba(0, 128, 0, .3) !important; //devgreen
+}
+
+// !VA Styling for the h3 subtext outside the Link component. This is positioned relatively within the absolutely positioned parent, i.e. the guide_menu_item_block div element outside the Link component.
+.guide_menu_item_subtext {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  position: absolute;
+  // height: 1rem;
+  // !VA Any padding here has to also be put on the h2 guide_menu_item_text because it's parent, i.e. the a tag, is absolutely positioned.
+  margin: 1.75rem 0 0 .5rem;
+  padding-right: .5rem;
+  color: #212121;
+  color: $light_text_color;
+  color: $dark_text_color;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: $rootFootnoteFontSize;
+  line-height: $rootFootnoteLineHeight;
+  // background: rgba(0, 0, 255, .3) !important; //devblue
+  // z-index: 1000;
+}
 
 
 
 
 /* dd container */
+// !VA Parent container for the dropdown menu, contains the button and all the elements. Note that there's no ul element in this structure!
 .dropdown {
   display: inline-block;
   position: relative;
@@ -2812,7 +2878,7 @@ text-align: left;
   // margin: 10px;
 }
 
-/* button */
+// !VA The dropdown button, i.e. the clickable element that opens the dropdown menu
 .dropbtn {
   display: inline-block;
   // !VA
@@ -2824,24 +2890,33 @@ text-align: left;
   // background-color: #861cb9;
   // transition: 0.35s ease-out;
 }
+
+// !VA Hover only expressed on desktop devices
 .dropbtn:hover, .dropbtn.c:hover, .dropbtn.r:hover {
-  // !VA Hover only on desktop devices
   background-color: #691692;
 }
 
-/* dd content */
+// !VA Prent container for everything that is displayed when menu button is clicked and the menu is rendered
 .dropdown .dropdown_content {
   position: absolute;
   top: 50%;
   visibility: hidden;
   opacity: 0;
   z-index: 100000;
-  // !VA 
+  // !VA This is on the .mi element
   // background-color: #f7f7f7;
-  background-color: $primary_color;
+  // background-color: $primary_color;
+  // background-color: $content_bg_color;
+  // background-color: $secondary_accent_color;
   // !VA
   // min-width: 200%;
-  width: 320px;
+  // width: 320px;
+  width: 100vw;
+
+  height: 438px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   // padding: 10px;
   // font-size: 16px;
   // !VA
@@ -2850,7 +2925,8 @@ text-align: left;
   transition: 0.35s ease-out;
 }
 
-/* center & right position menu relative to the button */
+
+// !VA "center & right position menu relative to the button". I think this applies only to the highlight styling that came with Arsen's demo
 .dropdown .dropdown_content.c  {
   left: 50%;
   margin-left: calc(-60% - 10px);
@@ -2859,40 +2935,27 @@ text-align: left;
   right: 0;
 }
 
-/* style link menu item */
+// !VA .mi is the menu item container, i.e. the actual anchor 'a' element expressed in the Link component. Originally relatively positioned, I changed it to absolute to expand the clickable link to the entire parent container, i.e. .guide_menu_item_block. Note: This was the same element as .guide_menu_item_link, which is now deprecated
 .dropdown_content .mi {
   display: block;
-  padding: .5rem 0;
+  // !VA Don't need the padding because the parent is flex column justified as space-evenly.
+  // padding: .5rem 0;
   // !VA
+  // !VA Font info is in the h2/h3
   // color: black;
-  color: $dark_text_color;
-  // font-family: $inter_font;
-  font-family: $secondary_font;
-  font-size: 1.125rem;
-  text-decoration: none;
-  position: relative;
-
-  // !VA
-  // position: absolute;
+  // font-size: 1.125rem;
+  // text-decoration: none;
+  // !VA Changed to position absolute so the clickable link could expand to the entire parent element, see above.
+  // position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 1;
+  // !VA background color is in the .guide_menu_item_block element for stacking reasons
+  // background: $primary_color;
 }
-
-// !VA Trying to keep only the link text in the link but also include subtext in the menu item, like on the cards. This is to prevent link stuffing
-.blob {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.patients {
-  background: rgba(0, 0, 255, .3) !important; //devblue
-  
-}
-
 
 .dropdown_content .mi::before {
   content: '';
@@ -2912,6 +2975,7 @@ text-align: left;
   z-index: -1;
   transition: 0.4s ease-out;
 }
+
 .dropdown_content .mi:hover::before {
     opacity: 1;
 }
@@ -2923,6 +2987,7 @@ text-align: left;
   border-bottom: 1px dotted #36f;
   transition: 0.35s ease-out;
 }
+
 .dropdown_content .tl:hover {
   border-bottom: 1px dotted transparent;
 }
@@ -3053,9 +3118,9 @@ text-align: left;
   position: absolute;
   top: 5px;
   right: 5px;
-  width: 18px;
-  height: 18px;
-  padding: 0;
+  width: 24px;
+  height: 24px;
+  padding: 5px;
   border-radius: 100%;
   z-index: 10;
   transition: 0.15s ease-out;
@@ -3065,8 +3130,8 @@ text-align: left;
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 60%;           /* height icon */
-  width: 2px;            /* width icon  */
+  height: 100%;           /* height icon */
+  width: 4px;            /* width icon  */
   background: #3c4043;   /* color icon  */
 }
 .dropdown_content .db3::before {
