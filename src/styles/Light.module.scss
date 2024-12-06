@@ -2903,14 +2903,10 @@ text-align: left;
   visibility: hidden;
   opacity: 0;
   z-index: 100000;
-  // !VA This is on the .mi element
-  // background-color: #f7f7f7;
-  // background-color: $primary_color;
-  // background-color: $content_bg_color;
+  // !VA Background color is on the .mi element
   // background-color: $secondary_accent_color;
-  // !VA
+  // !VA Width is the device width
   // min-width: 200%;
-  // width: 320px;
   width: 100vw;
 
   height: 438px;
