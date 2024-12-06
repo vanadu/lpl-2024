@@ -2795,6 +2795,23 @@ text-align: left;
 }
 
 // !VA 2024
+
+// !VA Guidenav go back link
+.guide_nav_back {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem .75rem;
+}
+
+.guide_nav_back_link {
+  // !VA
+  cursor: pointer;
+}
+
+.guide_nav_back_icon {
+  // !VA
+}
+
 // !VA Guidenav dropdown menu 
 
 /* !VA From here:  https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown/71029926#71029926. I used Arsen's answer from this jsfiddle: https://jsfiddle.net/5zngspur/ */
@@ -2888,7 +2905,7 @@ text-align: left;
   cursor: pointer;
   // !VA
   // background-color: #861cb9;
-  // transition: 0.35s ease-out;
+  transition: 0.35s ease-out;
 }
 
 // !VA Hover only expressed on desktop devices

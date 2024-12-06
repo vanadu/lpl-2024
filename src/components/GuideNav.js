@@ -1,6 +1,12 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Link from 'next/link'
+// !VA 2024 Testing out a  
+import {useRouter} from 'next/router'
+import {usePathname} from 'next/navigation'
+
+
+
 // !VA React Icons
 import { LuArrowUpWideNarrow } from "react-icons/lu";
 import { MdReadMore } from "react-icons/md";
@@ -8,6 +14,7 @@ import { CgMenuGridR } from "react-icons/cg";
 import { BsFillGridFill } from "react-icons/bs";
 import { MdOutlineGridView } from "react-icons/md";
 import { CiGrid41 } from "react-icons/ci";
+import { TfiBackRight } from "react-icons/tfi";
 
 // !VA 2024
 import { GuidenavContext } from '@/components/Contexts'
@@ -16,6 +23,36 @@ import { GuidenavContext } from '@/components/Contexts'
 import * as styles from '../styles/Light.module.scss'
 
 const GuideNav = () => {
+
+  const router = useRouter()
+  const pathname = usePathname()
+
+  // const [previousUrl, setPreviousUrl] = useState(null);
+
+
+  // useEffect(() => {
+  //   const handleRouteChange = (url) => {
+  //     setPreviousUrl(router.asPath); 
+  //   };
+
+  //   router.events.on('routeChangeStart', handleRouteChange);
+
+  //   return () => {
+  //     router.events.off('routeChangeStart', handleRouteChange);
+  //   };
+  // }, [router]);
+
+
+
+  
+  const doOnClick = () => {
+    /* !VA  IT IS POSSIBLE to exit the site and go somewhere else using router.back() but it is very unlikely, because router.back will almost always drive to the landing page or the /patients page, on which there is no back button and no way to go back further in the router stack. You'd have to exit the site, go to another site's url, then manually go to one of the Guide pages with a back button, and then click it. Who is going to do that? Having said that, the best way to do it would be to find the destination of the router.back and if it's not a Guide page, cancel the route change. BUT there's no easy way to do that. I'd have to build a history manually and navigate using useRouter without using router.back...what a pain it the ass that would be! Putting this on ice for how and moving on...*/
+    // console.log('clicked');
+    // console.log('previousUrl', previousUrl)
+    // setPreviousUrl(pathname)
+    router.back()
+    console.log(pathname);
+  }
 
   return (
     <>
@@ -78,7 +115,17 @@ const GuideNav = () => {
           </div>
         </div>
 
-
+        {/* can't use a Link component of course, because the href drives to a different page before the router.back is called */}
+        <div className={styles.guide_nav_back}>
+          <div
+            onClick={doOnClick}
+            className={styles.guide_nav_back_link}>
+              <TfiBackRight 
+                className={styles.guide_nav_back_icon}
+              />
+              Back 
+          </div>
+        </div>
       </div>
     </>
   )
