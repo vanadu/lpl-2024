@@ -395,84 +395,6 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   background: $primary_color;
 }
 
-// !VA LAR PAR GUIDE NAV MENU
-.guide_nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  // background: rgba(0, 0, 255, .3) !important; //devblue
-  background: $primary_color;
-  background: $home_bg_color;
-}
-
-.guide_nav_items {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding: .5rem 0;
-}
-
-.guide_nav_item {
-  @include mphone {
-    font-size: $mphoneFootnoteFontSize;
-    line-height: $mphoneFootnoteLineHeight;
-  }
-  @include lphone {
-    font-size: $lphoneFootnoteFontSize;
-    line-height: $lphoneFootnoteLineHeight;
-  }
-  @include tablet {
-    font-size: $tabletFootnoteFontSize;
-    line-height: $tabletFootnoteLineHeight;
-  }
-  @include desktop {
-    font-size: $desktopFootnoteFontSize;
-    line-height: $desktopFootnoteLineHeight;
-  }
-  @include ldesktop {
-    font-size: $ldesktopFootnoteFontSize;
-    line-height: $ldesktopFootnoteLineHeight;
-  }
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: $dark_text_color;
-  color: $light_text_color;
-  font-family: $inter_font;
-  font-size: .875rem;
-  font-size: $rootFootnoteFontSize;
-  line-height: $rootFootnoteLineHeight;
-}
-
-// !VA 2024 guide_nav font and icon size
-
-.guide_nav_items_icon {
-  @include mphone {
-    font-size: $mphoneSlugFontSize;
-    line-height: $mphoneSlugLineHeight;
-  }
-  @include lphone {
-    font-size: $lphoneSlugFontSize;
-    line-height: $lphoneSlugLineHeight;
-  }
-  @include tablet {
-    font-size: $tabletSlugFontSize;
-    line-height: $tabletSlugLineHeight;
-  }
-  @include desktop {
-    font-size: $desktopSlugFontSize;
-    line-height: $desktopSlugLineHeight;
-  }
-  @include ldesktop {
-    font-size: $ldesktopSlugFontSize;
-    line-height: $ldesktopSlugLineHeight;
-  }
-  font-size: $rootSlugFontSize;
-  line-height: $rootSlugLineHeight;
-}
-
 
 // !VA 2024 LAR PAR GUIDE STYLES
 // !VA These are the same as in AllAbout.module.scss
@@ -2794,13 +2716,75 @@ text-align: left;
   // !VAf
 }
 
-// !VA 2024
+// !VA LAR PAR GUIDE NAV MENU - GuideNav Component
+
+// !VA Guide Nav Bar - Topics Menu and Back buttons
+.guide_nav {
+  // @include tablet {
+  //   padding: 0 3.5rem 0 2.5rem;
+  // }
+  // @include desktop {
+  //   padding: 0 4.5rem 0 3.5rem;
+  // }
+  // @include ldesktop {
+  //   padding: 0 4.5rem 0 3.5rem;
+  // }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  // background: rgba(0, 0, 255, .3) !important; //devblue
+  background: $primary_color;
+  background: $home_bg_color;
+}
+
+
+.guide_nav_items {
+  @include mphone {
+    font-size: $mphoneConsentFontSize;
+    line-height: $mphoneConsentLineHeight;
+  }
+  @include lphone {
+    font-size: $lphoneConsentFontSize;
+    line-height: $lphoneConsentLineHeight;
+  }
+  @include tablet {
+    padding: 0 3.5rem 0 2.5rem;
+    font-size: $tabletConsentFontSize;
+    line-height: $tabletConsentLineHeight
+  }
+  @include desktop {
+    padding: 0 4rem 0 3.25rem;
+    font-size: $desktopConsentFontSize;
+    line-height: $desktopConsentLineHeight
+  }
+  @include ldesktop {
+    width: 1200px;
+    padding: 0 3rem 0 2rem;
+    font-size: $ldesktopConsentFontSize;
+    line-height: $ldesktopConsentLineHeight
+  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: $primary_font;
+  font-size: $rootConsentFontSize;
+  line-height: $rootConsentLineHeight;
+}
 
 // !VA Guidenav go back link
 .guide_nav_back {
+  @include mphone {
+    padding: .5rem 1.5rem .5rem 0;
+  }
+  @include lphone {
+    padding: .5rem 1.5rem .5rem 0;
+  }
   display: flex;
   justify-content: space-between;
-  padding: .5rem .75rem;
+  // !VA On phones, spacing from right is set on the button element because setting padding on the guide_nav bar indents the dropdown menu itself, not just the menu button. Larger than phones, spacing is set on the guide_nav bar element because the dropdown menu width is fixed and we do want the dropdown menu to indent
+  padding: .5rem .75rem .5rem 0;
 }
 
 .guide_nav_back_link {
@@ -2818,16 +2802,27 @@ text-align: left;
 
 // !VA Trying to keep only the link text in the link but also include subtext in the menu item, like on the cards. This is to prevent link stuffing
 .guide_menu_item_block {
+  @include mphone {
+    height: 88px;
+  }
+  @include lphone {
+    // height: 100vh !important;
+  }
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
   height: 75px;
   // !VA background has to be here rather than on the .mi, otherwise, the .mi will stack below the h3 and the link won't be active on the h3 text. 
-  background: $primary_color;
-  background: #ffd468;
-  background: #afbddd;
+  // background: $primary_color;
+  // background: #ffd468;
+  // background: #afbddd;
   border-bottom: 1px $secondary_accent_color solid;
+}
+
+// !VA No bottom border on the last menu item
+.guide_menu_item_block:last-child {
+  border-bottom: none;
 }
 
 
@@ -2898,9 +2893,28 @@ text-align: left;
 // !VA The dropdown button, i.e. the clickable element that opens the dropdown menu
 .dropbtn {
   display: inline-block;
-  // !VA
+  @include mphone {
+    padding: .5rem 0 .5rem 1.5rem;
+  }
+  @include lphone {
+    padding: .5rem 0 .5rem 1.5rem;
+  }
+  @include tablet {
+    // !VA Set right padding on the menu button for mouseover hover
+    padding: .5rem .5rem .5rem 0;
+  }
+  @include desktop {
+    // !VA Set right padding on the menu button for mouseover hover and dropdown position
+    padding: .5rem .75rem .5rem;
+  }
+  @include ldesktop {
+      // !VA Set right padding on the menu button for mouseover hover and dropdown position
+      padding: .5rem 1rem .5rem;
+  }
+  
+  // !VA  Larger than phones, spacing is set on the guide_nav bar element because the dropdown menu width is fixed and we do want the dropdown menu to indent
   // padding: 12px 16px;
-  padding: .5rem .75rem;
+  padding: .5rem 0 .5rem .75rem;
   color: $light_text_color;
   cursor: pointer;
   // !VA
@@ -2910,32 +2924,57 @@ text-align: left;
 
 // !VA Hover only expressed on desktop devices
 .dropbtn:hover, .dropbtn.c:hover, .dropbtn.r:hover {
-  background-color: #691692;
+  background-color: $secondary_color;
 }
 
-// !VA Prent container for everything that is displayed when menu button is clicked and the menu is rendered
+// !VA Parent container for everything that is displayed when menu button is clicked and the menu is rendered
 .dropdown .dropdown_content {
+  @include mphone {
+    height: calc(100vh - 141px);
+  }
+  @include lphone {
+    height: calc(100vh - 159px);
+  }
+  @include tablet {
+    height: 660px;
+    width: 500px;
+  }
+  @include desktop {
+    height: 660px;
+    width: 500px;
+  }
+  @include ldesktop {
+    height: 660px;
+    width: 500px;
+  }
   position: absolute;
   top: 50%;
   visibility: hidden;
   opacity: 0;
   z-index: 100000;
-  // !VA Background color is on the .mi element
+  // !VA Background color is on the .mi element - no it's not...
   // background-color: $secondary_accent_color;
   // !VA Width is the device width
   // min-width: 200%;
   width: 100vw;
-
+  // !VA 
   height: 438px;
+  height: 100vh;
+  height: calc(100vh - 133px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  // !VA
+  padding: 0;
   // padding: 10px;
   // font-size: 16px;
   // !VA
   font-size: 1rem;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   transition: 0.35s ease-out;
+
+  background: #afbddd;
+  // background: rgba(255, 0, 0, .3) !important; //devred
 }
 
 
@@ -3221,16 +3260,17 @@ text-align: left;
 }
 
 /* media queries */
-@media (max-width:745px) {
-.dropdown .dropdown_content.r,
-.dropdown .dropdown_content.c {
-  left: 0;
-  margin-left: 0;
-  }
-.dropbtn.c::before, .dropbtn.r::before {
-  background: radial-gradient(circle at 0 0, #fff 0%, #D59BF0 5%, #8b1dc0 35%, transparent 60%);
-  }
-}
+// !VA This only applies to the gradients, which we're not using, so it can be deleted eventually
+// @media (max-width:745px) {
+// .dropdown .dropdown_content.r,
+// .dropdown .dropdown_content.c {
+//   left: 0;
+//   margin-left: 0;
+//   }
+// .dropbtn.c::before, .dropbtn.r::before {
+//   background: radial-gradient(circle at 0 0, #fff 0%, #D59BF0 5%, #8b1dc0 35%, transparent 60%);
+//   }
+// }
 
 
 
