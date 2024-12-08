@@ -2802,17 +2802,13 @@ text-align: left;
 
 // !VA Trying to keep only the link text in the link but also include subtext in the menu item, like on the cards. This is to prevent link stuffing
 .guide_menu_item_block {
-  @include mphone {
-    height: 88px;
-  }
-  @include lphone {
-    // height: 100vh !important;
-  }
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
-  height: 75px;
+  // !VA
+  // height: 75px;
+  height: 100%;
   // !VA background has to be here rather than on the .mi, otherwise, the .mi will stack below the h3 and the link won't be active on the h3 text. 
   // background: $primary_color;
   // background: #ffd468;
@@ -2839,8 +2835,33 @@ text-align: left;
 
 // !VA Styling for the link text. This is positioned relatively within the absolutely positioned parent, i.e. the a element within the Link component.
 .guide_menu_item_text {
+  @include mphone {
+    margin: 1rem 0 0 1rem;
+    font-size: $mphoneTableFontSize;
+    line-height: $mphoneTableLineHeight;
+  }
+  @include lphone {
+    margin: 1.5rem 0 0 1.5rem;
+    font-size: $lphoneTableFontSize;
+    line-height: $lphoneTableLineHeight;
+  }
+  @include tablet {
+    margin: 1.5rem 0 0 1.5rem;
+    font-size: $tabletTableFontSize;
+    line-height: $tabletTableLineHeight;
+  }
+  @include desktop {
+    margin: 1.5rem 0 0 1.5rem;
+    font-size: $desktopTableFontSize;
+    line-height: $desktopTableLineHeight;
+  }
+  @include ldesktop {
+    margin: 1.5rem 0 0 1.5rem;
+    font-size: $ldesktopTableFontSize;
+    line-height: $ldesktopTableLineHeight;
+  }
   position: relative;
-  margin: .5rem 0 0 .5rem ;
+  margin: .5rem 0 0 .5rem;
   // display: flex;
   // flex-direction: column;
   // justify-content: flex-end;
@@ -2852,11 +2873,35 @@ text-align: left;
   font-size: $rootTableFontSize;
   line-height: $rootTableLineHeight;
   text-align: left;
-  // background: rgba(0, 128, 0, .3) !important; //devgreen
 }
 
 // !VA Styling for the h3 subtext outside the Link component. This is positioned relatively within the absolutely positioned parent, i.e. the guide_menu_item_block div element outside the Link component.
 .guide_menu_item_subtext {
+  @include mphone {
+    margin: 2.75rem 0 0 1rem;
+    font-size: $mphoneTableFontSize;
+    line-height: $mphoneTableLineHeight;
+  }
+  @include lphone {
+    margin: 3.5rem 0 0 1.5rem;
+    font-size: $lphoneTableFontSize;
+    line-height: $lphoneTableLineHeight;
+  }
+  @include tablet {
+    margin: 3.5rem 0 0 1.5rem;
+    font-size: $tabletTableFontSize;
+    line-height: $tabletTableLineHeight;
+  }
+  @include desktop {
+    margin: 3.5rem 0 0 1.5rem;
+    font-size: $desktopTableFontSize;
+    line-height: $desktopTableLineHeight;
+  }
+  @include ldesktop {
+    margin: 3.5rem 0 0 1.5rem;
+    font-size: $ldesktopTableFontSize;
+    line-height: $ldesktopTableLineHeight;
+  }
   // display: flex;
   // flex-direction: column;
   // justify-content: flex-end;
@@ -2872,7 +2917,7 @@ text-align: left;
   text-align: left;
   font-size: $rootFootnoteFontSize;
   line-height: $rootFootnoteLineHeight;
-  // background: rgba(0, 0, 255, .3) !important; //devblue
+
   // z-index: 1000;
 }
 
@@ -2960,7 +3005,7 @@ text-align: left;
   // !VA 
   height: 438px;
   height: 100vh;
-  height: calc(100vh - 133px);
+  height: calc(100vh - 131px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -2972,9 +3017,7 @@ text-align: left;
   font-size: 1rem;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   transition: 0.35s ease-out;
-
   background: #afbddd;
-  // background: rgba(255, 0, 0, .3) !important; //devred
 }
 
 
