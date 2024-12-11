@@ -455,6 +455,23 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
 }
 
 
+
+// !VA 2024
+// !VA STORIES PAGE
+// !VA STORIES NAV - This is just a banner on the Stories page until I get more stories, assuming that ever happens.
+.stories_banner {
+  width: 100%;
+  background: $primary_color;
+}
+
+.stories_banner_text {
+  padding: .25rem 0;
+  font-family: $primary_font;
+  font-size: $rootTextFontSize;
+  line-height: $rootTextLineHeight;
+  text-align: center;
+}
+
 // !VA 2024.04.05 This is only in /stories
 .stories_heading_head {
   @include mphone {

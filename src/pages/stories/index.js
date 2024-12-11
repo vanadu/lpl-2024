@@ -58,28 +58,27 @@ const Stories = () => {
         canonical="https://larparlife.com/stories"
       />
       <section className={styles.section}>
-        {/* StoriesNav component is the menu for the Stories items */}
+        {/* StoriesNav component is the menu for the Stories items. Currently there aren't any other stories, so there's only a stories_banner here. */}
         <StoriesNav />
-        {/* <div className={styles.section_story_head}>
-  
-        </div> */}
         {/* Page heading */}
-        <div className={styles.section_heading}>
-          <h1 className={styles.stories_heading_head}>Stent Stories: Treating <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis Without Surgery</h1>
-        </div>
-        <div 
-            className={ [styles.two_column_content, styles.saga_july].join(' ') }>
-            <div className={styles.container_flex_center}>
-            <div className={styles.content_heading}>
-              <h2 className={styles.content_head}>Miss B&rsquo;s Incredible Stent Journey</h2>
-              <hr className={styles.rule_underline} />
-            </div>
-            </div>
-            <p className=
-              {styles.content_text}
-            >
+        <div className={styles.section_content}>
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_head_title}>Stent Stories: Treating <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis <span className='mobile-show-inline'><br /></span> Without Surgery</h1>
+          </div>
+          <div className={styles.topic_subhead}>
+            <h2 className={styles.topic_subhead_title}>Miss B&rsquo;s Incredible Stent Journey</h2>
+          </div>
+          <p className={styles.content_text}>
               On Sept. 9, 2022 we put our dying dog in the car and drove 400 miles to have a silicone tube put in her throat, not knowing whether she&rsquo;d be alive when we got back.
             </p>
+        </div>
+        <div className={styles.saga_july}>
+          <div className={styles.container_flex_center}>
+            <div className={styles.content_heading}>
+
+            </div>
+          </div>
+
   
         {/* Section Menu */}
         <div className={styles.section_content}>
@@ -188,7 +187,7 @@ const Stories = () => {
               But we weren&rsquo;t giving up. She was still in overall good health, and if she could only get air past that limp cartilage in her throat, she could live many happy months, or even years. We vowed to give it our all before we let Miss B go. 
               <br className={styles.mobile_hide}/>
             </p> 
-          </div>
+        </div>
   
           {/* AUGUST */}
           <div className={styles.two_column_content}>

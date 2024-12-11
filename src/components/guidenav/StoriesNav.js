@@ -10,8 +10,9 @@ import SamMenuImg from '../../../public/img-sam-menu-img.png'
 import RoxyMenuImg from '../../../public/img-roxy-menu-img.png'
 import MissBInSidecar from '../../../public/img-miss-b-in-sidecar.jpg'
 
-
-import * as styles from '../../styles/Header.module.scss'
+// !VA The banner style is in Light until I get some more stories that require navigation.
+// import * as styles from '../../styles/Header.module.scss'
+import * as styles from '../../styles/Light.module.scss'
 
 // !VA I wasted literally 6 hours this morning trying to use state to set the active class on click target. But every time I clicked on the element, state would reinitialize because the Link element caused a rerender. THAT was my problem. The Link element wasn't causing a rerender, it was NAVIGATING to the new page, and on that new page there was no state, so it initialized it. I FINALLY figured out that it wasn't a problem at all - it made everything so much easier. All I had to do was get the route of the current page and apply the active style to the element if the href path of the target matched the path of the current route. 
 const StoriesNav = () => {
@@ -28,11 +29,18 @@ const StoriesNav = () => {
   ]
 
   return (
-    <div className={styles.nav_subnav1}>
-      <div className={styles.nav_subnav1_header}>
-        <p className={styles.nav_subnav1_header_text}>More Stent Success Stories Coming Soon!</p>
+
+    <>
+    <section className={[styles.section, styles.stories_banner].join(' ')}>
+      <div className={styles.section_content}>
+        <h2 className={styles.stories_banner_text}>More Stent Success Stories <span className='mobile-show-inline'><br/></span> Coming Soon!</h2>
       </div>
-      {/* <ul className={styles.nav_subnav1_list}>
+    </section>
+    {/* <div className={styles.nav_subnav1}>
+      <div className={styles.nav_subnav1_header}>
+        <p className={styles.nav_subnav1_header_text}></p>
+      </div>
+      <ul className={styles.nav_subnav1_list}>
         {stories.map((item, index) => {
           return (
             <li 
@@ -56,8 +64,10 @@ const StoriesNav = () => {
             </li>
           );
         })}
-      </ul> */}
-    </div>
+      </ul>
+    </div> */}
+    </>
+
   )
 }
 
