@@ -24,7 +24,7 @@
 
 // !VA Content styles
 // !VA This is the H1 that matches with the title tag
-.content_head {
+.main_head {
   @include mphone {
     padding-bottom: .75rem;
     font-size: $mphoneHeadFontSize;
@@ -61,7 +61,7 @@
 
 // !VA This is different in Light.module.scss
 // !VA Home page H2 heading
-.content_subhead {
+.main_subhead {
   @include mphone {
     margin: .575rem 0 .188rem;
     font-size: $mphoneSubheadFontSize;

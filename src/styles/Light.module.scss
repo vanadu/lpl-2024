@@ -2049,7 +2049,8 @@ font-weight: 400;
 
 // !VA 2024.04.03 This is the subhead for individual content sections. If there were a main heading for the page's content section, it would take ...HeadFontSize and ...HeadLineHeight. But these are the individual h2 or h3 subheadings, so they get ...SubheadFontSize etc.
 // !VA 2024.04.03 .content_heading_text needs to go, deprecated, changed to content_subhead
-.content_subhead {
+// !VA 2024.04.12 content_subhead changed to content_head globally on the h2 in content sections to allow for the h3 to become content_subhead. The Home module was modified to content_subhead -> main_subhead and content_head -> main_head
+.content_head {
   @include mphone {
     font-size: $mphoneSubheadFontSize;
     line-height: $mphoneSubheadLineHeight;
@@ -2083,7 +2084,7 @@ font-weight: 400;
 }
 
 // !VA This only appears in three files, probably unnecessary
-.content_subheading_text {
+.content_subhead {
   @include mphone {
     font-size: $mphoneSubheadFontSize;
     line-height: $mphoneSubheadLineHeight;
@@ -2107,7 +2108,7 @@ font-weight: 400;
     font-size: $ldesktopSubheadFontSize;
     line-height: $ldesktopSubheadLineHeight;
   }
-padding: .5rem 0;
+padding: .5rem 0 .25rem;
 font-family: $primary_font;
 font-size: $rootSubheadFontSize;
 line-height: $rootSubheadLineHeight;

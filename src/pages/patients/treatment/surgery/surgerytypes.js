@@ -150,7 +150,7 @@ const SurgeryStudies = () => {
               <TabPanel>
                 <div className={styles.content_block}>
                   <div className={styles.content_block}>
-                    <h2 className={styles.content_subhead}>Arytenoid Lateralization (&lsquo;Tie-back&rsquo;)</h2>
+                    <h2 className={styles.content_head}>Arytenoid Lateralization (&lsquo;Tie-back&rsquo;)</h2>
                   </div>
                   {/*Crossfade image start */}
                   <figure className={styles.figure_float_right}> 
@@ -288,7 +288,7 @@ const SurgeryStudies = () => {
               
               <TabPanel>
                 <div className={styles.content_block}>
-                  <h2 className={styles.content_subhead}>BVEAP</h2>
+                  <h2 className={styles.content_head}>BVEAP</h2>
                   
                   <p className={styles.content_text}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime earum dolore nesciunt quos molestias voluptatum aut quo ipsum accusamus vitae ut in perferendis, dolorem doloribus odio rerum necessitatibus nisi.
@@ -298,7 +298,7 @@ const SurgeryStudies = () => {
               
               <TabPanel>
                 <div className={styles.content_block}>
-                  <h2 className={styles.content_subhead}>Ventrilocordectomy</h2>
+                  <h2 className={styles.content_head}>Ventrilocordectomy</h2>
                   
                   <p className={styles.content_text}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime earum dolore nesciunt quos molestias voluptatum aut quo ipsum accusamus vitae ut in perferendis, dolorem doloribus odio rerum necessitatibus nisi.
@@ -308,7 +308,7 @@ const SurgeryStudies = () => {
   
               <TabPanel>
                 <div className={styles.content_block}>
-                  <h2 className={styles.content_subhead}>Tracheostomy</h2>
+                  <h2 className={styles.content_head}>Tracheostomy</h2>
                   
                   <p className={styles.content_text}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime earum dolore nesciunt quos molestias voluptatum aut quo ipsum accusamus vitae ut in perferendis, dolorem doloribus odio rerum necessitatibus nisi.
@@ -318,7 +318,7 @@ const SurgeryStudies = () => {
   
               <TabPanel>
                 <div className={styles.content_block}>
-                  <h2 className={styles.content_subhead}>Partial Laryngectomy</h2>
+                  <h2 className={styles.content_head}>Partial Laryngectomy</h2>
                   
                   <p className={styles.content_text}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime earum dolore nesciunt quos molestias voluptatum aut quo ipsum accusamus vitae ut in perferendis, dolorem doloribus odio rerum necessitatibus nisi.
@@ -328,7 +328,7 @@ const SurgeryStudies = () => {
   
               <TabPanel>
                 <div className={styles.content_block}>
-                  <h2 className={styles.content_subhead}>Castellated laryngofissure</h2>
+                  <h2 className={styles.content_head}>Castellated laryngofissure</h2>
                   
                   <p className={styles.content_text}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime earum dolore nesciunt quos molestias voluptatum aut quo ipsum accusamus vitae ut in perferendis, dolorem doloribus odio rerum necessitatibus nisi.

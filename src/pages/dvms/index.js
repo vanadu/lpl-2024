@@ -74,7 +74,7 @@ const DVMs = () => {
 
             {/* 21st Century Solution Content Start */}
             <div className={styles.content_block}>
-              <h3 className={styles.content_subhead}>The 21st Century Solution</h3>
+              <h2 className={styles.content_head}>The 21st Century Solution</h2>
               <figure className={styles.figure_small}>
                 <Image src={Typewriter} className={styles.figure_image} alt="Laryngeal Stent: Typewriter"/>
                 {/* <figcaption className={styles.figure_caption}>Do <span className="semibold-italic">you</span> use one of <span className="semibold-italic">these</span>?</figcaption> */}
@@ -89,7 +89,7 @@ const DVMs = () => {
             {/* Choosing to Lead Content Start */}
             <div className={styles.content_block}>
 
-              <h3 className={styles.content_subhead}>Choosing to Lead</h3>
+              <h2 className={styles.content_head}>Choosing to Lead</h2>
               <p className={styles.content_text}>
                 Here you can learn about the stent procedure for canine laryngeal paralysis &mdash; types of stents, procedure details, and revenue prospects for your practice. You can choose to be a leader in your community by adopting this proven 21st-century procedure to help your clients and the animals they love, as well as generate the revenue you need to run a successful business.
               </p>
@@ -99,7 +99,7 @@ const DVMs = () => {
             
 
             <div className={styles.content_block}>
-              <h3 className={styles.content_subhead}>Background</h3>
+              <h2 className={styles.content_head}>Background</h2>
               <p className={styles.content_text}>
               The first silicone stent implant to treat canine laryngeal paralysis was performed by the Argentine team of María Ricart, Sergio Rodríguez and Roberto Duré. <a href="https://europepmc.org/article/MED/32426250" className="link-dark" target="_blank" rel="noreferrer noopener">Read the Ricard/Rodríguez/Duré study&nbsp;<FaArrowCircleRight className={styles.anchor_go_button}/></a>
               </p>
@@ -148,7 +148,7 @@ const DVMs = () => {
             {/* Stent Types Content Start */}
             <div className={styles.content_block}>
 
-              <h3 className={styles.content_subhead}>Stent Types</h3>
+              <h2 className={styles.content_head}>Stent Types</h2>
               <p className={styles.content_text}>
                 There are currently two laryngeal stent types to treat laryngeal paralysis in dogs: the silicone stent and the Nitinol stent.  
               </p>

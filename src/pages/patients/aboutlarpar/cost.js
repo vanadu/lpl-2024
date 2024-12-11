@@ -72,7 +72,7 @@ const Cost = () => {
           {/* <hr className={styles.content_list_spacer}/> */}
             {/* Estimating the Bill  */}
             <div className={styles.content_block}>
-              <h2 className={styles.content_subhead}>First Step: Definitive Diagnosis</h2>
+              <h2 className={styles.content_head}>First Step: Definitive Diagnosis</h2>
               <figure className={styles.figure_float_right}>
                 <Image src={GolppDiagnosisTests} className={styles.figure_image} alt="GOLPP Diagnosis Test"/>
                 <figcaption className={styles.figure_caption}>
@@ -101,7 +101,7 @@ const Cost = () => {
               </div>  
               {/* ShowMoreComponent content end */}
 
-              <h3 className={styles.content_subheading_text}>Cost of Laryngeal Paralysis Diagnosis</h3>
+              <h3 className={styles.content_subhead}>Cost of Laryngeal Paralysis Diagnosis</h3>
               
               <ul className={styles.content_list_no_bullet}>
                 <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
@@ -156,7 +156,7 @@ const Cost = () => {
         <div className={styles.section_content}>
 
           <div className={styles.content_block}>
-              <h2 className={styles.content_subhead}>Laryngeal Paralysis Treatment Costs</h2>
+              <h2 className={styles.content_head}>Laryngeal Paralysis Treatment Costs</h2>
               <p className={styles.content_text}>
                 There are currently two veterinary-medical options for laryngeal paralysis treatment. One is <span className='italic'>surgery</span> to modify the structure of the larynx to allow air to pass through the paralyzed larynx. The other is the placement of a <span className='italic'>stent</span>, which is synthetic prothesis that supports the paralyzed larynx or provides an air passage through it to restore normal breathing. 
               </p>
@@ -214,7 +214,7 @@ const Cost = () => {
         <div className={styles.section_content}>
 
           <div className={styles.content_block}>
-            <h3 className={styles.content_subhead}>Pharmaceutical and Naturopathic Approaches</h3>
+            <h2 className={styles.content_head}>Pharmaceutical and Naturopathic Approaches</h2>
             {/* ShowMoreComponent content start */}
             <div className={styles.content_text}>
               <p className={styles.showmore_content_inline}>
@@ -244,7 +244,7 @@ const Cost = () => {
       <section className={styles.section}>
         <div className={styles.section_content}>
           <div className={styles.content_block}>
-              <h2 className={styles.content_subhead}>Laryngeal Paralysis Cost Summary</h2>
+              <h2 className={styles.content_head}>Laryngeal Paralysis Cost Summary</h2>
               <p className={styles.content_text}>
                 In the U.S. a definitive diagnosis for about $500 is required for surgery or stent. After that, surgery runs on average $4500, stent around $1500. Costs vary greatly by country, region and provider. Until the stent procedure is widely available, surgery in the U.S. will cost more than the stop-treatment amount for the average dog owner, which was most recently estimated at $1700. In Europe, surgery is significantly less expensive, so it stands to reason that more people will choose the surgical path. The pharmaceutical and naturopathic alternatives may alleviate some symptoms but will eventually end in end-of-life care and euthanasia. The laryngeal stent procedure will bring the cost of LarPar treatment below the $1700 stop-treatment threshold and save the lives of thousands of otherwise healthy dogs.
               </p>

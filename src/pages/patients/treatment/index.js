@@ -63,7 +63,7 @@ const Treatment = () => {
           {/* Veterinary Procedures vs. Medications Content Start */}
           <div className={styles.content_block}>
 
-            <h2 className={styles.content_subhead}>Veterinary Procedures vs. Medications</h2>
+            <h2 className={styles.content_head}>Veterinary Procedures vs. Medications</h2>
             {/* ShowMoreComponent content start */}
             <div className={styles.content_text}>
               <p className={styles.showmore_content_inline}>
@@ -99,7 +99,7 @@ const Treatment = () => {
           {/* Treatment Options Content Start */}
           <div className={styles.content_block}>
 
-            <h2 className={styles.content_subhead}>Veterinary-Medical Treatment vs. Treatment Alternatives</h2>
+            <h2 className={styles.content_head}>Veterinary-Medical Treatment vs. Treatment Alternatives</h2>
             <p className={styles.content_text}>
               There are two veterinary procedures to treat laryngeal paralysis in dogs and a variety of approaches to managing laryngeal paralysis symptoms without veterinary-medical treatment: 
             </p>

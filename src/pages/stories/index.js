@@ -71,7 +71,7 @@ const Stories = () => {
             className={ [styles.two_column_content, styles.saga_july].join(' ') }>
             <div className={styles.container_flex_center}>
             <div className={styles.content_heading}>
-              <h2 className={styles.content_subhead}>Miss B&rsquo;s Incredible Stent Journey</h2>
+              <h2 className={styles.content_head}>Miss B&rsquo;s Incredible Stent Journey</h2>
               <hr className={styles.rule_underline} />
             </div>
             </div>
@@ -119,7 +119,7 @@ const Stories = () => {
               ref={refJul}
               >
               <div className={styles.content_heading}>
-                <h2 className={styles.content_subhead}>July 2022</h2>
+                <h2 className={styles.content_head}>July 2022</h2>
                 <hr className={styles.rule_underline} />
               </div>
             </div>
@@ -197,7 +197,7 @@ const Stories = () => {
               ref={refAug}
               >
               <div className={styles.content_heading}>
-                <h2 className={styles.content_subhead}>August 2022</h2>
+                <h2 className={styles.content_head}>August 2022</h2>
                 <hr className={styles.rule_underline} />
               </div>
             </div>
@@ -252,7 +252,7 @@ const Stories = () => {
             <div className= { [styles.container_flex_center, styles.menu_spacer].join(' ') } ref={refSep}>
   
               <div className={styles.content_heading}>
-                <h2 className={styles.content_subhead}>September 2022</h2>
+                <h2 className={styles.content_head}>September 2022</h2>
                 <hr className={styles.rule_underline} />
               </div>
   
@@ -310,7 +310,7 @@ const Stories = () => {
                 ref={refEpi}
                 >
                 <div className={styles.content_heading}>
-                  <h2 className={styles.content_subhead}>Epilogue</h2>
+                  <h2 className={styles.content_head}>Epilogue</h2>
                   <hr className={styles.rule_underline} />
                 </div>
               </div>

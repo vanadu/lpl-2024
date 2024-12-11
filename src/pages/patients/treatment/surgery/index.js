@@ -81,7 +81,7 @@ const Surgery = () => {
             {/* Cost/Benefit of Surgery Content Start */}
             <div className={styles.content_block}>
   
-              <h2 className={styles.content_subhead}>Cost/Benefit of Surgery</h2>
+              <h2 className={styles.content_head}>Cost/Benefit of Surgery</h2>
               
               {/* ShowMoreComponent content start */}
               <div className={styles.content_text}>
@@ -117,7 +117,7 @@ const Surgery = () => {
             {/* Risk Assessment Content Start */}
             <div className={styles.content_block}>
 
-              <h2 className={styles.content_subhead}>Risk Assessment</h2>
+              <h2 className={styles.content_head}>Risk Assessment</h2>
               {/* ShowMoreComponent content start */}
               <div className={styles.content_text}>
                 <p className={styles.showmore_content_inline}>
@@ -154,7 +154,7 @@ const Surgery = () => {
             {/* Risk Factors Content Start */}
             <div className={styles.content_block}>
 
-              <h3 className={styles.content_subheading_text}>Risk Factors</h3>
+              <h3 className={styles.content_subhead}>Risk Factors</h3>
               <ul className={styles.content_list_no_bullet}>
                 <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
                   <span className='bold'>Incision site issues</span> &mdash; The dog can scratch or tear sutures, or a seroma (fluid buildup under the incision) or bacterial infection can develop at the incision.&#8203;&nbsp;
@@ -285,7 +285,7 @@ const Surgery = () => {
             {/* Negotiating Realities Content Start */}
             <div className={styles.content_block}>
 
-              <h2 className={styles.content_subhead}>Negotiating the Realities</h2>
+              <h2 className={styles.content_head}>Negotiating the Realities</h2>
               <p className={styles.content_text}>
                 Post-operative complications of laryngeal paralysis surgery are often talked about in terms of <span className='semibold-italic'>likelihood</span> of occurrence without addressing the their potential <span className='semibold-italic'>severity</span>.
               </p>
@@ -340,7 +340,7 @@ const Surgery = () => {
             {/* Summry and Conclusions Content Start */}
             <div className={styles.content_block}>
 
-              <h2 className={styles.content_subhead}>Summary &amp; Conclusions</h2>
+              <h2 className={styles.content_head}>Summary &amp; Conclusions</h2>
               <p className={styles.content_text}>
                 While most sources describe excellent outcomes of laryngeal paralysis surgery, there are possible complications that may result in an ongoing financial commitment and negative quality of life for the dog. Assessing risk factors is difficult due to a lack of science-based research and hard statistics. Online sources tend to frame the surgery narrative in vague terms that downplay the severity of negative outcomes. Social media tends to promote surgery-positive narratives and suppress negative ones. So while surgery can result in a longer, happier life for your dog, no matter what steps you take to minimize it, chance will always play a role in the outcome. Each person must determine for themselves whether the risk involved in surgery justifies not just the financial expenditure, but also reflects the best interests of the companion animal.
               </p>

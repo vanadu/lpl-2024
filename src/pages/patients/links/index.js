@@ -72,7 +72,7 @@ const Links = () => {
         
             {/* Veterinary Institution Websites Panel */}
             <TabPanel>
-              <h2 className={styles.content_subhead}>Veterinary Institution Websites</h2>
+              <h2 className={styles.content_head}>Veterinary Institution Websites</h2>
               <p className={styles.content_text}>
                 Below are links to veterinary teaching institution websites with general information about laryngeal paralysis in dogs as well as detailed information for veterinary students. <span className='bold'>Note:</span> As of late 2023 none of these sites mentions the laryngeal stent. 
               </p>
@@ -104,7 +104,7 @@ const Links = () => {
 
             {/* Research Study Links Panel */}
             <TabPanel>
-              <h2 className={styles.content_subhead}>Research Studies</h2>
+              <h2 className={styles.content_head}>Research Studies</h2>
               <p className={styles.content_text}>
                 Select the link to open the publication in a new tab. Select <span className='bold'>Results & Conclusions</span> to display the publication&rsquo;s summary.
               </p>

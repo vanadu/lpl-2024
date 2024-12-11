@@ -82,7 +82,7 @@ const StentTypes = () => {
             <p className={styles.content_text}>
               There are two currently two main types of stents for laryngeal paralysis in dogs: the <span className='semibold-italic'>silicone&nbsp;stent</span> and the <span className='semibold-italic'>Nitinol</span> stent.
             </p>
-            <h2 className={styles.content_subheading_text}>Dumon Silicone Stent</h2>
+            <h2 className={styles.content_subhead}>Dumon Silicone Stent</h2>
             <figure className={styles.figure_float_right}>
                 <Image src={DumonStent} className={styles.figure_image} alt="Dumon Stent"/>
               </figure>
@@ -90,7 +90,7 @@ const StentTypes = () => {
               Currently, the most common type of silicone stent for laryngeal paralysis is the Dumon stent. First developed in the late 1980s, the Dumon stent is a tubular prothesis with studs on the exterior wall to anchor the prothesis in the tissue of the airway. Dumon and similar stent silicone stent designs were the only airway prothesis available until the early 2000s when self-expanding metal stents (SEMS) using Nitinol were developed for airway use. However, <a href="https://www.fda.gov/news-events/fda-brief/fda-brief-fda-outlines-considerations-medical-devices-containing-metal-alloy-nitinol-part-ongoing" className="link-dark" target="_blank" rel="noreferrer noopener">the FDA has recently issued warnings</a> for human use of Nitinol stents, which is sure to have repercussions for veterinary applications.
             </p>
     
-            <h2 className={styles.content_subheading_text}>Nitinol Stent</h2>
+            <h2 className={styles.content_subhead}>Nitinol Stent</h2>
     
             <figure className={styles.figure_float_right}>
               <Image src={Dexstent} className={styles.figure_image} alt="Nitinol Stent"/>
@@ -109,7 +109,7 @@ const StentTypes = () => {
                 className={styles.container}
                 style={{ marginTop: '1rem' }}
                 >
-                <h2 className={styles.content_subhead}>Laryngeal Stent Types</h2>
+                <h2 className={styles.content_head}>Laryngeal Stent Types</h2>
                 <Tabs
                   style={{ margin: '1rem 0'}}>
                   <TabList>
@@ -344,7 +344,7 @@ const StentTypes = () => {
                 className={styles.container}
                 style={{ marginTop: '1rem' }}
                 >
-                <h2 className={styles.content_subhead}>Laryngeal Stent Types</h2>
+                <h2 className={styles.content_head}>Laryngeal Stent Types</h2>
                 <Tabs
                   style={{ margin: '1rem 0'}}>
                   <TabList>

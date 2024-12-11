@@ -166,7 +166,7 @@ const AboutLarpar = () => {
             {/* Overview Content */}
             <div className={styles.content_block}>
               <h2 
-                className={styles.content_subhead}
+                className={styles.content_head}
                 ref={refOverview}
                 >Overview</h2>
               {/* ShowMoreComponent content start */}
@@ -242,7 +242,7 @@ const AboutLarpar = () => {
               ref={refSymptoms}
               className="section_content-subhead menu-spacer"
               >
-              <h2 className={styles.content_subhead}>Symptoms</h2>
+              <h2 className={styles.content_head}>Symptoms</h2>
               
               <p className={styles.content_text}>
                 As with any progressive condition, symptoms are barely noticeable at first and get worse with time.
@@ -328,7 +328,7 @@ const AboutLarpar = () => {
             <div
               ref={refCause}
             className="section_content-subhead menu-spacer">
-              <h2 className={styles.content_subhead}>Causes of Laryngeal Paralysis</h2>
+              <h2 className={styles.content_head}>Causes of Laryngeal Paralysis</h2>
             </div>
             <p className={styles.content_text}>Laryngeal paralysis can be caused by a genetic trait or it can be a result of trauma or neurological degeneration.</p>
 
@@ -392,7 +392,7 @@ const AboutLarpar = () => {
               ref={refProgression}
               className="section_content-subhead menu-spacer"
               >
-              <h2 className={styles.content_subhead}>Progression</h2>
+              <h2 className={styles.content_head}>Progression</h2>
             </div>
             <figure className={styles.figure_float_right}>
               <Image src={LarparStages} className={styles.figure_image} alt="Laryngeal Paralysis Progression" />
@@ -401,12 +401,12 @@ const AboutLarpar = () => {
             <p className={styles.content_text}>Laryngeal paralysis in dogs generally starts with failure of the cartilage on one side of the larynx. This is called <span className='semibold-italic'>unilateral laryngeal paralysis</span>, and it only partially restricts air passage, so symptoms are mild to moderate.</p>
   
             <p className={styles.content_text}>As the condition progresses, both cartilages become paralyzed. This is called <span className='semibold-italic'>bilateral laryngeal paralysis</span>. At this stage, the airway is mostly blocked and the dog is can&rsquo;t get enough air to fuel the body. If the dog gets overexcited or overheated, a dangerous situation can result. </p>
-            <h3 className={styles.heading_subhead}>How long does it take?</h3>
+            <h3 className={styles.content_subhead}>How long does it take?</h3>
             <p className={styles.content_text}>
               A dog can have unilateral laryngeal paralysis for many months before it becomes bilateral. But the transition from unilateral to bilateral is inevitable and it can come seemingly overnight. Once the bilateral stage is reached, quality of life deteriorates quickly and you should be prepared in advance either for a veterinary procedure, i.e. surgery or stent, or end-of-life care. 
             </p>
   
-            <h3 className={styles.heading_subhead}>Case Study: Laryngeal Paralysis Progression&nbsp;in&nbsp;Miss&nbsp;B</h3>
+            <h3 className={styles.content_subhead}>Case Study: Laryngeal Paralysis Progression&nbsp;in&nbsp;Miss&nbsp;B</h3>
             <p className={styles.content_text}>
               It took just over two years from the time we noticed symptoms until her laryngeal paralysis reached the end-of-life stage.  
             </p>
@@ -432,7 +432,7 @@ const AboutLarpar = () => {
               </div>
             </ShowMoreContent>
   
-            <h3 className={styles.heading_subhead}>Aspiration Pneumonia Risk</h3>
+            <h3 className={styles.content_subhead}>Aspiration Pneumonia Risk</h3>
             {/* ShowMoreComponent content start */}
             <div className={styles.content_text}>
               <p className={styles.showmore_content_inline}>
@@ -468,7 +468,7 @@ const AboutLarpar = () => {
               ref={refTreatment}
               className="section_content-subhead menu-spacer"
               >
-              <h2 className={styles.content_subhead}>Treatment</h2>
+              <h2 className={styles.content_head}>Treatment</h2>
   
             </div>
             <p className={styles.content_text}>There is no known pharmaceutical or naturopathic treatment that can repair the function of a paralyzed larynx. There are only two veterinary-medical procedures that can restore breathing through the paralyzed larynx so the dog can live out its natural life &mdash; <span className='italic'>surgery</span> and <span className='italic'>laryngeal stent</span>. These procedures will be discussed in detail in the Treatment details section.</p>

@@ -100,7 +100,7 @@ const Procedure = () => {
               </p>
                 
                 {/* Ricart Procedure Details Start */}
-                <h2 className={styles.content_subhead}>Ricart, Rodríguez &amp; Duré</h2>
+                <h2 className={styles.content_head}>Ricart, Rodríguez &amp; Duré</h2>
                 <div className={styles.content_text}>
                   <a href="https://europepmc.org/article/MED/32426250" className="link-dark" target="_blank" rel="noreferrer noopener">Read the full Ricard/Rodríguez/Duré study&nbsp;<FaArrowCircleRight className={styles.anchor_go_button}/></a>
                   {/* ShowMoreComponent content start */}
@@ -138,7 +138,7 @@ const Procedure = () => {
                 {/* Ricart Procedure Details End */}
 
                 {/* Theron Procedure Details Start */}
-                <h2 className={styles.content_subhead}>Theron &amp; Lahuerta/Smith</h2>
+                <h2 className={styles.content_head}>Theron &amp; Lahuerta/Smith</h2>
                 <div className={styles.content_text}>
                   <a href="https://pubmed.ncbi.nlm.nih.gov/35920122/" className="link-dark" target="_blank" rel="noreferrer noopener">Read the full Theron/Lahuerta-Smith study&nbsp;<FaArrowCircleRight className={styles.anchor_go_button}/></a>
                   {/* ShowMoreComponent content start */}
@@ -178,7 +178,7 @@ const Procedure = () => {
               </TabPanel>
 
               <TabPanel>
-                <h2 className={styles.content_subhead}>Clinical Signs &amp; Complications</h2>
+                <h2 className={styles.content_head}>Clinical Signs &amp; Complications</h2>
                 <p className={styles.content_text}>
                   These clinical signs and complications were identified and/or confirmed in both studies. Please see the respective study for detailed information:
                 </p>

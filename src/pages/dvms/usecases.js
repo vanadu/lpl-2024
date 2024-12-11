@@ -87,7 +87,10 @@ const UseCases = () => {
                       {/* Management vs Stenting Content */}
             <div className={styles.content_block}>
 
-              <h3 className={styles.content_subhead}>Traditional Medical Management vs. Stenting</h3>
+              <h2 className={styles.content_head}>
+                Traditional Medical Management vs. Stenting
+                dm@
+              </h2>
               {/* ShowMoreComponent content start */}
               <div className={styles.content_text}>
                 <p className={styles.showmore_content_inline}>
@@ -127,7 +130,7 @@ const UseCases = () => {
 
           {/* Facilitate Surgery Content Start */}
           <div className={styles.content_block}>
-            <h3 className={styles.content_subhead}>Stenting to Facilitate Surgery</h3>
+            <h2 className={styles.content_head}>Stenting to Facilitate Surgery</h2>
             <p className={styles.content_text}>
               Qualified surgeons specializing in LP techniques often are scheduled far in advance, leaving dog owners to fear a fatal breathing crisis before the surgery date. 
             </p>
@@ -166,7 +169,7 @@ const UseCases = () => {
 
           {/* Surgery Alternative Content Start */}
           <div className={styles.content_block}>
-            <h3 className={styles.content_subhead}>Stenting as Surgery Alternative</h3>
+            <h2 className={styles.content_head}>Stenting as Surgery Alternative</h2>
             <p className={styles.content_text}>While LP surgery remains the treatment of choice for younger dogs with congenital or idiopathic laryngeal paralysis, for senior dogs, dogs with comorbidities, or dog owners of limited financial means the stent option is an attractive alternative.</p>
                           {/* ShowMoreComponent content start */}
             <div className={styles.content_text}>

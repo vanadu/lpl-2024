@@ -105,7 +105,7 @@ function Stent() {
 
           {/* The Laryngeal Stent Procedure Content Start */}
           <div className={styles.content_block}>
-            <h2 className={styles.content_subhead}>The Laryngeal Stent Procedure<span className='mobile-hide-inline'> for Canine&nbsp;Laryngeal&nbsp;Paralysis</span></h2>
+            <h2 className={styles.content_head}>The Laryngeal Stent Procedure<span className='mobile-hide-inline'> for Canine&nbsp;Laryngeal&nbsp;Paralysis</span></h2>
             {/* ShowMoreComponent content start */}
             <div className={styles.showmore_content_block}>
                 <p className={styles.content_text}>
@@ -146,7 +146,7 @@ function Stent() {
           {/* The Cost/Benefit Content Start */}
           <div className={styles.content_block}>
 
-            <h2 className={styles.content_subhead}>Cost/Benefit of Laryngeal Stents</h2>
+            <h2 className={styles.content_head}>Cost/Benefit of Laryngeal Stents</h2>
             
             {/* ShowMoreComponent content start */}
             <div className={styles.content_text}>
@@ -178,7 +178,7 @@ function Stent() {
       <section className={styles.section}>
         <div className={styles.section_content}>
           
-        <h2 className={styles.content_subhead}>Risk Assessment</h2>
+        <h2 className={styles.content_head}>Risk Assessment</h2>
         {/* ShowMoreComponent content start */}
         <div className={styles.content_text}>
           <p className={styles.showmore_content_space}></p>   
@@ -232,7 +232,7 @@ function Stent() {
 
             {/* Risk Factors Content Start */}
             <div className={styles.content_block}>
-              <h3 className={styles.subheading_text}>Risk Factors</h3>
+              <h3 className={styles.content_subhead}>Risk Factors</h3>
               <ul className={styles.content_list_no_bullet}>
                 <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
                   <span className='bold'>Stent migration</span> &mdash; After placement, the stent can shift out of position. In this case, a corrective procedure is required to reposition it. 
@@ -320,7 +320,7 @@ function Stent() {
             {/* More Info Content Start */}
             
             <div className={styles.content_block}>
-              <h2 className={styles.content_subhead}>More Info About Stents for Lar Par</h2>
+              <h2 className={styles.content_head}>More Info About Stents for Lar Par</h2>
               <p className={styles.content_text}>
               <span className='bold '>Silicone Stent</span> &mdash; To read abut the research studies that started the stenting revolution for laryngeal paralysis in dogs, visit the <Link href='/patients/treatment/stent/stentstudies' className='link-dark'>Stent Studies</Link>.
               </p>

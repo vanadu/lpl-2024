@@ -84,7 +84,7 @@ const Patients = () => {
       {/* What Is Laryngeal Paralysis Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <h3 className={styles.content_subhead}>What Is Laryngeal Paralysis?</h3>
+          <h2 className={styles.content_head}>What Is Laryngeal Paralysis?</h2>
           <p className={styles.content_text}>
             Here&rsquo;s the thing about about laryngeal paralysis (Lar Par) and geriatric-onset laryngeal paralysis and polyneuropathy (GOLPP) &mdash; <span className="semibold">your dog might be perfectly healthy</span>. Liver, heart, all the vital organs are in tip-top working order. Your dog has lots of energy and wants to run, play and enjoy life. The problem is that the nerves that control two little muscles in the throat, the ones the dog uses to bark, stop working. Instead of opening and closing, the voice box (or <span className='italic'>larynx</span>) becomes paralyzed and stops letting air through. 
           </p>
@@ -172,7 +172,7 @@ const Patients = () => {
       {/* Path Forward Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <h3 className={styles.content_subhead}>Choosing A Path Forward</h3>
+          <h2 className={styles.content_head}>Choosing A Path Forward</h2>
           <p className={styles.content_text}>
             If your dog has laryngeal paralysis or GOLPP, you have some tough decisions to make. We&rsquo;ve been there and understand how hard it is to see a beloved companion struggle to breathe. The most important thing you can do is inform yourself and develop a game plan moving forward.  
           </p>
@@ -235,7 +235,7 @@ const Patients = () => {
       {/* Where To Go From Here Section */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <h3 className={styles.content_subhead}>Where To Go From Here</h3>
+          <h2 className={styles.content_head}>Where To Go From Here</h2>
           <p className={styles.content_text}>
             This website is dedicated to helping you make informed choices about LP based on current information about stent treatments and clinical research data about surgical options. We started gathering information about the stent treatment in April of 2022 as our dog was days away from euthanasia due to end-stage laryngeal paralysis. Like many other people, we refused surgery because of the high cost and risk factors for our senior dog. As of April 2024, our dog is nearly sixteen years old and has lived over 570 days post-stent with a good quality of life, and we want everyone to have that option available to them. But if you can&rsquo;t find a stent provider, you will have to make an informed choice about other options.
           </p>

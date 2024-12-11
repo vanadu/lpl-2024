@@ -57,7 +57,7 @@ const Managing = () => {
           {/* Treatment vs Management Content Start */}
           <div className={styles.content_block}>
 
-            <h2 className={styles.content_subhead}>Treatment vs. Management</h2>
+            <h2 className={styles.content_head}>Treatment vs. Management</h2>
             <p className={styles.content_text}>
               With Lar Par, it&rsquo;s important to distinguish between <span className='semibold-italic'>treatment</span> and <span className='semibold-italic'>management</span>. <span className='italic'>Treatment</span> means making changes within the larynx to restore airflow past the paralyzed cartilage. <span className='italic'>Managing</span> means modifying the behavior of the dog to help him or her live with the constricted airflow and minimize the risk of a life-threatening respiratory crisis.&#8203;&nbsp;  
               </p>
@@ -93,7 +93,7 @@ const Managing = () => {
           {/* Behaviors To Avoid Content Start*/}
           <div className={styles.content_block}>
 
-            <h2 className={styles.content_subhead}>Behaviors to Avoid in Dogs with Laryngeal&nbsp;Paralysis</h2>
+            <h2 className={styles.content_head}>Behaviors to Avoid in Dogs with Laryngeal&nbsp;Paralysis</h2>
             
             {/* ShowMoreComponent content start */}
             <div className={styles.content_text}>
@@ -129,7 +129,7 @@ const Managing = () => {
           {/* Medications and Accupuncture Start */}
           <div className={styles.content_block}>
 
-            <h2 className={styles.content_subhead}>How Medications and Accupuncture May Help</h2>
+            <h2 className={styles.content_head}>How Medications and Accupuncture May Help</h2>
             
             <p className={styles.content_text}>
                 There&rsquo;s no <span className='semibold-italic'>scientific</span> evidence that pharmaceuticals, naturopathic medicines, or accupuncture have any effect on the lifespan or quality of life of canine laryngeal paralysis patients. But there are a lot of people &mdash; veterinarians included &mdash; who say that medications help some dogs live better with laryngeal paralysis.&#8203;&nbsp;
@@ -182,7 +182,7 @@ const Managing = () => {
           <div className={styles.content_block}>
 
 
-            <h2 className={styles.content_subhead}>Pharmaceuticals</h2>
+            <h2 className={styles.content_head}>Pharmaceuticals</h2>
               <p className={styles.content_text}>
                 While no medications  have been developed specifically for laryngeal paralysis in dogs, some veterinarians prescribe pharmaceuticals developed for humans to help manage laryngeal paralysis. The use of these drugs is strictly <a href="https://www.fda.gov/animal-veterinary/resources-you/ins-and-outs-extra-label-drug-use-animals-resource-veterinarians" className="link-dark" target="_blank" rel="noreferrer noopener">off-label</a>, as specified by the U.S. Food and Drug Administration.  
               </p>

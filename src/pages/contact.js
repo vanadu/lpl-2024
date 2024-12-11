@@ -122,7 +122,7 @@ export default function MessageForm() {
               {/* CONTENT START */}
               <div className={styles.heading_subhead}>
                 <h1 className={styles.heading_framed_text}>Share Your Lar Par Story: <span className='mobile-show-inline'><br /></span>Contact Us</h1>
-                <h2 className={styles.heading_subhead}>Help Us Improve Our Site</h2>
+                <h2 className={styles.content_head}>Help Us Improve Our Site</h2>
               </div>
               {/* OUTER CONDITIONAL OPEN */}
               <div className="outer-conditional-open">
