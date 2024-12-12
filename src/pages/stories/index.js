@@ -112,10 +112,10 @@ const Stories = () => {
         <div className={styles.section_content}>
 
           <div 
-            className= { [styles.container_flex_center, styles.menu_spacer].join(' ') }
+            className={styles.container_flex_center}
             ref={refJul}
             >
-            <div className={styles.content_heading}>
+            <div className={styles.section_heading}>
               <h2 className={styles.content_head}>July 2022</h2>
               <hr className={styles.rule_underline} />
             </div>
@@ -157,7 +157,7 @@ const Stories = () => {
           <figure className={styles.figure_float_right}>
             <Image src={MissBCoolingVest} alt="Miss Bs Cooling Vest" className={styles.figure_image}/>
             <figcaption className={styles.figure_caption}>
-              By June Miss B couldn&rsquo;t spend more than a few minutes outside even with her stylish &rsquo;cooling vest&rsquo;
+              By June Miss B couldn&rsquo;t spend more than a few minutes outside even with her stylish &rsquo;cooling&nbsp;vest&rsquo;
             </figcaption>
           </figure>
           <p className={styles.content_text}>
@@ -191,11 +191,11 @@ const Stories = () => {
       {/* AUGUST */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-          <div 
-            className= { [styles.container_flex_center, styles.menu_spacer].join(' ') }
+          <div
+            className={styles.container_flex_center}
             ref={refAug}
             >
-            <div className={styles.content_heading}>
+            <div className={styles.section_heading}>
               <h2 className={styles.content_head}>August 2022</h2>
               <hr className={styles.rule_underline} />
             </div>
@@ -204,7 +204,7 @@ const Stories = () => {
           <figure className={styles.figure_float_right}>
             <Image src={WrongStent} alt="We Bought The Wrong Stent" className={styles.figure_image}/>
             <figcaption className={styles.figure_caption}>
-              In desperation, we ordered a stent from the manufacturer. It cost $250 and didn&rsquo;t get used, so don&rsquo;t do that!
+              In desperation, we ordered a stent from the manufacturer. It cost $250 and didn&rsquo;t get used, so don&rsquo;t&nbsp;do&nbsp;that!
             </figcaption>
           </figure>
           <p className={styles.content_text}>
@@ -250,9 +250,11 @@ const Stories = () => {
       <section className={styles.section}>
         <div className={styles.section_content} >
           {/* Heading */}
-          <div className= { [styles.container_flex_center, styles.menu_spacer].join(' ') } ref={refSep}>
-
-            <div className={styles.content_heading}>
+          <div 
+            className={styles.container_flex_center}
+            ref={refSep}
+            >
+            <div className={styles.section_heading}>
               <h2 className={styles.content_head}>September 2022</h2>
               <hr className={styles.rule_underline} />
             </div>
@@ -261,7 +263,7 @@ const Stories = () => {
           {/* Content */}
           <figure className={styles.figure_float_right}>
             <Image src={MissBTinyHouse} alt="Miss B Post-Procedure" className={styles.figure_image}/>
-            <figcaption className={styles.figure_caption}>Afterwards in the Tiny House, exhausted, sedated &mdash; and breathing normally while we had a little cry</figcaption>
+            <figcaption className={styles.figure_caption}>Afterwards in the Tiny House, exhausted, sedated &mdash; and breathing normally while we had a little&nbsp;cry</figcaption>
           </figure>
           <p className={styles.content_text}>
               Then, on September 7, we got a call from a really friendly guy in New England. He told us he was the practice manager for a clinic where his wife is the veterinarian. They had over 20 years experience practicing together, and he was returning our call about the stent thing. He said they were in the same boat as we were a few weeks ago when&nbsp;
@@ -306,27 +308,25 @@ const Stories = () => {
   
           {/* EPILOGUE */}
       <section className={styles.section}>
-
-          <div className={styles.section_content}>
-            {/* Heading */}
-            <div 
-              className= { [styles.container_flex_center, styles.menu_spacer].join(' ') }
-              ref={refEpi}
-              >
-              <div className={styles.content_heading}>
-                <h2 className={styles.content_head}>Epilogue</h2>
-                <hr className={styles.rule_underline} />
-              </div>
+        <div className={styles.section_content}>
+          {/* Heading */}
+          <div 
+            className={styles.container_flex_center}
+            ref={refEpi}
+            >
+            <div className={styles.section_heading}>
+              <h2 className={styles.content_head}>Epilogue</h2>
+              <hr className={styles.rule_underline} />
             </div>
-            {/* Content */}
-            <figure className={styles.figure_float_right}>
-              <Image src={MissBRideHome} alt="On The Way Home With Stent" className={styles.figure_image}/>
-              <figcaption className={styles.figure_caption}>On the bumpy, never-ending ride home from New England after achieving what seemed like the impossible</figcaption>
-            </figure>
-            <p className={styles.content_text}>We spared you the gory details about how, as residents of the sedate Eastern Shore of Maryland, after the trip through New York City we needed a cardiologist almost as much as Miss B needed a stent. About how we got lost crossing the Green Mountains and there was no cell reception to geolocate ourselves. About how we stayed at an off-the-grid Tiny House on a farm with mice in the ceiling that kept us awake for hours. Or how our truck got stuck and had to be pulled out by a huge farm tractor. Or about the 9 hour rush-hour return trip via Albany that was so bumpy we were terrified it was going to jar Miss B&rsquo;s new stent loose in her throat. Or about ... blah blah blah. None of that matters.</p>
-            <p className={styles.content_text}>What matters is that Miss B has been breathing normally every since. And when she dies, which could be next week or next month or years from now, it won&rsquo;t be because of a minor neurological defect in the larynx. It will be of something fatal, something terminal, something that actually kills her. And we want everyone to know that there is a third option between expensive, risky surgery and euthanasia. It&rsquo;s affordable, quick, and it works. It should be available to all LarPar dogs and until it is, everyone should be asking, &ldquo;Why not?&rdquo;</p>
           </div>
-
+          {/* Content */}
+          <figure className={styles.figure_float_right}>
+            <Image src={MissBRideHome} alt="On The Way Home With Stent" className={styles.figure_image}/>
+            <figcaption className={styles.figure_caption}>On the bumpy, never-ending ride home from New England after achieving what seemed like the&nbsp;impossible</figcaption>
+          </figure>
+          <p className={styles.content_text}>We spared you the gory details about how, as residents of the sedate Eastern Shore of Maryland, after the trip through New York City we needed a cardiologist almost as much as Miss B needed a stent. About how we got lost crossing the Green Mountains and there was no cell reception to geolocate ourselves. About how we stayed at an off-the-grid Tiny House on a farm with mice in the ceiling that kept us awake for hours. Or how our truck got stuck and had to be pulled out by a huge farm tractor. Or about the 9 hour rush-hour return trip via Albany that was so bumpy we were terrified it was going to jar Miss B&rsquo;s new stent loose in her throat. Or about ... blah blah blah. None of that matters.</p>
+          <p className={styles.content_text}>What matters is that Miss B has been breathing normally every since. And when she dies, which could be next week or next month or years from now, it won&rsquo;t be because of a minor neurological defect in the larynx. It will be of something fatal, something terminal, something that actually kills her. And we want everyone to know that there is a third option between expensive, risky surgery and euthanasia. It&rsquo;s affordable, quick, and it works. It should be available to all LarPar dogs and until it is, everyone should be asking, &ldquo;Why not?&rdquo;</p>
+        </div>
       </section>
   
     </>

@@ -16,7 +16,8 @@ import { FaArrowCircleRight } from 'react-icons/fa'
 import ShowMoreContent from '@/components/ShowMoreContent'
 import BottomNav from '@/components/BottomNav'
 // !VA Images
-import MissBXrayStentHeart from '/public/img-miss-b-stent-heart.jpg'
+import MissBXrayStentHeart from 
+'/public/img-miss-b-stent-heart.jpg'
 // !VA Style modules
 import * as styles from '../styles/Light.module.scss'
 

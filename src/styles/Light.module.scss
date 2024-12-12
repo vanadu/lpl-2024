@@ -336,7 +336,7 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   @include lphone {
     display: block;
     margin: 0 auto;
-    padding: 0 1.5rem 0 1rem;
+    padding: 0 1.5rem 0 1.25rem;
   }
   @include tablet {
     display: block;
@@ -379,21 +379,21 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
 }
 
 // !VA Section heading -- not used in Home
-// !VA 2024.04.05 This is only in /stories
-.section_heading {
-  @include desktop {
-    margin-top: 1rem;
-  }
-  @include ldesktop {
-    margin-top: 1.5rem;
-  }
-  width: 100%;
-  height: auto;
+// !VA 2024.04.05 This is only in /stories - 
+// .section_heading {
+//   @include desktop {
+//     margin-top: 1rem;
+//   }
+//   @include ldesktop {
+//     margin-top: 1.5rem;
+//   }
+//   width: 100%;
+//   height: auto;
 
-  display: block; 
-  margin: 1rem 0 0;
-  background: $primary_color;
-}
+//   display: block; 
+//   margin: 1rem 0 0;
+//   background: $primary_color;
+// }
 
 
 // !VA 2024 LAR PAR GUIDE STYLES
@@ -556,6 +556,10 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
 
 
 .section_menu {
+  @include mphone {
+    margin-top: .75rem;
+  }
+
   @include ldesktop {
     padding: 0;
   }
@@ -575,6 +579,7 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   &.active {
     display: block;
   }
+  margin-top: .5rem;
 }
 
 .section_menu_list {
@@ -1081,17 +1086,17 @@ font-weight: 400;
 
 .figure_float_right  {
     @include mphone {
-      margin: .5rem auto .75rem;
+      margin: .5rem auto .313rem;
       padding: 0;
     }
     @include lphone {
-      margin: .5rem auto .75rem;
+      margin: .5rem auto .375rem;
       // width: 80%;
       max-width: 360px;
     }
     @include tablet {
-      width: 30%;
-      margin: .75rem 1rem .75rem .75rem;
+      width: 40%;
+      margin: .75rem 1rem .5rem .75rem;
       float: right;
     }
     @include desktop {
@@ -1108,7 +1113,7 @@ font-weight: 400;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: .5rem 0 .75rem;
+    margin: .5rem 0 .25rem;
 }
 
 .figure_image {
@@ -1137,30 +1142,32 @@ font-weight: 400;
 
 .figure_caption {
   @include mphone {
-    font-size: 1rem;
+    font-size: $mphoneFootnoteFontSize;
+    line-height: $mphoneFootnoteLineHeight;
   }
   @include lphone {
-    font-size: 1rem;
+    font-size: $lphoneFootnoteFontSize;
+    line-height: $lphoneFootnoteLineHeight;
   }
   @include tablet {
-    font-size: 1.125rem;
-    text-align: center;
+    font-size: $tabletFootnoteFontSize;
+    line-height: $tabletFootnoteLineHeight;
   }
   @include desktop {
     padding: 0 1rem;
-    font-size: 1.188rem;
+    font-size: $desktopFootnoteFontSize;
+    line-height: $desktopFootnoteLineHeight;
   }
   @include ldesktop {
-    font-size: 1.313rem;
-    line-height: 1.75rem;
     padding: 0;
+    font-size: $ldesktopFootnoteFontSize;
+    line-height: $ldesktopFootnoteLineHeight;
   }
   font-family: $primary_font;
   color: $dark_text_color;
-  font-size: 1rem;
+  font-size: $rootFootnoteFontSize;
+  line-height: $rootFootnoteLineHeight;
   font-weight: 400;
-  line-height: 1.25rem;
-  padding: 0 .5rem;
   text-align: center;
 }
 
@@ -1250,10 +1257,8 @@ font-weight: 400;
   text-align: center;
 }
 
-
-// !VA In Content pages, this has a horizontal rule to make an underline which isn't in the Home content.
-// !VA 2024.04.05 Check this and see why it's not the same as content_head or content_subhead
-.content_heading {
+// !VA 2024.12.12 section_heading is a div container used on the Stories page for the center-aligned month headings, or any other center-aligned heading in a content section
+.section_heading {
   @include mphone {
     padding: 1rem 0 .313rem;
   }
@@ -1270,14 +1275,16 @@ font-weight: 400;
     padding: .675rem 0 .75rem;
   }
   // !VA flex-direction is the default row to enforce inline-block
-  // flex-direction: row;
-  justify-content: le;
+  flex-direction: row;
+  // justify-content: left;
   display: inline-block;
-  margin: .5rem auto;
+  margin: .5rem auto .25rem;
   font-family: $secondary_font;
   text-align: center;
+  // background: rgba(255, 0, 0, .3) !important; //devred
 }
 
+// !VA Underline rule is applied to a 
 .rule_underline {
   width: auto;
   height: 1px;

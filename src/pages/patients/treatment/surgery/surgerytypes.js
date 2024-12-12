@@ -135,7 +135,7 @@ const SurgeryStudies = () => {
 
           <div className={styles.content_block}>
             <hr className={styles.rule_underline}/>
-            <h2 className={styles.content_heading}>Surgical Techniques for Laryngeal Paralysis</h2>
+            <h2 className={styles.content_head}>Surgical Techniques for Laryngeal Paralysis</h2>
   
             <Tabs>
               <TabList>
@@ -150,7 +150,7 @@ const SurgeryStudies = () => {
               <TabPanel>
                 <div className={styles.content_block}>
                   <div className={styles.content_block}>
-                    <h2 className={styles.content_head}>Arytenoid Lateralization (&lsquo;Tie-back&rsquo;)</h2>
+                    <h2 className={styles.content_subhead}>Arytenoid Lateralization (&lsquo;Tie-back&rsquo;)</h2>
                   </div>
                   {/*Crossfade image start */}
                   <figure className={styles.figure_float_right}> 
