@@ -72,13 +72,15 @@ const Stories = () => {
               On Sept. 9, 2022 we put our dying dog in the car and drove 400 miles to have a silicone tube put in her throat, not knowing whether she&rsquo;d be alive when we got back.
             </p>
         </div>
+
         <div className={styles.saga_july}>
           <div className={styles.container_flex_center}>
             <div className={styles.content_heading}>
 
             </div>
           </div>
-
+        </div>
+        <div>
   
         {/* Section Menu */}
         <div className={styles.section_content}>
