@@ -92,13 +92,18 @@ const Home = ( {posts}) => {
                     className={styles.community_icon} 
                     alt="Join the Lar Par Community" 
                   />
-                
                 </Link>
               </figure>
-              <h3 className={styles.community_cta}>Join the Community!</h3>
+              <h3 className={styles.community_cta}>
+                <Link href='/social' className={styles.community_cta}>Join the Community!</Link></h3>
               <div className={styles.community_text}>
                 <p className={styles.content_text}>
-                  Laryngeal Paralysis in dogs is hard to deal with. Sometimes you need to just talk about it with people who know what you&lsquo;re going through. That&lsquo;s where we can help by sharing experiences, giving support, and helpful info that only other Lar Par dog parents can provide.</p>
+                How can you make the best decision about your dog&rsquo;s Lar Par when so many people &mdash; even the veterinarians &mdash; seem to be saying different things? 
+                </p>
+                <p className={styles.content_text}>
+                Your Lar Par decisions will depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining our growing network of Facebook groups worldwide</Link>. 
+                </p>
+              
               </div>
             </div>
 

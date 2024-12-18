@@ -644,7 +644,7 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   position: relative;
-  background: $secondary_color;
+  background: $community_bg_color;
   z-index: 1;
 }
 
@@ -785,7 +785,7 @@ text-align: center;
   }
   display: inline-block;
   padding: 0;
-  color: $primary-color;
+  color: $community_marquee_color;
   font-size: 1rem;
   line-height: 1rem;
   opacity: .5;
@@ -926,10 +926,13 @@ text-align: center;
     font-size: 36px;
   }
   margin-bottom: .25rem;
-  color: $primary_color;
   font-family: $inter_font;
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+.community_link, .community_cta {
+  color: $community_link_color;
 }
 
 // !VA Override the Home text color
