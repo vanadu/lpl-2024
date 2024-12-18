@@ -96,7 +96,6 @@
   line-height: $rootSubheadLineHeight; 
   font-weight: 500;
   text-align: left;
-  // background: rgba(255, 0, 0, .3) !important; //devred
 }
 
 // !VA COMMON: content_text, content_list-item common styles
@@ -639,9 +638,7 @@ text-align: center;
 
 
 
-// !VA 2024
-// !VA  
-
+// !VA Top level parent container for all community elements - spans the entire page width to allow the marquee elements to extend to the device borders.
 .community_content {
   display: flex;
   flex-direction: column;
@@ -650,8 +647,6 @@ text-align: center;
   background: $secondary_color;
   z-index: 1;
 }
-
-
 
 // !VA Set page width and text margins here
 .community {
@@ -685,7 +680,7 @@ text-align: center;
   z-index: 12;
 }
 
-  // !VA This is for positioning the marquee block not the invidual marquee elements
+  // !VA Parent wrapper for positioning the marquee block not the invidual marquee elements
 .community_questions {
   @include mphone {
     top: 3.125rem;
@@ -714,6 +709,7 @@ text-align: center;
   z-index: 11;
 }
 
+// !VA The parent wrapper for the individual marquee elements within the .community_questions block
 .marquee_wrapper1, .marquee_wrapper2, .marquee_wrapper3, .marquee_wrapper4, .marquee_wrapper5 {
   @include lphone {
     height: 1.575rem;
@@ -734,6 +730,7 @@ text-align: center;
   padding: 0;
 }
 
+// !VA Individual marquee elements containing the animation parameters and text elements.
 .marquee1, .marquee2, .marquee3, .marquee4, , .marquee5 {
   white-space: nowrap;
   overflow: hidden;
@@ -742,9 +739,9 @@ text-align: center;
   padding: 0;
 }
 
-
+// !VA Calls the individual marquee animations, each of which has a different cycle time to make them run at different speeds.
 .marquee1 {
-  animation: marquee1 29s linear infinite;
+  animation: marquee1 38s linear infinite;
 }
 
 .marquee2 {
@@ -752,15 +749,15 @@ text-align: center;
 }
 
 .marquee3 {
-  animation: marquee3 30s linear infinite;
+  animation: marquee3 33s linear infinite;
 }
 
 .marquee4 {
-  animation: marquee3 24s linear infinite;
+  animation: marquee3 31s linear infinite;
 }
 
 .marquee5 {
-  animation: marquee3 32s linear infinite;
+  animation: marquee3 36s linear infinite;
 }
 
 
@@ -788,10 +785,12 @@ text-align: center;
   }
   display: inline-block;
   padding: 0;
-  color: $tertiary_color;
+  color: $primary-color;
   font-size: 1rem;
   line-height: 1rem;
+  opacity: .5;
 }
+
 
 @keyframes marquee1 {
   0% {

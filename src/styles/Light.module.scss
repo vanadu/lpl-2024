@@ -49,8 +49,7 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   border-top-right-radius: 15px;
 }
 
-// !VA This is a generic flex container - new
-// !VA 2024.04.05 This is in so many modules, maybe it should be moved to global.scss
+// !VA This is a generic flex container - used in Stories to push the section's figure down below the center-aligned section heading. 
 .container_flex_center {
   display: flex;
   flex-direction: column;
@@ -326,22 +325,22 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
 //   border-bottom: 1px solid black;
 // }
 
-// !VA In all content except Home, section_content is the same width as the .section container.
+// !VA 2024.04.12 This is display: flex for anything below tablet, and display: block for anything wider so that the figure is full-width and center on phones and float: right on anything wider. 
 .section_content {
   @include mphone {
-    display: block;
-    margin: 0 auto;
+    // display: block;
+    // margin: 0 auto;
     padding: 0 1.5rem 0 1rem;
   }
   @include lphone {
-    display: block;
-    margin: 0 auto;
+    // display: block;
+    // margin: 0 auto;
     padding: 0 1.5rem 0 1.25rem;
   }
   @include tablet {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 0 3rem 0 2.5rem;
   }
   @include desktop {
@@ -354,7 +353,7 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
   @include ldesktop {
     display: block;
     width: 1200px;
-    margin: 0 auto;
+    // margin: 0 auto;
     // padding: 0 5.688rem 0;
     padding: 0 1.5rem 0 2rem;
   }
@@ -1100,20 +1099,21 @@ font-weight: 400;
       float: right;
     }
     @include desktop {
-      width: 30%;
+      width: 40%;
       margin: .75rem 2rem .75rem .75rem;
       float: right;
     }
     @include ldesktop {
-      width: 400px;
+      width: 40%;
       margin: .5rem 3rem 2rem;
       float: right;
     }
     align-items: center;
     display: flex;
     flex-direction: column;
+    // display: block;
     justify-content: center;
-    margin: .5rem 0 .25rem;
+    margin: .5rem auto .25rem;
 }
 
 .figure_image {
@@ -1260,19 +1260,19 @@ font-weight: 400;
 // !VA 2024.12.12 section_heading is a div container used on the Stories page for the center-aligned month headings, or any other center-aligned heading in a content section
 .section_heading {
   @include mphone {
-    padding: 1rem 0 .313rem;
+    margin: .75rem auto .25rem;
   }
   @include lphone {
-    padding: 1rem 0 .313rem;
+    margin: .75rem auto .313rem;
   }
   @include tablet {
-    padding: 1rem 0 .25rem;
+    margin: .75rem auto .375rem;
   }
   @include desktop {
-    padding: 1rem 0 .75rem;
+    margin: .75rem auto .375rem;
   }
   @include ldesktop {
-    padding: .675rem 0 .75rem;
+    margin: .75rem auto .375rem;
   }
   // !VA flex-direction is the default row to enforce inline-block
   flex-direction: row;
@@ -2062,6 +2062,19 @@ font-weight: 400;
   line-height: 1.75rem;
   font-weight: 600;
   text-align: left;
+}
+
+// !VA Social page
+.social_links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.social_icon {
+  color: #0865FE;
+  font-size: 3rem;
 }
 
 

@@ -110,7 +110,7 @@ const Stories = () => {
       {/* JULY */}
       <section className={styles.section}>
         <div className={styles.section_content}>
-
+          {/* Need container_flex_center to push the figure down below the heading */}
           <div 
             className={styles.container_flex_center}
             ref={refJul}

@@ -82,27 +82,31 @@ const Home = ( {posts}) => {
               <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
 
               <figure className={styles.figure}>
-                <Image 
-                  src={JoinUsIcon} 
-                  // width="0"
-                  // height="0"
-                  // sizes="100vw"
-                  // style={{ width: '100%', height: 'auto' }}
-                  className={styles.community_icon} 
-                  alt="Join the Lar Par Community" 
-                />
+                <Link href='/social' className='link-dark'>
+                  <Image 
+                    src={JoinUsIcon} 
+                    // width="0"
+                    // height="0"
+                    // sizes="100vw"
+                    // style={{ width: '100%', height: 'auto' }}
+                    className={styles.community_icon} 
+                    alt="Join the Lar Par Community" 
+                  />
+                
+                </Link>
               </figure>
               <h3 className={styles.community_cta}>Join the Community!</h3>
               <div className={styles.community_text}>
                 <p className={styles.content_text}>
                   Laryngeal Paralysis in dogs is hard to deal with. Sometimes you need to just talk about it with people who know what you&lsquo;re going through. That&lsquo;s where we can help by sharing experiences, giving support, and helpful info that only other Lar Par dog parents can provide.</p>
               </div>
-
-
             </div>
 
 
-            {/* Container for the individual community question animations */}
+            {/* !VA Container for the individual community question animations */}
+            {/* !VA I used this technique: https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break. There was also a codepen I leaned on but I can't find it now.  */}
+            {/* !VA This technique makes it very hard to switch directions and I don't have time to deal with it right now. */}
+            {/* !VA There is a copy of each marquee to ensure that it reaches across the entire device width.  */}
             <div className={styles.community_questions}>
               {/* First scrolling animation  */}
               <div className={styles.marquee_wrapper1}>

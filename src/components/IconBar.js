@@ -46,7 +46,7 @@ const IconBar = () => {
           <FaYoutube />
         </Link>
         <Link 
-          href='https://www.facebook.com/groups/laryngealstentfordogs' 
+          href='/social' 
           className={styles.icon} 
           target="_blank" 
           rel="noopener noreferrer"

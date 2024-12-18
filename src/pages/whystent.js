@@ -40,7 +40,6 @@ function WhyStent() {
     
           <div className={styles.section_content}>
     
-            <div className={styles.two_column_content}>
     
               <div className={styles.why_title}>
                 <h1 className={styles.why_title_head}><span className={styles.massive}>FIVE GOOD REASONS</span><br />to <FaHeart className='heart' aria-label='love' /> the
@@ -222,7 +221,8 @@ function WhyStent() {
               </div>
               
     
-            </div>{/* .two-column-content */}
+
+
           </div>{/* .section_content .*/}  
           <BottomNav /> 
       </section>
