@@ -1,5 +1,9 @@
 import React from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
+// !VA Custom components
+import ShowMoreContent from '@/components/ShowMoreContent'
+
 
 // !VA Icons
 import { FaFacebook } from "react-icons/fa";
@@ -8,6 +12,10 @@ import { FaFacebook } from "react-icons/fa";
 import * as styles from '../styles/Light.module.scss'
 
 const Social = () => {
+
+  // !VA ShowMore component index
+  const [activeIndex, setActiveIndex] = useState(0)
+
   return (
     <>
       <section className={styles.section}>
@@ -17,12 +25,66 @@ const Social = () => {
           </div>
           <h2 className={styles.content_head}>What is the Lar Par community?</h2>
           <p className={styles.content_text}>
-            The Lar Par community is the collective of people whose lives have been impacted by canine laryngeal paralysis/GOLPP. If your beloved companion has or has had this horrible disease, you&rsquo;re a member of the community even if you choose to remain silent or anonymous. But if you want to connect with others, the best way is to join one of our growing international network of Facebook groups.
+            The Lar Par community is the collective of people whose lives have been impacted by canine laryngeal paralysis/GOLPP. 
           </p>
+
+          {/* ShowMoreComponent content start */}
+          <div className={styles.content_text}>
+            <ShowMoreContent
+              title='Learn more...'
+              index={1}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              >
+              <div className="showmore-content-text">
+                {/* <figure className="showmore-figure">
+                  <Image src={[showmore image]} className="showmore-figure-image" alt="[showmore alt text]"/>
+                  <figcaption className="showmore-figure-caption">
+                    [showmore figure caption]
+                  </figcaption>
+                </figure> */}
+                <span className="showmore-content-space"></span>
+                <p className="showmore-content-text">
+                  If your beloved companion has or has had this horrible disease, you&rsquo;re a member of the community even if you choose to remain silent or anonymous. But if you want to connect with others, the best way is to join one of our growing international network of Facebook groups.
+                </p>
+              </div>
+            </ShowMoreContent>
+          </div>  
+          {/* ShowMoreComponent content end */}
+          
+
+
+
+
           <h2 className={styles.content_head}>The Open Community</h2>
           <p className={styles.content_text}>
-            A truly open community embraces and respects all members regardless of their difference. Each community member&rsquo;s dog is unique and individual, and each community member has unique circumstances that inform their decisions. For some of us, our personal circumstances sadly limit our available options. A true community accepts this with compassion and understanding and without judgment. There a lot of Facebook groups that deal with canine laryngeal paralysis and GOLPP, but three stand out as being open, unbiased, and supportive of free speech.
+            A truly open community embraces and respects all members regardless of their personal circumstances. 
           </p>
+          {/* ShowMoreComponent content start */}
+          <div className={styles.content_text}>
+            <ShowMoreContent
+              title='Learn more...'
+              index={2}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              >
+              <div className="showmore-content-text">
+                {/* <figure className="showmore-figure">
+                  <Image src={[showmore image]} className="showmore-figure-image" alt="[showmore alt text]"/>
+                  <figcaption className="showmore-figure-caption">
+                    [showmore figure caption]
+                  </figcaption>
+                </figure> */}
+                <span className="showmore-content-space"></span>
+                <p className="showmore-content-text">
+                  Each community member&rsquo;s dog is unique and individual, and each community member has a unique situation that informs their decisions. For some of us, our personal circumstances sadly limit our available options. A true community accepts this with compassion and understanding and without judgment. There a lot of Facebook groups that deal with canine laryngeal paralysis and GOLPP, but three stand out as being open, unbiased, and supportive of free speech.
+                </p>
+              </div>
+            </ShowMoreContent>
+          </div>  
+          {/* ShowMoreComponent content end */}
+          
+
           <h2 className={styles.content_head}>The Lar Par Community Network</h2>
           <p className={styles.content_text}>
             The Lar Par Community network has three Facebook groups active in English and German to serve the international Lar Par community:
