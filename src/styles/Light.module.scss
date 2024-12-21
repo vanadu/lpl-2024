@@ -1325,6 +1325,8 @@ font-weight: 400;
     font-weight: 400;
     line-height: $ldesktopTextLineHeight;
   }
+  // !VA 2024 Added width 100% here so the showmore link would justify left. Otherwise, it will appear centered
+  width: 100%;
   padding: .25rem 0 .188rem;
   color: $dark_text_color;
   font-family: $primary_font;
@@ -2067,16 +2069,72 @@ font-weight: 400;
 // !VA Social page
 .social_links {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-
-.social_icon {
-  color: #0865FE;
-  font-size: 3rem;
+.social_link {
+  @include ldesktop {
+    flex-direction: column;
+  
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem 0;
 }
 
+.social_link_head {
+  @include ldesktop {
+    width: 50%;
+  }
+  width: 100%;
+}
+
+.social_link_content {
+  @include ldesktop {
+    flex-direction: row;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.social_link_head_text {
+  padding: .25rem 0;
+  font-family: $primary_font;
+  font-size: $rootPostLinkFontSize;
+  line-height: $rootPostLinkLineHeight;
+  text-align: center;
+}
+
+.social_link_content_text {
+  font-family: $primary_font;
+  font-size: $rootPostLinkFontSize;
+  line-height: $rootPostLinkLineHeight;
+}
+
+.social_link_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: .25rem 0 .25rem;
+}
+
+.social_icon {
+  width: 100%;
+  color: #0865FE;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.social_icon_caption {
+  text-align: center;
+}
 
 // !VA 2024.04.05 .blog_post_title_subtext is only in one of the old blog pages
 .blog_post_title_subtext {
@@ -2772,8 +2830,6 @@ text-align: left;
   align-items: center;
   justify-content: center;
   width: 100%;
-  // background: rgba(0, 0, 255, .3) !important; //devblue
-  background: $primary_color;
   background: $home_bg_color;
 }
 
