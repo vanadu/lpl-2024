@@ -1348,52 +1348,57 @@ font-weight: 400;
 
 // !VA IMPORTANT - why no mq?
 .content_list_no_bullet {
-    @include mphone {
-      // !VA
-    }
-    @include lphone {
-      // !VA
-    }
-    @include tablet {
-      // !VA
-    }
-    @include desktop {
-      // !VA
-    }
-    @include ldesktop {
-      // margin-left: 1.75rem;
-      margin: .75rem 0 0 1rem;
-    }
+  @include ldesktop {
+    // margin-left: 1.75rem;
+    margin: .75rem 0 0 1rem;
+  }
   margin-left: 0;
 }
 
 .content_list_item {
-  @include mphone {
-    padding: .25rem 0 .25rem -1.75rem;
-    text-indent: -1.75rem;
-  }
+  // !VA Update - changed from display block to flex, media queries determine the top and bottom margin between list items on devices. text-indent not necessary to set text indent around bullet with flex vs block.
   @include lphone {
-    padding: .25rem 0 .25rem 1.75rem;
-    text-indent: -1.75rem;
+    margin: .125rem 0;
   }
   @include tablet {
-    padding: .25rem 0 .25rem 1.75rem;
-    text-indent: -1.75rem;
+    margin: .25rem 0;
   }
   @include desktop {
-    padding: .25rem 0 .25rem 1.75rem;
-    text-indent: -1.75rem;
+    margin: .313rem 0;
   }
   @include ldesktop {
-    margin-bottom: .5rem;
-    padding-left: 1.75rem;
-    text-indent: -1.75rem;
+    margin: .375rem 0;
   }
-  display: block;
-  padding: 0 0 .25rem 1.75rem;
-  text-indent: -1.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0 .25rem .25rem;
   color: $dark_text_color;
 }
+
+.content_list_item_svg {
+  @include mphone {
+    font-size: $mphoneLargeFontSize;
+  }
+  @include lphone {
+    font-size: $lphoneLargeFontSize;
+  }
+  @include tablet {
+    font-size: $tabletLargeFontSize;
+  }
+  @include desktop {
+    font-size: $desktopLargeFontSize;
+  }
+  @include ldesktop {
+    font-size: $ldesktopLargeFontSize;
+  }
+  // !VA 2024
+  width: 1rem;
+  color: $primary_color;
+  margin-right: .5rem;
+  font-size: $rootLargeFontSize;
+}
+
 
 // !VA 2024.04.05 Why is this only in patients/treatment/surgery?
 .content_list_spacer {
@@ -1490,27 +1495,6 @@ font-weight: 400;
   }
   width: 100%;
   padding-right: .5rem;
-}
-
-.content_list_item_svg {
-    @include mphone {
-      font-size: $mphoneLargeFontSize;
-    }
-    @include lphone {
-      font-size: $lphoneLargeFontSize;
-    }
-    @include tablet {
-      font-size: $tabletLargeFontSize;
-    }
-    @include desktop {
-      font-size: $desktopLargeFontSize;
-    }
-    @include ldesktop {
-      font-size: $ldesktopLargeFontSize;
-    }
-  color: $primary_color;
-  margin-right: .5rem;
-  font-size: $rootLargeFontSize;
 }
 
 // !VA OLD Blog post Content
