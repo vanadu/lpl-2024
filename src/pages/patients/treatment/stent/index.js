@@ -39,12 +39,10 @@ function Stent() {
   const refAftermath = useRef();
   // const refEpi = useRef();
 
+  // !VA 2024 isActive is not used, I don't think
   const [isActive, setIsActive ] = useState('false')
+  // !VA ShowMore component index
   const [activeIndex, setActiveIndex] = useState(0)
-
-
-
-  
 
   return (
     <>

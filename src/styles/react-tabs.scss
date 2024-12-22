@@ -1,32 +1,32 @@
 .react-tabs {
   @include mphone {
-    font-size: $mphoneSubheadFontSize;
-    line-height: $mphoneSubheadLineHeight;
+    font-size: $mphoneLargeFontSize;
+    line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
-    font-size: $lphoneSubheadFontSize;
-    line-height: $lphoneSubheadLineHeight;
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneLargeLineHeight;
   }
   @include tablet {
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight;
+    font-size: $tabletLargeFontSize;
+    line-height: $tabletLargeLineHeight;
   }
   @include desktop {  
-    font-size: $desktopSubheadFontSize;
-    line-height: $desktopSubheadLineHeight;
+    font-size: $desktopLargeFontSize;
+    line-height: $desktopLargeLineHeight;
   
   }
   @include ldesktop {
-    font-size: $ldesktopSubheadFontSize;
-    line-height: $ldesktopSubheadLineHeight;
+    font-size: $ldesktopLargeFontSize;
+    line-height: $ldesktopLargeLineHeight;
     padding: 0 0 2rem;
     margin: 0 0 .75rem;
   }
   -webkit-tap-highlight-color: transparent;
   padding: 0 0 1.5rem;
   font-family: $secondary_font;
-  font-size: $rootSubheadFontSize;
-  line-height: $rootSubheadLineHeight;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
   &__tab-list {
     border-bottom: 1px solid #aaa;
     padding: 0 0 .75rem;

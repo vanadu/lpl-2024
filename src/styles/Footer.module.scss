@@ -140,28 +140,28 @@
 
 .copyright_text {
   @include mphone {
-    font-size: $mphoneFootnoteFontSize;
-    line-height: $mphoneFootnoteLineHeight;
+    font-size: $mphoneXXSFontSize;
+    line-height: $mphoneXXSLineHeight;
   }
   @include lphone {
-    font-size: $lphoneFootnoteFontSize;
-    line-height: $lphoneFootnoteLineHeight;
+    font-size: $lphoneXXSFontSize;
+    line-height: $lphoneXXSLineHeight;
   }
   @include tablet {
-    font-size: $tabletFootnoteFontSize;
-    line-height: $tabletFootnoteLineHeight;
+    font-size: $tabletXXSFontSize;
+    line-height: $tabletXXSLineHeight;
   }
   @include desktop {
-    font-size: $desktopFootnoteFontSize;
-    line-height: $desktopFootnoteLineHeight;
+    font-size: $desktopXXSFontSize;
+    line-height: $desktopXXSLineHeight;
   }
   @include ldesktop {
-    font-size: $ldesktopFootnoteFontSize;
-    line-height: $ldesktopFootnoteLineHeight;
+    font-size: $ldesktopXXSFontSize;
+    line-height: $ldesktopXXSLineHeight;
   }
   color: $light_text_color;
-  font-size: $rootFootnoteFontSize;
-  line-height: $rootFootnoteLineHeight;
+  font-size: $rootXXSFontSize;
+  line-height: $rootXXSLineHeight;
   text-align: center;
 }
 
@@ -211,27 +211,27 @@
 
 .disclaimer_text {
   @include mphone {
-    font-size: $mphoneFootnoteFontSize;
-    line-height: $mphoneFootnoteLineHeight;
+    font-size: $mphoneXXSFontSize;
+    line-height: $mphoneXXSLineHeight;
   }
   @include lphone {
-    font-size: $lphoneFootnoteFontSize;
-    line-height: $lphoneFootnoteLineHeight;
+    font-size: $lphoneXXSFontSize;
+    line-height: $lphoneXXSLineHeight;
   }
   @include tablet {
-    font-size: $tabletFootnoteFontSize;
-    line-height: $tabletFootnoteLineHeight;
+    font-size: $tabletXXSFontSize;
+    line-height: $tabletXXSLineHeight;
   }
   @include desktop {
-    font-size: $desktopFootnoteFontSize;
-    line-height: $desktopFootnoteLineHeight;
+    font-size: $desktopXXSFontSize;
+    line-height: $desktopXXSLineHeight;
   }
   @include ldesktop {
-    font-size: $ldesktopFootnoteFontSize;
-    line-height: $ldesktopFootnoteLineHeight;
+    font-size: $ldesktopXXSFontSize;
+    line-height: $ldesktopXXSLineHeight;
   }
   color: $light_text_color;
-  font-size: $rootFootnoteFontSize;
-  line-height: $rootFootnoteLineHeight;
+  font-size: $rootXXSFontSize;
+  line-height: $rootXXSLineHeight;
   text-align: left;
 }

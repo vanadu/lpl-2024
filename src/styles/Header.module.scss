@@ -672,28 +672,28 @@
 
 .header_slug_text {
   @include mphone {
-    font-size: $mphoneSlugFontSize;
+    font-size: $mphoneXLFontSize;
     line-height: $mphoneSlugLineHeight;
   }
   @include lphone {
-    font-size: $lphoneSlugFontSize;
+    font-size: $lphoneXLFontSize;
     line-height: $lphoneSlugLineHeight;
   }
   @include tablet {
-    font-size: $tabletSlugFontSize;
+    font-size: $tabletXLFontSize;
     line-height: $tabletSlugLineHeight;
   }
   @include desktop {
-    font-size: $desktopSlugFontSize;
+    font-size: $desktopXLFontSize;
     line-height: $desktopSlugLineHeight;
   }
   @include ldesktop {
-    font-size: $ldesktopSlugFontSize;
+    font-size: $ldesktopXLFontSize;
     line-height: $ldesktopSlugLineHeight;
   }
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootSlugFontSize;
+  font-size: $rootXLFontSize;
   line-height: $rootSlugLineHeight;
   font-weight: 500;
   text-align: center;
@@ -709,8 +709,8 @@
 .stories_banner_text {
   padding: .25rem 0;
   font-family: $primary_font;
-  font-size: $rootTextFontSize;
-  line-height: $rootTextLineHeight;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
   text-align: center;
 }
 

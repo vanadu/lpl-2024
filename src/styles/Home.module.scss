@@ -27,34 +27,34 @@
 .main_head {
   @include mphone {
     padding-bottom: .75rem;
-    font-size: $mphoneHeadFontSize;
-    line-height: $mphoneHeadLineHeight; 
+    font-size: $mphoneXXLFontSize;
+    line-height: $mphoneXXLLineHeight; 
   }
   @include lphone {
     padding: 1rem 0 .313rem;
-    font-size: $lphoneHeadFontSize;
-    line-height: $lphoneHeadLineHeight; 
+    font-size: $lphoneXXLFontSize;
+    line-height: $lphoneXXLLineHeight; 
   }
   @include tablet {
     padding: 1rem 0 .25rem;
-    font-size: $tabletHeadFontSize;
-    line-height: $tabletHeadLineHeight
+    font-size: $tabletXXLFontSize;
+    line-height: $tabletXXLLineHeight
   }
   @include desktop {
     padding: 1.25rem 0 .25rem;
-    font-size: $desktopHeadFontSize;
-    line-height: $desktopHeadLineHeight
+    font-size: $desktopXXLFontSize;
+    line-height: $desktopXXLLineHeight
   }
   @include ldesktop {
     padding: 1.25rem 0 .5rem;
-    font-size: $ldesktopHeadFontSize;
-    line-height: $ldesktopHeadLineHeight
+    font-size: $ldesktopXXLFontSize;
+    line-height: $ldesktopXXLLineHeight
   }
   margin: 0 0 .5rem;
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootHeadFontSize;
-  line-height: $rootHeadLineHeight; 
+  font-size: $rootXXLFontSize;
+  line-height: $rootXXLLineHeight; 
   font-weight: 500;
   text-align: center;
 }
@@ -64,36 +64,36 @@
 .main_subhead {
   @include mphone {
     margin: .575rem 0 .188rem;
-    font-size: $mphoneSubheadFontSize;
-    line-height: $mphoneSubheadLineHeight; 
+    font-size: $mphoneLargeFontSize;
+    line-height: $mphoneLargeLineHeight; 
   }
   @include lphone {
     margin: .625rem 0 .125rem;
-    font-size: $lphoneSubheadFontSize;
-    line-height: $lphoneSubheadLineHeight; 
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneLargeLineHeight; 
   }
   @include tablet {
     margin: .688rem 0 .125rem;
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight; 
+    font-size: $tabletLargeFontSize;
+    line-height: $tabletLargeLineHeight; 
   }
   @include desktop {
     margin: .725rem 0 .188rem;
-    font-size: $desktopSubheadFontSize;
-    line-height: $desktopSubheadLineHeight; 
+    font-size: $desktopLargeFontSize;
+    line-height: $desktopLargeLineHeight; 
   }
   @include ldesktop {
     margin: .813rem 0 .25rem;
-    font-size: $ldesktopSubheadFontSize;
-    line-height: $ldesktopSubheadLineHeight; 
+    font-size: $ldesktopLargeFontSize;
+    line-height: $ldesktopLargeLineHeight; 
   }
   // margin-bottom: .375rem;
   // padding-top: .25rem;
   margin: .5rem 0 .125rem;
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootSubheadFontSize;
-  line-height: $rootSubheadLineHeight; 
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight; 
   font-weight: 500;
   text-align: left;
 }
@@ -104,33 +104,33 @@
 .content_text, .content_list_item {
   @include mphone {
     margin: .188rem 0 .313rem;
-    font-size: $mphoneTextFontSize;
-    line-height: $mphoneTextLineHeight;
+    font-size: $mphoneLargeFontSize;
+    line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
     margin: .25rem 0 .375rem;
-    font-size: $lphoneTextFontSize;
-    line-height: $lphoneTextLineHeight;
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneLargeLineHeight;
   }
   @include tablet {
     margin: .313rem 0 .375rem;
-    font-size: $tabletTextFontSize;
-    line-height: $tabletTextLineHeight;
+    font-size: $tabletLargeFontSize;
+    line-height: $tabletLargeLineHeight;
   }
   @include desktop {
-    font-size: $desktopTextFontSize;
-    line-height: $desktopTextLineHeight;
+    font-size: $desktopLargeFontSize;
+    line-height: $desktopLargeLineHeight;
   }
   @include ldesktop {
-    font-size: $ldesktopTextFontSize;
-    line-height: $ldesktopTextLineHeight;
+    font-size: $ldesktopLargeFontSize;
+    line-height: $ldesktopLargeLineHeight;
   }
   // padding: .5rem 0 0 0;
   margin: .125rem 0 .25rem;
   font-family: $primary_font;
   color: $dark_text_color;
-  font-size: $rootTextFontSize;
-  line-height: $rootTextLineHeight;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
   font-weight: 400;
   text-align: left;
   // background: rgba(0, 128, 0, .3) !important; //devgreen
@@ -841,34 +841,34 @@ text-align: center;
   // !VA 2024 Top padding is on the parent
   @include mphone {
     margin-bottom: 1.375rem;
-    font-size: $mphoneHeadFontSize;
-    line-height: $mphoneHeadLineHeight;
+    font-size: $mphoneXXLFontSize;
+    line-height: $mphoneXXLLineHeight;
   }
   @include lphone {
     margin-bottom: 1.5rem;
-    font-size: $lphoneHeadFontSize;
-    line-height: $lphoneHeadLineHeight;
+    font-size: $lphoneXXLFontSize;
+    line-height: $lphoneXXLLineHeight;
   }
   @include tablet {
     margin-bottom: 1.638rem;
-    font-size: $tabletHeadFontSize;
-    line-height: $tabletHeadLineHeight;
+    font-size: $tabletXXLFontSize;
+    line-height: $tabletXXLLineHeight;
   }
   @include desktop {
     margin-bottom: 1.75rem;
-    font-size: $desktopHeadFontSize;
-    line-height: $desktopHeadLineHeight;
+    font-size: $desktopXXLFontSize;
+    line-height: $desktopXXLLineHeight;
   }
   @include ldesktop {
     margin-bottom: 2.25rem;    
-    font-size: $ldesktopHeadFontSize;
-    line-height: $ldesktopHeadLineHeight;
+    font-size: $ldesktopXXLFontSize;
+    line-height: $ldesktopXXLLineHeight;
   }
   margin-bottom: 1.125rem;
   color: $light_text_color;
   font-family: $secondary_font;
-  font-size: $rootHeadFontSize;
-  line-height: $rootHeadLineHeight;
+  font-size: $rootXXLFontSize;
+  line-height: $rootXXLLineHeight;
   font-weight: 500;
 
 }
@@ -905,16 +905,16 @@ text-align: center;
 
 .community_cta {
   @include mphone {
-    font-size: $mphoneHeadFontSize;
-    line-height: $mphoneHeadLineHeight;
+    font-size: $mphoneXXLFontSize;
+    line-height: $mphoneXXLLineHeight;
   }
   @include lphone {
-    font-size: $lphoneHeadFontSize;
-    line-height: $lphoneHeadLineHeight;
+    font-size: $lphoneXXLFontSize;
+    line-height: $lphoneXXLLineHeight;
   }
   @include tablet {
-    font-size: $tabletHeadFontSize;
-    line-height: $tabletHeadLineHeight;
+    font-size: $tabletXXLFontSize;
+    line-height: $tabletXXLLineHeight;
   }
   @include desktop {
     // !VA 2024

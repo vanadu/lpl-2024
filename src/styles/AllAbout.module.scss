@@ -71,29 +71,29 @@
 
 .head_title {
   @include mphone {
-    font-size: $mphoneConsentFontSize;
-    line-height: $mphoneConsentLineHeight;
+    font-size: $mphoneSmallFontSize;
+    line-height: $mphoneSmallLineHeight;
     padding: .188rem 1rem;
   }
   @include lphone {
-    font-size: $lphoneConsentFontSize;
-    line-height: $lphoneConsentLineHeight;
+    font-size: $lphoneSmallFontSize;
+    line-height: $lphoneSmallLineHeight;
     padding: .188rem 2rem;
   }
   @include tablet {
-    font-size: $tabletConsentFontSize;
-    line-height: $tabletConsentLineHeight;
+    font-size: $tabletSmallFontSize;
+    line-height: $tabletSmallLineHeight;
   }
   @include desktop {
     padding: .25rem 0 .375rem;
-    font-size: $desktopConsentFontSize;
-    line-height: $desktopConsentLineHeight;
+    font-size: $desktopSmallFontSize;
+    line-height: $desktopSmallLineHeight;
   }
   @include ldesktop {
     padding: .125rem 0 .25rem;
     padding: .5rem 0 .5rem;
-    font-size: $ldesktopConsentFontSize;
-    line-height: $ldesktopConsentLineHeight;
+    font-size: $ldesktopSmallFontSize;
+    line-height: $ldesktopSmallLineHeight;
   }
   color: $light_text_color;
   font-family: $secondary_font;
@@ -101,40 +101,40 @@
   // !VA 2024
   // font-size: 1.375rem;
   // line-height: 1.75rem;
-  font-size: $rootConsentFontSize;
-  line-height: $rootConsentLineHeight;
+  font-size: $rootSmallFontSize;
+  line-height: $rootSmallLineHeight;
   font-weight: 400;
   text-align: center;
 }
 
 .content_heading {
   @include mphone {
-    font-size: $mphoneSubheadFontSize;
-    line-height: $mphoneSubheadLineHeight;
+    font-size: $mphoneLargeFontSize;
+    line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
-    font-size: $lphoneSubheadFontSize;
-    line-height: $lphoneSubheadLineHeight;
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneLargeLineHeight;
   }
   @include tablet {
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight;
+    font-size: $tabletLargeFontSize;
+    line-height: $tabletLargeLineHeight;
   }
   @include desktop {
-    font-size: $desktopSubheadFontSize;
-    line-height: $desktopSubheadLineHeight;
+    font-size: $desktopLargeFontSize;
+    line-height: $desktopLargeLineHeight;
   }
   @include ldesktop {
-    font-size: $ldesktopSubheadFontSize;
-    line-height: $ldesktopSubheadLineHeight;
+    font-size: $ldesktopLargeFontSize;
+    line-height: $ldesktopLargeLineHeight;
   }
   display: block;
   margin: .5rem auto 0;
   width: 100%;
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootSubheadFontSize;
-  line-height: $rootSubheadLineHeight;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
   font-weight: 500;
   text-align: center;
 }
@@ -266,28 +266,28 @@
 // !VA Absolutely positioned from top left of card_link, i.e. top left of the card container
 .card_head {
   @include mphone {
-    font-size: $mphoneSubheadFontSize;
-    line-height: $mphoneSubheadLineHeight;
+    font-size: $mphoneLargeFontSize;
+    line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
     top: 30px;
-    font-size: $lphoneSubheadFontSize;
-    line-height: $lphoneSubheadLineHeight;
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneLargeLineHeight;
   }
   @include tablet {
     top: 33px;
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight;
+    font-size: $tabletLargeFontSize;
+    line-height: $tabletLargeLineHeight;
   }
   @include desktop {
     top: 36px;
-    font-size: $desktopSubheadFontSize;
-    line-height: $desktopSubheadLineHeight;
+    font-size: $desktopLargeFontSize;
+    line-height: $desktopLargeLineHeight;
   }
   @include ldesktop {
     top: 36px;
-    font-size: $ldesktopSubheadFontSize;
-    line-height: $ldesktopSubheadLineHeight;
+    font-size: $ldesktopLargeFontSize;
+    line-height: $ldesktopLargeLineHeight;
   }
   display: block;
   // !VA 2024
@@ -297,8 +297,8 @@
   padding: 0;
   font-family: $secondary_font;
   color: $dark_text_color;
-  font-size: $rootSubheadFontSize;
-  line-height: $rootSubheadLineHeight;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
   font-weight: 500;
   text-align: center;
 }
@@ -332,34 +332,34 @@
 .card_subhead {
   @include mphone {
     top: 55px;
-    font-size: $mphoneTextFontSize;
-    line-height: $mphoneTextLineHeight;
+    font-size: $mphoneLargeFontSize;
+    line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
     top: 56px;
-    font-size: $lphoneTextFontSize;
-    line-height: $lphoneTextLineHeight;
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneLargeLineHeight;
   }
   @include tablet {
     top: 62px;
-    font-size: $tabletTextFontSize;
-    line-height: $tabletTextLineHeight;
+    font-size: $tabletLargeFontSize;
+    line-height: $tabletLargeLineHeight;
   }
   @include desktop {
     top: 66px;
-    font-size: $desktopTextFontSize;
-    line-height: $desktopTextLineHeight;
+    font-size: $desktopLargeFontSize;
+    line-height: $desktopLargeLineHeight;
   }
   @include ldesktop {
     top: 70px;
-    font-size: $ldesktopTextFontSize;
-    line-height: $ldesktopTextLineHeight;
+    font-size: $ldesktopLargeFontSize;
+    line-height: $ldesktopLargeLineHeight;
   }
   display: block;
   top: 52px;
   font-family: $secondary_font;
-  font-size: $rootTextFontSize;
-  line-height: $rootTextLineHeight;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
   // letter-spacing: .01rem;  
   font-weight: 400;
   text-align: center;
@@ -406,8 +406,8 @@
   }
   color: $light_text-color;
   font-family: $inter_font;
-  font-size: $rootTableFontSize;
-  line-height: $rootTableLineHeight;
+  font-size: $rootXSFontSize;
+  line-height: $rootXSLineHeight;
   font-weight: 300;
 }
 

@@ -73,36 +73,36 @@ html, body {
   flex: 1 0 300px;
   font-family: $primary_font;
   font-weight: 300;
-  font-size: $rootConsentFontSize;
-  line-height: $rootConsentLineHeight;
+  font-size: $rootSmallFontSize;
+  line-height: $rootSmallLineHeight;
   // !VA 03.24
   overflow-y: scroll;
 }
 
 .consent-content p {
   @include mphone {
-    font-size: $mphoneConsentFontSize;
-    line-height: $mphoneConsentLineHeight;
+    font-size: $mphoneSmallFontSize;
+    line-height: $mphoneSmallLineHeight;
   }
   @include lphone {
-    font-size: $lphoneConsentFontSize;
-    line-height: $lphoneConsentLineHeight;
+    font-size: $lphoneSmallFontSize;
+    line-height: $lphoneSmallLineHeight;
   }
   @include tablet {
-    font-size: $tabletConsentFontSize;
-    line-height: $tabletConsentLineHeight;
+    font-size: $tabletSmallFontSize;
+    line-height: $tabletSmallLineHeight;
   }
   @include desktop {
-    font-size: $desktopConsentFontSize;
-    line-height: $desktopConsentLineHeight;
+    font-size: $desktopSmallFontSize;
+    line-height: $desktopSmallLineHeight;
   }
   @include ldesktop {
-    font-size: $tabletConsentFontSize;
-    line-height: $tabletConsentLineHeight;
+    font-size: $tabletSmallFontSize;
+    line-height: $tabletSmallLineHeight;
   }
   padding: .5em .5rem .25rem 1rem; 
-  font-size: $rootConsentFontSize;
-  line-height: $rootConsentLineHeight;
+  font-size: $rootSmallFontSize;
+  line-height: $rootSmallLineHeight;
 }
 
 // !VA Why is the modal defined here at all?
@@ -133,29 +133,29 @@ html, body {
 
 .consent-accept-button, .consent-decline-button, .consent-policy-button   {
   @include mphone {
-    font-size: $mphoneConsentFontSize;
-    line-height: $mphoneConsentLineHeight;
+    font-size: $mphoneSmallFontSize;
+    line-height: $mphoneSmallLineHeight;
   }
   @include lphone {
-    font-size: $lphoneConsentFontSize;
-    line-height: $lphoneConsentLineHeight;
+    font-size: $lphoneSmallFontSize;
+    line-height: $lphoneSmallLineHeight;
   }
   @include tablet {
-    font-size: $tabletConsentFontSize;
-    line-height: $tabletConsentLineHeight;
+    font-size: $tabletSmallFontSize;
+    line-height: $tabletSmallLineHeight;
   }
   @include desktop {
-    font-size: $desktopConsentFontSize;
-    line-height: $desktopConsentLineHeight;
+    font-size: $desktopSmallFontSize;
+    line-height: $desktopSmallLineHeight;
   }
   @include ldesktop {
-    font-size: $ldesktopConsentFontSize;
-    line-height: $ldesktopConsentLineHeight;
+    font-size: $ldesktopSmallFontSize;
+    line-height: $ldesktopSmallLineHeight;
     line-height: 2rem;
   }
   padding: .375rem 0 .5rem;
-  font-size: $rootConsentFontSize;
-  line-height: $rootConsentLineHeight;
+  font-size: $rootSmallFontSize;
+  line-height: $rootSmallLineHeight;
   font-weight: 600;
   border: none;
 }
@@ -278,32 +278,32 @@ html, body {
 .privacy-policy-close {
   @include mphone {
     height: 2.5rem;
-    font-size: $mphoneConsentFontSize;
-    line-height: $mphoneConsentLineHeight;
+    font-size: $mphoneSmallFontSize;
+    line-height: $mphoneSmallLineHeight;
   }
   @include lphone {
     height: 2.5rem;
-    font-size: $lphoneConsentFontSize;
-    line-height: $lphoneConsentLineHeight;
+    font-size: $lphoneSmallFontSize;
+    line-height: $lphoneSmallLineHeight;
   }
   @include tablet {
     height: 2.5rem;
-    font-size: $tabletConsentFontSize;
-    line-height: $tabletConsentLineHeight;
+    font-size: $tabletSmallFontSize;
+    line-height: $tabletSmallLineHeight;
   }
   @include ldesktop {
     width: 200px;
     height: 40px;
-    font-size: $ldesktopConsentFontSize;
-    line-height: $ldesktopConsentLineHeight;
+    font-size: $ldesktopSmallFontSize;
+    line-height: $ldesktopSmallLineHeight;
   }
   // width: 80%;
   flex: 0 0 auto;
   height: 2rem;
   width: 100%;
   color: $dark_text_color;
-  font-size: $rootConsentFontSize;
-  line-height: $rootConsentLineHeight;
+  font-size: $rootSmallFontSize;
+  line-height: $rootSmallLineHeight;
   font-weight: 600;
   cursor: pointer;
   box-shadow: none;
@@ -315,28 +315,28 @@ html, body {
 
 .privacy-policy-content h2, .privacy-policy-content p, .privacy-policy-content li {
   @include mphone {
-    font-size: $mphoneConsentFontSize;
-    line-height: $mphoneConsentLineHeight;
+    font-size: $mphoneSmallFontSize;
+    line-height: $mphoneSmallLineHeight;
   }
   @include lphone {
-    font-size: $lphoneConsentFontSize;
-    line-height: $lphoneConsentLineHeight;
+    font-size: $lphoneSmallFontSize;
+    line-height: $lphoneSmallLineHeight;
   }
   @include tablet {
-    font-size: $tabletConsentFontSize;
-    line-height: $tabletConsentLineHeight;
+    font-size: $tabletSmallFontSize;
+    line-height: $tabletSmallLineHeight;
   }
   @include desktop {
-    font-size: $desktopConsentFontSize;
-    line-height: $desktopConsentLineHeight;
+    font-size: $desktopSmallFontSize;
+    line-height: $desktopSmallLineHeight;
   }
   @include ldesktop {
-    font-size: $tabletConsentFontSize;
-    line-height: $tabletConsentLineHeight;
+    font-size: $tabletSmallFontSize;
+    line-height: $tabletSmallLineHeight;
     line-height: 2rem;
   }
-  font-size: $rootConsentFontSize;
-  line-height: $rootConsentLineHeight;
+  font-size: $rootSmallFontSize;
+  line-height: $rootSmallLineHeight;
   color: $dark_text_color;
 }
 

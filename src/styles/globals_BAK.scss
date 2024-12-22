@@ -956,29 +956,29 @@ svg {pointer-events: none;}
 
 .accordion .accordion__title h3 {
   @include mphone {
-    font-size: $mphoneSubheadFontSize;
-    line-height: $mphoneSubheadLineHeight;
+    font-size: $mphoneLargeFontSize;
+    line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
-    font-size: $lphoneSubheadFontSize;
-    line-height: $lphoneSubheadLineHeight;
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneLargeLineHeight;
   }
   @include tablet {
-    font-size: $tabletSubheadFontSize;
-    line-height: $tabletSubheadLineHeight;
+    font-size: $tabletLargeFontSize;
+    line-height: $tabletLargeLineHeight;
   }
   @include desktop {
-    font-size: $desktopSubheadFontSize;
-    line-height: $desktopSubheadLineHeight;
+    font-size: $desktopLargeFontSize;
+    line-height: $desktopLargeLineHeight;
   }
   @include ldesktop {
-    font-size: $ldesktopSubheadFontSize;
-    line-height: $ldesktopSubheadLineHeight;
+    font-size: $ldesktopLargeFontSize;
+    line-height: $ldesktopLargeLineHeight;
   }
   color: #1c1c1c;
   font-family: $secondary_font;
-  font-size: $rootSubheadFontSize;
-  line-height: $rootSubheadLineHeight;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
   font-weight: 400;
   margin: .125rem 0 .125rem 0rem;
   text-align: left;
@@ -1021,8 +1021,8 @@ svg {pointer-events: none;}
       line-height: 1.875rem;
     }
     display: block;
-    font-size: $rootTextFontSize;
-    line-height: $rootTextLineHeight;
+    font-size: $rootLargeFontSize;
+    line-height: $rootLargeLineHeight;
     // font-size: 1.125rem;
     // line-height: 1.375rem;
 }

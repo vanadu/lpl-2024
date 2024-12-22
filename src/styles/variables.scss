@@ -77,22 +77,100 @@ $ldesktopMobileMenuBg: 75px;
 
 /* !VA Font sizes   
 ------------------
-...TextFontSize - Text content
-// !VA 2024.04.03 HeadFontSize should be reserved for H1 tags sitewide
-...HeadFontSize - FIX THIS SITEWIDE
-...SubheadFontSize - FIX THIS SITEWIDE
+...LargeFontSize - Text content
+// !VA 2024.04.03 XXLFontSize should be reserved for H1 tags sitewide
+...XXLFontSize - FIX THIS SITEWIDE
+...LargeFontSize - FIX THIS SITEWIDE
 
 
-...TableFontSize - Table cells
-...FootnoteFontSize - Footnotes, not sure where they appear
-...ConsentFontSize - Consent form font sizes
+...XSFontSize - Table cells
+...XXSFontSize - Footnotes, not sure where they appear
+...SmallFontSize - Consent form font sizes
 
 
 */
 
 /* !VA   
+SIZE        OLD                     NEW         
+1.375rem    rootXXLFontSize       rootXXLFontSize
+1.688rem    rootXXLLineHeight     rootXXLLineHeight
 
-rootHead  rootXXLFontSize 1.375rem
+**Check this
+1.188rem    rootXLFontSize       rootXLFontSize
+1.438rem    rootSlugLineHeight     rootXLLineHeight
+
+1.063rem    rootLargeFontSize     rootLargeFontSize
+** Check this, it needs to be based on the text line height, not the subhead
+1.313rem    rootLargeLineHeight   rootLargeLineHeight
+1.063rem    rootLargeFontSize        "
+1.375rem    $rootLargeLineHeight     ???
+** No, not changing this...
+1.063rem    rootShowmoreFontSize    "
+1.25rem     rootShowmoreLineHeight  ???
+
+1rem        rootNormalFontSize    rootNormalFontSize
+1.313rem    rootNormalLineHeight  rootNormalLineHeight
+
+.938rem     rootSmallFontSize     rootSmallFontSize
+1.063rem    rootSmallLineHeight   rootSmallLineHeight
+
+.913rem     rootXSFontSize       rootXSFontSize
+1.125rem    rootXSLineHeight     rootXSLineHeight
+
+.875rem     rootXXSFontSize    rootXXSFontSize
+1rem        rootXXSLineHeight  rootXXSLineHeight
+
+
+rootHead -> rootXXL
+mphoneHead -> mphoneXXL
+lphoneHead -> lphoneXXL
+tabletHead -> tabletXXLFontSiz
+desktopHead -> desktopXXL
+ldesktopHead -> ldesktopXXL
+
+rootSlug -> rootXXL
+mphoneSlug -> mphoneXXL
+lphoneSlug -> lphoneXXL
+tabletSlug -> tabletXXL
+desktopSlug -> desktopXXL
+ldesktopSlug -> ldesktopXXL
+
+rootSubhead -> rootXL
+mphoneSubhead -> mphoneXXL
+lphoneSubhead -> lphoneXXL
+tabletSubhead -> tabletXXL
+desktopSubhead -> desktopXXL
+ldesktopSubhead -> ldesktopXXL
+
+rootText -> rootXL
+mphoneText -> mphoneXXL
+lphoneText -> lphoneXXL
+tabletText -> tabletXXL
+desktopText -> desktopXXL
+ldesktopText -> ldesktopXXL
+
+rootShowmoreFontSize -> rootXLFontSize
+mphoneShowmoreFontSize -> mphoneXXLFontSize
+lphoneShowmoreFontSize -> lphoneXXLFontSize
+tabletShowmoreFontSize -> tabletXXLFontSize
+desktopShowmoreFontSize -> desktopXXLFontSize
+ldesktopShowmoreFontSize -> ldesktopXXLFontSize
+
+**DO NOT CHANGE THIS - it has to remain differrent than LargeFontSize
+rootShowmoreLineHeight
+mphoneShowmoreFontSize
+lphoneShowmoreFontSize
+tabletShowmoreFontSize
+desktopShowmoreFontSize
+ldesktopShowmoreFontSize
+
+
+
+
+
+
+
+rootXXLFontSize  rootXXLFontSize 1.375rem
 rootBig   rootXLFontSize.188rem
 1.063rem  rootLargeFontSize
 1rem      rootNormalFontSize
@@ -107,60 +185,60 @@ rootBig   rootXLFontSize.188rem
 
 
 // !VA Header Slug 
-$rootSlugFontSize: 1.188rem;
+$rootXLFontSize: 1.188rem;
 $rootSlugLineHeight: 1.375rem;
-$mphoneSlugFontSize: 1.375rem;
+$mphoneXLFontSize: 1.375rem;
 $mphoneSlugLineHeight: 1.638rem;
-$lphoneSlugFontSize: 1.5rem;
+$lphoneXLFontSize: 1.5rem;
 $lphoneSlugLineHeight: 1.75rem;
-$tabletSlugFontSize: 1.5rem;
+$tabletXLFontSize: 1.5rem;
 $tabletSlugLineHeight: 1.75rem;
-$desktopSlugFontSize: 1.688rem;
+$desktopXLFontSize: 1.688rem;
 $desktopSlugLineHeight: 2.938rem;
-$ldesktopSlugFontSize: 1.938rem;
+$ldesktopXLFontSize: 1.938rem;
 $ldesktopSlugLineHeight: 2.25rem;
 
 // !VA Main Head H1
-$rootHeadFontSize: 1.375rem;
-$rootHeadLineHeight: 1.688rem;
-$mphoneHeadFontSize: 1.438rem;
-$mphoneHeadLineHeight: 1.75rem;
-$lphoneHeadFontSize: 1.5rem;
-$lphoneHeadLineHeight: 1.875rem;
-$tabletHeadFontSize: 1.613rem;
-$tabletHeadLineHeight: 1.938rem;
-$desktopHeadFontSize: 1.75rem;
-$desktopHeadLineHeight: 2.063rem;
-$ldesktopHeadFontSize: 2rem;
-$ldesktopHeadLineHeight: 2.313rem;
+$rootXXLFontSize: 1.375rem;
+$rootXXLLineHeight: 1.688rem;
+$mphoneXXLFontSize: 1.438rem;
+$mphoneXXLLineHeight: 1.75rem;
+$lphoneXXLFontSize: 1.5rem;
+$lphoneXXLLineHeight: 1.875rem;
+$tabletXXLFontSize: 1.613rem;
+$tabletXXLLineHeight: 1.938rem;
+$desktopXXLFontSize: 1.75rem;
+$desktopXXLLineHeight: 2.063rem;
+$ldesktopXXLFontSize: 2rem;
+$ldesktopXXLLineHeight: 2.313rem;
 
 // !VA Subhead h2
-$rootSubheadFontSize: 1.063rem;
-$rootSubheadLineHeight: 1.313rem;
-$mphoneSubheadFontSize: 1.125rem;
-$mphoneSubheadLineHeight: 1.438rem;
-$lphoneSubheadFontSize: 1.188rem;
-$lphoneSubheadLineHeight: 1.5rem;
-$tabletSubheadFontSize: 1.25rem;
-$tabletSubheadLineHeight: 1.575rem;
-$desktopSubheadFontSize: 1.313rem;
-$desktopSubheadLineHeight: 1.688rem;
-$ldesktopSubheadFontSize: 1.438rem;
-$ldesktopSubheadLineHeight: 1.813rem;
+$rootLargeFontSize: 1.063rem;
+$rootLargeLineHeight: 1.313rem;
+$mphoneLargeFontSize: 1.125rem;
+$mphoneLargeLineHeight: 1.438rem;
+$lphoneLargeFontSize: 1.188rem;
+$lphoneLargeLineHeight: 1.5rem;
+$tabletLargeFontSize: 1.25rem;
+$tabletLargeLineHeight: 1.575rem;
+$desktopLargeFontSize: 1.313rem;
+$desktopLargeLineHeight: 1.688rem;
+$ldesktopLargeFontSize: 1.438rem;
+$ldesktopLargeLineHeight: 1.813rem;
 
 // !VA Text Content
-$rootTextFontSize: 1.063rem;
-$rootTextLineHeight: 1.375rem;
-$mphoneTextFontSize: 1.125rem;
-$mphoneTextLineHeight: 1.438rem;
-$lphoneTextFontSize: 1.188rem;
-$lphoneTextLineHeight: 1.5rem;
-$tabletTextFontSize: 1.25rem;
-$tabletTextLineHeight: 1.625rem;
-$desktopTextFontSize: 1.313rem;
-$desktopTextLineHeight: 1.813rem;
-$ldesktopTextFontSize: 1.5rem;
-$ldesktopTextLineHeight: 1.938rem;
+$rootLargeFontSize: 1.063rem;
+$rootLargeLineHeight: 1.375rem;
+$mphoneLargeFontSize: 1.125rem;
+$mphoneLargeLineHeight: 1.438rem;
+$lphoneLargeFontSize: 1.188rem;
+$lphoneLargeLineHeight: 1.5rem;
+$tabletLargeFontSize: 1.25rem;
+$tabletLargeLineHeight: 1.625rem;
+$desktopLargeFontSize: 1.313rem;
+$desktopLargeLineHeight: 1.813rem;
+$ldesktopLargeFontSize: 1.5rem;
+$ldesktopLargeLineHeight: 1.938rem;
 
 // Nav Menu
 // !VA Text Content
@@ -172,33 +250,33 @@ $ldesktopMenuFontSize: 1.188rem;
 $ldesktopMenuLineHeight: 1.688rem;
 
 // Blog Post Listing Link
-$rootPostLinkFontSize: 1rem;
-$rootPostLinkLineHeight: 1.313rem;
-$mphonePostLinkFontSize: 1.063rem;
-$mphonePostLinkLineHeight: 1.375rem;
-$lphonePostLinkFontSize: 1.125rem;
-$lphonePostLinkLineHeight: 1.438rem;
-$tabletPostLinkFontSize: 1.188rem;
-$tabletPostLinkLineHeight: 1.5rem;
-$desktopPostLinkFontSize: 1.25rem;
-$desktopPostLinkLineHeight: 1.625rem;
-$ldesktopPostLinkFontSize: 1.313rem;
-$ldesktopPostLinkLineHeight: 1.875rem;
+$rootNormalFontSize: 1rem;
+$rootNormalLineHeight: 1.313rem;
+$mphoneNormalFontSize: 1.063rem;
+$mphoneNormalLineHeight: 1.375rem;
+$lphoneNormalFontSize: 1.125rem;
+$lphoneNormalLineHeight: 1.438rem;
+$tabletNormalFontSize: 1.188rem;
+$tabletNormalLineHeight: 1.5rem;
+$desktopNormalFontSize: 1.25rem;
+$desktopNormalLineHeight: 1.625rem;
+$ldesktopNormalFontSize: 1.313rem;
+$ldesktopNormalLineHeight: 1.875rem;
 
 
 // !VA Table cells
-$rootTableFontSize: .913rem;
-$rootTableLineHeight: 1.125rem;
-$mphoneTableFontSize: 1rem;
-$mphoneTableLineHeight: 1.25rem;
-$lphoneTableFontSize: 1.063rem;
-$lphoneTableLineHeight: 1.313rem;
-$tabletTableFontSize: 1.125rem;
-$tabletTableLineHeight: 1.438rem;
-$desktopTableFontSize: 1.25rem;
-$desktopTableLineHeight: 1.588rem;
-$ldesktopTableFontSize: 1.313rem;
-$ldesktopTableLineHeight: 1.625rem;
+$rootXSFontSize: .913rem;
+$rootXSLineHeight: 1.125rem;
+$mphoneXSFontSize: 1rem;
+$mphoneXSLineHeight: 1.25rem;
+$lphoneXSFontSize: 1.063rem;
+$lphoneXSLineHeight: 1.313rem;
+$tabletXSFontSize: 1.125rem;
+$tabletXSLineHeight: 1.438rem;
+$desktopXSFontSize: 1.25rem;
+$desktopXSLineHeight: 1.588rem;
+$ldesktopXSFontSize: 1.313rem;
+$ldesktopXSLineHeight: 1.625rem;
 
 // ShowMore link text 
 $rootShowmoreFontSize: 1.063rem;
@@ -215,32 +293,32 @@ $ldesktopShowmoreFontSize: 1.5rem;
 $ldesktopShowmoreLineHeight: 1.938rem;
 
 // !VA Footnotes
-$rootFootnoteFontSize: .875rem;
-$rootFootnoteLineHeight: 1rem;
-$mphoneFootnoteFontSize: .938rem;
-$mphoneFootnoteLineHeight: 1.063rem;
-$lphoneFootnoteFontSize: 1rem;
-$lphoneFootnoteLineHeight: 1.25rem;
-$tabletFootnoteFontSize: 1.063rem;
-$tabletFootnoteLineHeight: 1.25rem;
-$desktopFootnoteFontSize: 1.125rem;
-$desktopFootnoteLineHeight: 1.313rem;
-$ldesktopFootnoteFontSize: 1.188rem;
-$ldesktopFootnoteLineHeight: 1.438rem;
+$rootXXSFontSize: .875rem;
+$rootXXSLineHeight: 1rem;
+$mphoneXXSFontSize: .938rem;
+$mphoneXXSLineHeight: 1.063rem;
+$lphoneXXSFontSize: 1rem;
+$lphoneXXSLineHeight: 1.25rem;
+$tabletXXSFontSize: 1.063rem;
+$tabletXXSLineHeight: 1.25rem;
+$desktopXXSFontSize: 1.125rem;
+$desktopXXSLineHeight: 1.313rem;
+$ldesktopXXSFontSize: 1.188rem;
+$ldesktopXXSLineHeight: 1.438rem;
 
 // !VA Consent Form
-$rootConsentFontSize: .938rem;
-$rootConsentLineHeight: 1.063rem;
-$mphoneConsentFontSize: 1rem;
-$mphoneConsentLineHeight: 1.188rem;
-$lphoneConsentFontSize: 1.063rem;
-$lphoneConsentLineHeight: 1.375rem;
-$tabletConsentFontSize: 1.125em;
-$tabletConsentLineHeight: 1.5rem;
-$desktopConsentFontSize: 1.188rem;
-$desktopConsentLineHeight: 1.313rem;
-$ldesktopConsentFontSize: 1.25rem;
-$ldesktopConsentLineHeight: 1.375rem;
+$rootSmallFontSize: .938rem;
+$rootSmallLineHeight: 1.063rem;
+$mphoneSmallFontSize: 1rem;
+$mphoneSmallLineHeight: 1.188rem;
+$lphoneSmallFontSize: 1.063rem;
+$lphoneSmallLineHeight: 1.375rem;
+$tabletSmallFontSize: 1.125em;
+$tabletSmallLineHeight: 1.5rem;
+$desktopSmallFontSize: 1.188rem;
+$desktopSmallLineHeight: 1.313rem;
+$ldesktopSmallFontSize: 1.25rem;
+$ldesktopSmallLineHeight: 1.375rem;
 
 
 
