@@ -7,6 +7,8 @@ import ShowMoreContent from '@/components/ShowMoreContent'
 
 // !VA Icons
 import { FaFacebook } from "react-icons/fa";
+// !VA React Icons
+import { FaPaw } from 'react-icons/fa'
 
 // !VA Styles
 import * as styles from '../styles/Light.module.scss'
@@ -39,12 +41,6 @@ const Social = () => {
               setActiveIndex={setActiveIndex}
               >
               <div className="showmore-content-text">
-                {/* <figure className="showmore-figure">
-                  <Image src={[showmore image]} className="showmore-figure-image" alt="[showmore alt text]"/>
-                  <figcaption className="showmore-figure-caption">
-                    [showmore figure caption]
-                  </figcaption>
-                </figure> */}
                 <span className="showmore-content-space"></span>
                 <p className="showmore-content-text">
                   If your beloved companion has or has had this horrible disease, you&rsquo;re a member of the community even if you choose to remain silent or anonymous. But if you want to connect with others, the best way is to join one of our growing international network of Facebook groups.
@@ -90,6 +86,29 @@ const Social = () => {
           <p className={styles.content_text}>
             There a lot of Facebook groups that deal with canine laryngeal paralysis and GOLPP, but three stand out as being open, unbiased, and supportive of free speech.
           </p>
+          {/* ShowMoreComponent content start */}
+          <div className={styles.content_text}>
+            <ShowMoreContent
+              title='Learn more...'
+              index={3}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              >
+              <div className="showmore-content-text">
+                <span className="showmore-content-space"></span>
+                <p className="showmore-content-text">
+                  Not all Facebook groups are equal. Some are run by administrators that choose what they think you should hear and block or ban anyone who questions their authority. Our community has three simple rules:
+                </p>
+                <ul className={styles.content_list}>
+                  <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>Treat other group members with respect, even if you don&lsquo;t share their opinion.</li>
+                  <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>Don&lsquo;t use the group for spam, marketing, or personal/business networking, and limit discussions to topics directly related to laryngeal paralysis/GOLPP. </li>
+                  <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>Limit discussions to treatments, medications, and remedies that can be proven to be prescribed, performed, or supported by licensed veterinarians. </li>
+                </ul> 
+              </div>
+            </ShowMoreContent>
+          </div>  
+          {/* ShowMoreComponent content end */}
+          
           <p className={styles.content_text}>
             The Lar Par Community network currently has three Facebook groups active in English and German to help people whose dogs suffer from laryngeal paralysis:
           </p>
@@ -104,7 +123,6 @@ const Social = () => {
               <div className={styles.social_link_content}>
                 <p className={styles.social_link_content_text}>
                   This open English language group is a positive environment that supports free speech for all people with Lar Par dogs, regardless of personal circumstances.  
-                  Learn more...
                 </p>
                 <div className={styles.social_link_item}>
                   <Link 
@@ -116,7 +134,7 @@ const Social = () => {
                       className={styles.social_icon}
                     />
                     <p className={styles.social_icon_caption}>
-                      Lar Par/GOLPP International Group <span className='mobile-show-inline'><br /></span> (English language)
+                      Lar Par/GOLPP International <br/> Group (English language)
                     </p>
                   </Link>
                 </div>
@@ -145,7 +163,7 @@ const Social = () => {
                         className={styles.social_icon}
                       />
                       <p className={styles.social_icon_caption}>
-                        Lar Par/GOLPP International Group <span className='mobile-show-inline'><br /></span>(German language)
+                        Lar Par/GOLPP International <br/> Group (German language)
                       </p>
                     </Link>
                   </div>
@@ -157,13 +175,16 @@ const Social = () => {
               <hr className={styles.content_list_spacer}/>
             </div>
 
+
+            
+
             <div className={styles.social_link}>
               <div className={styles.social_link_head}>
                 <h3 className={styles.social_link_head_text}>Laryngeal Stent Treatment <span className='mobile-show-inline'><br /></span> for Laryngeal Paralysis (GOLPP)</h3>
               </div>
               <div className={styles.social_link_content}>
                 <p className={styles.social_link_content_text}>
-                  This group was founded in 2022 to advocate for and inform about the silicone stent alternative for canine laryngeal paralysis, because information about this procedure continues to be suppressed in many Facebook groups for canine laryngeal paralysis and the veterinary establishment.
+                  This group was founded in 2022 to advocate for and inform about the silicone stent alternative for canine laryngeal paralysis.
                 </p>
                 <div className={styles.social_link_item}>
                   <Link 
@@ -175,15 +196,14 @@ const Social = () => {
                       className={styles.social_icon}
                     />
                     <p className={styles.social_icon_caption}>
-                    Laryngeal Stent Treatment for <span className='mobile-show-inline'><br /></span> Laryngeal Paralysis (GOLPP) 
+                    Laryngeal Stent Treatment for <br/> Laryngeal Paralysis (GOLPP) 
                     </p>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className={styles.section_content}>
-              <hr className={styles.content_list_spacer}/>
-            </div>
+
+
           </div>
         </div>
       </section>

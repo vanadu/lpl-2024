@@ -173,6 +173,13 @@ html{scroll-behavior: smooth;}
   white-space: nowrap;
 }
 
+.blob {
+  position: relative;
+  display: inline;
+  font-weight: 600;
+  color: $secondary_link_color;
+}
+
 // !VA 2024.04.05 Only in patients/links
 .link-underline {
   text-decoration: underline;

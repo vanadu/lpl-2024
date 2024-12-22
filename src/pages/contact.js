@@ -1,4 +1,6 @@
 import { useState, useReducer } from 'react'
+
+import Link from 'next/link'
 // !VA Date: 2024.03.29 next-seo replaces the Head component
 import { NextSeo } from 'next-seo'
 // !VA The below is the old emailjs import from the Wallis page.
@@ -115,110 +117,136 @@ export default function MessageForm() {
         description="Contact us to learn more about laryngeal paralysis and stent implants as an effective alternative to surgery."
         canonical="https://larparlife.com/contact"
       />
-      <section className={styles.contact}>
+      <section className={styles.section}>
         <div className={styles.section_content}>
-          <div className={styles.two_column_content}>
+          {/* CONTENT START */}
+          <div className={styles.topic_head}>
+            <h1 className={styles.topic_subhead_title}>Questions about <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs?</h1>
+
             <div className={styles.container_flex_center}>
-              {/* CONTENT START */}
-              <div className={styles.heading_subhead}>
-                <h1 className={styles.heading_framed_text}>Share Your Lar Par Story: <span className='mobile-show-inline'><br /></span>Contact Us</h1>
-                <h2 className={styles.content_head}>Help Us Improve Our Site</h2>
-              </div>
-              {/* OUTER CONDITIONAL OPEN */}
-              <div className="outer-conditional-open">
-                { formSubmitted.title === '' ? ( 
-                // INNER CONDITIONAL OPEN
-                <div className={styles.contact_form_feedback}>
-                  <p className={styles.content_text}>If you have questions about laryngeal paralysis in dogs or the stent procedure that weren&lsquo;t answered on this site, or have information, a correction, or a suggestion to share, feel free to contact us.</p>
-                  <ul className={styles.content_list_no_bullet}>
-                    <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>Send us a <a href='https://www.facebook.com/van.l.albert/' className='link-dark' target="_blank" rel="noopener noreferrer">Friend Request on Facebook</a> and then send a private message with Messenger.</li>
-                    <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg} />Join our <a href='https://www.facebook.com/groups/1556166321568584' className='link-dark' target="_blank" rel="noopener noreferrer">Facebook group</a> and share your story. </li>
-                    {/* <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>You can post or send a private message to our Twitter account at <a href='https://twitter.com/LarParLife' className='link' target="_blank" rel="noopener noreferrer">https://twitter.com/LarParLife</a>.  </li> */}
-                    <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>Use the Contact form below to send us an email. </li>
-                  </ul>
-                  {/* <p className={styles.content_text}> */}
-                  <p className={[styles.content_text, styles.contact_privacy].join(' ')}>
-                    <span className='semibold'>About Your Privacy</span>: We don&lsquo;t share, sell, or allow your email address or personal information to come to third parties for any reason.
-                  </p>
-                  {/* If showCaptcha is false, show the form. If it is true, show the reCaptcha component. */}
-                  {!showCaptcha ? (
-                    <form 
-                      className={styles.contact_form}
-                      onSubmit={submitFormAndShowCaptcha}>
-                      <div className={styles.contact_form_user}>
-                        <div className={styles.contact_form_field}>
-                          <label className={styles.contact_form_input_label} htmlFor="contact-form-name">
-                          Your Name:
-                          </label>
-                          <input
-                              id="contact-form-name"
-                              className={styles.contact_form_input}
-                              type="text"
-                              value={name}
-                              onChange={(e) => dispatch({ type: 'name', value: e.target.value })}
-                              required
-                            />
-                        </div>
-                        <div className={styles.contact_form_field}>
-                          <label className={styles.contact_form_input_label} htmlFor="contact-form-email">
-                          Your Email:
-  
-                          </label>
-                          <input
-                              id="contact-form-email"
-                              className={styles.contact_form_input}
-                              type="email"
-                              value={email}
-                              onChange={(e) => dispatch({ type: 'email', value: e.target.value })}
-                              required
-                            />
-                        </div>
-                      </div>
-                      <div className={styles.contact_form_message}>
-                        <div className={styles.contact_form_field}>
-                          <label className={styles.contact_form_input_label} htmlFor="contact-form-message">
-                            Your Message:
-                          </label>
-                          <textarea
-                              rows="5"
-                              id="contact-form-message"
-                              className={styles.contact_form_textarea}
-                              type="text"
-                              value={message}
-                              onChange={(e) => dispatch({ type: 'message', value: e.target.value })}
-                              required
-                            />
-                        </div>
-                      </div>
-                      <div className="w-full flex justify-end items-center flex-col sm:flex-row">
-                        {showFormErr ? <p className="sm:mr-4 text-red-400">Please fill in all three input boxes to send a message</p> : null}
-                        <button className={styles.contact_form_button} type="submit">
-                          Send
-                        </button>
-                      </div>
-                    </form>
-                  ) : (
-                    <>                    
-                      <ReCAPTCHA
-                        sitekey={recaptcha_site_key}
-                        onChange={sendEmail}
-                      />
-                    </>
-                  )}
-                </div>
-                // INNER CONDITIONAL CLOSE
-                ) : (
-                <div className={styles.contact_form_feedback}>
-                  <div className={styles.contact_heading}>
-                    <h3 className={styles.heading_head}>{formSubmitted.title}</h3>
-                    <p>{formSubmitted.paragraph}</p>
-                  </div>
-                </div>
-                )}
-              </div>
-              {/* OUTER CONDITIONAL CLOSE */}
+              <h2 className={styles.heading_framed_text}>Contact Us</h2>
             </div>
+
           </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+ 
+          {/* OUTER CONDITIONAL OPEN */}
+          <div className="outer-conditional-open">
+            { formSubmitted.title === '' ? ( 
+            // INNER CONDITIONAL OPEN
+            <div className={styles.contact_form_feedback}>
+              <p className={styles.content_text}>If you have questions about laryngeal paralysis in dogs or the stent procedure that weren&lsquo;t answered on this site, or have information, a correction, or a suggestion to share, feel free to contact us.</p>
+              <ul className={styles.content_list_no_bullet}>
+
+                <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
+                  <p>Send us a private message with&nbsp;
+                    <Link href='https://www.facebook.com/van.l.albert/' 
+                      className='link-dark-nowrap' rel="noopener noreferrer" target="_blank">
+                      Facebook Messenger
+                    </Link>.
+                  </p>
+                </li>
+                <li className={styles.content_list_item}>
+                  <FaPaw className={styles.content_list_item_svg} />
+                  <p>
+                  Join the&nbsp;
+                  <Link href='/social' className='link-dark-nowrap' rel="noopener noreferrer" target="_blank">
+                  Lar Par Community
+                  </Link>
+                  &nbsp; and share your story.
+                  </p>
+                </li>
+                {/* <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>You can post or send a private message to our Twitter account at <a href='https://twitter.com/LarParLife' className='link' target="_blank" rel="noopener noreferrer">https://twitter.com/LarParLife</a>.  </li> */}
+                <li className={styles.content_list_item}>
+                  <FaPaw className={styles.content_list_item_svg}/>
+                  <p>Use the Contact form below to send us an email.</p> 
+                </li>
+              </ul>
+              {/* <p className={styles.content_text}> */}
+              <p className={[styles.content_text, styles.contact_privacy].join(' ')}>
+                <span className='semibold'>About Your Privacy</span>: We don&lsquo;t share, sell, or allow your email address or personal information to come to third parties for any reason.
+              </p>
+              {/* If showCaptcha is false, show the form. If it is true, show the reCaptcha component. */}
+              {!showCaptcha ? (
+                <form 
+                  className={styles.contact_form}
+                  onSubmit={submitFormAndShowCaptcha}>
+                  <div className={styles.contact_form_user}>
+                    <div className={styles.contact_form_field}>
+                      <label className={styles.contact_form_input_label} htmlFor="contact-form-name">
+                      Your Name:
+                      </label>
+                      <input
+                          id="contact-form-name"
+                          className={styles.contact_form_input}
+                          type="text"
+                          value={name}
+                          onChange={(e) => dispatch({ type: 'name', value: e.target.value })}
+                          required
+                        />
+                    </div>
+                    <div className={styles.contact_form_field}>
+                      <label className={styles.contact_form_input_label} htmlFor="contact-form-email">
+                      Your Email:
+
+                      </label>
+                      <input
+                          id="contact-form-email"
+                          className={styles.contact_form_input}
+                          type="email"
+                          value={email}
+                          onChange={(e) => dispatch({ type: 'email', value: e.target.value })}
+                          required
+                        />
+                    </div>
+                  </div>
+                  <div className={styles.contact_form_message}>
+                    <div className={styles.contact_form_field}>
+                      <label className={styles.contact_form_input_label} htmlFor="contact-form-message">
+                        Your Message:
+                      </label>
+                      <textarea
+                          rows="5"
+                          id="contact-form-message"
+                          className={styles.contact_form_textarea}
+                          type="text"
+                          value={message}
+                          onChange={(e) => dispatch({ type: 'message', value: e.target.value })}
+                          required
+                        />
+                    </div>
+                  </div>
+                  <div className="w-full flex justify-end items-center flex-col sm:flex-row">
+                    {showFormErr ? <p className="sm:mr-4 text-red-400">Please fill in all three input boxes to send a message</p> : null}
+                    <button className={styles.contact_form_button} type="submit">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              ) : (
+                <>                    
+                  <ReCAPTCHA
+                    sitekey={recaptcha_site_key}
+                    onChange={sendEmail}
+                  />
+                </>
+              )}
+            </div>
+            // INNER CONDITIONAL CLOSE
+            ) : (
+            <div className={styles.contact_form_feedback}>
+              <div className={styles.contact_heading}>
+                <h3 className={styles.heading_head}>{formSubmitted.title}</h3>
+                <p>{formSubmitted.paragraph}</p>
+              </div>
+            </div>
+            )}
+          </div>
+          {/* OUTER CONDITIONAL CLOSE */}
         </div>
       </section>
     </>
