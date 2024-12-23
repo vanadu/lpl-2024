@@ -630,20 +630,20 @@
 
 .logo {
   @include mphone {
-    width: 86px;
+    width: 92px;
     margin: .5rem 0 0 1rem;
   }
   @include lphone {
-    width: 90px;
+    width: 100px;
     margin: .75rem 0 0 1rem;
   }
   @include tablet {
     // !VA img width depends on nav menu width...
-    width: 100px;
+    width: 110px;
     margin: .575rem 0 0 1rem;
   }
   @include desktop {
-    width: 110px;
+    width: 120px;
     margin: .75rem 0 0 1.5rem;
   }
   @include ldesktop {
@@ -651,7 +651,7 @@
     margin: .5rem 0 0 0;
   }
   margin: .5rem 0 0 .75rem;
-  width: 80px;
+  width: 88px;
   height: auto;
   position: relative; 
   // !VA 2024
