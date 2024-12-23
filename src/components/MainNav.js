@@ -23,19 +23,28 @@ const MainNav = ( ) => {
   const [isChecked, setChecked ] = useState(false)
   const checkRef = useRef(null)
 
+  const testVal = null;
 
   // !VA When a menu item is clicked, close the mobile menu
   const handleClick = (e) => {
-    console.log('HERE');
+    console.log('handleClick');
     // !VA If the hamburger menu is checked, ie. the mobile menu is open, clicking on a menu item in the menu will uncheck the menu and go to the clicked link target.
     isChecked ? setChecked(false) : null;
   }
+
+  const sendingToChild = () => {
+    console.log('isChecked', isChecked)
+    
+  }
   
+
 
   // !VA onChange is fired when the checked status of the input changes.
   const onChangeEvent=(e)=> {
     setChecked(e.target.checked)
   }
+
+
   
   return (
     <>
@@ -46,7 +55,6 @@ const MainNav = ( ) => {
         <div className={[styles.mobile_menu_bg, styles.mobile_menu_bg_top, styles.mobile_menu_bg_bottom].join(' ')}>
           &nbsp;
         </div>
-
         
         {/* When the input is clicked, fire onChangeEvent and toggle the input's checked status  */}
         <input className={styles.checkbox} type="checkbox" checked={isChecked} onChange= {(e) => onChangeEvent(e)} ref={checkRef} />
@@ -57,81 +65,45 @@ const MainNav = ( ) => {
         {/* This is the third line in the burger or the backslash line in the X */}
         <span className={styles.menu_span}></span>
 
-        {/* !VA Tjos is the parent container for the actual individual menu items. Eventually this should move to a separate container, i.e. MainNavItems.js */}
-        <ul 
-        // className={styles.nav_main_list}
-        className={styles.nav_menu_items}
-        >
-
+        {/* !VA This is the parent container for the actual individual menu items. Eventually this should move to a separate container, i.e. MainNavItems.js */}
+        <ul className={styles.nav_menu_items}>
           {/* VA! 2024 removing the home icon and using the word Home */}
-  
-          <li
-            className={styles.nav_main_list_item}
-            // ref={homeRef}
-            >
-            <Link
-              href='/'
-              // className={[styles.nav_text].join(' ')}   
-              onClick = {handleClick}             
-              >
+          <li className={styles.nav_main_list_item}>
+            <Link href='/'
+              onClick = {handleClick} >
               Home
             </Link>
           </li>
-          <li
-            className={styles.nav_main_list_item}
-            // ref={ref}
-            >
-            <Link
-              href='/whystent'
-              // className={[styles.nav_text].join(' ')}   
+          <li className={styles.nav_main_list_item}>
+            <Link href='/whystent'
               onClick = {handleClick}             
               >
               Why Stent?
             </Link>
           </li>
-          <li 
-            className={styles.nav_main_list_item}
-            // ref={ref}
-            >
-            <Link
-              // key={item.text}
-              href='/stories'
-              // className={[styles.nav_text, ' active'].join('')}
-              // className={[styles.nav_text].join('')}
+          <li className={styles.nav_main_list_item}>
+            <Link href='/stories'
               onClick = {handleClick}
               >Stories
             </Link>
           </li>
-          <li 
-            className={styles.nav_main_list_item}
-            // ref={ref}
-            >
-            <Link
-              // key={item.text}
-              href='/blog'
-              // className={[styles.nav_text, ' active'].join('')}
-              // className={[styles.nav_text].join('')}
+          <li className={styles.nav_main_list_item}>
+            <Link href='/blog'
               onClick = {handleClick}
               >News
             </Link>
           </li>
-          <li 
-            key='dvms'
-            className={styles.nav_main_list_item}
-            >
-            <Link
-              href='/allabout'
-              // className={[styles.nav_text].join(' ')}
+          <li key='dvms'className={styles.nav_main_list_item}>
+            <Link href='/allabout'
               onClick = {handleClick}
               >
-              Lar Par Guide
-                <FaChevronRight 
-                className={styles.nav_dropdown_icon}
-                />
+              Lar Par Guide <FaChevronRight className={styles.nav_dropdown_icon} />
             </Link>
           </li>
+          {/* getClick passes handleClick to the IconBar, so that when an icon is clicked, the handleClick runs here in the parent to close the mobile nav menu */}
           <li className={styles.icon_bar_menu_item}>
-            <IconBar/>
+            <IconBar 
+              getClick={handleClick}/>
           </li>
         </ul>
 

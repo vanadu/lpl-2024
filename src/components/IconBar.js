@@ -1,4 +1,4 @@
-import { useState} from 'react'
+import { useState, useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import LarParNewsIcon from '/public/icon-larpar-news.png'
@@ -14,60 +14,43 @@ import { FaHome } from 'react-icons/fa'
 
 import * as styles from '../styles/Header.module.scss'
 
+// !VA getClick is the handleClick function that is passed in from the MainNav component. handleClick toggles the hidden checkbox on and off that shows/hides the mobile menu. 
+const IconBar = ( { getClick }) => {
 
-const IconBar = () => {
-
-  // !VA Commented out the Home, Stories, For Patients and For DVMs Links below 2023.09.24. 
   return (
     <>
       <div className={styles.icon_bar}>
-
         <div className={styles.icons}>
-
-        {/* <Link
-          href='/'
-          className={styles.icon}>
-          <FaHome />
-        </Link> */}
-        
-        {/* 
-        VA! 2024
-        <Link 
-          href='/blog'
-          className={styles.icon} 
-          aria-label='Visit Our Blog'
-          >
-          <Image src={LarParNewsIcon}
-            alt="Lar Par Dog Blog" />
-        </Link> */}
-        {/* Using the Twitter icon as a dummy click object for testing */}
+        {/* Using the Twitter icon as a dummy click object for testing. DON'T FORGET that React icons can't be used to run any React code. Props only work on their container, not the React icons components themselves. */}
         {/* <div 
           className={styles.devFoo}
+          onClick={getClick}
           >
           <FaTwitterSquare 
             className={styles.myfoo}
           />
-          </div> */}
+        </div> */}
+        {/* We want the Youtube link to open in a new tab and NOT close the mobile menu */}
         <Link 
-          // href='https://www.youtube.com/channel/UCwHwkfSqDlO6MJejPrxzW0A'
-          href=''
+          href='https://www.youtube.com/channel/UCwHwkfSqDlO6MJejPrxzW0A'
           className={styles.icon} 
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visit Our Youtube channel">
           <FaYoutube />
         </Link>
+        {/* We want the /social and /contact links to open in the same tab, so run getClick, which runs handleClick in the parent MainNav component to close the mobile menu. */}
         <Link 
           href='/social' 
           className={styles.icon} 
-          target="_blank" 
-          rel="noopener noreferrer"
+          onClick={getClick}
           aria-label="Visit Our Facebook Group">
           <FaFacebookF />
         </Link>
         <Link
           href='/contact'
           className={styles.icon} 
+          onClick={getClick}
           aria-label="Contact Us"
           >
           <MdMail />
