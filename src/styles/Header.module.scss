@@ -224,6 +224,7 @@
   border-radius: 20px;
 }
 
+
 .icon {
     @include tablet {
       padding: .125rem .75rem .063rem;
@@ -386,10 +387,26 @@
   border-radius: 20px;
 }
 
-.icon_bar_menu_item .icon_bar .icon {
+.icon_bar_menu_item .icon_bar .icon  {
   color: white;
   padding: .125rem .75rem .063rem;
   font-size: 1.75rem;
+}
+
+.myfoo {
+  position:relative;
+  color: white;
+  padding: .125rem .75rem .063rem;
+  font-size: 10rem;
+  cursor: pointer;
+  z-index: 10000;
+  // background: rgba(255, 0, 0, .3) !important; //devred
+}
+
+.devFoo {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 128, 0, .3) !important; //devgreen
 }
 
 // !VA This has to be outside the media query block for the mobile menu

@@ -1,3 +1,4 @@
+import { useState} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import LarParNewsIcon from '/public/icon-larpar-news.png'
@@ -10,6 +11,7 @@ import { MdMail } from 'react-icons/md'
 import { FaExclamationCircle } from 'react-icons/fa'
 import { IoPawSharp } from 'react-icons/io5'
 import { FaHome } from 'react-icons/fa'
+
 import * as styles from '../styles/Header.module.scss'
 
 
@@ -19,6 +21,7 @@ const IconBar = () => {
   return (
     <>
       <div className={styles.icon_bar}>
+
         <div className={styles.icons}>
 
         {/* <Link
@@ -37,8 +40,17 @@ const IconBar = () => {
           <Image src={LarParNewsIcon}
             alt="Lar Par Dog Blog" />
         </Link> */}
+        {/* Using the Twitter icon as a dummy click object for testing */}
+        {/* <div 
+          className={styles.devFoo}
+          >
+          <FaTwitterSquare 
+            className={styles.myfoo}
+          />
+          </div> */}
         <Link 
-          href='https://www.youtube.com/channel/UCwHwkfSqDlO6MJejPrxzW0A'
+          // href='https://www.youtube.com/channel/UCwHwkfSqDlO6MJejPrxzW0A'
+          href=''
           className={styles.icon} 
           target="_blank"
           rel="noopener noreferrer"

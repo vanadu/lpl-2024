@@ -16,53 +16,21 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 
 import * as styles from '../styles/Header.module.scss'
-const MainNav = () => {
+const MainNav = ( ) => {
+  
+  /* !VA  2024 Removing any residuals from the 2023 version navbar, including anything related to highlighting the active item on the menu, i.e. highlighting menu item corresponding to the currently displayed page. It never worked right anyway and with the new modern menu design it's not even necessary. Doesn't work on mobile anyway because it's not relevant for a hamburger menu. Old news. The last commit that had all that stuff was '55c87f9 Social page formatting all devices', in case you need to find it. */
 
-  // !VA 2024 removing...no workie
-  // const [mainIsActive, setMainIsActive ] = useState(true)
-  // const [mainHasActive, setMainHasActive ] = useState(false)
   const [isChecked, setChecked ] = useState(false)
   const checkRef = useRef(null)
-  // const homeRef = useRef(null)
 
-  // !VA 2024 removing...no workie
-  const mainRef = useRef()
-  // VA! 2024 homeRef is deprecated because the Home button is no more
-    // !VA 2024 removing...no workie. I'm not sure whether this is what broke the whole thing...
-  // !VA 2024 removing...no workie
-  // const pathname = usePathname()
-  // const router = useRouter()
-  // const [shown, setShown] = useContext(SitenavContext);
-  
 
   // !VA When a menu item is clicked, close the mobile menu
   const handleClick = (e) => {
-    // console.log('HERE');
+    console.log('HERE');
     // !VA If the hamburger menu is checked, ie. the mobile menu is open, clicking on a menu item in the menu will uncheck the menu and go to the clicked link target.
     isChecked ? setChecked(false) : null;
-
-    // !VA Handle add/remove active class for the clicked elements
-    // !VA 2024 THe Home button is no more, so just reset the main menu items 
-    // !VA If the home button is clicked
-    // if (e.target === homeRef.current) {
-      // !VA Add the active class to the Home button
-      // e.target.classList.add('active')
-    // !VA If a menu item is clicked
-    // } else {
-      // !VA Remove the  active class from the Home button
-      // homeRef.current.classList.remove('active')
-    // }
-    // !VA Now reset all the menu items to inactive and make the current click target active
-    // resetMainMenu(e);
   }
-  // !VA Function to reset the main menu and make the current click target active
-  const resetMainMenu = (e) => {
-    const mainNavItems = Object.values(mainRef.current.children)
-    mainNavItems.forEach(el => {
-      el.firstChild.classList.remove('active');
-    });
-    e.target.classList.add('active');
-  }
+  
 
   // !VA onChange is fired when the checked status of the input changes.
   const onChangeEvent=(e)=> {
@@ -93,10 +61,10 @@ const MainNav = () => {
         <ul 
         // className={styles.nav_main_list}
         className={styles.nav_menu_items}
-        ref={mainRef}
         >
 
-          {/* VA! 2024 removing the home icon, the logo works for the home link */}
+          {/* VA! 2024 removing the home icon and using the word Home */}
+  
           <li
             className={styles.nav_main_list_item}
             // ref={homeRef}
@@ -163,7 +131,7 @@ const MainNav = () => {
             </Link>
           </li>
           <li className={styles.icon_bar_menu_item}>
-            <IconBar />
+            <IconBar/>
           </li>
         </ul>
 
