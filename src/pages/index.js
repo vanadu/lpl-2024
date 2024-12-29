@@ -126,10 +126,22 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper3}>
                 <div className={styles.marquee3}>
                   <p>
-                    Is it bad for my Lar Par dog to get excited? Is prolonging life the best thing for my Lar Par dog? Why does my primary veterinarian advise against surgery? Has any dog every died from a stent implant? Is there a cure for Lar Par? Is the stent treatment available where I live?&nbsp;
+                    <Link href='lpdogsgettingexcited' className={styles.community_link}>Is it bad for my Lar Par dog to get excited?</Link>&nbsp;
+                    <Link href='prolonginglife' className={styles.community_link}>Is prolonging life the best thing for my Lar Par dog?</Link>&nbsp;
+                    <Link href='veterinarianadvice' className={styles.community_link}>Why does my primary veterinarian advise against surgery?</Link>&nbsp;
+                    <Link href='stentmortality' className={styles.community_link}>Has any dog every died from a stent implant?</Link>&nbsp;
+                    <Link href='lpcure' className={styles.community_link}>Is there a cure for Lar Par?</Link>
+                    <Link href='stentavailablity' className={styles.community_link}>Is the stent treatment available where I live?</Link>
+                         &nbsp;
                     </p>
                     <p>
-                    Is it bad for my Lar Par dog to get excited? Is prolonging life the best thing for my Lar Par dog? Why does my primary veterinarian advise against surgery? Has any dog every died from a stent implant? Is there a cure for Lar Par? Is the stent treatment available where I live?&nbsp;
+                    <Link href='lpdogsgettingexcited' className={styles.community_link}>Is it bad for my Lar Par dog to get excited?</Link>&nbsp;
+                    <Link href='prolonginglife' className={styles.community_link}>Is prolonging life the best thing for my Lar Par dog?</Link>&nbsp;
+                    <Link href='veterinarianadvice' className={styles.community_link}>Why does my primary veterinarian advise against surgery?</Link>&nbsp;
+                    <Link href='stentmortality' className={styles.community_link}>Has any dog every died from a stent implant?</Link>&nbsp;
+                    <Link href='lpcure' className={styles.community_link}>Is there a cure for Lar Par?</Link>
+                    <Link href='stentavailablity' className={styles.community_link}>Is the stent treatment available where I live?</Link>
+                         &nbsp;
                     </p>
                 </div>
               </div>
@@ -137,10 +149,22 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper4}>
                 <div className={styles.marquee4}>
                   <p>
-                  What should I feed my Lar Par dog? What is BVEAP surgery? How long before my dog&lsquo;s Lar Par gets really bad? What&lsquo;s stridor? Are all surgeons equally skilled at tieback surgery? Can Lar Par dogs get aspiration pneumonia without surgery?&nbsp; 
+                    <Link href='#' className={styles.community_link}>What should I feed my Lar Par dog?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>What is BVEAP surgery?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>How long before my dog&lsquo;s Lar Par gets really bad?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>What&lsquo;s stridor?</Link>
+                    <Link href='#' className={styles.community_link}>Are all surgeons equally skilled at tieback surgery?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>Can Lar Par dogs get aspiration pneumonia without surgery?</Link>&nbsp;
+                       &nbsp; 
                   </p>
                   <p>
-                  What should I feed my Lar Par dog? What is BVEAP surgery? How long before my dog&lsquo;s Lar Par gets really bad? What&lsquo;s stridor? Are all surgeons equally skilled at tieback surgery? Can Lar Par dogs get aspiration pneumonia without surgery?&nbsp;
+                    <Link href='#' className={styles.community_link}>What should I feed my Lar Par dog?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>What is BVEAP surgery?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>How long before my dog&lsquo;s Lar Par gets really bad?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>What&lsquo;s stridor?</Link>
+                    <Link href='#' className={styles.community_link}>Are all surgeons equally skilled at tieback surgery?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>Can Lar Par dogs get aspiration pneumonia without surgery?</Link>&nbsp;
+                       &nbsp; 
                   </p>
                 </div>
               </div>
@@ -148,10 +172,22 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper5}>
                 <div className={styles.marquee5}>
                   <p>
-                    Are there supplements that can help my Lar Par dog? How can I be sure my dog has Lar Par? Can accupuncture help with Lar Par? How much does the specialist diagnosis cost? Can a regular X-ray tell if my dog has Lar Par?&nbsp;
+                    <Link href='#' className={styles.community_link}>Are there supplements that can help my Lar Par dog?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>How can I be sure my dog has Lar Par?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>Can accupuncture help with Lar Par?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>How much does the specialist diagnosis cost?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>Can a regular X-ray tell if my dog has Lar Par?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}></Link>
+                        &nbsp;
                   </p>
                   <p>
-                    Are there supplements that can help my Lar Par dog? How can I be sure my dog has Lar Par? Can accupuncture help with Lar Par? How much does the specialist diagnosis cost? Can a regular X-ray tell if my dog has Lar Par?&nbsp;
+                    <Link href='#' className={styles.community_link}>Are there supplements that can help my Lar Par dog?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>How can I be sure my dog has Lar Par?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>Can accupuncture help with Lar Par?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>How much does the specialist diagnosis cost?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}>Can a regular X-ray tell if my dog has Lar Par?</Link>&nbsp;
+                    <Link href='#' className={styles.community_link}></Link>
+                        &nbsp;
                   </p>
                 </div>
               </div>
