@@ -117,10 +117,10 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper1}>
                 <div className={styles.marquee1}>
                   <p>
-                  What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?&nbsp;
+                  <Link href='#' className='link-dark'>What is GOLPP?</Link> <Link href='#' className='link-dark'>What are the side effects of surgery?</Link> <Link href='#' className='link-dark'>What causes laryngeal paralysis?</Link> <Link href='#' className='link-dark'>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#' className='link-dark'>Are there other kinds of surgery besides tieback?</Link> <Link href='#' className='link-dark'>How much does tieback surgery cost?</Link>&nbsp;
                   </p>
                   <p>
-                  What is GOLPP? What are the side effects of surgery? What causes laryngeal paralysis? What&lsquo;s the difference between surgery and stent?Are there other kinds of surgery besides tieback? How much does tieback surgery cost?&nbsp;
+                  <Link href='#' className='link-dark'>What is GOLPP?</Link> <Link href='#' className='link-dark'>What are the side effects of surgery?</Link> <Link href='#' className='link-dark'>What causes laryngeal paralysis?</Link> <Link href='#' className='link-dark'>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#' className='link-dark'>Are there other kinds of surgery besides tieback?</Link> <Link href='#' className='link-dark'>How much does tieback surgery cost?</Link>&nbsp;
                   </p>
                 </div>
               </div>
