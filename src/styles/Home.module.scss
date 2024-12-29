@@ -638,8 +638,12 @@ text-align: center;
 
 
 
+
+
+
+
 // !VA Top level parent container for all community elements - spans the entire page width to allow the marquee elements to extend to the device borders.
-.community_content {
+.community {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -648,37 +652,70 @@ text-align: center;
   z-index: 1;
 }
 
-// !VA Set page width and text margins here
-.community {
+
+.community_heading {
   @include mphone {
-    padding: .75rem;
+    margin-bottom: 1.375rem;
+    font-size: $mphoneXXLFontSize;
+    line-height: $mphoneXXLLineHeight;
   }
   @include lphone {
-    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: $lphoneXXLFontSize;
+    line-height: $lphoneXXLLineHeight;
   }
   @include tablet {
-    padding: 1.125rem;
+    margin-bottom: 1.638rem;
+    font-size: $tabletXXLFontSize;
+    line-height: $tabletXXLLineHeight;
   }
   @include desktop {
-    padding: 1.25rem 0;
-    width: 900px;
+    margin-bottom: 1.75rem;
+    font-size: $desktopXXLFontSize;
+    line-height: $desktopXXLLineHeight;
   }
   @include ldesktop {
-    padding: 1.75rem 0 2rem;
-    width: 1200px;
+    margin-bottom: 2.25rem;    
+    font-size: $ldesktopXXLFontSize;
+    line-height: $ldesktopXXLLineHeight;
+  }
+  margin: .75rem 0 1.5rem;
+  color: $light_text_color;
+  font-family: $secondary_font;
+  font-size: $rootXXLFontSize;
+  line-height: $rootXXLLineHeight;
+  font-weight: 500;
+}
+
+.community_icon {
+  @include mphone {
+    width: 80px;
+    margin-bottom: .875rem;
+  }
+  @include lphone {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  @include tablet {
+    width: 110px;
+    margin-bottom: 1rem;
+  }
+  @include desktop {
+    width: 130px;
+    margin-bottom: 1.25rem;
+  }
+  @include ldesktop {
+    width: 136px;
+    margin-bottom: 1.25rem;
   }
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: .5rem .75rem .75rem;
-  background: transparent;
-  // !VA 2024 for the scrolling text animation so it's cut off at the edge of the container
-  overflow: hidden;
-  z-index: 12;
+  width: 84px;
+  height: auto;
+  margin-bottom: .75rem;
+  // !VA 2024
+  z-index: 100;
 }
+
 
   // !VA Parent wrapper for positioning the marquee block not the invidual marquee elements
 .community_questions {
@@ -695,10 +732,10 @@ text-align: center;
     top: 4.25rem;
   }
   @include ldesktop {
-    top: 5.5rem;
+    top: 3.5rem;
   }
   // position: absolute;
-  top: 2.313rem;
+  top: 3rem;
   left: 0px;
   display: flex;
   flex-direction: column;
@@ -724,7 +761,7 @@ text-align: center;
     height: 2rem;
   }
   max-width: 100%;
-  height: 1.25rem;
+  height: 1.375rem;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -786,8 +823,10 @@ text-align: center;
   display: inline-block;
   padding: 0;
   color: $community_marquee_color;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-family: $primary_font;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
+  font-weight: 400;
   opacity: .5;
 }
 
@@ -837,71 +876,42 @@ text-align: center;
   }
 }
 
-.community_heading {
-  // !VA 2024 Top padding is on the parent
-  @include mphone {
-    margin-bottom: 1.375rem;
-    font-size: $mphoneXXLFontSize;
-    line-height: $mphoneXXLLineHeight;
-  }
-  @include lphone {
-    margin-bottom: 1.5rem;
-    font-size: $lphoneXXLFontSize;
-    line-height: $lphoneXXLLineHeight;
-  }
-  @include tablet {
-    margin-bottom: 1.638rem;
-    font-size: $tabletXXLFontSize;
-    line-height: $tabletXXLLineHeight;
-  }
-  @include desktop {
-    margin-bottom: 1.75rem;
-    font-size: $desktopXXLFontSize;
-    line-height: $desktopXXLLineHeight;
-  }
-  @include ldesktop {
-    margin-bottom: 2.25rem;    
-    font-size: $ldesktopXXLFontSize;
-    line-height: $ldesktopXXLLineHeight;
-  }
-  margin-bottom: 1.125rem;
-  color: $light_text_color;
-  font-family: $secondary_font;
-  font-size: $rootXXLFontSize;
-  line-height: $rootXXLLineHeight;
-  font-weight: 500;
-
+.link_community {
+  color: #F7BD36;
 }
 
-.community_icon {
+// !VA Container for CTA and community text content
+.community_content {
   @include mphone {
-    width: 80px;
-    margin-bottom: .875rem;
+    padding: .75rem;
   }
   @include lphone {
-    width: 100px;
-    margin-bottom: 1rem;
+    padding: 1rem;
   }
   @include tablet {
-    width: 110px;
-    margin-bottom: 1rem;
+    padding: 1.125rem;
   }
   @include desktop {
-    width: 130px;
-    margin-bottom: 1.25rem;
+    padding: 1.25rem 0;
+    width: 900px;
   }
   @include ldesktop {
-    width: 136px;
-    margin-bottom: 1.25rem;
+    padding: 1.75rem 0 2rem;
+    width: 1200px;
   }
   position: relative;
-  width: 75px;
-  height: auto;
-  margin-bottom: 1rem;
-  // !VA 2024
-  z-index: 100;
-  background: rgba(255, 0, 0, .3) !important; //devred
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: .5rem .75rem .75rem;
+  background: transparent;
+  // !VA 2024 for the scrolling text animation so it's cut off at the edge of the container
+  overflow: hidden;
+  z-index: 12;
 }
+
 
 .community_cta {
   @include mphone {

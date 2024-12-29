@@ -9,6 +9,7 @@ import * as styles from '../styles/Light.module.scss'
 // !VA Get the props from the child
 const ShowMoreContent = ({
   title,
+  anchor,
   children,
   index,
   activeIndex,
@@ -39,7 +40,7 @@ const ShowMoreContent = ({
         ref={showmoreRef}
         >
         <div
-          onClick={() => handleSetIndex(index, title)}
+          onClick={() => handleSetIndex(index, title, anchor)}
           className={styles.showmore}>
             <div 
               className={`${styles.showmore_trigger} ${index === activeIndex ? 'showmore-open' : ''}`}>
@@ -49,7 +50,7 @@ const ShowMoreContent = ({
                   <h3 className={styles.showmore_title}>{title}</h3>
                 </div> 
                 :
-                <div className={styles.showmore_link}>
+                <div id={anchor} className={styles.showmore_link}>
                   <FaPlusSquare className={styles.showmore_icon} />
                   <h3 className={styles.showmore_title}>{title}</h3>
                 </div>}

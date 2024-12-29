@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import {useRouter} from 'next/router'
+import { useRouter} from 'next/router'
 import Head from 'next/head'
 // !VA Date: 2024.03.29 next-seo replaces the Head component
 import { NextSeo } from 'next-seo'
@@ -25,6 +25,7 @@ import MockHeroVideo from '../../public/MOCK-hero-video.png'
 // !VA Components
 import Layout from '@/components/Layout'
 import BottomNav from '../components/BottomNav'
+import ShowMoreContent from '@/components/ShowMoreContent'
 // !VA Styles
 import * as styles from '../styles/Home.module.scss'
 
@@ -32,7 +33,7 @@ const Home = ( {posts}) => {
   // !VA Log out the posts exported from the getStaticProps function below 
   const router = useRouter()
 
-  
+  const [activeIndex, setActiveIndex] = useState(0)
 
 
   return (
@@ -72,41 +73,17 @@ const Home = ( {posts}) => {
 
       <section className={styles.section}>
         <div className={styles.section_content}>
+          {/* Top level parent container for all community elements - spans the entire page width to allow the marquee elements to extend to the device borders. */}
+          <div className={styles.community}>
 
-
-          <div className={styles.community_content}>
-
-
-
-            <div className={styles.community}>
-              <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
-
-              <figure className={styles.figure}>
-                <Link href='/social' className='link-dark'>
-                  <Image 
-                    src={JoinUsIcon} 
-                    // width="0"
-                    // height="0"
-                    // sizes="100vw"
-                    // style={{ width: '100%', height: 'auto' }}
-                    className={styles.community_icon} 
-                    alt="Join the Lar Par Community" 
-                  />
-                </Link>
-              </figure>
-              <h3 className={styles.community_cta}>
-                <Link href='/social' className={styles.community_cta}>Join the Community!</Link></h3>
-              <div className={styles.community_text}>
-                <p className={styles.content_text}>
-                How can you make the best decision about your dog&rsquo;s Lar Par when so many people &mdash; even the veterinarians &mdash; seem to be saying different things? 
-                </p>
-                <p className={styles.content_text}>
-                Your Lar Par decisions depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining our growing network of Facebook groups worldwide</Link>. 
-                </p>
-              
-              </div>
-            </div>
-
+            <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
+            <Link href='/social' className='link-dark'>
+                <Image 
+                  src={JoinUsIcon} 
+                  className={styles.community_icon} 
+                  alt="Join the Lar Par Community" 
+                />
+            </Link>
 
             {/* !VA Container for the individual community question animations */}
             {/* !VA I used this technique: https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break. There was also a codepen I leaned on but I can't find it now.  */}
@@ -117,10 +94,10 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper1}>
                 <div className={styles.marquee1}>
                   <p>
-                  <Link href='#' className='link-dark'>What is GOLPP?</Link> <Link href='#' className='link-dark'>What are the side effects of surgery?</Link> <Link href='#' className='link-dark'>What causes laryngeal paralysis?</Link> <Link href='#' className='link-dark'>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#' className='link-dark'>Are there other kinds of surgery besides tieback?</Link> <Link href='#' className='link-dark'>How much does tieback surgery cost?</Link>&nbsp;
+                  <Link href='#whatisgolpp' className={styles.link_community}>What is GOLPP?</Link> <Link href='#sideeffectsofsurgery' className={styles.link_community}>What are the side effects of surgery?</Link> <Link href='#causesoflaryngealparalysis' className={styles.link_community}>What causes laryngeal paralysis?</Link> <Link href='#surgerystentdifference'  className={styles.link_community}>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#typesofsurgery'  className={styles.link_community}>Are there other kinds of surgery besides tieback?</Link> <Link href='costofsurgery' className={styles.link_community}>How much does tieback surgery cost?</Link>&nbsp;
                   </p>
                   <p>
-                  <Link href='#' className='link-dark'>What is GOLPP?</Link> <Link href='#' className='link-dark'>What are the side effects of surgery?</Link> <Link href='#' className='link-dark'>What causes laryngeal paralysis?</Link> <Link href='#' className='link-dark'>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#' className='link-dark'>Are there other kinds of surgery besides tieback?</Link> <Link href='#' className='link-dark'>How much does tieback surgery cost?</Link>&nbsp;
+                  <Link href='#whatisgolpp' className={styles.link_community}>What is GOLPP?</Link> <Link href='#sideeffectsofsurgery' className={styles.link_community}>What are the side effects of surgery?</Link> <Link href='#causesoflaryngealparalysis' className={styles.link_community}>What causes laryngeal paralysis?</Link> <Link href='#surgerystentdifference'  className={styles.link_community}>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#typesofsurgery'  className={styles.link_community}>Are there other kinds of surgery besides tieback?</Link> <Link href='costofsurgery' className={styles.link_community}>How much does tieback surgery cost?</Link>&nbsp;
                   </p>
                 </div>
               </div>
@@ -128,10 +105,20 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper2}>
                 <div className={styles.marquee2}>
                     <p>
-                    How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency?&nbsp;
+                      <Link href='#dangersofaspirationpneumonia' className={styles.community_link}>How dangerous is aspiration pneumonia?&nbsp;</Link>
+                      <Link href='lpgroupsonfacebook' className={styles.community_link}>Are there Lar Par groups on Facebook?&nbsp;</Link>
+                      <Link href='whichbreedsdoeslpaffect' className={styles.community_link}>Which breeds does Lar Par affect?&nbsp;</Link>
+                      <Link href='uptodateinfo' className={styles.community_link}>Where can I get up-to-date information about Lar Par?&nbsp;</Link>
+                      <Link href='specialistdiagnosis' className={styles.community_link}>Why do I need a specialist diagnosis?&nbsp;</Link>&nbsp;
+                      <Link href='breathingemergency' className={styles.community_link}>What do I do in a breathing emergency?</Link>&nbsp;
                     </p>
                     <p>
-                    How dangerous is aspiration pneumonia? What are the side effects of surgery? Which breeds does Lar Par affect? Where can I get up-to-date information about Lar Par? Why do I need a specialist diagnosis? What do I do in a breathing emergency?&nbsp;
+                      <Link href='#dangersofaspirationpneumonia' className={styles.community_link}>How dangerous is aspiration pneumonia? </Link>
+                      <Link href='lpgroupsonfacebook' className={styles.community_link}>Are there Lar Par groups on Facebook? </Link>
+                      <Link href='whichbreedsdoeslpaffect' className={styles.community_link}>Which breeds does Lar Par affect?</Link>
+                      <Link href='uptodateinfo' className={styles.community_link}>Where can I get up-to-date information about Lar Par?</Link>
+                      <Link href='specialistdiagnosis' className={styles.community_link}>Why do I need a specialist diagnosis?</Link>&nbsp;
+                      <Link href='breathingemergency' className={styles.community_link}>What do I do in a breathing emergency?</Link>
                     </p>
                 </div>
               </div>
@@ -169,6 +156,22 @@ const Home = ( {posts}) => {
                 </div>
               </div>
             </div>
+
+
+            <div className={styles.community_content}>
+              <h3 className={styles.community_cta}>
+                <Link href='/social' className={styles.community_cta}>Join the Community!</Link>
+              </h3>
+              <div className={styles.community_text}>
+                <p className={styles.content_text}>
+                How can you make the best decision about your dog&rsquo;s Lar Par when so many people &mdash; even the veterinarians &mdash; seem to be saying different things? 
+                </p>
+                <p className={styles.content_text}>
+                Your Lar Par decisions depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining our growing network of Facebook groups worldwide</Link>. 
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -255,8 +258,267 @@ const Home = ( {posts}) => {
               Thank you for visiting LarParLife.com.  People want a more moderate treatment path for their beloved canine companions, a third way between surgery and deteriorating quality of life. It&rsquo;s time for this affordable, life-saving alternative to move into the mainstream of veterinary care.  
             </p>
           </div>
-          </div>
+        </div>
       </section>
+
+      <section className={styles.section}>
+        <div className={styles.section_content}>
+          <div className={styles.main}>
+            <h2 className={styles.main_head}>Laryngeal Paralysis in Dogs &mdash; Quick FAQs</h2>
+            <p className={styles.content_text}>
+              Laryngeal paralysis and GOLPP 
+            </p>
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='What is GOLPP?'
+                anchor='whatisgolpp'
+                index={1}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+          
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='What are the side effects of surgery?'
+                anchor='sideeffectsofsurgery'
+                index={2}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+          
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='What causes laryngeal paralysis?'
+                anchor='sideeffectsofsurgery'
+                index={3}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+          
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='What&lsquo;s the difference between surgery and stent?'
+                anchor='surgerystentdifference'
+                index={4}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='Are there other kinds of surgery besides tieback?'
+                anchor='typesofsurgery'
+                index={5}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='How much does tieback surgery cost?'
+                anchor='costofsurgery'
+                index={6}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='How dangerous is aspiration pneumonia?'
+                anchor='dangersofaspirationpneumonia'
+                index={7}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='Are there Lar Par groups on Facebook?'
+                anchor='lpgroupsonfacebook'
+                index={8}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='Which breeds does Lar Par affect?'
+                anchor='whichbreedsdoeslpaffect'
+                index={9}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='Where can I get up-to-date information about Lar Par?'
+                anchor='uptodateinfo'
+                index={10}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+            
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='Why do I need a specialist diagnosis?'
+                anchor='specialistdiagnosis'
+                index={11}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+
+            {/* ShowMoreComponent content start */}
+            <div className={styles.content_text}>
+              <ShowMoreContent
+                title='What do I do in a breathing emergency?'
+                anchor='breathingemergency'
+                index={12}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+                >
+                <div className="showmore-content-text">
+                  <span className="showmore-content-space"></span>
+                  <p className="showmore-content-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                  </p>
+                </div>
+              </ShowMoreContent>
+            </div>  
+            {/* ShowMoreComponent content end */}
+
+
+
+
+
+
+
+          
+          
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
     </>
   )
 }
