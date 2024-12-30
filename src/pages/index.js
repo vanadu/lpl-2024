@@ -319,7 +319,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    <span className='semibold'>GOLPP</span> stands for <span className='semibold-italic'>Geteriatric Onset Laryngeal Paralysis and Polyneuropathy</span>, which is a long way of saying that some dogs’ nervous systems begin to weaken when they reach a certain age. As a result, the muscles no longer receive the signals from the brain that tell them what to do. Most often, the larynx is the first thing to become paralyzed. Then, the hind end becomes progressively weaker. See the <Link href='/allabout' className='link-dark'>Lar Par Guide</Link> to learn more and to find links to detailed explanations on veterinary websites. 
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -339,7 +339,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      Although surgery for laryngeal paralysis in most cases results in positive outcomes, there is a significant risk of complications, some of which can be very serious or fatal. Possible complications include aspiration pneumonia, anesthesia intolerance, suture failure, and infection at the incision site. These risks factors have been studied extensively in the 40 years since LP surgeries first were developed. For more information, see the research studies linked to on the <Link href='/patients/links' className='link-dark'>Research and Website Links</Link> page of the <Link href='/allabout' className='link-dark'>Lar Par Guide</Link>. 
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -359,7 +359,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      Veterinary science distinguishes between acquired and congenital laryngeal paralysis. Acquired LP can be caused by age-related neurological degeneration, trauma to the neck or throat, or other factors related to injury or disease. Congenital LP is present at birth and generally has a genetic or breed-specific component. In both cases, it can be treated with surgery or a stent implant, however with age-related neurological degeneration, the polyneuropathy will progress even if the laryngeal paralysis is treated. For more information see the <Link href='/allabout' className='link-dark'>Lar Par Guide</Link>.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -378,7 +378,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      Surgery is an invasive procedure that entails modifying the physical structure of the larynx to enlarge the airway through the paralyzed larynx. The stent implant is a minimally invasive procedure that entails placing a physical body between the paralyzed parts of the larynx to create an artifical airway. For more information, see the <Link href='/patients/treatment' className='link-dark'>Treatment Options</Link> topic in the <Link href='#' className='link-dark'>Lar Par Guide</Link>.
                     </p>
                   </div>
                 </ShowMoreContent>
