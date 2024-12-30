@@ -49,7 +49,7 @@ const Home = ( {posts}) => {
             <div className={styles.hero}>
               <div className={styles.hero_head}>
                 <p className={styles.hero_head_heading}>
-                    Lar Par?
+                     Lar Par?
                 </p>
                 <p className={styles.hero_head_emphasis}>
                   LIFE!
@@ -76,14 +76,8 @@ const Home = ( {posts}) => {
           {/* Top level parent container for all community elements - spans the entire page width to allow the marquee elements to extend to the device borders. */}
           <div className={styles.community}>
 
-            <h2 className={styles.community_heading}>Feeling Overwhelmed?</h2>
-            <Link href='/social' className='link-dark'>
-                <Image 
-                  src={JoinUsIcon} 
-                  className={styles.community_icon} 
-                  alt="Join the Lar Par Community" 
-                />
-            </Link>
+            <h2 className={styles.community_head}>Feeling Overwhelmed?</h2>
+            {/* <h3 className={styles.community_subhead}>Laryngeal Paralysis in Dogs Quick FAQs</h3> */}
 
             {/* !VA Container for the individual community question animations */}
             {/* !VA I used this technique: https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break. There was also a codepen I leaned on but I can't find it now.  */}
@@ -126,21 +120,21 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper3}>
                 <div className={styles.marquee3}>
                   <p>
-                    <Link href='lpdogsgettingexcited' className={styles.community_link}>Is it bad for my Lar Par dog to get excited?</Link>&nbsp;
-                    <Link href='prolonginglife' className={styles.community_link}>Is prolonging life the best thing for my Lar Par dog?</Link>&nbsp;
-                    <Link href='veterinarianadvice' className={styles.community_link}>Why does my primary veterinarian advise against surgery?</Link>&nbsp;
-                    <Link href='stentmortality' className={styles.community_link}>Has any dog every died from a stent implant?</Link>&nbsp;
-                    <Link href='lpcure' className={styles.community_link}>Is there a cure for Lar Par?</Link>
-                    <Link href='stentavailablity' className={styles.community_link}>Is the stent treatment available where I live?</Link>
+                    <Link href='#lpdogsgettingexcited' className={styles.community_link}>Is it bad for my Lar Par dog to get excited?</Link>&nbsp;
+                    <Link href='#prolonginglife' className={styles.community_link}>Is prolonging life the best thing for my Lar Par dog?</Link>&nbsp;
+                    <Link href='#veterinarianadvice' className={styles.community_link}>Why does my primary veterinarian advise against surgery?</Link>&nbsp;
+                    <Link href='#stentmortality' className={styles.community_link}>Has any dog every died from a stent implant?</Link>&nbsp;
+                    <Link href='#lpcure' className={styles.community_link}>Is there a cure for Lar Par?</Link>
+                    <Link href='#stentavailablity' className={styles.community_link}>Is the stent treatment available where I live?</Link>
                          &nbsp;
                     </p>
                     <p>
-                    <Link href='lpdogsgettingexcited' className={styles.community_link}>Is it bad for my Lar Par dog to get excited?</Link>&nbsp;
-                    <Link href='prolonginglife' className={styles.community_link}>Is prolonging life the best thing for my Lar Par dog?</Link>&nbsp;
-                    <Link href='veterinarianadvice' className={styles.community_link}>Why does my primary veterinarian advise against surgery?</Link>&nbsp;
-                    <Link href='stentmortality' className={styles.community_link}>Has any dog every died from a stent implant?</Link>&nbsp;
-                    <Link href='lpcure' className={styles.community_link}>Is there a cure for Lar Par?</Link>
-                    <Link href='stentavailablity' className={styles.community_link}>Is the stent treatment available where I live?</Link>
+                    <Link href='#lpdogsgettingexcited' className={styles.community_link}>Is it bad for my Lar Par dog to get excited?</Link>&nbsp;
+                    <Link href='#prolonginglife' className={styles.community_link}>Is prolonging life the best thing for my Lar Par dog?</Link>&nbsp;
+                    <Link href='#veterinarianadvice' className={styles.community_link}>Why does my primary veterinarian advise against surgery?</Link>&nbsp;
+                    <Link href='#stentmortality' className={styles.community_link}>Has any dog every died from a stent implant?</Link>&nbsp;
+                    <Link href='#lpcure' className={styles.community_link}>Is there a cure for Lar Par?</Link>
+                    <Link href='#stentavailablity' className={styles.community_link}>Is the stent treatment available where I live?</Link>
                          &nbsp;
                     </p>
                 </div>
@@ -149,21 +143,21 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper4}>
                 <div className={styles.marquee4}>
                   <p>
-                    <Link href='#' className={styles.community_link}>What should I feed my Lar Par dog?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>What is BVEAP surgery?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>How long before my dog&lsquo;s Lar Par gets really bad?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>What&lsquo;s stridor?</Link>
-                    <Link href='#' className={styles.community_link}>Are all surgeons equally skilled at tieback surgery?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>Can Lar Par dogs get aspiration pneumonia without surgery?</Link>&nbsp;
+                    <Link href='#feedinglpdogs' className={styles.community_link}>What should I feed my Lar Par dog?</Link>&nbsp;
+                    <Link href='#whatisbveap' className={styles.community_link}>What is BVEAP surgery?</Link>&nbsp;
+                    <Link href='#lpprogression' className={styles.community_link}>How long before my dog&lsquo;s Lar Par gets really bad?</Link>&nbsp;
+                    <Link href='#whatisstridor' className={styles.community_link}>What&lsquo;s stridor?</Link>
+                    <Link href='#areallsurgeonsequal' className={styles.community_link}>Are all surgeons equally skilled at tieback surgery?</Link>&nbsp;
+                    <Link href='#apwithoutsurgery' className={styles.community_link}>Can Lar Par dogs get aspiration pneumonia without surgery?</Link>&nbsp;
                        &nbsp; 
                   </p>
                   <p>
-                    <Link href='#' className={styles.community_link}>What should I feed my Lar Par dog?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>What is BVEAP surgery?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>How long before my dog&lsquo;s Lar Par gets really bad?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>What&lsquo;s stridor?</Link>
-                    <Link href='#' className={styles.community_link}>Are all surgeons equally skilled at tieback surgery?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>Can Lar Par dogs get aspiration pneumonia without surgery?</Link>&nbsp;
+                    <Link href='#feedinglpdogs' className={styles.community_link}>What should I feed my Lar Par dog?</Link>&nbsp;
+                    <Link href='#whatisbveap' className={styles.community_link}>What is BVEAP surgery?</Link>&nbsp;
+                    <Link href='#lpprogression' className={styles.community_link}>How long before my dog&lsquo;s Lar Par gets really bad?</Link>&nbsp;
+                    <Link href='#whatisstridor' className={styles.community_link}>What&lsquo;s stridor?</Link>
+                    <Link href='#areallsurgeonsequal' className={styles.community_link}>Are all surgeons equally skilled at tieback surgery?</Link>&nbsp;
+                    <Link href='#apwithoutsurgery' className={styles.community_link}>Can Lar Par dogs get aspiration pneumonia without surgery?</Link>&nbsp;
                        &nbsp; 
                   </p>
                 </div>
@@ -172,22 +166,18 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper5}>
                 <div className={styles.marquee5}>
                   <p>
-                    <Link href='#' className={styles.community_link}>Are there supplements that can help my Lar Par dog?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>How can I be sure my dog has Lar Par?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>Can accupuncture help with Lar Par?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>How much does the specialist diagnosis cost?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>Can a regular X-ray tell if my dog has Lar Par?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}></Link>
-                        &nbsp;
+                    <Link href='#lpsupplements' className={styles.community_link}>Are there supplements that can help my Lar Par dog?</Link>&nbsp;
+                    <Link href='#howtobesure' className={styles.community_link}>How can I be sure my dog has Lar Par?</Link>&nbsp;
+                    <Link href='#lpaccupuncture' className={styles.community_link}>Can accupuncture help with Lar Par?</Link>&nbsp;
+                    <Link href='#diagnosiscost' className={styles.community_link}>How much does the specialist diagnosis cost?</Link>&nbsp;
+                    <Link href='#doesxrayshowlp' className={styles.community_link}>Can a regular X-ray tell if my dog has Lar Par?</Link>&nbsp;
                   </p>
                   <p>
-                    <Link href='#' className={styles.community_link}>Are there supplements that can help my Lar Par dog?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>How can I be sure my dog has Lar Par?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>Can accupuncture help with Lar Par?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}>How much does the specialist diagnosis cost?</Link>&nbsp;
+                    <Link href='#lpsupplements' className={styles.community_link}>Are there supplements that can help my Lar Par dog?</Link>&nbsp;
+                    <Link href='#howtobesure' className={styles.community_link}>How can I be sure my dog has Lar Par?</Link>&nbsp;
+                    <Link href='#lpaccupuncture' className={styles.community_link}>Can accupuncture help with Lar Par?</Link>&nbsp;
+                    <Link href='#diagnosiscost' className={styles.community_link}>How much does the specialist diagnosis cost?</Link>&nbsp;
                     <Link href='#' className={styles.community_link}>Can a regular X-ray tell if my dog has Lar Par?</Link>&nbsp;
-                    <Link href='#' className={styles.community_link}></Link>
-                        &nbsp;
                   </p>
                 </div>
               </div>
@@ -198,14 +188,25 @@ const Home = ( {posts}) => {
               <h3 className={styles.community_cta}>
                 <Link href='/social' className={styles.community_cta}>Join the Community!</Link>
               </h3>
+              <Link href='/social' className='link-dark'>
+                <Image 
+                  src={JoinUsIcon} 
+                  className={styles.community_icon} 
+                  alt="Join the Lar Par Community" 
+                />
+              </Link>
               <div className={styles.community_text}>
                 <p className={styles.content_text}>
-                How can you make the best decision about your dog&rsquo;s Lar Par when so many people &mdash; even the veterinarians &mdash; seem to be saying different things? 
+                How can you make the best decision about your dog&rsquo;s Lar Par when you have so many questions and when so many people &mdash; even veterinarians &mdash; seem to be saying different things? 
                 </p>
                 <p className={styles.content_text}>
                 Your Lar Par decisions depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining our growing network of Facebook groups worldwide</Link>. 
                 </p>
+                <p className={styles.content_text}>
+                  You can click on any question in the scrolling marquee text above to go straight to the <Link href='#quickfaqs' className={styles.community_link}>Laryngeal Paralysis/GOLPP Quick FAQs</Link> at the bottom of this page.
+                </p>
               </div>
+              
             </div>
 
           </div>
@@ -300,250 +301,591 @@ const Home = ( {posts}) => {
       <section className={styles.section}>
         <div className={styles.section_content}>
           <div className={styles.main}>
-            <h2 className={styles.main_head}>Laryngeal Paralysis in Dogs &mdash; Quick FAQs</h2>
+            <h2 href="" className={styles.main_head}>Laryngeal Paralysis in Dogs <span className='mobile-show-inline'><br /></span> Quick FAQs</h2>
             <p className={styles.content_text}>
-              Laryngeal paralysis and GOLPP 
+              Here are some frequently-asked questions about laryngeal paralysis/GOLPP in dogs. For more detailed answers, visit our <Link href='#' className='link-dark'>21st Century Guide to Laryngeal Paralysis </Link> or join the <Link href='#' className='link-dark'>Lar Par community on Facebook</Link>. 
             </p>
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='What is GOLPP?'
-                anchor='whatisgolpp'
-                index={1}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-          
-
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='What are the side effects of surgery?'
-                anchor='sideeffectsofsurgery'
-                index={2}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-          
-
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='What causes laryngeal paralysis?'
-                anchor='sideeffectsofsurgery'
-                index={3}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-          
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='What&lsquo;s the difference between surgery and stent?'
-                anchor='surgerystentdifference'
-                index={4}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='Are there other kinds of surgery besides tieback?'
-                anchor='typesofsurgery'
-                index={5}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='How much does tieback surgery cost?'
-                anchor='costofsurgery'
-                index={6}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='How dangerous is aspiration pneumonia?'
-                anchor='dangersofaspirationpneumonia'
-                index={7}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='Are there Lar Par groups on Facebook?'
-                anchor='lpgroupsonfacebook'
-                index={8}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='Which breeds does Lar Par affect?'
-                anchor='whichbreedsdoeslpaffect'
-                index={9}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='Where can I get up-to-date information about Lar Par?'
-                anchor='uptodateinfo'
-                index={10}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
-
+            <div className={styles.quick_faqs}>
+              {/* MARQUEE TEXT SECTION 1 */}
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What is GOLPP?'
+                  anchor='whatisgolpp'
+                  index={1}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
             
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='Why do I need a specialist diagnosis?'
-                anchor='specialistdiagnosis'
-                index={11}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What are the side effects of surgery?'
+                  anchor='sideeffectsofsurgery'
+                  index={2}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+            
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What causes laryngeal paralysis?'
+                  anchor='sideeffectsofsurgery'
+                  index={3}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+            
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What&lsquo;s the difference between surgery and stent?'
+                  anchor='surgerystentdifference'
+                  index={4}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Are there other kinds of surgery besides tieback?'
+                  anchor='typesofsurgery'
+                  index={5}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='How much does tieback surgery cost?'
+                  anchor='costofsurgery'
+                  index={6}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* MARQUEE TEXT SECTION 2 */}
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='How dangerous is aspiration pneumonia?'
+                  anchor='dangersofaspirationpneumonia'
+                  index={7}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Are there Lar Par groups on Facebook?'
+                  anchor='lpgroupsonfacebook'
+                  index={8}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Which breeds does Lar Par affect?'
+                  anchor='whichbreedsdoeslpaffect'
+                  index={9}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Where can I get up-to-date information about Lar Par?'
+                  anchor='uptodateinfo'
+                  index={10}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Why do I need a specialist diagnosis?'
+                  anchor='specialistdiagnosis'
+                  index={11}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
 
 
-            {/* ShowMoreComponent content start */}
-            <div className={styles.content_text}>
-              <ShowMoreContent
-                title='What do I do in a breathing emergency?'
-                anchor='breathingemergency'
-                index={12}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-                >
-                <div className="showmore-content-text">
-                  <span className="showmore-content-space"></span>
-                  <p className="showmore-content-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
-                  </p>
-                </div>
-              </ShowMoreContent>
-            </div>  
-            {/* ShowMoreComponent content end */}
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What do I do in a breathing emergency?'
+                  anchor='breathingemergency'
+                  index={12}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* MARQUEE TEXT SECTION 3 */}  
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Is it bad for my Lar Par dog to get excited?'
+                  anchor='lpdogsgettingexcited'
+                  index={13}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
 
 
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Is prolonging life the best thing for my Lar Par dog?'
+                  anchor='prolonginglife'
+                  index={14}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Why does my primary veterinarian advise against surgery?'
+                  anchor='veterinarianadvice'
+                  index={15}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Has any dog every died from a stent implant?'
+                  anchor='stentmortality'
+                  index={16}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Is there a cure for Lar Par?'
+                  anchor='lpcure'
+                  index={17}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Is the stent treatment available where I live?'
+                  anchor='stentavailablity'
+                  index={18}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
 
 
+              {/* MARQUEE TEXT SECTION 4 */}
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What should I feed my Lar Par dog?'
+                  anchor='feedinglpdogs'
+                  index={19}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What is BVEAP surgery?'
+                  anchor='whatisbveap'
+                  index={20}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='How long before my dog&lsquo;s Lar Par gets really bad?'
+                  anchor='lpprogression'
+                  index={21}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}                  
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What is stridor?'
+                  anchor='whatisstridor'
+                  index={22}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='What is stridor?'
+                  anchor='whatisstridor'
+                  index={23}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Are all surgeons equally skilled at tieback surgery?'
+                  anchor='areallsurgeonsequal'
+                  index={24}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Can Lar Par dogs get aspiration pneumonia without surgery?'
+                  anchor='apwithoutsurgery'
+                  index={25}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
 
 
+              {/* MARQUEE TEXT SECTION 5 */}
+                {/* ShowMoreComponent content start */}
+                <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Are there supplements that can help my Lar Par dog?'
+                  anchor='lpsupplements'
+                  index={26}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
 
-          
-          
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='How can I be sure my dog has Lar Par?'
+                  anchor='howtobesure'
+                  index={27}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Can accupuncture help with Lar Par?'
+                  anchor='lpaccupuncture'
+                  index={28}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='How much does the specialist diagnosis cost?'
+                  anchor='diagnosiscost'
+                  index={29}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}
+
+              {/* ShowMoreComponent content start */}
+              <div className={styles.content_text}>
+                <ShowMoreContent
+                  title='Can a regular X-ray tell if my dog has Lar Par?'
+                  anchor='doesxrayshowlp'
+                  index={30}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                  >
+                  <div className="showmore-content-text">
+                    <span className="showmore-content-space"></span>
+                    <p className="showmore-content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                    </p>
+                  </div>
+                </ShowMoreContent>
+              </div>  
+              {/* ShowMoreComponent content end */}       
+
+
+            </div>                             
+
 
           </div>
         </div>
