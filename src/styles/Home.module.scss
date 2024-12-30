@@ -646,7 +646,6 @@ text-align: center;
   z-index: 1;
 }
 
-
 .community_head {
   @include mphone {
     margin: .75rem 0 1.5rem;
@@ -962,6 +961,18 @@ text-align: center;
     color: $light_text_color;
 }
 
+.quick_faqs {
+  @include tablet {
+    margin: 1rem 0 1.5rem;
+  }
+  @include desktop {
+    margin: 1rem 0 1.5rem;
+  }
+  @include ldesktop {
+    margin: 1rem 0 1.5rem;
+  }
+  margin: .75rem 0 1rem;
+}
 
 
 

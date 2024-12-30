@@ -88,10 +88,10 @@ const Home = ( {posts}) => {
               <div className={styles.marquee_wrapper1}>
                 <div className={styles.marquee1}>
                   <p>
-                  <Link href='#whatisgolpp' className={styles.link_community}>What is GOLPP?</Link> <Link href='#sideeffectsofsurgery' className={styles.link_community}>What are the side effects of surgery?</Link> <Link href='#causesoflaryngealparalysis' className={styles.link_community}>What causes laryngeal paralysis?</Link> <Link href='#surgerystentdifference'  className={styles.link_community}>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#typesofsurgery'  className={styles.link_community}>Are there other kinds of surgery besides tieback?</Link> <Link href='costofsurgery' className={styles.link_community}>How much does tieback surgery cost?</Link>&nbsp;
+                  <Link href='#whatisgolpp' className={styles.link_community}>What is GOLPP?</Link> <Link href='#sideeffectsofsurgery' className={styles.link_community}>What are the side effects of surgery?</Link> <Link href='#causesoflaryngealparalysis' className={styles.link_community}>What causes laryngeal paralysis?</Link> <Link href='#surgerystentdifference'  className={styles.link_community}>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#typesofsurgery'  className={styles.link_community}>Are there other kinds of surgery besides tieback?</Link> <Link href='#costofsurgery' className={styles.link_community}>How much does tieback surgery cost?</Link>&nbsp;
                   </p>
                   <p>
-                  <Link href='#whatisgolpp' className={styles.link_community}>What is GOLPP?</Link> <Link href='#sideeffectsofsurgery' className={styles.link_community}>What are the side effects of surgery?</Link> <Link href='#causesoflaryngealparalysis' className={styles.link_community}>What causes laryngeal paralysis?</Link> <Link href='#surgerystentdifference'  className={styles.link_community}>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#typesofsurgery'  className={styles.link_community}>Are there other kinds of surgery besides tieback?</Link> <Link href='costofsurgery' className={styles.link_community}>How much does tieback surgery cost?</Link>&nbsp;
+                  <Link href='#whatisgolpp' className={styles.link_community}>What is GOLPP?</Link> <Link href='#sideeffectsofsurgery' className={styles.link_community}>What are the side effects of surgery?</Link> <Link href='#causesoflaryngealparalysis' className={styles.link_community}>What causes laryngeal paralysis?</Link> <Link href='#surgerystentdifference'  className={styles.link_community}>What&lsquo;s the difference between surgery and stent?</Link> <Link href='#typesofsurgery'  className={styles.link_community}>Are there other kinds of surgery besides tieback?</Link> <Link href='#costofsurgery' className={styles.link_community}>How much does tieback surgery cost?</Link>&nbsp;
                   </p>
                 </div>
               </div>
@@ -100,19 +100,19 @@ const Home = ( {posts}) => {
                 <div className={styles.marquee2}>
                     <p>
                       <Link href='#dangersofaspirationpneumonia' className={styles.community_link}>How dangerous is aspiration pneumonia?&nbsp;</Link>
-                      <Link href='lpgroupsonfacebook' className={styles.community_link}>Are there Lar Par groups on Facebook?&nbsp;</Link>
-                      <Link href='whichbreedsdoeslpaffect' className={styles.community_link}>Which breeds does Lar Par affect?&nbsp;</Link>
-                      <Link href='uptodateinfo' className={styles.community_link}>Where can I get up-to-date information about Lar Par?&nbsp;</Link>
-                      <Link href='specialistdiagnosis' className={styles.community_link}>Why do I need a specialist diagnosis?&nbsp;</Link>&nbsp;
-                      <Link href='breathingemergency' className={styles.community_link}>What do I do in a breathing emergency?</Link>&nbsp;
+                      <Link href='#lpgroupsonfacebook' className={styles.community_link}>Are there Lar Par groups on Facebook?&nbsp;</Link>
+                      <Link href='#whichbreedsdoeslpaffect' className={styles.community_link}>Which breeds does Lar Par affect?&nbsp;</Link>
+                      <Link href='#uptodateinfo' className={styles.community_link}>Where can I get up-to-date information about Lar Par?&nbsp;</Link>
+                      <Link href='#specialistdiagnosis' className={styles.community_link}>Why do I need a specialist diagnosis?&nbsp;</Link>&nbsp;
+                      <Link href='#breathingemergency' className={styles.community_link}>What do I do in a breathing emergency?</Link>&nbsp;
                     </p>
                     <p>
                       <Link href='#dangersofaspirationpneumonia' className={styles.community_link}>How dangerous is aspiration pneumonia? </Link>
-                      <Link href='lpgroupsonfacebook' className={styles.community_link}>Are there Lar Par groups on Facebook? </Link>
-                      <Link href='whichbreedsdoeslpaffect' className={styles.community_link}>Which breeds does Lar Par affect?</Link>
-                      <Link href='uptodateinfo' className={styles.community_link}>Where can I get up-to-date information about Lar Par?</Link>
-                      <Link href='specialistdiagnosis' className={styles.community_link}>Why do I need a specialist diagnosis?</Link>&nbsp;
-                      <Link href='breathingemergency' className={styles.community_link}>What do I do in a breathing emergency?</Link>
+                      <Link href='#lpgroupsonfacebook' className={styles.community_link}>Are there Lar Par groups on Facebook? </Link>
+                      <Link href='#whichbreedsdoeslpaffect' className={styles.community_link}>Which breeds does Lar Par affect?</Link>
+                      <Link href='#uptodateinfo' className={styles.community_link}>Where can I get up-to-date information about Lar Par?</Link>
+                      <Link href='#specialistdiagnosis' className={styles.community_link}>Why do I need a specialist diagnosis?</Link>&nbsp;
+                      <Link href='#breathingemergency' className={styles.community_link}>What do I do in a breathing emergency?</Link>
                     </p>
                 </div>
               </div>
@@ -133,7 +133,7 @@ const Home = ( {posts}) => {
                     <Link href='#prolonginglife' className={styles.community_link}>Is prolonging life the best thing for my Lar Par dog?</Link>&nbsp;
                     <Link href='#veterinarianadvice' className={styles.community_link}>Why does my primary veterinarian advise against surgery?</Link>&nbsp;
                     <Link href='#stentmortality' className={styles.community_link}>Has any dog every died from a stent implant?</Link>&nbsp;
-                    <Link href='#lpcure' className={styles.community_link}>Is there a cure for Lar Par?</Link>
+                    <Link href='#lpcure' className={styles.community_link}>Is there a cure for Lar Par?</Link>&nbsp;
                     <Link href='#stentavailablity' className={styles.community_link}>Is the stent treatment available where I live?</Link>
                          &nbsp;
                     </p>
@@ -146,7 +146,7 @@ const Home = ( {posts}) => {
                     <Link href='#feedinglpdogs' className={styles.community_link}>What should I feed my Lar Par dog?</Link>&nbsp;
                     <Link href='#whatisbveap' className={styles.community_link}>What is BVEAP surgery?</Link>&nbsp;
                     <Link href='#lpprogression' className={styles.community_link}>How long before my dog&lsquo;s Lar Par gets really bad?</Link>&nbsp;
-                    <Link href='#whatisstridor' className={styles.community_link}>What&lsquo;s stridor?</Link>
+                    <Link href='#whatisstridor' className={styles.community_link}>What&lsquo;s stridor?</Link>&nbsp;
                     <Link href='#areallsurgeonsequal' className={styles.community_link}>Are all surgeons equally skilled at tieback surgery?</Link>&nbsp;
                     <Link href='#apwithoutsurgery' className={styles.community_link}>Can Lar Par dogs get aspiration pneumonia without surgery?</Link>&nbsp;
                        &nbsp; 
@@ -155,7 +155,7 @@ const Home = ( {posts}) => {
                     <Link href='#feedinglpdogs' className={styles.community_link}>What should I feed my Lar Par dog?</Link>&nbsp;
                     <Link href='#whatisbveap' className={styles.community_link}>What is BVEAP surgery?</Link>&nbsp;
                     <Link href='#lpprogression' className={styles.community_link}>How long before my dog&lsquo;s Lar Par gets really bad?</Link>&nbsp;
-                    <Link href='#whatisstridor' className={styles.community_link}>What&lsquo;s stridor?</Link>
+                    <Link href='#whatisstridor' className={styles.community_link}>What&lsquo;s stridor?</Link>&nbsp;
                     <Link href='#areallsurgeonsequal' className={styles.community_link}>Are all surgeons equally skilled at tieback surgery?</Link>&nbsp;
                     <Link href='#apwithoutsurgery' className={styles.community_link}>Can Lar Par dogs get aspiration pneumonia without surgery?</Link>&nbsp;
                        &nbsp; 
@@ -351,7 +351,7 @@ const Home = ( {posts}) => {
               <div className={styles.content_text}>
                 <ShowMoreContent
                   title='What causes laryngeal paralysis?'
-                  anchor='sideeffectsofsurgery'
+                  anchor='causesoflaryngealparalysis'
                   index={3}
                   activeIndex={activeIndex}
                   setActiveIndex={setActiveIndex}
@@ -731,28 +731,9 @@ const Home = ( {posts}) => {
               {/* ShowMoreComponent content start */}
               <div className={styles.content_text}>
                 <ShowMoreContent
-                  title='What is stridor?'
-                  anchor='whatisstridor'
-                  index={23}
-                  activeIndex={activeIndex}
-                  setActiveIndex={setActiveIndex}
-                  >
-                  <div className="showmore-content-text">
-                    <span className="showmore-content-space"></span>
-                    <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
-                    </p>
-                  </div>
-                </ShowMoreContent>
-              </div>  
-              {/* ShowMoreComponent content end */}
-
-              {/* ShowMoreComponent content start */}
-              <div className={styles.content_text}>
-                <ShowMoreContent
                   title='Are all surgeons equally skilled at tieback surgery?'
                   anchor='areallsurgeonsequal'
-                  index={24}
+                  index={23}
                   activeIndex={activeIndex}
                   setActiveIndex={setActiveIndex}
                   >
@@ -771,7 +752,7 @@ const Home = ( {posts}) => {
                 <ShowMoreContent
                   title='Can Lar Par dogs get aspiration pneumonia without surgery?'
                   anchor='apwithoutsurgery'
-                  index={25}
+                  index={24}
                   activeIndex={activeIndex}
                   setActiveIndex={setActiveIndex}
                   >
@@ -792,7 +773,7 @@ const Home = ( {posts}) => {
                 <ShowMoreContent
                   title='Are there supplements that can help my Lar Par dog?'
                   anchor='lpsupplements'
-                  index={26}
+                  index={25}
                   activeIndex={activeIndex}
                   setActiveIndex={setActiveIndex}
                   >
@@ -811,7 +792,7 @@ const Home = ( {posts}) => {
                 <ShowMoreContent
                   title='How can I be sure my dog has Lar Par?'
                   anchor='howtobesure'
-                  index={27}
+                  index={26}
                   activeIndex={activeIndex}
                   setActiveIndex={setActiveIndex}
                   >
@@ -831,7 +812,7 @@ const Home = ( {posts}) => {
                 <ShowMoreContent
                   title='Can accupuncture help with Lar Par?'
                   anchor='lpaccupuncture'
-                  index={28}
+                  index={27}
                   activeIndex={activeIndex}
                   setActiveIndex={setActiveIndex}
                   >
@@ -850,7 +831,7 @@ const Home = ( {posts}) => {
                 <ShowMoreContent
                   title='How much does the specialist diagnosis cost?'
                   anchor='diagnosiscost'
-                  index={29}
+                  index={28}
                   activeIndex={activeIndex}
                   setActiveIndex={setActiveIndex}
                   >
@@ -869,7 +850,7 @@ const Home = ( {posts}) => {
                 <ShowMoreContent
                   title='Can a regular X-ray tell if my dog has Lar Par?'
                   anchor='doesxrayshowlp'
-                  index={30}
+                  index={29}
                   activeIndex={activeIndex}
                   setActiveIndex={setActiveIndex}
                   >
@@ -883,11 +864,19 @@ const Home = ( {posts}) => {
               </div>  
               {/* ShowMoreComponent content end */}       
 
+            </div> 
 
-            </div>                             
+
+            <p className={styles.content_text}>
+              Laryngeal paralysis and GOLPP in dogs is a complex topic, and you&lsquo;re bound to encounter people with strong opinions that aren&lsquo;t always based on accurate information. The purpose of this site is to collect current, verifiable information on laryngeal paralysis and GOLPP into one place. We&lsquo;ve done the research and can provide references to published sources for everything you read here. If you believe information on this site is inaccurate, please contact us via our <Link href='/contact' className='link-dark'>Contact page</Link> or <Link href='/social' className='link-dark'>social media</Link>. 
+            </p>
+            <p className={styles.content_text}>
+              &nbsp;
+            </p>    
 
 
           </div>
+ 
         </div>
       </section>
 
