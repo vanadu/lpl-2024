@@ -51,7 +51,7 @@ const Treatment = () => {
       <section className={styles.section}>
         <div className={styles.section_content}>
             <div className={styles.topic_subhead}>
-              <h2 className={styles.topic_subhead_title}>Veterinary Treatment vs.<span className="mobile-show"><br/></span> Managing Lar Par Symptoms</h2>
+              <h2 className={styles.topic_subhead_title}>Veterinary Treatment vs.<span className="mobile-show-inline"><br/></span> Managing Lar Par Symptoms</h2>
             </div>
         </div>
       </section>
@@ -110,7 +110,7 @@ const Treatment = () => {
                     <div className={styles.two_columns_left}><FaPaw className={styles.content_list_item_svg}/><span className='bold'>Laryngeal Stent</span> &mdash; stenting provides a non&#8209;surgical, minimally&#8209;invasive veterinary-medical treatment option for your LarPar dog. </div >
                     <div className={styles.goto_links}>
                       <Link href="/patients/treatment/stent" className={styles.goto_links_link}>
-                      Learn about stent treatment&nbsp;<span className='mobile-hide-inline'>options</span>&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} />
+                      Stent treatment&nbsp;<span className='mobile-hide-inline'>options</span>&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} />
                       </Link>
                     </div>
                   {/* </div> */}
@@ -120,7 +120,7 @@ const Treatment = () => {
                 <div className={styles.two_columns_left}><FaPaw className={styles.content_list_item_svg}/><span className='bold'>Surgery</span> &mdash; In 2023, surgery is the most widely-available veterinary-medical treatment&nbsp;option, but it&rsquo;s also the most expensive. </div >
                 <div className={styles.goto_links}>
                   <Link href="/patients/treatment/surgery" className={styles.goto_links_link}>
-                  Learn about surgery treatment&nbsp;<span className='mobile-hide-inline'>options</span>&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} />
+                    Surgery treatment&nbsp;<span className='mobile-hide-inline'>options</span>&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} />
                   </Link>
                 </div>
               </li>
@@ -129,7 +129,7 @@ const Treatment = () => {
                 <div className={styles.two_columns_left}><FaPaw className={styles.content_list_item_svg}/><span className='bold'>Alternatives</span> &mdash;Laryngeal paralysis can&rsquo;t be effectively treated without surgery or a stent implant, but some medications and alternative approaches may help mitigate and manage some of the more severe symptoms of laryngeal paralysis.</div >
                 <div className={styles.goto_links}>
                   <Link href="/patients/treatment/managing" className={styles.goto_links_link}>
-                  Learn about managing <span className='nowrap'>laryngeal&nbsp;paralysis&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} /></span>
+                  Managing <span className='nowrap'>laryngeal&nbsp;paralysis&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} /></span>
                   </Link>
                 </div>
               </li>

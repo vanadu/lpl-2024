@@ -397,7 +397,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      There are several surgical techniques for canine laryngeal paralysis. Some of the ways they differ are: 1) whether they remove tissue or surgically modify existing tissue, 2) the surgical skill and experience required for the technique, 3) whether the technique requires an artificial prothesis and 4) whether there is science-based research to evaluate the outcomes. Since the 1990&lsquo;s, unilateral arytenoid laterialization (&lsquo;tieback&rsquo;) surgery has been the preferred surgical technique worldwide. In the 2020&lsquo;s, stents have gained increased attention as an alternative to invasive LP surgery. For more information, visit the <Link href='http://localhost:3000/patients/treatment' className='link-dark' rel="noopener noreferrer" target="_blank"></Link>Treatments page in the <Link href='#' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>.
                     </p>
                   </div>
                 </ShowMoreContent>
