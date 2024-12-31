@@ -397,7 +397,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      There are several surgical techniques for canine laryngeal paralysis. Some of the ways they differ are: 1) whether they remove tissue or surgically modify existing tissue, 2) the surgical skill and experience required for the technique, 3) whether the technique requires an artificial prothesis and 4) whether there is science-based research to evaluate the outcomes. Since the 1990&lsquo;s, unilateral arytenoid laterialization (&lsquo;tieback&rsquo;) surgery has been the preferred surgical technique worldwide. In the 2020&lsquo;s, stents have gained increased attention as an alternative to invasive LP surgery. For more information, visit the <Link href='http://localhost:3000/patients/treatment' className='link-dark' rel="noopener noreferrer" target="_blank"></Link>Treatments page in the <Link href='#' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>.
+                      There are several surgical techniques for canine laryngeal paralysis. Some of the ways they differ are: 1) whether they remove tissue or surgically modify existing tissue, 2) the surgical skill and experience required for the technique, 3) whether the technique requires an artificial prothesis and 4) whether there is science-based research to evaluate the outcomes. Since the 1990&lsquo;s, unilateral arytenoid laterialization (&lsquo;tieback&rsquo;) surgery has been the preferred surgical technique worldwide. In the 2020&lsquo;s, stents have gained increased attention as an alternative to invasive LP surgery. For more information, visit the <Link href='http://localhost:3000/patients/treatment' className='link-dark' rel="noopener noreferrer" target="_blank">Treatments</Link> page in the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -416,7 +416,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      The cost of tieback surgery varies greatly depending on where you live. In the continental United States cost ranges from about $2500 in some parts of the Midwest to over $8000 in major metropolitan areas, with the national average at about $4500. In the UK and EU, costs are considerably lower, generally in the $2200 range. These estimates are based on pre-2024 sources and are likely to be significantly higher in 2025 due to inflation. This doesn&lsquo;t include the cost of the diagnosis or potential post-operative complications. For more information, visit <Link href='/patients/aboutlarpar/cost' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment Costs</Link> page in the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -436,7 +436,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                     Aspiration pneumonia is a serious condition that can occur when contaminants enter the lungs and cause an infection. Laryngeal paralysis increases the risk of aspiration pneumonia because a paralyzed larynx cannot open and close as it should to protect the lungs from contaminants during inhalation. While AP is possible with a fully paralyzed larynx, the risk increases considerably after tieback surgery or a stent implant because the size of the always-open artificial aperture is much greater than the small aperture created by the paralyzed larynx. Aspiration pneumonia can usually be treated with antibiotics but if not caught in time it can be life-threatening. For more information, visit the <Link href='/patients/aboutlarpar' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Crash Course</Link> in the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -455,7 +455,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      There are a number of Facebook groups focusing on laryngeal paralysis, most of which are closed (i.e., private) with a perspective that is enforced by the group&lsquo;s administrators. For information about open (i.e., public) groups with a free-speech policy that allows users to share experiences with naturopathic alternatives and stent implants, visit the <Link href='/social' className='link-dark' rel="noopener noreferrer" target="_blank">Community</Link> page. 
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -474,7 +474,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      Laryngeal paralysis most frequently affects large and giant breeds like Newfoundlands, Labrador and Golden Retrievers, Greyhounds, German Shepherds, Brittany Spaniels and other large-breed and mixed-breed dogs. Cats can also be affected although it is much less common. Some breeds such as Huskies are genetically predisposed to laryngeal paralysis. For more information, visit the <Link href='/patients/aboutlarpar' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Crash Course</Link> in the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -493,7 +493,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      There are many websites that provide information about laryngeal paralysis in dogs, but internet searches with search engines such as Google and inquiries with AI engines such as ChatGPT will generally not lead you to current, up-to-date information. Veterinary websites tend to focus only on surgical treatment options that are taught in veterinary teaching institutions to the exclusion of all other topics, such as acupuncture or stent implants. Websites that feature information on laryngeal paralysis are generally not updated with information past 2020. While these websites can provide valuable information about the condition of canine laryngeal paralysis, the best source for current information is this website or our network of Facebook groups. For more information, visit the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link> and the <Link href='/social' className='link-dark' rel="noopener noreferrer" target="_blank">Community</Link> page.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -513,7 +513,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      Laryngeal paralysis is a complex condition whose symptoms overlap with other conditions. A definitive diagnosis requires specialized knowledge of the canine airway, specialized technology, and experience. Laryngeal paralysis is often misdiagnosed by primary veterinarians and a misdiagnosis can result in a serious health crisis for your dog. In late-stage LP, breathing emergencies and even suffocation events can happen with very little warning. If you suspect that your dog has laryngeal paralysis, the best course of action is to get a definitive diagnosis by a board-certified soft-tissue specialist or surgeon. In the US, you can find a board-certified surgeon on the website of the <Link href='https://acvs.org' className='link-dark' rel="noopener noreferrer" target="_blank">American College of Veterinary Surgeons</Link>. Outside the US, contact your primary veterinarian for a referral. For more information, visit the <Link href='/patients/aboutlarpar/cost' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment Costs</Link> page. You can find even more detailed information on <Link href='https://www.facebook.com/groups/1737118503207596/permalink/3705841026335324' className='link-dark' rel="noopener noreferrer" target="_blank">this Facebook group post</Link>. 
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -533,7 +533,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                    A breathing crisis caused by laryngeal paralysis is a terrifying and traumatic experience, both for you and your dog. Most often it occurs when the paralyzed, flaccid laryngeal cartilages are sucked inwards when a dog tries to pull more air through the paralyzed larynx than the constricted aperture can pass. When this occurs, the airway is completely blocked, and a <Link href='https://vcahospitals.com/know-your-pet/cyanosis-in-dogs' className='link-dark' rel="noopener noreferrer" target="_blank">cyanosis</Link> or suffocation event is imminent. When this happens, you must 1) reduce your dog&lsquo;s body temperature through external cooling, i.e., cool packs, cold water, or a cool, temperature-controlled environment 2) calm your dog, ideally with sedation and 3) find a way to enough oxygen to the dog to sustain life until the cartilages return to their original state and the episode passes. Your best course of action might be to find an emergency vet who will handle the crisis professionally, possibly with intubation. But once a breathing crisis has occurred, it is almost certain to happen again without treatment with surgery or stent, and if that isn&lsquo;t an option for you, you must be prepared for a recurrence. <Link href='https://www.facebook.com/groups/1737118503207596/permalink/3703753429877417' className='link-dark' rel="noopener noreferrer" target="_blank">This Facebook group post</Link> may give you an idea of what to expect in a breathing crisis, but your best bet is to speak to your veterinarian about your dog&lsquo;s quality of life with late-stage laryngeal paralysis.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -552,7 +552,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      When dogs get excited, they 1) breathe heavier and pant harder 2) become more physically active, consuming oxygen in the process and 3) often try to vocalize or bark. These behaviors are bad for Lar Par dogs because the heavy breathing forces more air through the constricted paralyzed larynx, the heightened oxygen consumption makes them breathe even harder to compensate, and barking agitates the already dysfunctional larynx. In a dog with bilateral or end-stage laryngeal paralysis, being anxious or excitable is almost certain to result in a breathing emergency or potentially life-threatening breathing crisis. If your Lar Par dog has an anxious or excitable nature, you best course of action is to talk to your primary vet about medications that can moderate this behavior, get a referral to a surgeon or stent provider, or have the very difficult discussion about your beloved companion&lsquo;s prospects for quality of life moving forward. The Lar Par community is a good place to get support and information from people whose lives have been touched by canine laryngeal paralysis. For more information, visit the <Link href='/social' className='link-dark' rel="noopener noreferrer" target="_blank">Community</Link> page.
                     </p>
                   </div>
                 </ShowMoreContent>
