@@ -241,7 +241,7 @@ const Home = ( {posts}) => {
             </p>
             <h2 className={styles.main_subhead}>The Non-Surgical Alternative</h2>
             <p className={styles.content_text}> 
-              You may have heard that the only veterinary procedure to treat dogs with <Link href='https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/laryngeal-paralysis' className='link'>laryngeal paralysis (Lar Par)</Link> or <Link href='https://cvm.msu.edu/scs/research-initiatives/golpp/living-with-golpp' className='link'>GOLPP (geriatric-onset laryngeal paralysis and polyneuropathy) </Link> is <span className='bold italic'>expensive surgery with a risk of complications</span>. 
+              You may have heard that the only veterinary procedure to treat dogs with <a href="https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/laryngeal-paralysis" className="link-dark" target="_blank" rel="noreferrer noopener">GOLPP (geriatric-onset laryngeal paralysis and polyneuropathy)</a> is <span className='bold italic'>expensive surgery with a risk of complications</span>. 
             </p> 
 
             <p className={styles.content_text}> 
@@ -513,7 +513,8 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Laryngeal paralysis is a complex condition whose symptoms overlap with other conditions. A definitive diagnosis requires specialized knowledge of the canine airway, specialized technology, and experience. Laryngeal paralysis is often misdiagnosed by primary veterinarians and a misdiagnosis can result in a serious health crisis for your dog. In late-stage LP, breathing emergencies and even suffocation events can happen with very little warning. If you suspect that your dog has laryngeal paralysis, the best course of action is to get a definitive diagnosis by a board-certified soft-tissue specialist or surgeon. In the US, you can find a board-certified surgeon on the website of the <Link href='https://acvs.org' className='link-dark' rel="noopener noreferrer" target="_blank">American College of Veterinary Surgeons</Link>. Outside the US, contact your primary veterinarian for a referral. For more information, visit the <Link href='/patients/aboutlarpar/cost' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment Costs</Link> page. You can find even more detailed information on <Link href='https://www.facebook.com/groups/1737118503207596/permalink/3705841026335324' className='link-dark' rel="noopener noreferrer" target="_blank">this Facebook group post</Link>. 
+                      Laryngeal paralysis is a complex condition whose symptoms overlap with other conditions. A definitive diagnosis requires specialized knowledge of the canine airway, specialized technology, and experience. Laryngeal paralysis is often misdiagnosed by primary veterinarians and a misdiagnosis can result in a serious health crisis for your dog. In late-stage LP, breathing emergencies and even suffocation events can happen with very little warning. If you suspect that your dog has laryngeal paralysis, the best course of action is to get a definitive diagnosis by a board-certified soft-tissue specialist or surgeon. In the US, you can find a board-certified surgeon on the website of the <a href="https://acvs.org" className="link-dark" target="_blank" rel="noreferrer noopener">American College of Veterinary Surgeons</a>. Outside the US, contact your primary veterinarian for a referral. For more information, visit the <Link href='/patients/aboutlarpar/cost' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment Costs</Link> page. You can find even more detailed information on <a href="https://www.facebook.com/groups/1737118503207596/permalink/3705841026335324" className="link-dark" target="_blank" rel="noreferrer noopener">this Facebook group post</a>
+                      
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -533,7 +534,8 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                    A breathing crisis caused by laryngeal paralysis is a terrifying and traumatic experience, both for you and your dog. Most often it occurs when the paralyzed, flaccid laryngeal cartilages are sucked inwards when a dog tries to pull more air through the paralyzed larynx than the constricted aperture can pass. When this occurs, the airway is completely blocked, and a <Link href='https://vcahospitals.com/know-your-pet/cyanosis-in-dogs' className='link-dark' rel="noopener noreferrer" target="_blank">cyanosis</Link> or suffocation event is imminent. When this happens, you must 1) reduce your dog&lsquo;s body temperature through external cooling, i.e., cool packs, cold water, or a cool, temperature-controlled environment 2) calm your dog, ideally with sedation and 3) find a way to enough oxygen to the dog to sustain life until the cartilages return to their original state and the episode passes. Your best course of action might be to find an emergency vet who will handle the crisis professionally, possibly with intubation. But once a breathing crisis has occurred, it is almost certain to happen again without treatment with surgery or stent, and if that isn&lsquo;t an option for you, you must be prepared for a recurrence. <Link href='https://www.facebook.com/groups/1737118503207596/permalink/3703753429877417' className='link-dark' rel="noopener noreferrer" target="_blank">This Facebook group post</Link> may give you an idea of what to expect in a breathing crisis, but your best bet is to speak to your veterinarian about your dog&lsquo;s quality of life with late-stage laryngeal paralysis.
+                    A breathing crisis caused by laryngeal paralysis is a terrifying and traumatic experience, both for you and your dog. Most often it occurs when the paralyzed, flaccid laryngeal cartilages are sucked inwards when a dog tries to pull more air through the paralyzed larynx than the constricted aperture can pass. When this occurs, the airway is completely blocked, and a 
+                    <a href="https://vcahospitals.com/know-your-pet/cyanosis-in-dogs" className="link-dark" target="_blank" rel="noreferrer noopener">cyanosis</a> or suffocation event is imminent. When this happens, you must 1) reduce your dog&lsquo;s body temperature through external cooling, i.e., cool packs, cold water, or a cool, temperature-controlled environment 2) calm your dog, ideally with sedation and 3) find a way to enough oxygen to the dog to sustain life until the cartilages return to their original state and the episode passes. Your best course of action might be to find an emergency vet who will handle the crisis professionally, possibly with intubation. But once a breathing crisis has occurred, it is almost certain to happen again without treatment with surgery or stent, and if that isn&lsquo;t an option for you, you must be prepared for a recurrence. <a href="https://www.facebook.com/groups/1737118503207596/permalink/3703753429877417" className="link-dark" target="_blank" rel="noreferrer noopener">This Facebook group post</a> may give you an idea of what to expect in a breathing crisis, but your best bet is to speak to your veterinarian about your dog&lsquo;s quality of life with late-stage laryngeal paralysis.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -571,7 +573,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      This is the most difficult question a dog lover can face and only you can answer it. But for that, you need accurate, complete information. Your decision will depend not only on the prospects for long-term qualify of life of your beloved companion, but also on your personal circumstances. Laryngeal paralysis/GOLPP is a serious illness and all the choices are lesser-evil ones. If the prospects for long-term qualify of life are poor, letting your beloved companion go humanely in an loving environment may be in their best interest. If you are grappling with the question of your Lar Par dog&lsquo;s future, you might benefit from the support and shared experience that <a href="#" className="link-dark" target="_blank" rel="noreferrer noopener">Lar Par community on social media</a> can provide.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -589,7 +591,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      It is not uncommon for a primary veterinarians to recommend humane euthansia for Lar Par dogs. This is often based on the age and overall health of the dog and whether there are prexisting conditions that may result in post-surgery complications, but also on the veterinarian&lsquo;s personal experience. Primary veterinarians are the ones who see the aftermath of treatment, and are often tasked with treating long-term complications and euthanizing animals when surgical treatment is unsuccessful. If you believe your primary veterinarian&lsquo;s recommendation does not reflect your Lar Par dog&lsquo;s actual condition, your best path forward is to consult with a board-certified surgeon for a specialist diagnosis and second opinion.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -607,7 +609,9 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      As of early 2025 we are not aware of any dog that did not survive the 10-minute silicone stent implant procedure. Like any veterinary-medical treatment, the stent implant results in increased risk of aspiration pneumonia as well as other treatment-related complications. However, the risks of long-term anesthesia and complications of invasive surgery do not apply to the stent implant. You can find the most up-do-date information about the stent alternative and follow current stent stories on <a href="https://www.facebook.com/groups/laryngealstentfordogs" className="link-dark" target="_blank" rel="noreferrer noopener">this stent-specific Facebook group</a>.
+                      
+                      <Link href='#' className='link-dark' rel="noopener noreferrer" target="_blank"></Link>.  
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -625,7 +629,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      There is no medicinal, homeopathic, pharmaceutical, or veterinary-medical cure for laryngeal paralysis or GOLPP. If anyone tells you otherwise, you are being misinformed. Laryngeal paralysis is a condition that causes the airway to be obstructed, and short of removing the obstruction with surgery or creating an artificial airway through the paralyzed larynx with a laryngeal stent, there is no treatment that will restore breathing. There are a variety of pharmaceuticals and naturopathic medicinals that may or may not have a positive effect for your dog, but is no cure and no cure on the horizon. For more information, visit the <Link href='/patients/treatment' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment Options</Link> page in the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -643,7 +647,8 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque placeat esse quisquam ex aliquid, recusandae illo, molestias iste molestiae mollitia assumenda neque quos dolore vel qui velit blanditiis dicta?
+                      Silicone stent implants are done in some clinics in the EU, specifically France, Spain, and Germany, and as of January 2025 there are two stent providers in the US. We hope there will be more in 2025 as the silicone stent treatemt enters mainstream veterinary practice. For more information, visit the <Link href='/patients/treatment/stent' className='link-dark' rel="noopener noreferrer" target="_blank">Stent</Link> page in the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link> and join the <a href="'https://www.facebook.com/groups/laryngealstentfordogs" className="link-dark" target="_blank" rel="noreferrer noopener">stent-specific Facebook group</a>.
+                      
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -664,7 +669,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      There is no consensus on this question, but in general most primary veterinarians and specialists recommend avoiding dry kibble because it sheds dust that can be inhaled, potentially causing aspiration pneumonia. Some vets go further, recommending that food be processed into a meatball shape that can be swallowed whole instead of chewed into smaller particles, thereby eliminating the potential for inhalation of food particles. Then, there is everything in-between &mdash; people who home-cook their dog&lsquo;s food and serve it in raised bowls in soups, stews, or mashes. The way to get a food recommendation is to reach out to the <Link href='/social' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par community on social media</Link>.   
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -683,7 +688,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      BVEAP stands for <span className='italic'>Bilateral Vocal Fold Excision &amp; Bilateral Arytenoidpexy</span > and is a surgical technique performed almost exclusively in the US by Dr. Ken Sadanaga at the VRC in Malvern, PA. This technique is significantly more challenging than conventional &lsquo;tieback&rsquo; (unilateral arytenoid lateralization), but also brings significant benefits. For more information, visit the <Link href='/patients/treatment/surgery/surgerytypes' className='link-dark' rel="noopener noreferrer" target="_blank">Surgery Types</Link> page in the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link> and the <a href="https://www.vrcmalvern.com/bilateral-vocal-fold-excision-mucosoplasty-bilateral-arytenoidpexy-bveap-approach-to-laryngeal-paralysis-in-dogs/" className="link-dark" target="_blank" rel="noreferrer noopener">BVEAP page on the VRC Malvern&lsquo;s website</a>.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -702,7 +707,8 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      Laryngeal paralysis/GOLPP is a progressive condition, and how fast it progresses is different for each individual dog and can&lsquo;t be determined in advance. Once paralysis begins on one side of the arytenoid cartilage, it can take weeks or months to become fully paralyzed, and paralysis on the other side can occur at the same time or in a different time frame that can take weeks or months. The entire process from initial signs of paralysis to end-stage can take months or years and it&lsquo;s not possible to predict how long it will take. That&lsquo;s why it&lsquo;s crucial to develop a game plan as soon as you suspect laryngeal paralysis is in your dog&lsquo;s future. For more information, visit the <Link href='/patients/aboutlarpar' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Crash Course</Link> in the <Link href='#' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>. 
+
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -721,7 +727,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      Stridor is the loud, raspy, scratchy breathing sound that is generated when air passes over semi-rigid tissue in the airway, causing it to vibrate. Stridor is the most noticeable symptom of laryngeal paralysis/GOLPP. Paralyzed laryngeal cartilage hangs in a flaccid state in a nearly closed position. As a result, the air passes much faster over them, causing them to vibrate with a high-pitched, scratchy sound. To hear what this sounds like, visit the <Link href='patients/aboutlarpar' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Crash Course</Link> page in the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link>, click the &lsquo;What does laryngeal paralysis in dogs sound like&lsquo; link, and listen to the video of Miss B&lsquo;s breathing with end-stage LP the day before her stent implant. End-stage laryngeal paralysis is a life-threatening condition so if your dog sounds like this, you should seek professional veterinary advice without delay.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -740,7 +746,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      Successful surgery depends not just on the surgeon, but also the anesthesiologist, the surgical team, and the facility, and not all these factors are the same for all veterinary hospitals. The experience of the surgeon and anesthesia protocols are some of the most important factors for a positive outcome. Unfortunately, there is no way for patients to evaluate these factors in advance. Board certification is a basic measure of skill and conformance to standards. Some, but not all, board certified surgeons are listed on the <a href="https://acvs.org" className="link-dark" target="_blank" rel="noreferrer noopener">American College of Veterinary Surgeons</a> website. In the UK, the <a href="https://www.rcvs.org.uk/home/" className="link-dark" target="_blank" rel="noreferrer noopener">Royal College of Veterinary Surgeons</a> keeps records of board-certification. In other countries, inquire with your primary veterinarian for information about board certification. For recommendations, the <Link href='/social' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par community on social media</Link> can be a great help. 
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -759,7 +765,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      Any dog can get aspiration pneumonia if unsterile water or contaminants enter the lungs. The opening/closing of the larynx provides a measure of defense against contaminants and if it is not closing properly when it should, the risk of contaminant getting through to the lungs increases. So the answer to that question is yes. BUT &mdash; and that&lsquo;s a big BUT &mdash; the risk of AP is proportional to the size of the always-open aperture because the greater the airflow, the greater the potential for contaminants to ride that air through the paralyzed larynx on down into the lungs. You may hear the admins of Facebook Lar Par groups claim that the AP risk is the same before and after tieback surgery. This is blatant, indefensible misinformation that calls into question these peope&lsquo;s competency to choose what information their group members can and can&lsquo;t see. On this point, it&lsquo;s better to listen to people who teach veterinary science, and <a href="https://www.google.com/search?client=firefox-b-1-d&q=is+the+risk+of+aspiration+pneumonia+greater+after+tieback+surgery" className="link-dark" target="_blank" rel="noreferrer noopener">all of them concur that aspiration risk increases significantly after tieback surgery</a>. 
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -780,7 +786,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      There is to our knowledge no science based evidence that any supplement has any effect on the symptoms of laryngeal paralysis or GOLPP. That doesn&lsquo;t mean that they do not have any effect, it just means that there is currently no published, peer-reviewed research showing that any supplement has benefited any Lar Par dog in any way. There are veterinarians that prescribe certain pharmaceuticals to help with Lar Par symptoms, even though there is no substantial research demonstrating their efficacy. There are also veterinarians that recommend certain supplements despite the lack of science-based evidence that they work. Each individual has to assess such claims for themselves. The universal principle applies here just as well as it does everywhere else: <span className='italic'>caveat emptor</span> &mdash; let the buyer beware.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -799,7 +805,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      There are classic symptoms of laryngeal paralysis/GOLPP to watch for. But many of these symptoms coincide with other conditions, and even experienced veterinarians sometimes misinterpret what they observe, leading to a misdiagnosis that can have serious ramifications for your Lar Par dog. The only way to definitively diagnose laryngeal paralysis/GOLPP in dogs is by laryngoscope performed by a qualified soft tissue specialist or veterinarian with extensive experience in conditions of the upper airway. The Lar Par exam requires the appropriate sedative in the appropriate amount. Incorrect sedative or dosage can influence the movement of the arachnoid cartilage, which often leads to false results. To get an idea of the complexity involved in the laryngeal paralysis diagnosis, read <a href="https://www.facebook.com/groups/1737118503207596/permalink/3705841026335324" className="link-dark" target="_blank" rel="noreferrer noopener">this post on the open Lar Par Facebook group</a>. For a definitive diagnosis, contact a board-certified soft tissue specialist or surgeon. 
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -819,7 +825,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      Acupuncture has been demonstrated to be effective in treating certain conditions, but there is currently no evidence showing that symptoms or causes laryngeal paralysis/GOLPP can be treated with acupuncture. That doesn&lsquo;t mean is not effective, it just means there’s no science-based evidence indicating that it is. Acupuncture treatment options for your dog should be discussed with a licensed veterinary acupuncturist.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -838,7 +844,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      The cost of a definitive diagnosis can vary depending on your location and the type of facility offering the diagnosis. Generally, specialized veterinary services are more expensive in major metropolitan areas. You may be able to reduce costs by having any required imaging done by your primary veterinarian and forwarded to the specialist. You may also choose to decline some of the tests recommended by the specialist if your only concern is whether the larynx itself is paralyzed. For more information, visit the <Link href='/patients/aboutlarpar/cost' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment Costs</Link> page of the <Link href='/allabout' className='link-dark' rel="noopener noreferrer" target="_blank">Lar Par Guide</Link> and talk to your specialist.
                     </p>
                   </div>
                 </ShowMoreContent>
@@ -857,7 +863,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem voluptas quas quaerat iste quos eligendi voluptatibus. Harum nulla nostrum quisquam! Numquam accusamus beatae minima laboriosam, voluptatibus nostrum a alias?
+                      No. A regular X-ray can neither accurately represent the condition of the laryngeal cartilages nor establish whether these cartilages exhibit any movement. X-rays only represent the position of a body at the instant the image is taken. Laryngeal paralysis involves not only the position of the laryngeal cartilages, but also to what extent they are still capable of the movement required to open and close the airway. While transnasal laryngoscopy and laryngeal ultrasound have been known to diagnose laryngeal paralysis, the preferred technique is transoral video endoscope, which has the benefit that the video record can be shared with the client. (Source -  CompendiumVet.com: Continuing Education for Veterinarians). For more information, contact your specialist.
                     </p>
                   </div>
                 </ShowMoreContent>
