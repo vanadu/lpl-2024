@@ -87,22 +87,13 @@
 
 
 .bricks_slider .bricks {
-  @include tablet {
-    animation: moveSlideshow 360s linear infinite;
-  }
-  @include desktop {
-    animation: desktopMoveSlideshow 240s linear infinite;
-  }
-  @include ldesktop {
-    animation: lDesktopMoveSlideshow 240s linear infinite;
-  }
   display: flex;
   justify-content: flex-start;
   position: absolute;
   height: auto;
   height: 100%;
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 240s linear infinite;
+  animation: moveSlideshow 120s linear infinite;
   // !VA 2024
   opacity: .3;
   // background: $secondary_color;
@@ -119,19 +110,7 @@
   100% { 
     // !VA Initial from the demo, see links in OneNote CSS notebook
     // transform: translateX(-66.6666%);  
-    transform: translateX(-80.9%);  
-  }
-}
-
-@keyframes desktopMoveSlideshow {
-  100% { 
-    transform: translateX(-52.2%);  
-  }
-}
-
-@keyframes lDesktopMoveSlideshow {
-  100% { 
-    transform: translateX(-31%);  
+    transform: translateX(-50%);  
   }
 }
 
