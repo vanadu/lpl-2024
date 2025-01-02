@@ -59,17 +59,19 @@ const Header = () => {
 
       <div className={styles.header_content}>
         <div className={styles.logo}>
-          <Image 
-            src={logo} 
-            width="0"
-            height="0"
-            sizes="100vw"
-            style={{ width: '100%', height: 'auto' }}
-            className={styles.logo_img} alt="LarParLife Logo" 
-          />
+          <Link href='/' className='link-dark'>
+              <Image 
+              src={logo} 
+              width="0"
+              height="0"
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto' }}
+              className={styles.logo_img} alt="LarParLife Logo" 
+            />
+          </Link>
+
         </div>
           <div className={styles.nav_container}>
-
               <MainNav/>
               <IconBar />
           </div>

@@ -277,13 +277,13 @@ const Home = ( {posts}) => {
                 If you&rsquo;ve noticed a change in your dog&rsquo;s breathing recently and want to know more about it, go to the&nbsp;<Link href='/allabout' className='link'>Lar Par Guide</Link> to see all the available topics.
               </li>
               <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
-                Learn about 5 good reasons to love the stent procedure for canine laryngeal paralysis on the <Link href='/whystent' className='link'>Why Stent?</Link> page. 
+                Learn about 5 good reasons to love the silicone stent procedure for canine laryngeal paralysis on the <Link href='/whystent' className='link'>Why Stent?</Link> page. 
               </li>
               <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
                 To read the inspirational stories about the stent treatment for laryngeal paralysis in dogs, go to the  <Link href='/stories' className='link'>Stories</Link> pages.
               </li>
               <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
-                If you&rsquo;re a veterinarian seeking research info and procedural details about the laryngeal stent implant for laryngeal paralysis, visit the <Link href='/dvms' className='link'>Info for DVMs</Link> section.
+                If you&rsquo;re a veterinarian seeking research info and procedural details about the silicone laryngeal stent implant for canine laryngeal paralysis, visit the <Link href='/dvms' className='link'>Info for DVMs</Link> section.
               </li>
               <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
                 You can also find links to pertinent research and informational websites from respected institutions on the <Link href="/patients/links" className='link'>Research Links and More Info</Link> page. 

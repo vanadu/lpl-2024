@@ -81,6 +81,12 @@ const MainNav = ( ) => {
               Why Stent?
             </Link>
           </li>
+          <li className={[styles.nav_main_list_item, 'mobile-show-inline'].join(' ')}>
+            <Link href='/social'
+              onClick = {handleClick}
+              >Community
+            </Link>
+          </li>
           <li className={styles.nav_main_list_item}>
             <Link href='/stories'
               onClick = {handleClick}
