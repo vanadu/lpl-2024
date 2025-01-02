@@ -107,7 +107,7 @@ function WhyStent() {
                 {/* ShowMoreComponent content start */}
                 <div className={styles.content_text}>
                   <p className={styles.showmore_content_inline}>
-                    All invasive surgeries &mdash; human and veterinary&nbsp;&mdash; are <a href="#" className="link-dark" target="_blank" rel="noreferrer noopener">associated with some risk</a>. The laryngeal stent implant is considered a <span className='semibold-italic'>minimally-invasive</span> procedure because there&rsquo;s no incision involved. For more information and sources, see the <Link href='/patients/treatment/surgery' className='link-dark'>Surgery</Link> page in the <Link href='/patients/treatment' className='link-dark'>Treatment</Link> section.&nbsp;
+                    All invasive surgeries &mdash; human and veterinary&nbsp;&mdash; are associated with some risk. The laryngeal stent implant is considered a <span className='semibold-italic'>minimally-invasive</span> procedure because there&rsquo;s no incision involved. For more information and sources, see the <Link href='/patients/treatment/surgery' className='link-dark'>Surgery</Link> page in the <Link href='/patients/treatment' className='link-dark'>Treatment</Link> section.&nbsp;
                   </p>
                   <ShowMoreContent
                     title='How risky is stent vs. surgery?'
