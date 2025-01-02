@@ -15,7 +15,8 @@ import path from 'path'
 import matter from 'gray-matter'
 // import PostListing from '../components/blog_components/PostListing'
 // !VA Icons
-import { FaArrowCircleRight } from 'react-icons/fa'
+import { FaArrowCircleRight, FaPaw } from 'react-icons/fa'
+
 
 import JoinUsIcon from '../../public/img-lpl-community.png'
 import MissBHome from '../../public/img-miss-b-home.jpg'
@@ -203,7 +204,7 @@ const Home = ( {posts}) => {
                 Your Lar Par decisions depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining our growing network of Facebook groups worldwide</Link>. 
                 </p>
                 <p className={styles.content_text}>
-                  You can click on any question in the scrolling marquee text above to go straight to the <Link href='#quickfaqs' className={styles.community_link}>Laryngeal Paralysis/GOLPP Quick FAQs</Link> at the bottom of this page.
+                  You can click on any question in the scrolling marquee text above to go straight to the <a href='#quickfaqs' className={styles.community_link}>Laryngeal Paralysis/GOLPP Quick FAQs</a> at the bottom of this page.
                 </p>
               </div>
               
@@ -267,33 +268,34 @@ const Home = ( {posts}) => {
             <h2 className={styles.main_subhead}>
               Where To Go From Here
             </h2>
+
+            <ul className={styles.content_list_no_bullet}>
+              <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
+                The <a href='#quickfaqs' className='link-dark'>Laryngeal Paralysis/GOLPP Quick FAQs</a> at the bottom of this page provide quick answers for many of the questions people ask when they first learn about laryngeal paralysis and GOLPP in dogs.
+              </li>
+              <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
+                If you&rsquo;ve noticed a change in your dog&rsquo;s breathing recently and want to know more about it, go to the&nbsp;<Link href='/allabout' className='link'>Lar Par Guide</Link> to see all the available topics.
+              </li>
+              <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
+                Learn about 5 good reasons to love the stent procedure for canine laryngeal paralysis on the <Link href='/whystent' className='link'>Why Stent?</Link> page. 
+              </li>
+              <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
+                To read the inspirational stories about the stent treatment for laryngeal paralysis in dogs, go to the  <Link href='/stories' className='link'>Stories</Link> pages.
+              </li>
+              <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
+                If you&rsquo;re a veterinarian seeking research info and procedural details about the laryngeal stent implant for laryngeal paralysis, visit the <Link href='/dvms' className='link'>Info for DVMs</Link> section.
+              </li>
+              <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
+                You can also find links to pertinent research and informational websites from respected institutions on the <Link href="/patients/links" className='link'>Research Links and More Info</Link> page. 
+              </li>
+              <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
+                In the <Link href="/blog" className='link'>News</Link> you can explore a dog lover&lsquo;s perspective on Lar Par-related topics.
+              </li>
+            </ul>
             <p className={styles.content_text}>
-              If you&rsquo;ve noticed a change in your dog&rsquo;s breathing recently and want to know more about it, go to the&nbsp;
-              <Link 
-                href='/allabout' 
-                className='link' 
-                // This is unused, I put it in here to log the click event
-                // onClick={ (e) => handleLink(e) }
-                >
-                Lar Par Guide
-                </Link> to see all the available topics.
-            </p>
-            <p className={styles.content_text}>
-              Learn about 5 good reasons to love the stent procedure for canine laryngeal paralysis on the <Link href='/whystent' className='link'>Why Stent?</Link> page. 
+              People want a more moderate treatment path for their beloved canine companions, a third way between surgery and deteriorating quality of life. It&rsquo;s time for this affordable, life-saving alternative to move into the mainstream of veterinary care.  
             </p>
 
-            <p className={styles.content_text}>
-              To read the inspirational stories about the stent treatment for laryngeal paralysis in dogs, go to the  <Link href='/stories' className='link'>Stories</Link> pages.
-            </p>
-            <p className={styles.content_text}>
-              If you&rsquo;re a DVM seeking research info and procedural details about the laryngeal stent implant for laryngeal paralysis, visit the <Link href='/dvms' className='link'>Info for DVMs</Link> section.
-            </p>
-            <p className={styles.content_text}>
-              You can also find links to pertinent research and informational websites from respected institution on the <Link href="/patients/links" className='link'>Research Links and More Info</Link> page. You can explore a dog lover&lsquo;s perspective on Lar Par-related topics in the <Link href="/blog" className='link'>News</Link> section. 
-            </p>
-            <p className={styles.content_text}>
-              Thank you for visiting LarParLife.com.  People want a more moderate treatment path for their beloved canine companions, a third way between surgery and deteriorating quality of life. It&rsquo;s time for this affordable, life-saving alternative to move into the mainstream of veterinary care.  
-            </p>
           </div>
         </div>
       </section>
@@ -301,9 +303,9 @@ const Home = ( {posts}) => {
       <section className={styles.section}>
         <div className={styles.section_content}>
           <div className={styles.main}>
-            <h2 href="" className={styles.main_head}>Laryngeal Paralysis in Dogs <span className='mobile-show-inline'><br /></span> Quick FAQs</h2>
+            <h2 id="quickfaqs" className={styles.main_head}>Laryngeal Paralysis in Dogs <span className='mobile-show-inline'><br /></span> Quick FAQs</h2>
             <p className={styles.content_text}>
-              Here are some frequently-asked questions about laryngeal paralysis/GOLPP in dogs. For more detailed answers, visit our <Link href='#' className='link-dark'>21st Century Guide to Laryngeal Paralysis </Link> or join the <Link href='#' className='link-dark'>Lar Par community on Facebook</Link>. 
+              Here are some frequently-asked questions about laryngeal paralysis/GOLPP in dogs. For more detailed answers, visit our <Link href='/allabout' className='link-dark'>21st Century Guide to Laryngeal Paralysis </Link> or join the <Link href='/social' className='link-dark'>Lar Par community on Facebook</Link>. 
             </p>
             <div className={styles.quick_faqs}>
               {/* MARQUEE TEXT SECTION 1 */}
@@ -863,7 +865,7 @@ const Home = ( {posts}) => {
                   <div className="showmore-content-text">
                     <span className="showmore-content-space"></span>
                     <p className="showmore-content-text">
-                      No. A regular X-ray can neither accurately represent the condition of the laryngeal cartilages nor establish whether these cartilages exhibit any movement. X-rays only represent the position of a body at the instant the image is taken. Laryngeal paralysis involves not only the position of the laryngeal cartilages, but also to what extent they are still capable of the movement required to open and close the airway. While transnasal laryngoscopy and laryngeal ultrasound have been known to diagnose laryngeal paralysis, the preferred technique is transoral video endoscope, which has the benefit that the video record can be shared with the client. (Source -  CompendiumVet.com: Continuing Education for Veterinarians). For more information, contact your specialist.
+                      No. X-rays only represent the position of a body at the instant the image is taken. Laryngeal paralysis involves not only the position of the laryngeal cartilages, but also to what extent they can still move to open and close the airway. While transnasal laryngoscopy and laryngeal ultrasound have been known to diagnose laryngeal paralysis, the preferred technique is transoral video endoscope, which has the benefit that the video record can be shared with the client. (Source -  CompendiumVet.com: Continuing Education for Veterinarians). For more information, contact your specialist.
                     </p>
                   </div>
                 </ShowMoreContent>

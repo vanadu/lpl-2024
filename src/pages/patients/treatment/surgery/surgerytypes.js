@@ -291,7 +291,7 @@ const SurgeryStudies = () => {
                   <h2 className={styles.content_head}>BVEAP</h2>
                   
                   <p className={styles.content_text}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime earum dolore nesciunt quos molestias voluptatum aut quo ipsum accusamus vitae ut in perferendis, dolorem doloribus odio rerum necessitatibus nisi.
+                    BVEAP stands for <span className='italic'>Bilateral Vocal Fold Excision &amp; Bilateral Arytenoidpexy</span > and is a surgical technique performed almost exclusively in the US by Dr. Ken Sadanaga at the VRC in Malvern, PA. This technique is significantly more challenging than conventional &lsquo;tieback&rsquo; (unilateral arytenoid lateralization), but also brings significant benefits. With BVEAP, the vocal folds are removed and the arytenoid cartilages are &lsquo;pexied&rsquo; (i.e., permanently affixed) to the thyroid cartilage. This creates an aperture through the paralyzed larynx that is both more symmetrical and more advantageously located lower in the larynx, thereby providing a better interface between the glottis and the epiglottis and reducing the risk of aspiration pneumonia. As a side benefit, dogs can also without significant risk of inhaling unsterile water. People travel from all over the country to Pennsylvania for this surgery technique. For more information, visit the <a href="https://www.vrcmalvern.com/bilateral-vocal-fold-excision-mucosoplasty-bilateral-arytenoidpexy-bveap-approach-to-laryngeal-paralysis-in-dogs/" className="link-dark" target="_blank" rel="noreferrer noopener">BVEAP page on the VRC Malvern&lsquo;s website</a>.
                   </p>
                 </div>
               </TabPanel>
