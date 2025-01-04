@@ -184,30 +184,29 @@ const Home = ( {posts}) => {
               </div>
             </div>
 
-
             <div className={styles.community_content}>
-              <h3 className={styles.community_cta}>
-                <Link href='/social' className={styles.community_cta}>Join the Community!</Link>
-              </h3>
-              <Link href='/social' className='link-dark'>
-                <Image 
-                  src={JoinUsIcon} 
-                  className={styles.community_icon} 
-                  alt="Join the Lar Par Community" 
-                />
-              </Link>
-              <div className={styles.community_text}>
-                <p className={styles.content_text}>
-                How can you make the best decision about your dog&rsquo;s Lar Par when you have so many questions and when so many people &mdash; even veterinarians &mdash; seem to be saying different things? 
-                </p>
-                <p className={styles.content_text}>
-                Your Lar Par decisions depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining our growing network of Facebook groups worldwide</Link>. 
-                </p>
-                <p className={styles.content_text}>
-                  You can click on any question in the scrolling marquee text above to go straight to the <a href='#quickfaqs' className={styles.community_link}>Laryngeal Paralysis/GOLPP Quick FAQs</a> at the bottom of this page.
-                </p>
-              </div>
-              
+                <h3 className={styles.community_cta}>
+                  <Link href='/social' className={styles.community_cta}>Join the Community!</Link>
+                </h3>
+                <Link href='/social' className='link-dark'>
+                  <Image 
+                    src={JoinUsIcon} 
+                    className={styles.community_icon} 
+                    alt="Join the Lar Par Community" 
+                  />
+                </Link>
+                <div className={styles.community_text}>
+                  <p className={styles.content_text}>
+                  How can you make the best decision about your dog&rsquo;s Lar Par when you have so many questions and when so many people &mdash; even veterinarians &mdash; seem to be saying different things? 
+                  </p>
+                  <p className={styles.content_text}>
+                  Your Lar Par decisions depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining our growing network of Facebook groups worldwide</Link>. 
+                  </p>
+                  <p className={styles.content_text}>
+                    You can click on any question in the scrolling marquee text above to go straight to the <a href='#quickfaqs' className={styles.community_link}>Laryngeal Paralysis/GOLPP Quick FAQs</a> at the bottom of this page.
+                  </p>
+                </div>
+                
             </div>
 
           </div>

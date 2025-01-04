@@ -367,14 +367,15 @@ text-align: center;
     padding: 1rem 1rem;
   }
   @include tablet {
+    width: 740px;
     padding: 1rem 1.5rem;
   }
   @include desktop {
-    width: 900px;
+    width: 860px;
     padding: 0;
   }
   @include ldesktop {
-    width: 1200px;
+    width: 960px;
     display: block;
     margin: 0 auto;
     padding: 1rem 0 2rem;
@@ -882,7 +883,12 @@ text-align: center;
   color: #F7BD36;
 }
 
+// .main .community_content {
+//   background: $secondary_color;
+// }
+
 // !VA Container for CTA and community text content
+// !VA Set content width here, this is normally done in .section_content.main but community has a different bgcolor and it's easiest just to set the width to be the same here as .main than to make .main the parent of .community_content and set a different bgcolor for it.
 .community_content {
   @include mphone {
     top: 7rem;
@@ -893,18 +899,19 @@ text-align: center;
     padding: 0 .75rem 8.75rem;
   }
   @include tablet {
+    width: 740px;
     top: 8.75rem;
-    padding: 0 .75rem 10.5rem;
+    padding: 0 1.5rem 10.5rem;
   }
   @include desktop {
     top: 10rem;
-    width: 900px;
-    padding: 0 .75rem 11.5rem;
+    width: 860px;
+    padding: 0 0 11.5rem;
   }
   @include ldesktop {
     top: 11rem;
-    width: 1200px;
-    padding: 0 .75rem 13rem;
+    width: 960px;
+    padding: 0 0 13rem;
   }
   position: relative;
   top: 6.5rem;
