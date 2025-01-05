@@ -16,6 +16,9 @@ import { MdOutlineGridView } from "react-icons/md";
 import { CiGrid41 } from "react-icons/ci";
 import { TfiBackRight } from "react-icons/tfi";
 
+import Image from 'next/image'
+import GuideBG from '../../public/bricks/img-brick-11.webp'
+
 // !VA 2024
 import { GuidenavContext } from '@/components/Contexts'
 
@@ -64,6 +67,22 @@ const GuideNav = () => {
             <a className={styles.dropbtn}>All Topics</a>
             {/* About item */}
             <div className={styles.dropdown_content}>
+
+            <Image 
+              src={GuideBG} 
+              // width="300"
+              // height="200"
+              width="0"
+              height="0"
+              // !VA This fixed the no-load problem on iOS!!!!!
+              loading="eager"
+              priority={true}
+              // sizes="100vw"
+              // style={{ width: '100%', height: 'auto' }}
+              className={styles.dropdown_content_img}
+              alt='blob'
+            />
+
               <i className={styles.db3} tabindex="1"></i>
               <div className={styles.guide_menu_item_block}>
                 <Link href='/patients' 

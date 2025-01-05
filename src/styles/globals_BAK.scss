@@ -633,12 +633,12 @@ display: none;
   @include mphone {
     padding: .25rem 0 0;
     font-size: 1.125rem;
-    line-height: 1.575rem;
+    line-height: 1.563rem;
   }
   @include lphone {
     padding: .25rem 0;
     font-size: 1.188rem;
-    line-height: 1.575rem;
+    line-height: 1.563rem;
   }
   @include tablet {
     padding: .25rem 0 .313rem;
@@ -680,7 +680,7 @@ display: none;
   }
   @include desktop {
     font-size: 1.188rem;
-    line-height: 1.575rem;
+    line-height: 1.563rem;
   }
   @include ldesktop {
     font-size: 1.25rem;

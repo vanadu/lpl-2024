@@ -17,6 +17,7 @@ $home_bg_color: #212121;
 $content_bg_color: #E1E1E1;
 $subnav1_bg_color: #E1E1E1;
 $footer_bg_color: #0e2660;
+$guide_menu_color: #E1E1E1; // .dropdown .dropdown_content
 // $footer_bg_color: #A520DA;
 
 
@@ -35,6 +36,7 @@ $home_text-color: #212121;
 $light_text_color: #FFF;
 $dark_text_color: #212121;
 $gray_text_color: #494949;
+$guide_menu_text_color: #3d3730; //guide_menu_item_block
 $showmore_text_color: #8E000B;
 $primary_font: 'Open Sans', sans-serif;
 $secondary_font: 'Oswald', 'Arial Narrow', sans-serif;
@@ -123,6 +125,16 @@ $desktopLargeLineHeight: 1.938rem;
 $ldesktopLargeFontSize: 1.5rem;
 $ldesktopLargeLineHeight: 2.25rem;
 
+// !VA List Line Height, 135% of text line height, just a bit tighter than normal to offset lists visually
+$rootListLineHeight: 1.5rem;
+$mphoneListLineHeight: 1.563rem;
+$lphoneListLineHeight: 1.625rem;
+$tabletListLineHeight: 1.688rem;
+$desktopListLineHeight: 2.063rem;
+$ldesktopListLineHeight: 2.125rem;
+
+
+
 // Nav Menu
 // !VA Text Content
 $tabletMenuFontSize: .938rem;
@@ -136,7 +148,7 @@ $ldesktopMenuLineHeight: 1.688rem;
 $rootNormalFontSize: 1rem;
 $rootNormalLineHeight: 1.438rem;
 $mphoneNormalFontSize: 1.063rem;
-$mphoneNormalLineHeight: 1.575rem;
+$mphoneNormalLineHeight: 1.563rem;
 $lphoneNormalFontSize: 1.125rem;
 $lphoneNormalLineHeight: 1.688rem;
 $tabletNormalFontSize: 1.188rem;
@@ -154,7 +166,7 @@ $mphoneSmallLineHeight: 1.438rem;
 $lphoneSmallFontSize: 1.063rem;
 $lphoneSmallLineHeight: 1.5rem;
 $tabletSmallFontSize: 1.125em;
-$tabletSmallLineHeight: 1.575rem;
+$tabletSmallLineHeight: 1.563rem;
 $desktopSmallFontSize: 1.188rem;
 $desktopSmallLineHeight: 1.625rem;
 $ldesktopSmallFontSize: 1.25rem;
@@ -169,7 +181,7 @@ $mphoneXSLineHeight: 1.438rem;
 $lphoneXSFontSize: 1.063rem;
 $lphoneXSLineHeight: 1.5rem;
 $tabletXSFontSize: 1.125rem;
-$tabletXSLineHeight: 1.575rem;
+$tabletXSLineHeight: 1.563rem;
 $desktopXSFontSize: 1.25rem;
 $desktopXSLineHeight: 1.625rem;
 $ldesktopXSFontSize: 1.313rem;
@@ -181,7 +193,7 @@ $rootShowmoreLineHeight: 1.438rem;
 $mphoneShowmoreFontSize: 1.125rem;
 $mphoneShowmoreLineHeight: 1.5rem;
 $lphoneShowmoreFontSize: 1.188rem;
-$lphoneShowmoreLineHeight: 1.575rem;
+$lphoneShowmoreLineHeight: 1.563rem;
 $tabletShowmoreFontSize: 1.25rem;
 $tabletShowmoreLineHeight: 1.688rem;
 $desktopShowmoreFontSize: 1.313rem;

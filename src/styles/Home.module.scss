@@ -98,10 +98,9 @@
   text-align: left;
 }
 
-// !VA COMMON: content_text, content_list-item common styles
-// !VA 2024.04.05 blob_header_description not found in js, removed
 // !VA NO TOP PADDING FOR ELEMENT SPACING!
-.content_text, .content_list_item {
+// !VA .content_text has different line height than .content_list_item
+.content_text {
   @include mphone {
     margin: .188rem 0 .313rem;
     font-size: $mphoneLargeFontSize;
@@ -135,50 +134,80 @@
   text-align: left;
 }
 
-.content_text {
-   // !VA Moved to common
+.content_list_item {
+  @include mphone {
+    margin: .188rem 0 .313rem;
+    padding-left: 1.5rem;
+    font-size: $mphoneLargeFontSize;
+    line-height: $mphoneLargeLineHeight;
+    text-indent: -1.5rem;
+  }
+  @include lphone {
+    margin: .25rem 0 .375rem;
+    padding-left: 1.5rem;
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneLargeLineHeight;
+    text-indent: -1.5rem;
+  }
+  @include tablet {
+    padding-left: 1.5rem;
+    margin: .313rem 0 .375rem;
+    font-size: $tabletLargeFontSize;
+    line-height: $tabletLargeLineHeight;
+    text-indent: -1.5rem;
+  }
+  @include desktop {
+    padding-left: 1.5rem;
+    font-size: $desktopLargeFontSize;
+    line-height: $desktopLargeLineHeight;
+    text-indent: -1.5rem;
+  }
+  @include ldesktop {
+    padding-left: 2rem;
+    font-size: $ldesktopLargeFontSize;
+    line-height: $ldesktopListLineHeight;
+    text-indent: -2rem;
+  }
+  margin: .125rem 0 .25rem;
+  padding-left: 1.5rem;
+  font-family: $primary_font;
+  color: $dark_text_color;
+  font-size: $rootLargeFontSize;
+  line-height: $rootLargeLineHeight;
+  font-weight: 400;
+  text-align: left;
+  text-indent: -1.5rem;
 }
+
 
 .content_list_no_bullet {
   list-style: none;
 }
 
-.content_list_item {
-  @include mphone {
-    text-indent: -1.5rem;
-    padding-left: 1.5rem;
-  }
-  @include lphone {
-    text-indent: -1.5rem;
-    padding-left: 1.5rem;
-  }
-  @include tablet {
-    padding: .25rem 0;
-    text-indent: -1.5rem;
-    padding-left: 1.5rem;
-  }
-  @include desktop {
-    padding: .25rem 0;
-    text-indent: -1.5rem;
-    padding-left: 1.5rem;
-  }
-  @include ldesktop {
-    line-height: 2.5rem;
-    text-indent: -2rem;
-    padding-left: 2rem;
-  }
-  text-indent: -1.5rem;
-  padding-left: 1.5rem;
-}
 
 .content_list_item_svg {
-  @include ldesktop {
-    font-size: 1.5rem;
+  @include mphone {
+    font-size: $mphoneLargeFontSize;
   }
-  margin-right: .5rem;
-  vertical-align: -2px;
+  @include lphone {
+    font-size: $lphoneLargeFontSize;
+  }
+  @include tablet {
+    font-size: $tabletLargeFontSize;
+  }
+  @include desktop {
+    font-size: $desktopLargeFontSize;
+  }
+  @include ldesktop {
+    font-size: $ldesktopLargeFontSize;
+  }
+  width: $rootLargeFontSize;
+  // !VA No margin left on Home page because the list starts below the heading with no intro text
+  margin-right: $rootLargeFontSize;
+  display: inline;
   color: $secondary_link_color;
-  font-size: 1rem;
+  font-size: $rootLargeFontSize;
+  vertical-align: -2px;
 }
 
 // !VA 2024.04.05 What's the diff between all these figure styles?
@@ -752,7 +781,7 @@ text-align: center;
 // !VA The parent wrapper for the individual marquee elements within the .community_questions block
 .marquee_wrapper1, .marquee_wrapper2, .marquee_wrapper3, .marquee_wrapper4, .marquee_wrapper5 {
   @include lphone {
-    height: 1.575rem;
+    height: 1.563rem;
   }
   @include tablet {
     height: 1.688rem;
