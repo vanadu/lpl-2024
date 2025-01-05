@@ -16,6 +16,7 @@ import { MdOutlineGridView } from "react-icons/md";
 import { CiGrid41 } from "react-icons/ci";
 import { TfiBackRight } from "react-icons/tfi";
 
+// !VA Background image for guide dropdown menu, senior black lab
 import Image from 'next/image'
 import GuideBG from '../../public/bricks/img-brick-11.webp'
 
@@ -67,21 +68,12 @@ const GuideNav = () => {
             <a className={styles.dropbtn}>All Topics</a>
             {/* About item */}
             <div className={styles.dropdown_content}>
-
-            <Image 
-              src={GuideBG} 
-              // width="300"
-              // height="200"
-              width="0"
-              height="0"
-              // !VA This fixed the no-load problem on iOS!!!!!
-              loading="eager"
-              priority={true}
-              // sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className={styles.dropdown_content_img}
-              alt='blob'
-            />
+              <div 
+                style={{
+                  backgroundImage: `url(${GuideBG.src})`,
+                }}
+                className={styles.dropdown_content_bg}>
+              </div>
 
               <i className={styles.db3} tabindex="1"></i>
               <div className={styles.guide_menu_item_block}>
@@ -97,7 +89,7 @@ const GuideNav = () => {
                   className={styles.mi}>
                   <h2 className={styles.guide_menu_item_text}>Treatment Options</h2>
                 </Link>
-                <h3 className={styles.guide_menu_item_subtext}>Treatment options for laryngeal paralysis & GOLPP</h3>
+                <h3 className={styles.guide_menu_item_subtext}>Treatment options for laryngeal paralysis &&nbsp;GOLPP</h3>
               </div>
               {/* Research and Info item */}
               <div className={styles.guide_menu_item_block}>

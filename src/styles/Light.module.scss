@@ -3022,65 +3022,65 @@ text-align: left;
 // !VA Styling for the link text. This is positioned relatively within the absolutely positioned parent, i.e. the a element within the Link component.
 .guide_menu_item_text {
   @include mphone {
-    margin: 1rem 0 0 1rem;
-    font-size: $mphoneXSFontSize;
-    line-height: $mphoneXSLineHeight;
+    margin: .5rem 0 0 1rem;
+    font-size: $mphoneNormalFontSize;
+    line-height: $mphoneNormalLineHeight;
   }
   @include lphone {
-    margin: 1.5rem 0 0 1.5rem;
-    font-size: $lphoneXSFontSize;
-    line-height: $lphoneXSLineHeight;
+    margin: 1.25rem 0 0 1.5rem;
+    font-size: $lphoneLargeFontSize;
+    line-height: $lphoneNormalLineHeight;
+    font-weight: 500;
   }
   @include tablet {
-    margin: 1.5rem 0 0 1.5rem;
-    font-size: $tabletXSFontSize;
-    line-height: $tabletXSLineHeight;
+    margin: 1rem 1rem 0 1.5rem;
+    font-size: $tabletNormalFontSize;
+    line-height: $tabletNormalLineHeight;
   }
   @include desktop {
-    margin: 1.5rem 0 0 1.5rem;
-    font-size: $desktopXSFontSize;
-    line-height: $desktopXSLineHeight;
+    margin: 1.25rem 0 0 1.5rem;
+    font-size: $desktopNormalFontSize;
+    line-height: $desktopNormalLineHeight;
   }
   @include ldesktop {
-    margin: 1.5rem 0 0 1.5rem;
-    font-size: $ldesktopXSFontSize;
-    line-height: $ldesktopXSLineHeight;
+    margin: 1.375rem 0 0 1.5rem;
+    font-size: $ldesktopNormalFontSize;
+    line-height: $ldesktopNormalLineHeight;
   }
   position: relative;
-  margin: .5rem 0 0 .5rem;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
-  // height: 1rem;
-
+  margin: .25rem 0 0 .5rem;
+  font-size: $rootNormalFontSize;
+  line-height: $rootNormalLineHeight;
+  font-weight: 400;
 }
 
 // !VA Styling for the h3 subtext outside the Link component. This is positioned relatively within the absolutely positioned parent, i.e. the guide_menu_item_block div element outside the Link component.
 .guide_menu_item_subtext {
   @include mphone {
-    margin: 2.75rem 0 0 1rem;
+    margin: 2.125rem 0 0 1rem;
     font-size: $mphoneXSFontSize;
-    line-height: $mphoneXSLineHeight;
+    line-height: $mphoneXXSLineHeight;
   }
   @include lphone {
-    margin: 3.5rem 0 0 1.5rem;
-    font-size: $lphoneXSFontSize;
+    margin: 3.125rem 0 0 1.5rem;
+    padding-right: 1rem;
+    font-size: $lphoneNormalFontSize;
     line-height: $lphoneXSLineHeight;
   }
   @include tablet {
     margin: 3.5rem 0 0 1.5rem;
     font-size: $tabletXSFontSize;
-    line-height: $tabletXSLineHeight;
+    line-height: $tabletXXSLineHeight;
   }
   @include desktop {
     margin: 3.5rem 0 0 1.5rem;
     font-size: $desktopXSFontSize;
-    line-height: $desktopXSLineHeight;
+    line-height: $desktopXXSLineHeight;
   }
   @include ldesktop {
     margin: 3.5rem 0 0 1.5rem;
     font-size: $ldesktopXSFontSize;
-    line-height: $ldesktopXSLineHeight;
+    line-height: $ldesktopXXSLineHeight;
   }
   // display: flex;
   // flex-direction: column;
@@ -3088,11 +3088,11 @@ text-align: left;
   position: absolute;
   // height: 1rem;
   // !VA Any padding here has to also be put on the h2 guide_menu_item_text because it's parent, i.e. the a tag, is absolutely positioned.
-  margin: 1.75rem 0 0 .5rem;
+  margin: 1.563rem 0 0 .5rem;
   padding-right: .5rem;
   font-family: "Open Sans", sans-serif;
   text-align: left;
-  font-size: $rootXXSFontSize;
+  font-size: $rootSmallFontSize;
   line-height: $rootXXSLineHeight;
   font-weight: 400;
   // z-index: 1000;
@@ -3192,22 +3192,47 @@ text-align: left;
   // font-size: 16px;
   // !VA
   font-size: 1rem;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   transition: 0.35s ease-out;
   background: $guide_menu_color;
+  box-shadow: inset 0 0 85px rgba(0, 0, 0, .3);
 }
 
-.dropdown_content_img {
+.dropdown_content_bg {
+  @include tablet {
+    background-position: -110px 0;
+  }
   position: absolute;
-  width: auto;
-  height: 100%;
-  background-image: '../../public/bricks/img-brick-11.webp';
   top: 0;
-  left: -75px;
-  // background-position: -200px -200px;
-  background-size: 250%;
-  opacity: .3;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background: rgba(0, 0, 255, .3) !important; //devblue
+  background-image: '../public/bricks/img-brick-11.webp';
+  opacity: .2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -100px 0;
+
 }
+
+// .dropdown_content_bg_img {
+//   @include tablet {
+//     background-size: cover;
+//     left: 0;
+//     height: 100%;
+//     width: auto;
+//     overflow: hidden;
+//   }
+//   position: absolute;
+//   width: auto;
+//   height: 100%;
+//   background-image: '../../../public/bricks/img-brick-11.webp';
+//   top: 0;
+//   left: -75px;
+//   // background-position: -200px -200px;
+//   background-size: 250%;
+//   opacity: .3;
+// }
 
 
 // !VA "center & right position menu relative to the button". I think this applies only to the highlight styling that came with Arsen's demo
