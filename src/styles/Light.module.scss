@@ -3160,14 +3160,17 @@ text-align: left;
   @include tablet {
     height: 660px;
     width: 500px;
+    box-shadow: inset 0 0 85px rgba(218, 165, 32, .2);
   }
   @include desktop {
     height: 660px;
     width: 500px;
+    box-shadow: inset 0 0 85px rgba(218, 165, 32, .2);
   }
   @include ldesktop {
     height: 660px;
     width: 500px;
+    box-shadow: inset 0 0 85px rgba(218, 165, 32, .2);
   }
   position: absolute;
   top: 50%;
@@ -3194,12 +3197,28 @@ text-align: left;
   font-size: 1rem;
   transition: 0.35s ease-out;
   background: $guide_menu_color;
-  box-shadow: inset 0 0 85px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 50px rgba(218, 165, 32, .4);
 }
 
 .dropdown_content_bg {
+  @include mphone {
+    background-position: -100px 0;
+  }
+  @include lphone {
+    background-position: -190px 0;
+    opacity: .25;
+  }
   @include tablet {
     background-position: -110px 0;
+    opacity: .25;
+  }
+  @include desktop {
+    background-position: -120px 0;
+    opacity: .22;
+  }
+  @include ldesktop {
+    background-position: -120px 0;
+    opacity: .25;
   }
   position: absolute;
   top: 0;
@@ -3208,10 +3227,10 @@ text-align: left;
   height: 100%;
   // background: rgba(0, 0, 255, .3) !important; //devblue
   background-image: '../public/bricks/img-brick-11.webp';
-  opacity: .2;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -100px 0;
+  background-position: -80px 0;
+  opacity: .3;
 
 }
 
