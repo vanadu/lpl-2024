@@ -44,9 +44,10 @@
   }
   @include desktop {
     width: 960px;
+    padding: 0 .75rem 0;
   }
   @include ldesktop {
-    width: 1200px;
+    width: 1000px;
   }
   position: relative;
   width: 310px;
@@ -117,6 +118,7 @@
     line-height: $lphoneLargeLineHeight;
   }
   @include tablet {
+    margin: .5rem auto 0;
     font-size: $tabletLargeFontSize;
     line-height: $tabletLargeLineHeight;
   }
@@ -129,7 +131,7 @@
     line-height: $ldesktopLargeLineHeight;
   }
   display: block;
-  margin: .5rem auto 0;
+  margin: .25rem auto 0;
   width: 100%;
   color: $dark_text_color;
   font-family: $secondary_font;
@@ -138,9 +140,6 @@
   font-weight: 500;
   text-align: center;
 }
-
-
-
 
 // !VA The 'I'm looking for info about' text
 .content_caption_mobile {
@@ -172,25 +171,25 @@
 
 .cards {
   @include lphone {
-    margin: 0 0 2rem;
+    margin: 0 0 1.25rem;
   }
   @include tablet {
     flex-direction: row;
     position: relative;
     flex-wrap: wrap;
-    margin: .5rem 0 2rem;
+    margin: 0 0 1.25rem;
   }
   @include desktop {
     flex-direction: row;
     position: relative;
     flex-wrap: wrap;
-    margin: .5rem 0 2rem;
+    margin: .25rem 0 1.25rem;
   }
   @include ldesktop {
     flex-direction: row;
     position: relative;
     flex-wrap: wrap;
-    margin: .5rem 0 2rem;
+    margin: .25rem 0 2rem;
   }
   position: relative;
   display: flex;
@@ -200,9 +199,7 @@
 }
 
 // !VA The CSS for these cards is incredibly convoluted because you can't include more than one element in the link because of SEO. If Google sees more than one phrase in the link text, you'll get dinged for link stuffing! So the only thing in that link is the H2. 
-
 // !VA 2024 Switching everything to absolute positioning, this relative positioning is impossible to manage
-
 .card {
   @include tablet {
     width: 50%;
@@ -210,11 +207,11 @@
   }
   @include desktop {
     width: 50%;
-    padding: 0 .5rem;
+    padding: 0 .25rem;
   }
   @include ldesktop {
     width: 50%;
-    padding: 0 1rem;
+    padding: 0 .5rem;
   }
   // width: 100%;
   margin: .125rem 0 .25rem;
@@ -228,12 +225,10 @@
     margin: .25rem auto;
   }
   @include desktop {
-    width: 100%;
     margin: 0 .75rem 0;
   }
   @include ldesktop {
-    width: 100%;
-    margin: 0 .75rem 0;
+    margin: 0 .5rem 0;
   }
   position: relative;
   width: 100%;
@@ -266,11 +261,12 @@
 // !VA Absolutely positioned from top left of card_link, i.e. top left of the card container
 .card_head {
   @include mphone {
+    top: 30px;
     font-size: $mphoneLargeFontSize;
     line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
-    top: 30px;
+    top: 32px;
     font-size: $lphoneLargeFontSize;
     line-height: $lphoneLargeLineHeight;
   }
@@ -280,12 +276,12 @@
     line-height: $tabletLargeLineHeight;
   }
   @include desktop {
-    top: 36px;
+    top: 34px;
     font-size: $desktopLargeFontSize;
     line-height: $desktopLargeLineHeight;
   }
   @include ldesktop {
-    top: 36px;
+    top: 32px;
     font-size: $ldesktopLargeFontSize;
     line-height: $ldesktopLargeLineHeight;
   }
@@ -333,33 +329,33 @@
   @include mphone {
     top: 55px;
     font-size: $mphoneLargeFontSize;
-    line-height: $mphoneLargeLineHeight;
+    line-height: $mphoneXXSLineHeight;
   }
   @include lphone {
-    top: 56px;
+    top: 59px;
     font-size: $lphoneLargeFontSize;
-    line-height: $lphoneLargeLineHeight;
+    line-height: $lphoneXXSLineHeight;
   }
   @include tablet {
     top: 62px;
     font-size: $tabletLargeFontSize;
-    line-height: $tabletLargeLineHeight;
+    line-height: $tabletXXSLineHeight;
   }
   @include desktop {
-    top: 66px;
+    top: 64px;
     font-size: $desktopLargeFontSize;
-    line-height: $desktopLargeLineHeight;
+    line-height: $desktopXSLineHeight;
   }
   @include ldesktop {
-    top: 70px;
+    top: 68px;
     font-size: $ldesktopLargeFontSize;
-    line-height: $ldesktopLargeLineHeight;
+    line-height: $ldesktopSmallLineHeight;
   }
   display: block;
   top: 52px;
   font-family: $secondary_font;
   font-size: $rootLargeFontSize;
-  line-height: $rootLargeLineHeight;
+  line-height: $rootXXSLineHeight;
   // letter-spacing: .01rem;  
   font-weight: 400;
   text-align: center;
@@ -384,25 +380,25 @@
 
 .card_list_item {
   @include mphone {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: $mphoneXSFontSize;
+    line-height: $mphoneXSLineHeight;
   }
   @include lphone {
-    font-size: 1.063rem;
-    line-height: 1.5rem;
+    font-size: $lphoneXSFontSize;
+    line-height: $lphoneXSLineHeight;
   }
   @include tablet {
     padding: .25rem 0 .25rem;
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: $tabletXSFontSize;
+    line-height: $tabletXSLineHeight;
   }
   @include desktop {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: $desktopXSFontSize;
+    line-height: $desktopXSLineHeight;
   }
   @include ldesktop {
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: $ldesktopXSFontSize;
+    line-height: $ldesktopXSLineHeight;
   }
   color: $light_text-color;
   font-family: $inter_font;

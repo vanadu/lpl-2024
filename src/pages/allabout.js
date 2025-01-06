@@ -136,7 +136,7 @@ const More = () => {
                   <div className={styles.card_content}>
                     <GoButton />
                     <Link href='/blog'  className={styles.card_link}>
-                      <span className={styles.card_head}>Lar Par News</span>
+                      <span className={styles.card_head}>Lar Par News &amp; Notes</span>
                     </Link>
                     <div className={styles.card_content_text}>
                       <h3 className={styles.card_subhead}>Current Topics from the World of<br/>&nbsp;Laryngeal&nbsp;Paralysis&nbsp; &amp; GOLPP in&nbsp;Dogs</h3>
@@ -154,7 +154,7 @@ const More = () => {
                 {/* Desktop Topic Card */}
                   <div className={styles.card_content}>
                     <GoButton />
-                    <Link href='/contact'  className={styles.card_link}>
+                    <Link href='/social'  className={styles.card_link}>
                       <span className={styles.card_head}>Connect &amp; Contact</span>
                     </Link>
                     <div className={styles.card_content_text}>
