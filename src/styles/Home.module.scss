@@ -27,33 +27,33 @@
 .main_head {
   @include mphone {
     padding-bottom: .25rem;
-    font-size: $mphoneXLFontSize;
+    font-size: $mphoneXXLFontSize;
     line-height: $mphoneXLLineHeight; 
   }
   @include lphone {
     padding: 1rem 0 .313rem;
-    font-size: $lphoneXLFontSize;
+    font-size: $lphoneXXLFontSize;
     line-height: $lphoneXLLineHeight; 
   }
   @include tablet {
     padding: 1rem 0 .25rem;
-    font-size: $tabletXLFontSize;
+    font-size: $tabletXXLFontSize;
     line-height: $tabletXLLineHeight
   }
   @include desktop {
     padding: 1.25rem 0 .25rem;
-    font-size: $desktopXLFontSize;
+    font-size: $desktopXXLFontSize;
     line-height: $desktopXLLineHeight
   }
   @include ldesktop {
     padding: 1.25rem 0 .5rem;
-    font-size: $ldesktopXLFontSize;
+    font-size: $ldesktopXXLFontSize;
     line-height: $ldesktopXLLineHeight
   }
   margin: 0 0 .25rem;
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootXLFontSize;
+  font-size: $rootXXLFontSize;
   line-height: $rootXLLineHeight; 
   font-weight: 500;
   text-align: center;

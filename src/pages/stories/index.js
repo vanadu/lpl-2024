@@ -326,6 +326,12 @@ const Stories = () => {
           </figure>
           <p className={styles.content_text}>We spared you the gory details about how, as residents of the sedate Eastern Shore of Maryland, after the trip through New York City we needed a cardiologist almost as much as Miss B needed a stent. About how we got lost crossing the Green Mountains and there was no cell reception to geolocate ourselves. About how we stayed at an off-the-grid Tiny House on a farm with mice in the ceiling that kept us awake for hours. Or how our truck got stuck and had to be pulled out by a huge farm tractor. Or about the 9 hour rush-hour return trip via Albany that was so bumpy we were terrified it was going to jar Miss B&rsquo;s new stent loose in her throat. Or about ... blah blah blah. None of that matters.</p>
           <p className={styles.content_text}>What matters is that Miss B has been breathing normally every since. And when she dies, which could be next week or next month or years from now, it won&rsquo;t be because of a minor neurological defect in the larynx. It will be of something fatal, something terminal, something that actually kills her. And we want everyone to know that there is a third option between expensive, risky surgery and euthanasia. It&rsquo;s affordable, quick, and it works. It should be available to all LarPar dogs and until it is, everyone should be asking, &ldquo;Why not?&rdquo;</p>
+          <p className={styles.content_text}>
+          <span className='italic'>Our beloved Miss B crossed over the Rainbow Bridge peacefully on August 27th, 2024 at the age of 16 1/2. Our hope that she would live out her life breathing normally was realized, but in the end she succumbed to the polyneuropathy that goes along with GOLPP (Geriatric-Onset Laryngeal Paralysis and Polyneuropathy). We documented her post-stent life extensively in video and will release her end-of-life celebration video in January 2025. Miss B had a beautiful life and we will remember her always.</span>
+          </p>
+          <p className={styles.content_text}>
+            &nbsp;
+          </p>
         </div>
       </section>
   
