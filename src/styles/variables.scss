@@ -2,8 +2,11 @@
 //------------------
 // $primary_color: #FCB900;
 // $primary_color: goldenrod;
+// !VA primary_color_rgb: 218, 165, 32
 $primary_color: #DAA520;
 // !VA 2024 Blue as per the color wheel
+// !VA secondary_color_rgb: 32, 85, 218
+
 $secondary_color: #2055DA;
 // !VA 2024 Heart red
 // $secondary_color: #aa0000;
@@ -111,9 +114,6 @@ $desktopXLLineHeight: 2.938rem;
 $ldesktopXLFontSize: 1.938rem;
 $ldesktopXLLineHeight: 2.25rem;
 
-
-
-
 // !VA Header Slug 
 $rootSlugLineHeight: 1.375rem;
 $mphoneSlugLineHeight: 1.638rem;
@@ -133,8 +133,8 @@ $tabletLargeFontSize: 1.25rem;
 $tabletLargeLineHeight: 1.875rem;
 $desktopLargeFontSize: 1.313rem;
 $desktopLargeLineHeight: 1.938rem;
-$ldesktopLargeFontSize: 1.5rem;
-$ldesktopLargeLineHeight: 2.25rem;
+$ldesktopLargeFontSize: 1.375rem;
+$ldesktopLargeLineHeight: 2.063rem;
 
 // !VA List Line Height, 135% of text line height, just a bit tighter than normal to offset lists visually
 $rootListLineHeight: 1.5rem;

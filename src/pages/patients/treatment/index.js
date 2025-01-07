@@ -36,7 +36,7 @@ const Treatment = () => {
       <section className={styles.section}>
         <div className={styles.section_content}>
           <div className={styles.topic_head}>
-            <h1 className={styles.topic_head_title}>Treatment Options for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs<span className='mobile-show-inline'><br /></span> Symptoms, Causes & Progression</h1>
+            <h1 className={styles.topic_head_title}>Treatment Options for <span className='mobile-show-inline'><br /></span>Laryngeal Paralysis in Dogs</h1>
             </div>
             </div>
       </section>
@@ -117,7 +117,7 @@ const Treatment = () => {
               </li>
 
               <li className={[styles.content_list_item, styles.two_columns].join(' ')}>
-                <div className={styles.two_columns_left}><FaPaw className={styles.content_list_item_svg}/><span className='bold'>Surgery</span> &mdash; In 2023, surgery is the most widely-available veterinary-medical treatment&nbsp;option, but it&rsquo;s also the most expensive. </div >
+                <div className={styles.two_columns_left}><FaPaw className={styles.content_list_item_svg}/><span className='bold'>Surgery</span> &mdash; In 2025, surgery is the most widely-available veterinary-medical treatment&nbsp;option, but it&rsquo;s also the most expensive. </div >
                 <div className={styles.goto_links}>
                   <Link href="/patients/treatment/surgery" className={styles.goto_links_link}>
                     Surgery treatment&nbsp;<span className='mobile-hide-inline'>options</span>&nbsp;<FaArrowCircleRight className={styles.related_links_figure_icon} />

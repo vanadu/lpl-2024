@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }) {
 
 
   
-  // !VA 2023.09.24 I don't even know if this works...I tried to remove it but kept getting url is undefined errors. DOn't have time for it right now... 
+  // !VA I don't even know if this works...I tried to remove it but kept getting url is undefined errors. DOn't have time for it right now... 
   useEffect(() => {
     // !VA If serving from localhost, host will be 'localhost'. If serving from the domain, host will be www.larparlife.com
     const useEffect_host = window.location.hostname

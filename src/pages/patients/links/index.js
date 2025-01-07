@@ -74,7 +74,7 @@ const Links = () => {
             <TabPanel>
               <h2 className={styles.content_head}>Veterinary Institution Websites</h2>
               <p className={styles.content_text}>
-                Below are links to veterinary teaching institution websites with general information about laryngeal paralysis in dogs as well as detailed information for veterinary students. <span className='bold'>Note:</span> As of late 2023 none of these sites mentions the laryngeal stent. 
+                Below are links to veterinary teaching institution websites with general information about laryngeal paralysis in dogs as well as detailed information for veterinary students. <span className='bold'>Note:</span> As of early 2025 none of these sites mention the laryngeal stent. 
               </p>
               <p className={styles.content_text}>
                 <span className='bold'>Michigan State University College of Veterinary Medicine</span>

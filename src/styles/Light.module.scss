@@ -2250,32 +2250,32 @@ font-weight: 400;
 // !VA 2024.04.12 content_subhead changed to content_head globally on the h2 in content sections to allow for the h3 to become content_subhead. The Home module was modified to content_subhead -> main_subhead and content_head -> main_head
 .content_head {
   @include mphone {
-    font-size: $mphoneXLFontSize;
+    font-size: $mphoneLargeFontSize;
     line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
-    font-size: $lphoneXLFontSize;
+    font-size: $lphoneLargeFontSize;
     line-height: $lphoneLargeLineHeight;
   }
   @include tablet {
     margin-top: .5rem;
-    font-size: $tabletXLFontSize;
+    font-size: $tabletLargeFontSize;
     line-height: $tabletLargeLineHeight;
   }
   @include desktop {
     margin-top: .5rem;
-    font-size: $desktopXLFontSize;
+    font-size: $desktopLargeFontSize;
     line-height: $desktopLargeLineHeight;
   }
   @include ldesktop {
     margin-top: .75rem;
-    font-size: $ldesktopXLFontSize;
+    font-size: $ldesktopLargeFontSize;
     line-height: $ldesktopLargeLineHeight;
   }
   width: 100%;
   padding: .25rem 0 0; 
   font-family: $secondary_font;
-  font-size: $rootXLFontSize;
+  font-size: $rootLargeFontSize;
   line-height: $rootLargeLineHeight;
   color: $dark_text_color;
   font-weight: 500;
@@ -3233,7 +3233,6 @@ text-align: left;
   background-size: cover;
   background-position: -80px 0;
   opacity: .3;
-
 }
 
 // .dropdown_content_bg_img {

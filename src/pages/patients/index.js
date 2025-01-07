@@ -102,7 +102,7 @@ const Patients = () => {
               <div className={styles.showmore_content_block}>
               <span className={styles.showmore_content_space}></span>
                 <p className={styles.showmore_content_inline}>
-                There is no known cure for canine laryngeal paralysis &mdash; it&lsquo;s a neurological disease that doesn&lsquo;t get better on its own.  It&rsquo;s a progressive condition, meaning it gets worse over weeks, months or years&nbsp;&mdash; it&rsquo;s not possible to predict how it will progress. In younger dogs, it can be hereditary. On older dogs, it&lsquo;s generally associated with age-related neurological decline. For more information about the causes of laryngeal paralysis in dogs, see the  <Link href="/patients/aboutlarpar" className='link-dark'>Crash Course in Laryngeal Paralysis</Link> section.
+                There is no known cure for canine laryngeal paralysis &mdash; it&lsquo;s a neurological disease that doesn&lsquo;t get better on its own.  It&rsquo;s a progressive condition, meaning it gets worse over weeks, months or years&nbsp;&mdash; it&rsquo;s not possible to predict how it will progress. In younger dogs, it can be hereditary. On older dogs, it&lsquo;s generally associated with age-related neurological decline. For more information about the causes of laryngeal paralysis in dogs, see the <Link href='/patients/aboutlarpar' className='link-dark' rel="noopener noreferrer" target="_blank">Crash Course in Laryngeal Paralysis</Link> section.
                 </p>
 
               </div>
@@ -155,7 +155,7 @@ const Patients = () => {
                 </p>
                 <span className={styles.showmore_content_space}></span>
                 <p className="showmore-content-text">
-                  For a definitive diagnosis, make an appointment with a board-certified soft-tissue specialist. You can find one in your area by following the Find a Surgeon link on the <Link href='htttps://acvs.org' className='link-dark'>American College of Veterinary Surgeons</Link> website. The specialist&lsquo;s diagnosis is critical because it can tell you what stage the disease is in. You&lsquo;ll need that when you start thinking about treatment options moving forward. 
+                  For a definitive diagnosis, make an appointment with a board-certified soft-tissue specialist. You can find one in your area by following the Find a Surgeon link on the <a href="htttps://acvs.org" className="link-dark" target="_blank" rel="noreferrer noopener">American College of Veterinary Surgeons</a> website. The specialist&lsquo;s diagnosis is critical because it can tell you what stage the disease is in. You&lsquo;ll need that when you start thinking about treatment options moving forward. 
                 </p>
                 <span className={styles.showmore_content_space}></span>
                 <p className="showmore-content-text">
@@ -201,7 +201,7 @@ const Patients = () => {
               setActiveAccordionIndex={setActiveAccordionIndex}
               >
               <p className='accordion__text'>
-                If money is no object, you will probably want to focus on the veterinary-medical approaches to laryngeal paralysis treatment: surgery or the laryngeal stent. Currently in 2023 there are very few stent providers worldwide, so its availablility for you depends on your location. Unless you are fortunate enough to live close to a stent provider, your only option is surgery, which has been the standard treatment for laryngeal paralysis for over 40 years. The surgery is expensive and has significant risk factors, but has a high likelihood of a positive outcome. You can read more about it on the <Link href='/patients/treatment' className='link-dark'>Treatment Options</Link> page of this website.
+                If money is no object, you will probably want to focus on the veterinary-medical approaches to laryngeal paralysis treatment: surgery or the laryngeal stent. Currently in 2025 there are very few stent providers worldwide, so its availablility for you depends on your location. Unless you are fortunate enough to live close to a stent provider, your only option is surgery, which has been the standard treatment for laryngeal paralysis for over 40 years. The surgery is expensive and has significant risk factors, but has a high likelihood of a positive outcome. You can read more about it on the <Link href='/patients/treatment' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment Options</Link> page of this website.
               </p>
             </AccordionContent>
 
@@ -213,7 +213,8 @@ const Patients = () => {
               setActiveAccordionIndex={setActiveAccordionIndex}
               >
               <p className='accordion__text'>
-                You&rsquo;ll need to first weigh the cost/benefit of surgery and decide whether it&rsquo;s possible for you, either in your own budget or with help from your family or support network. If you decide you can&rsquo;t afford it, your choices are limited to the more affordable stent procedure &mdash; which unfortunately is as yet unavailable in most of the world &mdash; or to managing the condition as best as you can until end-of-life. That means means curtailing your dog&rsquo;s activities, avoiding hot weather and humidity, and other limitations. While there are prescription medications and naturopathic remedies that <span className='italic'>may help</span> some dogs, there is no scientific evidence that they <span className='italic'>will help</span> yours. We&rsquo;ll discuss the non-surgical options on the <Link href='#' className='link-dark'>Treatment Options</Link> page. 
+                You&rsquo;ll need to first weigh the cost/benefit of surgery and decide whether it&rsquo;s possible for you, either in your own budget or with help from your family or support network. If you decide you can&rsquo;t afford it, your choices are limited to the more affordable stent procedure &mdash; which unfortunately is as yet unavailable in most of the world &mdash; or to managing the condition as best as you can until end-of-life. That means means curtailing your dog&rsquo;s activities, avoiding hot weather and humidity, and other limitations. While there are prescription medications and naturopathic remedies that <span className='italic'>may help</span> some dogs, there is no scientific evidence that they <span className='italic'>will help</span> yours. We&rsquo;ll discuss the non-surgical options on the 
+                <Link href='/patients/treatment' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment Options</Link> page. 
               </p>
             </AccordionContent>
 

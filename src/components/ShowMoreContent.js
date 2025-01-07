@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { useState, useRef } from 'react'
 import { FaPlusSquare } from 'react-icons/fa'
@@ -32,7 +33,7 @@ const ShowMoreContent = ({
     }
 
 
-    // !VA I'm not sure anymore what showmore-open does. It's added to the classlist of showmore-trigger but I can't find it in any stylesheet, 2023.10.08
+    // !VA Update: I'm not sure anymore what showmore-open does. It's added to the classlist of showmore-trigger but I can't find it in any stylesheet. You could probably go ahead and remove this conditional
   return (
     <>
       <div 

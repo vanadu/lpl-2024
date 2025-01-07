@@ -202,7 +202,7 @@ const Cost = () => {
               </div>
               {/* ShowMoreComponent content end */}
               <p className={styles.content_text}>
-                Keep in mind that as of May 2023, discussing costs for the stent procedure in the U.S. is a mostly moot point since there are so few providers. We hope that will change. If you&rsquo;d like to know if there is a provider in your area, feel free to contact us via the <Link href="/contact" className='link-dark'>Contact page</Link> or join our <a href="https://www.facebook.com/groups/laryngealstentfordogs" className='link-dark' target="_blank" rel="noreferrer noopener">Facebook group</a>. 
+                As of May 2025 discussing costs for the stent procedure in the U.S. is a mostly moot point since there are so few providers. We hope that will change. If you&rsquo;d like to know if there is a provider in your area, feel free to contact us via the <Link href="/contact" className='link-dark'>Contact page</Link> or join our <a href="https://www.facebook.com/groups/laryngealstentfordogs" className='link-dark' target="_blank" rel="noreferrer noopener">Facebook group</a>. 
               </p>
           </div>
 

@@ -25,8 +25,6 @@ import * as styles from '../styles/Header.module.scss'
 
 const MainNav = ( ) => {
   
-  /* !VA  2024 Removing any residuals from the 2023 version navbar, including anything related to highlighting the active item on the menu, i.e. highlighting menu item corresponding to the currently displayed page. It never worked right anyway and with the new modern menu design it's not even necessary. Doesn't work on mobile anyway because it's not relevant for a hamburger menu. Old news. The last commit that had all that stuff was '55c87f9 Social page formatting all devices', in case you need to find it. */
-
   const [isChecked, setChecked ] = useState(false)
   const checkRef = useRef(null)
 
@@ -68,77 +66,69 @@ const MainNav = ( ) => {
 
         {/* !VA This is the parent container for the actual individual menu items. Eventually this should move to a separate container, i.e. MainNavItems.js */}
 
+        <ul 
+          className={styles.nav_menu_items}>
+          <li className={[styles.nav_main_list_item, styles.nav_logo].join(' ')}>
+
+              <Link href='/'>
+                <Image 
+                src={logo} 
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
+                className={styles.nav_logo_img}
+                alt="LarParLife Logo" 
+              />
+            </Link>
 
 
 
-
-
-          <ul 
-            // style={{
-            //   backgroundImage: `url(${GuideBG.src})`,
-            // }}
-            className={styles.nav_menu_items}>
-            <li className={[styles.nav_main_list_item, styles.nav_logo].join(' ')}>
-
-                <Link href='/'>
-                  <Image 
-                  src={logo} 
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  className={styles.nav_logo_img}
-                  alt="LarParLife Logo" 
-                />
-              </Link>
-
-
-
-            </li>
-            <li className={styles.nav_main_list_item}>
-              <Link href='/'
-                onClick = {handleClick} >
-                Home
-              </Link>
-            </li>
-            <li className={styles.nav_main_list_item}>
-              <Link href='/whystent'
-                onClick = {handleClick}             
-                >
-                Why Stent?
-              </Link>
-            </li>
-            <li className={[styles.nav_main_list_item, 'mobile-show-inline'].join(' ')}>
-              <Link href='/social'
-                onClick = {handleClick}
-                >Community
-              </Link>
-            </li>
-            <li className={styles.nav_main_list_item}>
-              <Link href='/stories'
-                onClick = {handleClick}
-                >Stories
-              </Link>
-            </li>
-            <li className={styles.nav_main_list_item}>
-              <Link href='/blog'
-                onClick = {handleClick}
-                >News
-              </Link>
-            </li>
-            <li key='dvms'className={styles.nav_main_list_item}>
-              <Link href='/allabout'
-                onClick = {handleClick}
-                >
-                Lar Par Guide <FaChevronRight className={styles.nav_dropdown_icon} />
-              </Link>
-            </li>
-            {/* getClick passes handleClick to the IconBar, so that when an icon is clicked, the handleClick runs here in the parent to close the mobile nav menu */}
-            <li className={styles.icon_bar_menu_item}>
-              <IconBar 
-                getClick={handleClick}/>
-            </li>
-          </ul>
+          </li>
+          <li className={styles.nav_main_list_item}>
+            <Link href='/'
+              onClick = {handleClick} >
+              Home
+            </Link>
+          </li>
+          <li className={styles.nav_main_list_item}>
+            <Link href='/whystent'
+              onClick = {handleClick}             
+              >
+              Why Stent?
+            </Link>
+          </li>
+          <li className={[styles.nav_main_list_item, 'mobile-show-inline'].join(' ')}>
+            <Link href='/social'
+              onClick = {handleClick}
+              >Community
+            </Link>
+          </li>
+          <li className={styles.nav_main_list_item}>
+            <Link href='/stories'
+              onClick = {handleClick}
+              >Stories
+            </Link>
+          </li>
+          <li className={styles.nav_main_list_item}>
+            <Link href='/blog'
+              onClick = {handleClick}
+              >News
+            </Link>
+          </li>
+          <li key='dvms'className={styles.nav_main_list_item}>
+            <Link href='/allabout'
+              onClick = {handleClick}
+              >
+              Lar Par Guide <FaChevronRight className={styles.nav_dropdown_icon} />
+            </Link>
+          </li>
+          {/* getClick passes handleClick to the IconBar, so that when an icon is clicked, the handleClick runs here in the parent to close the mobile nav menu */}
+          <li className={styles.icon_bar_menu_item}>
+            <IconBar 
+              getClick={handleClick}/>
+          </li>
+        </ul>
       </div>
     </>
   )

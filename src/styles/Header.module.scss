@@ -56,7 +56,7 @@
     height: 130px;
   }
   @include ldesktop {
-    // !VA 2023.12.05 Trying to get rid of the vertical scrollbar
+    // !VA At some point, I noted that I was trying to get rid of the vertical scrollbar here
     height: 150px;
   }
   position: absolute;
@@ -74,13 +74,10 @@
   z-index: 1;
 }
 
-// !VA 2023.12.05 This was never implemented...
+// !VA This is in Header.js
 .bricks_slider {
   display: block;
   height: 100%;
-  // z-index: -1;
-
-  // !VA 2024 
   opacity: 1;
   z-index: 1;
   }
@@ -94,9 +91,7 @@
   height: 100%;
   transform: translate3d(0, 0, 0);
   animation: moveSlideshow 120s linear infinite;
-  // !VA 2024
   opacity: .3;
-  // background: $secondary_color;
   z-index: 1;
 }
 
@@ -114,7 +109,7 @@
   }
 }
 
-// !VA 2023.12.02 brick_img is in the Brick component
+// !VA brick_img is in the Brick component
 .brick_img {
   position: relative;
   width: auto;
@@ -249,6 +244,10 @@
 }
 
 .nav_menu_items {
+  @include lphone {
+    padding-top: 2rem;
+    // justify-content: center;
+  }
   @include tablet {
     position: relative;
     top: auto;
@@ -292,16 +291,6 @@
   // flex-direction: row;
   // margin: 0 0 0 1rem; 
   background: $content_bg_color;
-
-
-
-  // background: rgba(0, 0, 255, .3) !important; //devblue
-  // background-image: '../../../../public/bricks/img-brick-11.webp';
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: -80px 0;
-
-
   text-align: center;
   list-style-type: none;
   transform-origin: 0% 0%;
@@ -315,8 +304,23 @@
 
 
 
-
+// !VA Putting the background image in the pseudoelement, otherwise it will screw up the layout of the hamburger menu. I don't know if this will have an effect on the page load...
 .nav_main_list_item::after {
+  @include mphone {
+    background-position: -170px 0;
+  }
+  @include lphone {
+    background-position: -290px 0;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include ldesktop {
+    display: none;
+  } 
   content: "";
   background-image: url('../../public/bricks/img-brick-11.webp');
   background-repeat: no-repeat;
@@ -333,6 +337,16 @@
 
 .nav_menu_items a {
   // !VA 2024 This affects the mobile AND desktop menu items
+  @include mphone {
+    padding: 1.125rem 1rem;
+    font-size: $mphoneXXLFontSize;
+    line-height: $mphoneXXLLineHeight;
+  }
+  @include lphone {
+    padding: 1.25rem 1rem;
+    font-size: $lphoneXXLFontSize;
+    line-height: $lphoneXXLLineHeight;
+  }
   @include tablet {
     padding: 0 .638rem;
     font-size: $tabletMenuFontSize;
@@ -353,54 +367,31 @@
   }
   text-decoration: none;
   display: block;
-  padding: 1rem;
+  padding: .813rem 1rem;
   color: $dark_text_color;
   font-family: $inter_font;
-  font-size: 1.3em;
+  font-size: $rootXXLFontSize;
+  line-height: $rootXXLLineHeight;
   font-weight: 600;
-}
-
-
-
-.nav_main_list_item {
-  // border-bottom: 1px solid $secondary_accent_color;
-}
-
-.nav_menu_bg {
-  @include mphone {
-    background-position: -100px 0;
-  }
-  @include lphone {
-    background-position: -190px 0;
-    opacity: .25;
-  }
-  @include tablet {
-    background-position: -110px 0;
-    opacity: .25;
-  }
-  @include desktop {
-    background-position: -120px 0;
-    opacity: .22;
-  }
-  @include ldesktop {
-    background-position: -120px 0;
-    opacity: .25;
-  }
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  // background: rgba(0, 0, 255, .3) !important; //devblue
-  background-image: '../public/bricks/img-brick-11.webp';
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -80px 0;
-  opacity: .3;
 }
 
 // !VA Logo in the mobile menu
 .nav_logo {
+  @include mphone {
+    width: 140px;
+  }
+  @include lphone {
+    width: 160px;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include ldesktop {
+    display: none;
+  }
   display: block;  
   width: 120px;
   margin: 0 auto;
@@ -411,8 +402,6 @@
   margin-top: 2rem;
   padding: 0;
 }
-
-
 
 .nav_dropdown_icon {
   font-size: 80%;
@@ -524,7 +513,9 @@
     position: fixed;
     top: 0;
     right: -60px;
-    background: white;
+    // background: white;
+    background-color: rgba(218, 165, 32, .4);
+    // background-color: rgba(32, 85, 218, .4);
     display: inline-block;
     display: block;
     // margin: 0 1em 1em 0;
@@ -852,7 +843,8 @@
   top: auto;
   left: -60px;
   bottom: 0;
-  background: #FFFFFF;
+  background-color: rgba(218, 165, 32, .8);
+  // background-color: rgba(32, 85, 218, .9);
   height: auto;
   opacity: .8;
 }

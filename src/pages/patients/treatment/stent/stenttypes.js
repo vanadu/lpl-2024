@@ -99,7 +99,7 @@ const StentTypes = () => {
               </figcaption>
             </figure>
               <p className={styles.content_text}>
-              For canine laryngeal paralysis, only one Nitinol stenting product has been developed, and as of June 2023 it is not yet available on the market &mdash; the Dextronix DexStent LN. While other Nitinol airway stents are a tubular mesh, this product is double-loop of Nitinol wire. The only information available about it is on the Dextronix website and to date no research data about the product has been publicly released. According to our contacts, the product is scheduled to be released and marketed to veterinarians starting in July 2023.
+              For canine laryngeal paralysis, only one Nitinol stenting product has been developed &mdash; the Dextronix DexStent LN. While other Nitinol airway stents are a tubular mesh, this product is double-loop of Nitinol wire. The only information available about it is on the Dextronix website and to date no research data about the product has been publicly released. There are legitimate safety concerns with this product. For more information, see <Link href='/blog/fda-report-fuels-concerns-about-dextronix-nitinol-stent-for-dogs' className='link-dark' rel="noopener noreferrer" target="_blank">this article in the News &amp; Notes</Link> section.
             </p>
           </div>
 
