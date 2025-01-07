@@ -97,18 +97,29 @@ $desktopXXLLineHeight: 2.375rem;
 $ldesktopXXLFontSize: 2rem;
 $ldesktopXXLLineHeight: 2.5rem;
 
-// !VA Header Slug 
+// !VA XL Font Size and Line Height 
 $rootXLFontSize: 1.188rem;
-$rootSlugLineHeight: 1.375rem;
+$rootXLLineHeight: 1.375rem;
 $mphoneXLFontSize: 1.375rem;
-$mphoneSlugLineHeight: 1.638rem;
+$mphoneXLLineHeight: 1.638rem;
 $lphoneXLFontSize: 1.5rem;
-$lphoneSlugLineHeight: 1.75rem;
+$lphoneXLLineHeight: 1.75rem;
 $tabletXLFontSize: 1.5rem;
-$tabletSlugLineHeight: 1.75rem;
+$tabletXLLineHeight: 1.75rem;
 $desktopXLFontSize: 1.688rem;
-$desktopSlugLineHeight: 2.938rem;
+$desktopXLLineHeight: 2.938rem;
 $ldesktopXLFontSize: 1.938rem;
+$ldesktopXLLineHeight: 2.25rem;
+
+
+
+
+// !VA Header Slug 
+$rootSlugLineHeight: 1.375rem;
+$mphoneSlugLineHeight: 1.638rem;
+$lphoneSlugLineHeight: 1.75rem;
+$tabletSlugLineHeight: 1.75rem;
+$desktopSlugLineHeight: 2.938rem;
 $ldesktopSlugLineHeight: 2.25rem;
 
 // !VA Text Content, subhead h2
@@ -165,7 +176,7 @@ $mphoneSmallFontSize: 1rem;
 $mphoneSmallLineHeight: 1.438rem;
 $lphoneSmallFontSize: 1.063rem;
 $lphoneSmallLineHeight: 1.5rem;
-$tabletSmallFontSize: 1.125em;
+$tabletSmallFontSize: 1.125rem;
 $tabletSmallLineHeight: 1.563rem;
 $desktopSmallFontSize: 1.188rem;
 $desktopSmallLineHeight: 1.625rem;

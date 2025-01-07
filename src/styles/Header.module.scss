@@ -292,6 +292,16 @@
   // flex-direction: row;
   // margin: 0 0 0 1rem; 
   background: $content_bg_color;
+
+
+
+  // background: rgba(0, 0, 255, .3) !important; //devblue
+  // background-image: '../../../../public/bricks/img-brick-11.webp';
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: -80px 0;
+
+
   text-align: center;
   list-style-type: none;
   transform-origin: 0% 0%;
@@ -301,6 +311,24 @@
   // !VA Trying to get the mobile menu to display over the menu items
   // !VA 2024 Has no effect on anything...
   z-index: auto;
+}
+
+
+
+
+.nav_main_list_item::after {
+  content: "";
+  background-image: url('../../public/bricks/img-brick-11.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -150px 0;
+  opacity: 0.03;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 .nav_menu_items a {
@@ -332,12 +360,68 @@
   font-weight: 600;
 }
 
+
+
+.nav_main_list_item {
+  // border-bottom: 1px solid $secondary_accent_color;
+}
+
+.nav_menu_bg {
+  @include mphone {
+    background-position: -100px 0;
+  }
+  @include lphone {
+    background-position: -190px 0;
+    opacity: .25;
+  }
+  @include tablet {
+    background-position: -110px 0;
+    opacity: .25;
+  }
+  @include desktop {
+    background-position: -120px 0;
+    opacity: .22;
+  }
+  @include ldesktop {
+    background-position: -120px 0;
+    opacity: .25;
+  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background: rgba(0, 0, 255, .3) !important; //devblue
+  background-image: '../public/bricks/img-brick-11.webp';
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -80px 0;
+  opacity: .3;
+}
+
+// !VA Logo in the mobile menu
+.nav_logo {
+  display: block;  
+  width: 120px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav_logo a {
+  margin-top: 2rem;
+  padding: 0;
+}
+
+
+
 .nav_dropdown_icon {
   font-size: 80%;
   font-weight: 600;
   vertical-align: -1px;
   padding-left: .063rem;
 }
+
+
 
 // !VA This is the icon bar displayed in the mobile menu, styled differently in the mobile vs desktop view
 .icon_bar_menu_item .icon_bar {
