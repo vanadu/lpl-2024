@@ -26,35 +26,35 @@
 // !VA This is the H1 that matches with the title tag
 .main_head {
   @include mphone {
-    padding-bottom: .75rem;
-    font-size: $mphoneXXLFontSize;
-    line-height: $mphoneXXLLineHeight; 
+    padding-bottom: .25rem;
+    font-size: $mphoneXLFontSize;
+    line-height: $mphoneXLLineHeight; 
   }
   @include lphone {
     padding: 1rem 0 .313rem;
-    font-size: $lphoneXXLFontSize;
-    line-height: $lphoneXXLLineHeight; 
+    font-size: $lphoneXLFontSize;
+    line-height: $lphoneXLLineHeight; 
   }
   @include tablet {
     padding: 1rem 0 .25rem;
-    font-size: $tabletXXLFontSize;
-    line-height: $tabletXXLLineHeight
+    font-size: $tabletXLFontSize;
+    line-height: $tabletXLLineHeight
   }
   @include desktop {
     padding: 1.25rem 0 .25rem;
-    font-size: $desktopXXLFontSize;
-    line-height: $desktopXXLLineHeight
+    font-size: $desktopXLFontSize;
+    line-height: $desktopXLLineHeight
   }
   @include ldesktop {
     padding: 1.25rem 0 .5rem;
-    font-size: $ldesktopXXLFontSize;
-    line-height: $ldesktopXXLLineHeight
+    font-size: $ldesktopXLFontSize;
+    line-height: $ldesktopXLLineHeight
   }
-  margin: 0 0 .5rem;
+  margin: 0 0 .25rem;
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootXXLFontSize;
-  line-height: $rootXXLLineHeight; 
+  font-size: $rootXLFontSize;
+  line-height: $rootXLLineHeight; 
   font-weight: 500;
   text-align: center;
 }

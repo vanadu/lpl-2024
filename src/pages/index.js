@@ -200,7 +200,7 @@ const Home = ( {posts}) => {
                   How can you make the best decision about your dog&rsquo;s Lar Par when you have so many questions and when so many people &mdash; even veterinarians &mdash; seem to be saying different things? 
                   </p>
                   <p className={styles.content_text}>
-                  Your Lar Par decisions depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining our growing network of Facebook groups worldwide</Link>. 
+                  Your Lar Par decisions depend on your personal circumstances and your individual dog, so the best place to find guidance is the community of people like you who have first-hand experience, information, and insights to share. You can connect with thousands of people worldwide by <Link href='/social' className={styles.community_link}>joining the growing network of Facebook groups worldwide</Link>. 
                   </p>
                   <p className={styles.content_text}>
                     You can click on any question in the scrolling marquee text above to go straight to the <a href='#quickfaqs' className={styles.community_link}>Laryngeal Paralysis/GOLPP Quick FAQs</a> at the bottom of this page.
@@ -220,7 +220,7 @@ const Home = ( {posts}) => {
             <h1 className={styles.main_head}>Laryngeal Paralysis in Dogs: <span 
             className="mobile-show-inline"><br /></span>The 21st Century Guide</h1>
             <h2 className={styles.main_subhead}>Your Lar Par Dog&rsquo;s Best Friend</h2>
-            <p className={styles.content_text}>Lar Par dogs&rsquo; best friends are the people who love them enough to make informed choices for them. This website is devoted to providing reliable, up-to-date information so that people can make the best decisions for their beloved canine companions who suffer from laryngeal paralysis.   </p>
+            <p className={styles.content_text}>Lar Par dogs&rsquo; best friends are the people who love them enough to make informed choices for them. This website provides reliable, up-to-date information so that people can make the best decisions for their beloved canine companions who suffer from laryngeal paralysis.   </p>
 
             <h2 className={styles.main_subhead}>Lar Par: The Deadly Little Defect</h2>
             <figure className={styles.figure_small}>

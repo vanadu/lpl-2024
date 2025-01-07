@@ -23,7 +23,7 @@ const Social = () => {
       <section className={styles.section}>
         <div className={styles.section_content}>
           <div className={styles.topic_head}>
-            <h1 className={styles.topic_head_title}>The Canine Laryngeal Paralysis/GOLPP  Community</h1>
+            <h1 className={styles.topic_head_title}>The Canine Laryngeal <span className='mobile-show-inline'><br /></span>Paralysis/GOLPP  Community</h1>
           </div>
           <h2 className={styles.content_head}>What is the Lar Par community?</h2>
           <p className={styles.content_text}>

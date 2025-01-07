@@ -417,35 +417,35 @@ Removed Unused Styles: To restore git back to 830a1ad (HEAD -> master) 2024.04.0
 
 .topic_head_title {
   @include mphone {
-    font-size: $mphoneXXLFontSize;
-    line-height: $mphoneLargeLineHeight;
+    font-size: $mphoneXLFontSize;
+    line-height: $mphoneXLLineHeight;
     // padding: .188rem 1rem;
   }
   @include lphone {
-    font-size: $lphoneXXLFontSize;
-    line-height: $lphoneLargeLineHeight;
+    font-size: $lphoneXLFontSize;
+    line-height: $lphoneXLLineHeight;
     // padding: .188rem 2rem;
   }
   @include tablet {
-    font-size: $tabletXXLFontSize;
-    line-height: $tabletLargeLineHeight;
+    font-size: $tabletXLFontSize;
+    line-height: $tabletXLLineHeight;
   }
   @include desktop {
     // padding: .25rem 0 .375rem;
-    font-size: $desktopXXLFontSize;
-    line-height: $desktopLargeLineHeight;
+    font-size: $desktopXLFontSize;
+    line-height: $desktopXLLineHeight;
   }
   @include ldesktop {
     // padding: .125rem 0 .25rem;
     // padding: .5rem 0 .5rem;
-    font-size: $ldesktopXXLFontSize;
-    line-height: $ldesktopLargeLineHeight;
+    font-size: $ldesktopXLFontSize;
+    line-height: $ldesktopXLLineHeight;
   }
   // !VA 2024
   color: $dark_text_color;
   font-family: $secondary_font;
-  font-size: $rootXXLFontSize;
-  line-height: $rootLargeLineHeight;
+  font-size: $rootXLFontSize;
+  line-height: $rootXLLineHeight;
   font-weight: 500;
   text-align: center;
 }
@@ -1295,31 +1295,31 @@ font-weight: 400;
 .content_text, .content_list_item_svg, .content_list_bullet {
   @include mphone {
     padding: .25rem 0;
-    font-size: $mphoneLargeFontSize;
+    font-size: $mphoneNormalFontSize;
     line-height: $mphoneLargeLineHeight;
   }
   @include lphone {
     padding: .25rem 0;
-    font-size: $lphoneLargeFontSize;
-    line-height: $lphoneLargeLineHeight;
+    font-size: $lphoneNormalFontSize;
+    line-height: $lphoneNormalLineHeight;
   }
   @include tablet {
     padding: .25rem 0 .125rem;
-    font-size: $tabletLargeFontSize;
-    line-height: $tabletLargeLineHeight;
+    font-size: $tabletNormalFontSize;
+    line-height: $tabletNormalLineHeight;
   }
   
   @include desktop {
     padding: .25rem 0;
-    font-size: $desktopLargeFontSize;
+    font-size: $desktopNormalFontSize;
     font-weight: 400;
-    line-height: $desktopLargeLineHeight;
+    line-height: $desktopNormalLineHeight;
   }
   @include ldesktop {
     padding: .25rem 0;
-    font-size: $ldesktopLargeFontSize;
+    font-size: $ldesktopNormalFontSize;
     font-weight: 400;
-    line-height: $ldesktopLargeLineHeight;
+    line-height: $ldesktopNormalLineHeight;
   }
   // !VA 2024 Added width 100% here so the showmore link would justify left. Otherwise, it will appear centered
   width: 100%;
@@ -1327,8 +1327,8 @@ font-weight: 400;
   color: $dark_text_color;
   font-family: $primary_font;
   
-  font-size: $rootLargeFontSize;
-  line-height: $rootLargeLineHeight;
+  font-size: $rootNormalFontSize;
+  line-height: $rootNormalLineHeight;
   text-align: left;
 }
 
@@ -2592,34 +2592,34 @@ text-align: left;
 
 .showmore_title {
   @include mphone {
-    font-size: $mphoneSmallFontSize;
-    line-height: $mphoneSmallLineHeight;
+    font-size: $mphoneNormalFontSize;
+    line-height: $mphoneNormalLineHeight;
   }
   @include lphone {
-    font-size: $lphoneSmallFontSize;
-    line-height: $lphoneSmallLineHeight;
+    font-size: $lphoneNormalFontSize;
+    line-height: $lphoneNormalLineHeight;
   }
   @include tablet {
-    font-size: $tabletSmallFontSize;
-    line-height: $tabletSmallLineHeight;
+    font-size: $tabletNormalFontSize;
+    line-height: $tabletNormalLineHeight;
   }
   @include desktop {
     padding-left: 1.625rem;
-    font-size: $desktopSmallFontSize;
-    line-height: $desktopSmallLineHeight;
+    font-size: $desktopNormalFontSize;
+    line-height: $desktopNormalLineHeight;
   }
   @include ldesktop {
     padding-left: 1.75rem;
-    font-size: $ldesktopSmallFontSize;
-    line-height: $ldesktopSmallLineHeight;
+    font-size: $ldesktopNormalFontSize;
+    line-height: $ldesktopNormalLineHeight;
   }
   display: block;
   // margin-left: 1rem;
   // padding-left: 1.313rem;
   padding: 0 0 .25rem 1.313rem;
   // text-indent: -1rem;
-  font-size: $rootSmallFontSize;
-  line-height: $rootSmallLineHeight;
+  font-size: $rootNormalFontSize;
+  line-height: $rootNormalLineHeight;
   font-weight: 600;
 }
 

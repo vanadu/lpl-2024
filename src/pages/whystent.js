@@ -88,7 +88,7 @@ function WhyStent() {
                        <div className={styles.showmore_content_block}>
                         <span className={styles.showmore_content_space}></span>
                         <p className={styles.showmore_content_text}>
-                          What&rsquo;s different about laryngeal paralysis is that unlike most terminal diseases like cancer it doesn&rsquo;t destroy a vital organ&rsquo;s ability to function. Laryngeal paralysis incapacitates two pieces of cartilage in the larynx which block the airway to the lungs. So by restoring the air passage through the larynx with a stent, you restore the health of the animal. <a href="https://www.verywellhealth.com/stents-and-when-they-are-used-1745738" className="link-dark" target="_blank" rel="noreferrer noopener">Stenting has become routine</a> in all areas of human medicine. The laryngeal stent is quick, affordable, and proven in the field to be effective. Fast-tracking the adoption of this procedure will ensure that people &mdash; regardless of their income level or willingness to subject their senior dogs to invasive surgery &mdash; don&rsquo;t have to watch their beloved companions suffer and die unnecessarily.
+                          What&rsquo;s different about laryngeal paralysis is that unlike most terminal diseases it doesn&rsquo;t destroy a vital organ&rsquo;s ability to function. Laryngeal paralysis incapacitates two pieces of cartilage in the larynx which block the airway to the lungs. So by restoring the air passage through the larynx with a stent, you can restore the health of the animal. <a href="https://www.verywellhealth.com/stents-and-when-they-are-used-1745738" className="link-dark" target="_blank" rel="noreferrer noopener">Stenting has become routine</a> in all areas of human medicine. The laryngeal stent is quick, affordable, and proven in the field to be effective. Fast-tracking the adoption of this procedure will ensure that people &mdash; regardless of their income level or willingness to subject their senior dogs to invasive surgery &mdash; don&rsquo;t have to watch their beloved companions suffer and die unnecessarily.
                         </p>
                       </div>
                     </ShowMoreContent>
@@ -107,7 +107,7 @@ function WhyStent() {
                 {/* ShowMoreComponent content start */}
                 <div className={styles.content_text}>
                   <p className={styles.showmore_content_inline}>
-                    All invasive surgeries &mdash; human and veterinary&nbsp;&mdash; are associated with some risk. The laryngeal stent implant is considered a <span className='semibold-italic'>minimally-invasive</span> procedure because there&rsquo;s no incision involved. For more information and sources, see the <Link href='/patients/treatment/surgery' className='link-dark'>Surgery</Link> page in the <Link href='/patients/treatment' className='link-dark'>Treatment</Link> section.&nbsp;
+                    All invasive surgeries &mdash; human and veterinary&nbsp;&mdash; are associated with some risk. The laryngeal stent implant is considered a <span className='semibold-italic'>minimally-invasive</span> procedure because there&rsquo;s no incision involved. For more information and sources, see the <Link href='/patients/treatment/surgery' className='link-dark' rel="noopener noreferrer" target="_blank">Surgery</Link> page in the <Link href='/patients/treatment' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment</Link> section.&nbsp;
                   </p>
                   <ShowMoreContent
                     title='How risky is stent vs. surgery?'
@@ -118,7 +118,7 @@ function WhyStent() {
                      <div className={styles.showmore_content_block}>
                       <span className={styles.showmore_content_space}></span>
                       <p className={styles.showmore_content_text}>
-                        Laryngeal stent implant requires no incision, so there&rsquo;s no possibility of primary infection. There are no stitches for the dog to tear or scratch at. There are no internal sutures, so there&rsquo;s no danger of suture failure which would require a repeat operation with extended anesthesia. Anesthesia for stent placement is less than five minutes as opposed to 30 - 45 minutes for surgery. For people concerned about anesthesia intolerance in senior dogs, this is a big advantage.
+                        Laryngeal stent implant requires no incision, so there&rsquo;s no possibility of primary infection. There are no stitches for the dog to tear or scratch at. There are no internal sutures, so there&rsquo;s no danger of suture failure which would require a repeat operation with extended anesthesia. Anesthesia for stent placement is under 10 minutes as opposed to 30 - 45 minutes for surgery. For people concerned about anesthesia intolerance in senior dogs, this is a big advantage.
                       </p>
                     </div>
                   </ShowMoreContent>
@@ -135,7 +135,7 @@ function WhyStent() {
                 {/* ShowMoreComponent content start */}
                 <div className={styles.content_text}>
                   <p className={styles.showmore_content_inline}>
-                    If for whatever reason the outcome of stent placement is unacceptable to you, the stent can be removed in another short procedure so you can proceed with surgery. Tieback surgery, on the other hand, can&lsquo;t be undone without another invasive operation with the same risks and costs as the original surgery. Some surgery types are permanent and can&lsquo;t be undone&nbsp; at&nbsp; all.
+                    If the outcome of the silicone stent placement is unacceptable to you, it can be removed in another short procedure so you can proceed with surgery. Other stent types can&lsquo;t be removed easily, if at all.
                   </p>
                   <ShowMoreContent
                     title='Can a stent be removed?'
@@ -146,7 +146,7 @@ function WhyStent() {
                      <div className={styles.showmore_content_block}>
                       <span className={styles.showmore_content_space}></span>
                       <p className={styles.showmore_content_text}>
-                        A laryngeal stent can be removed in a five minute procedure that&rsquo;s basically the reverse of the placement procedure. That means that at any time you can go back to where you were before stent implant, making the laryngeal stent the perfect interim solution if your dog has another condition that needs to be addressed before tieback surgery. But you might find that once the stent is implanted, no further treatment is necessary. One stent recipient from the original French stent study in 2020 lived a happy, symptom-free life for two years and three months after the implant. So stent implants are suitable as a life-long solution, not just an interim one.
+                        A silicone laryngeal stent can be removed in a procedure that&rsquo;s basically the reverse of the placement procedure. That means that at any time you can go back to where you were before stent implant, making the laryngeal stent the perfect interim solution if your dog has another condition that needs to be addressed before tieback surgery. But you might find that once the stent is implanted, no further treatment is necessary. Many stent recipients lived out their full lives with a good quality of life after the implant. Stent implants are increasingly recognized as a life-long solution, not just an interim one &mdash; particularly for senior dogs suffering from geriatric-onset laryngeal paralysis and polyneuropathy (GOLPP).
                       </p>
                     </div>
                   </ShowMoreContent>
@@ -164,7 +164,7 @@ function WhyStent() {
                   {/* ShowMoreComponent content start */}
                   <div className={styles.content_text}>
                     <p className={styles.showmore_content_inline}>
-                      We have reason to believe that the risk of aspiration pneumonia (AP) is considerably less with a laryngeal stent than with tieback surgery. This has to do with the size and position of the stent&rsquo;s aperture compared to the aperture created by the surgically tied-back laryngeal cartilage.&nbsp;
+                      We have reason to believe that the risk of aspiration pneumonia is considerably less with a laryngeal stent than with tieback surgery. This has to do with the size and position of the stent compared to the aperture created by the surgically tied-back laryngeal cartilage.&nbsp;
                     </p>
                     <ShowMoreContent
                       title='Why is this a big deal?'
@@ -175,7 +175,7 @@ function WhyStent() {
                        <div className={styles.showmore_content_block}>
                         <span className={styles.showmore_content_space}></span>
                         <p className={styles.showmore_content_text}>
-                          Aspiration pneumonia is the single most likely post-op cause of death. If it can be demonstrated that the laryngeal stent has a significantly lower risk of AP, that would be a big life-saving advantage for the stent vis-à-vis any surgical procedure for laryngeal paralysis. For more information, see the <Link href='/patients/treatment/stent' className='link-dark'>Stent</Link> page in the <Link href='http://localhost:3000/patients/treatment' className='link-dark'>Treatment</Link> section.
+                          Aspiration pneumonia is the single most likely post-op cause of death. If it can be demonstrated that the laryngeal stent has a significantly lower risk of aspiration pneumonia, that would be a big life-saving advantage for the silicone stent compared to any surgical procedure for laryngeal paralysis. For more information, see the <Link href='/patients/treatment/stent' className='link-dark' rel="noopener noreferrer" target="_blank">Stent</Link> page in the <Link href='/patients/treatment' className='link-dark' rel="noopener noreferrer" target="_blank">Treatment</Link> section.
                         </p>
                       </div>
                     </ShowMoreContent>
@@ -205,7 +205,7 @@ function WhyStent() {
                       <span className={styles.showmore_content_space}></span>
                       <p className={styles.showmore_content_text}>
                         Laryngeal stent implants are a win-win-win for  
-                        people, their dogs, and the veterinarians who perform the procedure. A tieback procedure takes hours to prepare for and perform. A stent implant takes a fraction of that. So all other things being equal, that means for each tieback surgery costing $4000, an estimated 4 stent implants can be done at $1200 apiece. That&rsquo;s $4000 vs. $4800 in revenue in the same time period, with four lives saved with a stent for each one with surgery. But surgery will remain the preferred treatment for younger animals with congenital or acquired laryngeal paralysis, so the revenue stream from surgery won&rsquo;t go away. It&rsquo;ll require an adjustment of the business model, but will result in greater revenue as more dogs stay alive and require more years of veterinary care.
+                        people, their dogs, and the veterinarians who perform the procedure. A tieback procedure takes hours to prepare for and perform. A stent implant takes a fraction of that. So all other things being equal, that means for each tieback surgery costing $4000, an estimated 4 stent implants can be done at $1200 apiece. That&rsquo;s $4000 vs. $4800 in revenue in the same time period, with four lives saved with a stent for each one with surgery. Still, surgery will remain the preferred treatment for younger animals with congenital or acquired laryngeal paralysis, so the revenue stream from surgery won&rsquo;t go away. It&rsquo;ll require an adjustment of the business model, but will result in greater revenue as more dogs stay alive and require more years of veterinary care.
                       </p>
                     </div>
                   </ShowMoreContent>
@@ -216,7 +216,7 @@ function WhyStent() {
               <div className={styles.why_content}>
                 <h2 className={styles.reason_heading_text}>Other Advantages of Stents for Laryngeal Paralysis in Dogs?</h2>
                 <p className={styles.content_text}>
-                  There are probably more reasons to <FaHeart className='heart'/> the stent procedure for laryngeal paralysis in dogs that we haven&rsquo;t thought of yet. If you can think of any or would like to communicate with us for any reason, <Link href='/contact' className='link-dark'>contact us here</Link> or join our <a href="https://www.facebook.com/groups/laryngealstentfordogs" className="link-dark" target="_blank" rel="noreferrer noopener">Facebook group</a>.
+                  There are probably more reasons to <FaHeart className='heart'/> the stent procedure for laryngeal paralysis in dogs that we haven&rsquo;t thought of yet. If you can think of any <Link href='/contact' className='link-dark' rel="noopener noreferrer" target="_blank">contact us here</Link> or join our <a href="https://www.facebook.com/groups/laryngealstentfordogs" className="link-dark" target="_blank" rel="noreferrer noopener">Facebook group</a>.
                 </p>
               </div>
               
