@@ -4,21 +4,6 @@
 // !VA NOTE: ALL STYLES FOR THE MDX BODY CONTENT ARE IN GLOBALS.SCSS BECAUSE CSS MODULES AREN'T SUPPORTED INSIDE MDX FILES, OR AT LEAST I COULDN'T GET IT TO WORK
 
 
-
-// !VA 2024 heading_subhead removed, no longer used
-// !VA 2024 blog_heading_subhead removed, no longer used
-// !VA 2024 header_subtitle removed, no longer used
-// !VA 2024 .subhead removed, no longer used
-// !VA 2024 .subhead_text removed, no longer used
-// !VA 2024 subhead_toggle removed, no longer used
-// !VA 2024 post_listing_topic removed, no longer used
-// !VA 2024 post_listing_figure removed, no longer used
-// !VA 2024 header_legend removed, no longer used
-// !VA 2024 header_figure removed, no longer used
-// !VA 2024 header_text removed, no longer used
-// !VA 2024 header_title removed, no longer used
-// !VA 2024 container_flex_center removed, not used
-
 // !VA Utility classes
 // !VA ---------------
 
@@ -246,21 +231,29 @@
 
 .post_listings {
   @include mphone {
-    margin: 0 1.25rem 0 0;
+    padding: 1rem .75rem;
   }
   @include lphone {
-    margin: 0 1.25rem 0 0;
+    padding: 1rem 1rem;
   }
   @include tablet {
-    margin: 0 1.5rem 0 0;
+    width: 740px;
+    padding: 1rem 0;
   }
   @include desktop {
-    margin: 0 1.5rem 0 0;
+    width: 860px;
+    padding: 1rem 0;
   }
   @include ldesktop {
-    margin: 0 2rem 0 0;
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
   }
-  margin: 0 1rem 0 0;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem .75rem;
+  background: $content_bg_color;
 }
 
 // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
@@ -273,13 +266,13 @@
     padding: 0 0 .5rem;
   }
   @include tablet {
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 0 0;
   }
   @include desktop {
-    padding: 0 1.5rem 1rem;
+    padding: 0 0 1rem;
   }
   @include ldesktop {
-    padding: 0 2rem 1rem;
+    padding: 0 0 1rem;
   }
   display: block;
   width: 100%;
@@ -421,6 +414,18 @@
   text-align: left;
 }
 
+.post_listing_figure {
+  @include ldesktop {
+    display: block;
+    float:right;
+    width: 240px;
+    height: 100%;
+    margin-top: .75rem;
+    padding: 0  0 0 1rem;
+  }
+  display: none;
+}
+
 
 // !VA STYLES FOR MDX BODY 
 // !VA CSS modules are used for the elements corresponing to MDX markup and passed as props. See Post.js for JSX. Components used in the MDX files are in /blog_components; each component imports the Blog.module.scss into its own component. 
@@ -428,10 +433,30 @@
 
 // !VA 2024 Post styles from the MDX files. Watch this, there are duplicate styles here.
 .post {
-  @include tablet {
-    margin-top: 1rem;
+  @include mphone {
+    padding: 1rem .75rem;
   }
-  margin: 0;
+  @include lphone {
+    padding: 1rem 1rem;
+  }
+  @include tablet {
+    width: 740px;
+    padding: 1rem 1.5rem;
+  }
+  @include desktop {
+    width: 860px;
+    padding: 0;
+  }
+  @include ldesktop {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+  }
+  display: block;
+  margin: 0 auto;
+  padding: 1rem .75rem;
+  background: $content_bg_color;
 }
 
 // !VA Applied to the H1, i.e. post title as props, see Post.js
@@ -706,8 +731,48 @@
   padding-left: 0;
 }
 
+
 // !VA 2024 Hero image and Blog.module.scss import in HeroImage.js and Youtube.js
-.post_hero, .youtube_embed {
+.post_hero {
+  @include mphone {
+    margin: .5rem auto;
+    width: 260px;
+  }
+  @include lphone {
+    margin: .75rem auto .5rem;
+    width: 280px;
+    height: auto;
+  }
+  @include tablet {
+    float:right;
+    clear: both;
+    width: 280px;
+    margin: 1rem auto;
+    padding: 0 0 1rem 1.5rem;
+  }
+  @include desktop {
+    float:right;
+    clear: both;
+    width: 320px;
+    margin: 1rem 1rem 0 1rem;
+  }  
+  @include ldesktop {
+    float:right;
+    clear: both;
+    width: 340px;
+    margin: 1rem 1rem 0 1.5rem;
+  }
+  display: block;
+  margin: 0 auto;
+  float: none;
+  clear: both;
+  width: 220px;
+  height: auto;
+}
+
+
+// !VA 2024 Hero image and Blog.module.scss import in HeroImage.js and Youtube.js
+.youtube_embed {
   @include mphone {
     margin: .5rem auto;
     width: 325px;
@@ -721,7 +786,7 @@
   @include tablet {
     // float:right;
     // clear: both;
-    width: 460px;
+    width: 360px;
     // margin: -6rem 1rem 0 1rem;
     margin: 1rem auto;
   }

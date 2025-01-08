@@ -18,9 +18,8 @@ const PostListing = ({post}) => {
             {/* !VA 2024 removed 'Topic' header and the 'posted on'...wasted space */}
             {/* <p className={styles.post_listing_topic}>Topic: {post.frontmatter.topic}</p> */}
             {/* <p className={styles.post_listing_date}>Posted on: {post.frontmatter.date}</p> */}
-            <p className={styles.post_listing_date}>{post.frontmatter.date}</p>
-            {/* !VA 2024 We don't need the image in the listing */}
-            {/* <figure className={styles.post_listing_figure}>
+
+            <figure className={styles.post_listing_figure}>
               <Image 
                 src={post.frontmatter.cover_image} 
                 width="0"
@@ -28,7 +27,11 @@ const PostListing = ({post}) => {
                 sizes="100vw"
                 style={{ width: '100%', height: 'auto' }}
                 className={styles.post_listing_figure_image} alt="Lar Par Life Blog Feature Image" />
-            </figure> */}
+            </figure>
+
+            <p className={styles.post_listing_date}>{post.frontmatter.date}</p>
+            {/* !VA 2024 We don't need the image in the listing */}
+
             <h3 className={styles.post_listing_title}>{post.frontmatter.title}</h3>
             <p className={styles.post_listing_excerpt}>
               {post.frontmatter.excerpt}
