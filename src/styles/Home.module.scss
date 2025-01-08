@@ -559,22 +559,22 @@ text-align: center;
 
 
 .hero_video {
-  // @include mphone {
-  //   width: 100%;
-  // }
-  // @include lphone {
-  //   width: 100%;
-  // }
-  // @include tablet {
-  //   width: 496px;
-  // }
-  // @include desktop {
-  //   width: auto;
-  // }
-  // @include ldesktop {
-  //   width: 600px;
-  //   margin: 0 3rem 0 3rem;
-  // }
+  @include mphone {
+    width: 100%;
+  }
+  @include lphone {
+    width: 100%;
+  }
+  @include tablet {
+    width: 496px;
+  }
+  @include desktop {
+    width: auto;
+  }
+  @include ldesktop {
+    width: 600px;
+    margin: 0 3rem 0 3rem;
+  }
   display: flex;
   position: relative;
   flex-direction: column;
@@ -584,25 +584,25 @@ text-align: center;
   // border: 4px solid #FFF;
   margin: 0 auto;
   // !VA 2024 This is for the mock video img.
-  img {
-    @include mphone {
-      width: 320px;
-    }
-    @include lphone {
-      width: 360px;
-    }
-    @include tablet {
-      width: 460px;
-    }
-    @include desktop {
-      width: 480px;
-    }
-    @include ldesktop {
-      width: 520px;
-    }
-    width: 280px;
-    height: auto;
-  }
+  // img {
+  //   @include mphone {
+  //     width: 320px;
+  //   }
+  //   @include lphone {
+  //     width: 360px;
+  //   }
+  //   @include tablet {
+  //     width: 460px;
+  //   }
+  //   @include desktop {
+  //     width: 480px;
+  //   }
+  //   @include ldesktop {
+  //     width: 520px;
+  //   }
+  //   width: 280px;
+  //   height: auto;
+  // }
 }
 
 .hero_video_frame {

@@ -65,7 +65,7 @@ const GuideNav = () => {
 
           <div className={styles.dropdown} tabindex="1">
             <i className={styles.db2} tabindex="1"></i>
-            <a className={styles.dropbtn}>All Topics</a>
+            <a className={styles.dropbtn}>Lar Par <span className="mobile-hide-inline">Guide</span> Topics</a>
             {/* About item */}
             <div className={styles.dropdown_content}>
               <div 
@@ -136,7 +136,7 @@ const GuideNav = () => {
                 <TfiBackRight 
                   className={styles.guide_nav_back_icon}
                 />
-                Back 
+                Previous Topic 
             </div>
           </div>
         </div>

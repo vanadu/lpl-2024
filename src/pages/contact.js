@@ -143,27 +143,25 @@ export default function MessageForm() {
               <ul className={styles.content_list_no_bullet}>
 
                 <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>
-                  <p>Send us a private message with&nbsp;
-                    <Link href='https://www.facebook.com/van.l.albert/' 
-                      className='link-dark-nowrap' rel="noopener noreferrer" target="_blank">
-                      Facebook Messenger
-                    </Link>.
-                  </p>
+                  Send us a private message with&nbsp;
+                  <Link href='https://www.facebook.com/van.l.albert/' 
+                    className='link-dark-nowrap' rel="noopener noreferrer" target="_blank">
+                    Facebook Messenger
+                  </Link>.
+                  
                 </li>
                 <li className={styles.content_list_item}>
                   <FaPaw className={styles.content_list_item_svg} />
-                  <p>
                   Join the&nbsp;
                   <Link href='/social' className='link-dark-nowrap' rel="noopener noreferrer" target="_blank">
                   Lar Par Community
                   </Link>
                   &nbsp; and share your story.
-                  </p>
                 </li>
                 {/* <li className={styles.content_list_item}><FaPaw className={styles.content_list_item_svg}/>You can post or send a private message to our Twitter account at <a href='https://twitter.com/LarParLife' className='link' target="_blank" rel="noopener noreferrer">https://twitter.com/LarParLife</a>.  </li> */}
                 <li className={styles.content_list_item}>
                   <FaPaw className={styles.content_list_item_svg}/>
-                  <p>Use the Contact form below to send us an email.</p> 
+                  Use the Contact form below to send us an email. 
                 </li>
               </ul>
               {/* <p className={styles.content_text}> */}

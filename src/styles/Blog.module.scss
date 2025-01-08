@@ -331,10 +331,12 @@
     // align-items: center;
     // color: $dark_text_color;
     @include mphone {
-      margin: 1rem 1rem 1rem 2rem;
+      margin: .5rem .5rem 1rem 1.5rem;
+      padding: .25rem 0;
     }
     @include lphone {
-    
+      margin: .5rem .5rem 1rem 1.5rem;
+      padding: .25rem 0;
     }
     @include tablet {
       margin: 2rem 0 2rem 2rem;

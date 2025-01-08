@@ -16,6 +16,10 @@ import matter from 'gray-matter'
 // import PostListing from '../components/blog_components/PostListing'
 // !VA Icons
 import { FaArrowCircleRight, FaPaw } from 'react-icons/fa'
+import { FaFacebookSquare } from 'react-icons/fa'
+import { FaTwitterSquare } from 'react-icons/fa'
+import { TfiYoutube } from 'react-icons/tfi'
+import { MdMail } from 'react-icons/md'
 
 
 import JoinUsIcon from '../../public/img-lpl-community.png'
@@ -56,17 +60,51 @@ const Home = ( {posts}) => {
                   LIFE!
                 </p>
               </div>
+
               <div className={styles.hero_video}>
+                {/* You have to comment this out for dev if you're using Chrome because you get strange errors. It's a Vimeo problem */}
+                <iframe className={styles.hero_video_frame} title="Do Laryngeal Stents for LarPar Work?" src="https://player.vimeo.com/video/774914281?h=0a34926c18&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_&amp;dnt=1" />
+
+                   
+                <div className={styles.hero_video_sharebar}>
+                  <figcaption className=''>
+                    <div className='hero_video_sharebar_item'>
+                      <p className='hero_video-sharebar-label'>Share on:</p>
+                    </div>
+                  </figcaption>
+                                        
+                  <div className='hero_video_sharebar_item'>
+                    <a href='https://youtu.be/bB0aCPxL168' target="_blank" rel="noopener noreferrer" aria-label="Visit Us On Youtube"><TfiYoutube className={styles.icon} /></a>
+                  </div>
+                    
+                  <div className='hero_video_sharebar_item'>
+                    <a href='https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.larparlife.com%2F' target="_blank" rel="noopener noreferrer" aria-label="Visit Us On Facebook"><FaFacebookSquare className={styles.icon} /></a>
+                  </div>
+                    
+                  <div className='hero_video_sharebar_item'>
+                    <a href='https://twitter.com/intent/tweet
+                      ?url=https%3A%2F%2Fwww.larparlife.com
+                      &text=NEW+Non-Surgical+Treatment+For+LarPar+(GOLPP)!
+                      &hashtags=larpar,seniordogs,laryngealparalysis,golpp,larparlife' target="_blank" rel="noopener noreferrer" aria-label="Visit Us On X (Twitter)"><FaTwitterSquare className={styles.icon} /></a>
+                  </div>
+                    
+                  <div className='hero_video_sharebar_item'>
+                    <Link href='/contact' aria-label='Contact Us'>
+                      <MdMail className={styles.icon} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+
+
+              {/* <div className={styles.hero_video}>
                 <Image 
                   src={MockHeroVideo} 
-                  // width="0"
-                  // height="0"
-                  // sizes="100vw"
-                  // style={{ width: '100%', height: 'auto' }}
                   className={styles.mock_hero_video} 
                   alt="Mock Hero Video" 
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
