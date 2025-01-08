@@ -231,24 +231,24 @@
 
 .post_listings {
   @include mphone {
-    padding: 1rem .75rem;
+    padding: .5rem .75rem;
   }
   @include lphone {
-    padding: 1rem 1rem;
+    padding: .5rem 1rem;
   }
   @include tablet {
     width: 740px;
-    padding: 1rem 0;
+    padding: .25rem 0;
   }
   @include desktop {
     width: 860px;
-    padding: 1rem 0;
+    padding: .25rem 0;
   }
   @include ldesktop {
     width: 960px;
     display: block;
     margin: 0 auto;
-    padding: 1rem 0 2rem;
+    padding: .5rem 0 2rem;
   }
   display: block;
   margin: 0 auto;
@@ -259,65 +259,104 @@
 // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
 // !VA Used in PostListing.js
 .post_listing {
-  @include mphone {
-    padding: 0 0 .25rem;
-  }
-  @include lphone {
-    padding: 0 0 .5rem;
-  }
-  @include tablet {
-    padding: 0 1.5rem 0 0;
-  }
-  @include desktop {
-    padding: 0 0 1rem;
-  }
-  @include ldesktop {
-    padding: 0 0 1rem;
-  }
-  display: block;
+  // @include mphone {
+  //   padding: 0 0 .25rem;
+  // }
+  // @include lphone {
+  //   padding: 0 0 .5rem;
+  // }
+  // @include tablet {
+  //   padding: 0 1.5rem 0 0;
+  // }
+  // @include desktop {
+  //   padding: 0 0 1rem;
+  // }
+  // @include ldesktop {
+  //   padding: 0 0 1rem;
+  // }
+  // display: block;
+  // width: 100%;
+  // margin: 0 auto;
+  // background: $content_bg_color;
+  // color: $dark_text_color;
+  position: relative;
   width: 100%;
-  margin: 0 auto;
-  background: $content_bg_color;
-  color: $dark_text_color;
-  // !VA 2024
-  // border-radius: .5rem;
-  // box-shadow: 0 0 1em #27272733;
+  margin: 0.25rem auto 0;
 }
 
+// !VA The link is attached to the heading and takes up the entire parent container, i.e. post_listing
 .post_listing_link {
-  @include ldesktop {
-    // padding: 1rem 0 0;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 0 0 1.25rem .25rem;
+  
+  @include tablet {
+    position: absolute; 
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  // padding: .5rem .5rem .5rem 1rem;
-  // padding: 0 1rem 0 0;
-  margin: 0 0 1.25rem .25rem;
-      // !VA 2024
+  @include desktop {
+    position: absolute; 
+  }
+  @include ldesktop {
+    position: absolute; 
+  }
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   border-left: .575rem solid $primary_color;
+  z-index: 1;
 }
 
 
 .post_listing_content {
     // !VA display block to float image right
+    // @include tablet {
+    //   display: block;
+    // }
+    // @include desktop {
+    //   display: block;
+    //   padding-left: .75rem;
+    // }
+    // @include ldesktop {
+    //   display: block;
+    //   padding-left: .75rem;
+    // }
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // padding-left: .5rem;
+    // align-items: center;
+    // color: $dark_text_color;
+    @include mphone {
+      margin: 1rem 1rem 1rem 2rem;
+    }
+    @include lphone {
+    
+    }
     @include tablet {
-      display: block;
+      margin: 2rem 0 2rem 2rem;
     }
     @include desktop {
-      display: block;
-      padding-left: .75rem;
+      margin: 2rem 0 2rem 2rem;
     }
     @include ldesktop {
-      display: block;
-      padding-left: .75rem;
+      margin: 2rem 0 2rem 2rem;
     }
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: .5rem;
-    align-items: center;
+    position: relative;
+    display: block;
+    min-height: 120px;
+    margin: .5rem .5rem 1rem 1.5rem;
+    padding: .25rem 0;
+    color: $dark_text_color;
+    
+}
+
+.post_listing_text {
+    position: relative;
+    min-height: 120px;
 }
 
 // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
@@ -327,6 +366,7 @@
       line-height: 1.313rem;
     }
     @include lphone {
+      // margin-top: .25rem;
       font-size: 1.125rem;
       line-height: 1.438rem;    
     }
@@ -357,73 +397,102 @@
 
 // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
 .post_listing_title {
-    @include mphone {
-      font-size: 1.125rem;
-      line-height: 1.438rem;
-    }
-    @include lphone {
-      font-size: 1.188rem;
-      line-height: 1.313rem;
-    }
-    @include tablet {
-      font-size: 1.313rem;
-      line-height: 1.75rem;
-    }
-    @include desktop {
-      font-size: 1.5rem;
-      line-height: 1.875rem;
-    }
-    @include ldesktop {
-      width: 72%;
-      font-size: 1.688rem;
-      line-height: 2.125rem;
-    }
+  @include mphone {
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+  }
+  @include lphone {
+    padding: .25rem 0;
+    font-size: 1.188rem;
+    line-height: 1.313rem;
+  }
+  @include tablet {
+    padding: .25rem 0;
+    font-size: 1.313rem;
+    line-height: 1.75rem;
+  }
+  @include desktop {
+    padding: .25rem 0;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  @include ldesktop {
+    padding: .25rem 0;
+    font-size: 1.688rem;
+    line-height: 2.125rem;
+  }
+  padding: .25rem 0;
   font-family: $primary_font;
   // padding: .125rem .5rem 0 0;
   // !VA 2024
   font-size: $rootNormalFontSize;
   line-height: $rootNormalLineHeight;
   text-decoration: underline;
+  
 }
 
 // !VA 2024.04.04 Appears only in Blog module - only applied in blog content
 .post_listing_excerpt {
-    @include mphone {
-      font-size: 1.125rem;
-      line-height: 1.313rem;
-    }
-    @include lphone {
-      font-size: 1.125rem;
-      line-height: 1.313rem;
-    }
-    @include tablet {
-      font-size: 1.25rem;
-      line-height: 1.5rem;
-    }
-    @include desktop {
-      font-size: 1.438rem;
-      line-height: 1.75rem;
-    }
-    @include ldesktop {
-      font-size: 1.438rem;
-      line-height: 1.75rem;
-    }
-  width: 100%;
+  @include mphone {
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+  }
+  @include lphone {
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+  }
+  @include tablet {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  @include desktop {
+    padding: .25rem  0 0 0;
+    font-size: 1.438rem;
+    line-height: 1.75rem;
+  }
+  @include ldesktop {
+    padding: .25rem  0 0 0;
+    font-size: 1.438rem;
+    line-height: 1.75rem;
+  }
+  padding: .25rem 0;
   font-size: 1.063rem;
   line-height: 1.313rem;
   text-align: left;
 }
 
 .post_listing_figure {
+  @include tablet {
+    display: block;
+    width: 180px;
+    height: 110px;
+    top: .5rem;
+    margin: 0 0 0 1.25rem;
+  }
+  @include desktop {
+    display: block;
+    width: 200px;
+    height: 120px;
+    top: .5rem;
+    margin: 0 0 0 1.5rem;
+    // padding: 0  0 0 1rem;
+  }
   @include ldesktop {
     display: block;
-    float:right;
-    width: 240px;
-    height: 100%;
-    margin-top: .75rem;
-    padding: 0  0 0 1rem;
+    width: 200px;
+    height: 120px;
+    top: .5rem;
+    margin: 0 0 0 1.5rem;
   }
   display: none;
+  position: relative;
+  float: right;
+  clear: both;
+}
+
+.post_listing_figure_image {
+  width: 100%;
+  height: auto;
 }
 
 

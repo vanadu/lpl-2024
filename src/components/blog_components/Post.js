@@ -52,11 +52,6 @@ const Post = ({ serializedContent }) => {
     // console.log('styles', styles)
   }, []);
 
-
-
-
-
-
   return (
     <MDXProvider components={{ 
       HeroImage,
